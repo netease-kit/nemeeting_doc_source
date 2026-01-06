@@ -1,0 +1,35 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "网易会议 SDK 文档",
+  "description": "网易会议多平台（Android/iOS/Web/Windows/macOS/Linux/Electron/H5）SDK 开发文档，包含快速开始、会议管理、会议安全、界面定制等完整功能模块",
+  "folders": [
+    "Android",
+    "iOS",
+    "Web",
+    "Windows",
+    "macOS",
+    "Linux",
+    "Electron",
+    "H5"
+  ],
+  "excludeFolders": [
+    ".git",
+    "node_modules"
+  ],
+  "excludeFiles": [
+    ".DS_Store"
+  ],
+  "rules": [
+    "每个平台的文档位于对应的平台目录下，从 README.md 开始查看",
+    "新手入门请先阅读平台的「集成概述.md」，然后查看「快速开始」目录",
+    "根据具体功能需求查找对应的模块文档：会议管理、会议安全、界面定制等",
+    "不同平台的功能和 API 可能略有差异，请参考具体平台的文档",
+    "所有文档中的代码示例都是针对对应平台的最佳实践"
+  ],
+  "previousVersions": [
+    {
+      "tag": "v4.18.1",
+      "description": "网易会议 SDK 4.18.1 稳定版本"
+    }
+  ]
+}
