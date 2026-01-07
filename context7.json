@@ -1,37 +1,33 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
-  "url": "https://context7.com/netease-kit/nemeeting_doc_source",
-  "public_key": "pk_Scmz3s7Jwm3QjyVBrqHUI",
-  "projectTitle": "网易会议 SDK 文档",
-  "description": "网易会议多平台（Android/iOS/Web/Windows/macOS/Linux/Electron/H5）SDK 开发文档，包含快速开始、会议管理、会议安全、界面定制等完整功能模块",
+  "projectTitle": "NEMeeting SDK",
+  "description": "NetEase Meeting SDK - Comprehensive guides for integrating video conferencing capabilities into your applications across multiple platforms (Android/iOS/Web/H5/Windows/macOS/Linux/Electron)",
   "folders": [
-    "Android",
-    "iOS",
-    "Web",
-    "Windows",
-    "macOS",
-    "Linux",
-    "Electron",
-    "H5"
+    "guides/",
+    "api-reference/"
   ],
   "excludeFolders": [
-    ".git",
-    "node_modules"
+    ".claude",
+    "node_modules",
+    ".git"
   ],
   "excludeFiles": [
     ".DS_Store"
   ],
   "rules": [
-    "Documentation for each platform is located in the corresponding platform directory. Start with README.md in each platform folder",
-    "For beginners: First read the platform's 'Integration Overview' (集成概述.md), then check the 'Quick Start' (快速开始) directory",
-    "Find module documentation based on your needs: Meeting Management, Meeting Security, UI Customization, etc.",
-    "Platform features and APIs may vary slightly. Please refer to the specific platform's documentation",
-    "All code examples in the documentation follow the best practices for the respective platform"
+    "NEMeeting SDK supports 8 platforms: Android, iOS, Web, H5, Windows, macOS, Linux, and Electron",
+    "Each platform has its own integration guide under guides/[Platform]/ directory",
+    "For beginners: Start with the Quick Start guide at guides/[Platform]/快速开始/",
+    "SDK features include meeting management, meeting security, UI customization, and advanced features (beauty filters, virtual backgrounds, meeting extensions)",
+    "Platform features and APIs may vary slightly - refer to platform-specific documentation",
+    "For production use, implement proper error handling and state management",
+    "Check platform-specific best practices sections for optimization recommendations",
+    "Complete API reference documentation is available on the online documentation site"
   ],
   "previousVersions": [
     {
       "tag": "v4.18.1",
-      "description": "网易会议 SDK 4.18.1 稳定版本"
+      "description": "NEMeeting SDK 4.18.1 stable release"
     }
   ]
 }
