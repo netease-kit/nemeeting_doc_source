@@ -3,7 +3,8 @@
   "projectTitle": "NEMeeting SDK",
   "description": "NetEase Meeting SDK - Comprehensive guides for integrating video conferencing capabilities into your applications across multiple platforms (Android/iOS/Web/H5/Windows/macOS/Linux/Electron)",
   "folders": [
-    "guides/"
+    "guides/",
+    "api-reference/"
   ],
   "excludeFolders": [
     ".claude",

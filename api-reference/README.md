@@ -4,11 +4,11 @@
 
 ## 各平台 API 文档
 
-- [Android API 文档](https://doc.yunxin.163.com/meetingkit/references/android/dokka/Latest/zh/com/netease/yunxin/kit/meeting/sdk/NEMeetingKit.html)
-- [iOS API 文档](https://doc.yunxin.163.com/meetingkit/references/ios/Latest/index.html)
-- [Web API 文档](https://doc.yunxin.163.com/meetingkit/references/web/Latest/index.html)
-- [H5 API 文档](https://doc.yunxin.163.com/meetingkit/references/h5/Latest/index.html)
-- [Windows API 文档](https://doc.yunxin.163.com/meetingkit/references/windows/Latest/index.html)
-- [macOS API 文档](https://doc.yunxin.163.com/meetingkit/references/macos/Latest/index.html)
-- [Linux API 文档](https://doc.yunxin.163.com/meetingkit/references/linux/Latest/index.html)
-- [Electron API 文档](https://doc.yunxin.163.com/meetingkit/references/electron/Latest/index.html)
+- [Android API 文档](https://doc.yunxin.163.com/meetingkit/references/android/dokka/Latest/zh/com/netease/yunxin/kit/meeting/sdk/package-summary.html)
+- [iOS API 文档](https://doc.yunxin.163.com/docs/interface/meetingkit/iOS/doxygen/Latest/zh/annotated.html)
+- [Web API 文档](https://doc.yunxin.163.com/meetingkit/references/web/typedoc/Latest/zh/index.html)
+- [H5 API 文档](https://doc.yunxin.163.com/meetingkit/references/web/typedoc/Latest/zh/h5/modules.html)
+- [Windows API 文档](https://doc.yunxin.163.com/docs/interface/meetingkit/windows/doxygen/Latest/zh/index.html)
+- [macOS API 文档](https://doc.yunxin.163.com/docs/interface/meetingkit/macOS/doxygen/Latest/zh/index.html)
+- [Linux API 文档](https://doc.yunxin.163.com/docs/interface/meetingkit/linux/doxygen/Latest/zh/index.html)
+- [Electron API 文档](https://doc.yunxin.163.com/meetingkit/references/web/typedoc/Latest/zh/electron/modules.html)
