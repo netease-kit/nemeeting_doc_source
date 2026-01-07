@@ -21,7 +21,7 @@ Each platform guide follows a consistent structure:
 
 #### Directory Structure
 ```
-guides/[Platform]/
+guides/Android/             # (其他平台路径类似，如 guides/iOS/, guides/Web/ 等)
 ├── 快速开始/              # Quick Start
 │   ├── 快速跑通 Sample Code.md
 │   ├── 集成并初始化 SDK.md
@@ -118,44 +118,46 @@ guides/[Platform]/
 
 ### Feature Index with File Paths
 
+> **Note**: 以下路径以 Android 平台为例，其他平台路径类似（如 iOS: `guides/iOS/`, Web: `guides/Web/`, H5: `guides/H5/`, Windows: `guides/Windows/`, macOS: `guides/macOS/`, Linux: `guides/Linux/`, Electron: `guides/Electron/`）
+
 #### Quick Start & Integration
-- **快速跑通 Sample Code** - `guides/[Platform]/快速开始/快速跑通 Sample Code.md`
-- **集成并初始化 SDK** - `guides/[Platform]/快速开始/集成并初始化 SDK.md` (或 `集成并初始化SDK.md` for H5)
-- **登录鉴权** - `guides/[Platform]/快速开始/登录鉴权.md`
-- **集成概述** - `guides/[Platform]/集成概述.md`
+- **快速跑通 Sample Code** - `guides/Android/快速开始/快速跑通 Sample Code.md`
+- **集成并初始化 SDK** - `guides/Android/快速开始/集成并初始化 SDK.md` (H5 平台使用 `集成并初始化SDK.md`)
+- **登录鉴权** - `guides/Android/快速开始/登录鉴权.md`
+- **集成概述** - `guides/Android/集成概述.md`
 
 #### Meeting Management (会议管理)
-- **创建会议** - `guides/[Platform]/会议管理/创建会议.md`
-- **加入会议** - `guides/[Platform]/会议管理/加入会议.md`
-- **预约会议** - `guides/[Platform]/会议管理/预约会议.md`
-- **邀请入会** - `guides/[Platform]/会议管理/邀请入会.md`
-- **会议管理** - `guides/[Platform]/会议管理/会议管理.md` (离开/结束会议、成员加入或离开会议、会议设置)
-- **会议状态变更流程** - `guides/[Platform]/会议管理/会议状态变更流程.md`
+- **创建会议** - `guides/Android/会议管理/创建会议.md`
+- **加入会议** - `guides/Android/会议管理/加入会议.md`
+- **预约会议** - `guides/Android/会议管理/预约会议.md`
+- **邀请入会** - `guides/Android/会议管理/邀请入会.md`
+- **会议管理** - `guides/Android/会议管理/会议管理.md` (离开/结束会议、成员加入或离开会议、会议设置)
+- **会议状态变更流程** - `guides/Android/会议管理/会议状态变更流程.md`
 
 #### Meeting Security (会议安全)
-- **会中水印** - `guides/[Platform]/会议安全/会中水印.md`
-- **入会音视频状态控制** - `guides/[Platform]/会议安全/入会音视频状态控制.md`
-- **媒体流加密** - `guides/[Platform]/会议安全/媒体流加密.md` (或 `流媒体加密.md` for iOS)
-- **概述** - `guides/[Platform]/会议安全/概述.md`
+- **会中水印** - `guides/Android/会议安全/会中水印.md`
+- **入会音视频状态控制** - `guides/Android/会议安全/入会音视频状态控制.md`
+- **媒体流加密** - `guides/Android/会议安全/媒体流加密.md` (iOS 平台使用 `流媒体加密.md`)
+- **概述** - `guides/Android/会议安全/概述.md`
 
 #### UI Customization (界面定制)
-- **设置语言&主题** - `guides/[Platform]/界面定制/设置语言&主题.md` (切换主题色、设置语言)
-- **自定义菜单** - `guides/[Platform]/界面定制/自定义菜单.md`
-- **其他界面定制** - `guides/[Platform]/界面定制/其他界面定制.md` (或 `其他界面设置.md` for Web)
-- **概述** - `guides/[Platform]/界面定制/概述.md`
+- **设置语言&主题** - `guides/Android/界面定制/设置语言&主题.md` (切换主题色、设置语言)
+- **自定义菜单** - `guides/Android/界面定制/自定义菜单.md`
+- **其他界面定制** - `guides/Android/界面定制/其他界面定制.md` (Web 平台使用 `其他界面设置.md`)
+- **概述** - `guides/Android/界面定制/概述.md`
 
 #### Advanced Features
-- **基础美颜** - `guides/[Platform]/基础美颜.md`
-- **虚拟背景** - `guides/[Platform]/虚拟背景.md`
-- **会议扩展性** - `guides/[Platform]/会议扩展性.md`
-- **复用 IM 账号** - `guides/[Platform]/复用 IM 账号.md` (Android/iOS/H5/Web)
-- **私有云配置** - `guides/[Platform]/私有云配置.md`
-- **屏幕共享** - `guides/iOS/屏幕共享.md` (iOS only)
-- **会议巡检** - `guides/Web/会议巡检.md` (Web only)
+- **基础美颜** - `guides/Android/基础美颜.md`
+- **虚拟背景** - `guides/Android/虚拟背景.md`
+- **会议扩展性** - `guides/Android/会议扩展性.md`
+- **复用 IM 账号** - `guides/Android/复用 IM 账号.md` (Android/iOS/H5/Web 平台支持)
+- **私有云配置** - `guides/Android/私有云配置.md`
+- **屏幕共享** - `guides/iOS/屏幕共享.md` (仅 iOS 平台)
+- **会议巡检** - `guides/Web/会议巡检.md` (仅 Web 平台)
 
 #### Troubleshooting & Reference
-- **常见问题** - `guides/[Platform]/常见问题/` (会议安全、依赖冲突、功能版本对照、集成编译打包等)
-- **更新日志** - `guides/[Platform]/更新日志.md`
+- **常见问题** - `guides/Android/常见问题/` (会议安全、依赖冲突、功能版本对照、集成编译打包等)
+- **更新日志** - `guides/Android/更新日志.md`
 - **API Reference** - `api-reference/README.md`
 
 ## Support
