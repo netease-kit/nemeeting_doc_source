@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingMessageChannelService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_meeting_message_channel_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingMessageChannelService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>消息服务  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__service__message_8h_source.html">kit_service_message.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEMeetingMessageChannelService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_meeting_message_channel_service.png" usemap="#NEMeetingMessageChannelService_map" alt=""/>
+  <map id="NEMeetingMessageChannelService_map" name="NEMeetingMessageChannelService_map">
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="0,56,216,80"/>
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,216,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a67a67e4ee205462f2c190c74f166d710" id="r_a67a67e4ee205462f2c190c74f166d710"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="struct_n_e_meeting_session_message.html">NEMeetingSessionMessage</a>&gt;&gt;</td></tr>
+<tr class="separator:a67a67e4ee205462f2c190c74f166d710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a10767c7c629c3808ba6da1f969860097" id="r_a10767c7c629c3808ba6da1f969860097"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10767c7c629c3808ba6da1f969860097">addMeetingMessageChannelListener</a> (<a class="el" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a10767c7c629c3808ba6da1f969860097"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加自定义消息监听  <br /></td></tr>
+<tr class="separator:a10767c7c629c3808ba6da1f969860097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f10db8cf765c388779be3c22cf25e1" id="r_a56f10db8cf765c388779be3c22cf25e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56f10db8cf765c388779be3c22cf25e1">removeMeetingMessageChannelListener</a> (<a class="el" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a56f10db8cf765c388779be3c22cf25e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除自定义消息监听  <br /></td></tr>
+<tr class="separator:a56f10db8cf765c388779be3c22cf25e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2826355a147d6890bcd070199e92a8ac" id="r_a2826355a147d6890bcd070199e92a8ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2826355a147d6890bcd070199e92a8ac">queryUnreadMessageList</a> (const std::string &amp;sessionId, const <a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a2826355a147d6890bcd070199e92a8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定会话的未读消息列表  <br /></td></tr>
+<tr class="separator:a2826355a147d6890bcd070199e92a8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b366f1308cab990c3bfaecb1c088007" id="r_a5b366f1308cab990c3bfaecb1c088007"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b366f1308cab990c3bfaecb1c088007">clearUnreadCount</a> (const std::string &amp;sessionId, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a5b366f1308cab990c3bfaecb1c088007"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除指定会话的历史消息列表 该接口会触发 <code><a class="el" href="class_n_e_meeting_message_channel_listener.html#a99edfa37b34b6d87d6a7ee61c475ddab">NEMeetingMessageChannelListener#onSessionMessageRecentChanged</a></code> 回调通知。  <br /></td></tr>
+<tr class="separator:a5b366f1308cab990c3bfaecb1c088007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f4e6eec143379131e80cc859b7200a" id="r_a32f4e6eec143379131e80cc859b7200a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f4e6eec143379131e80cc859b7200a">deleteAllSessionMessage</a> (const std::string &amp;sessionId, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a32f4e6eec143379131e80cc859b7200a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定会话的所有消息 该接口会触发 <code><a class="el" href="class_n_e_meeting_message_channel_listener.html#ad4baf9002c124cf969a5de026da9cbb2">NEMeetingMessageChannelListener#onSessionMessageAllDeleted</a></code> 回调通知。  <br /></td></tr>
+<tr class="separator:a32f4e6eec143379131e80cc859b7200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3116e93a17dbfa6313ec8b3a756fb377" id="r_a3116e93a17dbfa6313ec8b3a756fb377"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3116e93a17dbfa6313ec8b3a756fb377">getSessionMessagesHistory</a> (const <a class="el" href="struct_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a> &amp;param, const <a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a3116e93a17dbfa6313ec8b3a756fb377"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定会话的历史消息  <br /></td></tr>
+<tr class="separator:a3116e93a17dbfa6313ec8b3a756fb377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_service.html">NEService</a></td></tr>
+<tr class="memitem:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service" id="r_a39edbaa5283b44e0ca4b5b3f7e5118ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a39edbaa5283b44e0ca4b5b3f7e5118ff">NEService</a> ()</td></tr>
+<tr class="memdesc:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service" id="r_a68d614611401bd7085d6585e26a7a433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a68d614611401bd7085d6585e26a7a433">~NEService</a> ()</td></tr>
+<tr class="memdesc:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>消息服务 </p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a67a67e4ee205462f2c190c74f166d710" name="a67a67e4ee205462f2c190c74f166d710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a67e4ee205462f2c190c74f166d710">&#9670;&#160;</a></span>NEMessagesCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMeetingMessageChannelService::NEMessagesCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="struct_n_e_meeting_session_message.html">NEMeetingSessionMessage</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a10767c7c629c3808ba6da1f969860097" name="a10767c7c629c3808ba6da1f969860097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10767c7c629c3808ba6da1f969860097">&#9670;&#160;</a></span>addMeetingMessageChannelListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::addMeetingMessageChannelListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加自定义消息监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>消息监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b366f1308cab990c3bfaecb1c088007" name="a5b366f1308cab990c3bfaecb1c088007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b366f1308cab990c3bfaecb1c088007">&#9670;&#160;</a></span>clearUnreadCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::clearUnreadCount </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清除指定会话的历史消息列表 该接口会触发 <code><a class="el" href="class_n_e_meeting_message_channel_listener.html#a99edfa37b34b6d87d6a7ee61c475ddab">NEMeetingMessageChannelListener#onSessionMessageRecentChanged</a></code> 回调通知。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionId</td><td>会话id </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，该回调不会返回额外的结果数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32f4e6eec143379131e80cc859b7200a" name="a32f4e6eec143379131e80cc859b7200a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f4e6eec143379131e80cc859b7200a">&#9670;&#160;</a></span>deleteAllSessionMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::deleteAllSessionMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除指定会话的所有消息 该接口会触发 <code><a class="el" href="class_n_e_meeting_message_channel_listener.html#ad4baf9002c124cf969a5de026da9cbb2">NEMeetingMessageChannelListener#onSessionMessageAllDeleted</a></code> 回调通知。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionId</td><td>会话id </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，该回调不会返回额外的结果数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3116e93a17dbfa6313ec8b3a756fb377" name="a3116e93a17dbfa6313ec8b3a756fb377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3116e93a17dbfa6313ec8b3a756fb377">&#9670;&#160;</a></span>getSessionMessagesHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::getSessionMessagesHistory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>param</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取指定会话的历史消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>查询参数 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2826355a147d6890bcd070199e92a8ac" name="a2826355a147d6890bcd070199e92a8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2826355a147d6890bcd070199e92a8ac">&#9670;&#160;</a></span>queryUnreadMessageList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::queryUnreadMessageList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取指定会话的未读消息列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionId</td><td>会话id </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a56f10db8cf765c388779be3c22cf25e1" name="a56f10db8cf765c388779be3c22cf25e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f10db8cf765c388779be3c22cf25e1">&#9670;&#160;</a></span>removeMeetingMessageChannelListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingMessageChannelService::removeMeetingMessageChannelListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除自定义消息监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>消息监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__service__message_8h_source.html">kit_service_message.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

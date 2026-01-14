@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: TagNEMenuItemInfo结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_tag_n_e_menu_item_info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">TagNEMenuItemInfo结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>菜单项在特定状态下的描述信息，包括菜单标题和菜单图标。  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a27044eb7076e3357d4895472ca725ec3" id="r_a27044eb7076e3357d4895472ca725ec3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27044eb7076e3357d4895472ca725ec3">icon</a></td></tr>
+<tr class="memdesc:a27044eb7076e3357d4895472ca725ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单项图标资源名称，如果为自定义注入菜单，需指定真实存在的图标资源名称；如果为SDK内置菜单，可指定为"0"，由SDK加载内置图标。图标资源尺寸大小规格为：1x:24px  <br /></td></tr>
+<tr class="separator:a27044eb7076e3357d4895472ca725ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d70cfdb159c808401967449b811cd25" id="r_a0d70cfdb159c808401967449b811cd25"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d70cfdb159c808401967449b811cd25">text</a></td></tr>
+<tr class="memdesc:a0d70cfdb159c808401967449b811cd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单项标题，最大长度为10  <br /></td></tr>
+<tr class="separator:a0d70cfdb159c808401967449b811cd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>菜单项在特定状态下的描述信息，包括菜单标题和菜单图标。 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a27044eb7076e3357d4895472ca725ec3" name="a27044eb7076e3357d4895472ca725ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27044eb7076e3357d4895472ca725ec3">&#9670;&#160;</a></span>icon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TagNEMenuItemInfo::icon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>菜单项图标资源名称，如果为自定义注入菜单，需指定真实存在的图标资源名称；如果为SDK内置菜单，可指定为"0"，由SDK加载内置图标。图标资源尺寸大小规格为：1x:24px </p>
+<ul>
+<li>24px ; 2x: 48px * 48px，以此类推。 </li>
+</ul>
+
+</div>
+</div>
+<a id="a0d70cfdb159c808401967449b811cd25" name="a0d70cfdb159c808401967449b811cd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d70cfdb159c808401967449b811cd25">&#9670;&#160;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TagNEMenuItemInfo::text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>菜单项标题，最大长度为10 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

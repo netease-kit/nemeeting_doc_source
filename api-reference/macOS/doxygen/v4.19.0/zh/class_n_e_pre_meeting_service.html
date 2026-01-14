@@ -1,0 +1,1699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEPreMeetingService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_pre_meeting_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEPreMeetingService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>预约会议服务  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__service__premeeting_8h_source.html">kit_service_premeeting.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEPreMeetingService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_pre_meeting_service.png" usemap="#NEPreMeetingService_map" alt=""/>
+  <map id="NEPreMeetingService_map" name="NEPreMeetingService_map">
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="0,56,138,80"/>
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,138,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a048615e1b00896163adf8ea027ce03b2" id="r_a048615e1b00896163adf8ea027ce03b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td></tr>
+<tr class="separator:a048615e1b00896163adf8ea027ce03b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be2224c345c7e813546b5b6921ddb09" id="r_a4be2224c345c7e813546b5b6921ddb09"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be2224c345c7e813546b5b6921ddb09">NEGetMeetingItemByNumberCallback</a> = <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a></td></tr>
+<tr class="separator:a4be2224c345c7e813546b5b6921ddb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462679f5b342b5815224c281a5576dbf" id="r_a462679f5b342b5815224c281a5576dbf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a462679f5b342b5815224c281a5576dbf">NEOperateScheduleMeetingCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td></tr>
+<tr class="separator:a462679f5b342b5815224c281a5576dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4306ff0fdbde187128f6b9366aad1dcb" id="r_a4306ff0fdbde187128f6b9366aad1dcb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEGetMeetingListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:a4306ff0fdbde187128f6b9366aad1dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342db72ba339d9f269357275108a065f" id="r_a342db72ba339d9f269357275108a065f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a31b1d64f9fc6af3fd1000c533980fa05">NERemoteHistoryMeeting</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:a342db72ba339d9f269357275108a065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676eded6cb03af73d65100894eab0011" id="r_a676eded6cb03af73d65100894eab0011"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a676eded6cb03af73d65100894eab0011">NEGetHistoryMeetingListCallback</a> = <a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a></td></tr>
+<tr class="separator:a676eded6cb03af73d65100894eab0011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9c6a0f66860df52da02659340e796c" id="r_a9f9c6a0f66860df52da02659340e796c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f9c6a0f66860df52da02659340e796c">NEGetHistoryMeetingDetailCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#ab690dc0a35acb61da19a414431462e76">NERemoteHistoryMeetingDetail</a>&gt;</td></tr>
+<tr class="separator:a9f9c6a0f66860df52da02659340e796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d41433dde885c1d8c39bfa2dff66596" id="r_a7d41433dde885c1d8c39bfa2dff66596"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d41433dde885c1d8c39bfa2dff66596">NEGetHistoryMeetingCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a31b1d64f9fc6af3fd1000c533980fa05">NERemoteHistoryMeeting</a>&gt;</td></tr>
+<tr class="separator:a7d41433dde885c1d8c39bfa2dff66596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae37c526e15c0841eba660cea7691e92" id="r_aae37c526e15c0841eba660cea7691e92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae37c526e15c0841eba660cea7691e92">NEGetScheduledMemberListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a403019f3534c901c5ec2a2a1e979b60f">NEScheduledMember</a>&gt;&gt;</td></tr>
+<tr class="separator:aae37c526e15c0841eba660cea7691e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379caa2442004f6a60218c047a8dd902" id="r_a379caa2442004f6a60218c047a8dd902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379caa2442004f6a60218c047a8dd902">NEMeetingItemCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td></tr>
+<tr class="separator:a379caa2442004f6a60218c047a8dd902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa885e181a1ab4047fcacadd081835a20" id="r_aa885e181a1ab4047fcacadd081835a20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa885e181a1ab4047fcacadd081835a20">NEGetInviteInfoCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td></tr>
+<tr class="separator:aa885e181a1ab4047fcacadd081835a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa577c37dda26fd2bbbdb6297a2754a7c" id="r_aa577c37dda26fd2bbbdb6297a2754a7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa577c37dda26fd2bbbdb6297a2754a7c">NEGetLocalMeetingHistoryListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#aa268e2315e22fc5dc31257cde4a5e9ae">NELocalHistoryMeeting</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:aa577c37dda26fd2bbbdb6297a2754a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f0c1f2bd7585bc2c192add7d77b21e" id="r_ac6f0c1f2bd7585bc2c192add7d77b21e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f0c1f2bd7585bc2c192add7d77b21e">NEMeetingRecordListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a8a1501c0ecd8765b1629008fa6ea64eb">NEMeetingRecord</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:ac6f0c1f2bd7585bc2c192add7d77b21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7756e048bae7af00406f1fd6fddb127c" id="r_a7756e048bae7af00406f1fd6fddb127c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7756e048bae7af00406f1fd6fddb127c">NEMeetingTranscriptionInfoListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a27ec84e763ee0a7e56803abb4504ab70">NEMeetingTranscriptionInfo</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:a7756e048bae7af00406f1fd6fddb127c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20c3596f022d87ceee24bd20323f7a9" id="r_ad20c3596f022d87ceee24bd20323f7a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20c3596f022d87ceee24bd20323f7a9">NEMeetingTranscriptionFileUrlCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td></tr>
+<tr class="separator:ad20c3596f022d87ceee24bd20323f7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88883c6d8b38340354ea6db6a35af70" id="r_ae88883c6d8b38340354ea6db6a35af70"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae88883c6d8b38340354ea6db6a35af70">NEMeetingTranscriptionMessageListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#ae9787e08f61cfaf6931133e2a591e1c0">NEMeetingTranscriptionMessage</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:ae88883c6d8b38340354ea6db6a35af70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc2727fc3b6cc4e28e7bb55ffb3d2c9" id="r_a3bc2727fc3b6cc4e28e7bb55ffb3d2c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bc2727fc3b6cc4e28e7bb55ffb3d2c9">NEMeetingFetchChatroomHistoryListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#ab482d533ce3559b09ac5f397cb45b24a">NEMeetingChatMessage</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:a3bc2727fc3b6cc4e28e7bb55ffb3d2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfb921de235061dd805676e820d7bc0" id="r_acdfb921de235061dd805676e820d7bc0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdfb921de235061dd805676e820d7bc0">NEMeetingExportChatroomHistoryCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td></tr>
+<tr class="separator:acdfb921de235061dd805676e820d7bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38636cf890dd6de72a8a5d4e51411520" id="r_a38636cf890dd6de72a8a5d4e51411520"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38636cf890dd6de72a8a5d4e51411520">NEGetRecordItemListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#acd1a398f9fd3f0b909a06ea7cc5a38fe">NEMeetingRecordItem</a>&gt;&amp;&gt;</td></tr>
+<tr class="separator:a38636cf890dd6de72a8a5d4e51411520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acb18f9478884c641b98d07dc6bb1fcd5" id="r_acb18f9478884c641b98d07dc6bb1fcd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb18f9478884c641b98d07dc6bb1fcd5">getFavoriteMeetingList</a> (int64_t anchorId, uint32_t limit, const <a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:acb18f9478884c641b98d07dc6bb1fcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取收藏会议列表，返回会议时间早于 anchorId 的最多 limit 个会议。 如果 anchorId 小于等于 0，则从头开始查询。  <br /></td></tr>
+<tr class="separator:acb18f9478884c641b98d07dc6bb1fcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9c6b84dfa0ca582ab0e6c611839f3a" id="r_add9c6b84dfa0ca582ab0e6c611839f3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add9c6b84dfa0ca582ab0e6c611839f3a">addFavoriteMeeting</a> (int64_t meetingId, const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int64_t &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:add9c6b84dfa0ca582ab0e6c611839f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加收藏会议  <br /></td></tr>
+<tr class="separator:add9c6b84dfa0ca582ab0e6c611839f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1930bf73e3c07991d3b89bc3eb1da0" id="r_a3b1930bf73e3c07991d3b89bc3eb1da0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1930bf73e3c07991d3b89bc3eb1da0">removeFavoriteMeeting</a> (int64_t meetingId, const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a3b1930bf73e3c07991d3b89bc3eb1da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消收藏会议  <br /></td></tr>
+<tr class="separator:a3b1930bf73e3c07991d3b89bc3eb1da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65330b86df3927ff937d6a010b6ebbb0" id="r_a65330b86df3927ff937d6a010b6ebbb0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65330b86df3927ff937d6a010b6ebbb0">getHistoryMeetingList</a> (int64_t anchorId, uint32_t limit, const <a class="el" href="#a676eded6cb03af73d65100894eab0011">NEGetHistoryMeetingListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a65330b86df3927ff937d6a010b6ebbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取历史会议列表  <br /></td></tr>
+<tr class="separator:a65330b86df3927ff937d6a010b6ebbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2730a1b7abafeaa34b321c4002aafb2" id="r_ac2730a1b7abafeaa34b321c4002aafb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2730a1b7abafeaa34b321c4002aafb2">getHistoryMeetingDetail</a> (int64_t meetingId, const <a class="el" href="#a9f9c6a0f66860df52da02659340e796c">NEGetHistoryMeetingDetailCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ac2730a1b7abafeaa34b321c4002aafb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取历史会议详情  <br /></td></tr>
+<tr class="separator:ac2730a1b7abafeaa34b321c4002aafb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039518cec5366754a6ee2081f5e250b9" id="r_a039518cec5366754a6ee2081f5e250b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a039518cec5366754a6ee2081f5e250b9">getHistoryMeeting</a> (int64_t meetingId, const <a class="el" href="#a7d41433dde885c1d8c39bfa2dff66596">NEGetHistoryMeetingCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a039518cec5366754a6ee2081f5e250b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">meetingId  <br /></td></tr>
+<tr class="separator:a039518cec5366754a6ee2081f5e250b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358c2ae1751f0532045ddbd22c194938" id="r_a358c2ae1751f0532045ddbd22c194938"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a358c2ae1751f0532045ddbd22c194938">createScheduleMeetingItem</a> ()=0</td></tr>
+<tr class="memdesc:a358c2ae1751f0532045ddbd22c194938"><td class="mdescLeft">&#160;</td><td class="mdescRight">预约会议  <br /></td></tr>
+<tr class="separator:a358c2ae1751f0532045ddbd22c194938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593a92531678a568d90c1bbcaec85bc9" id="r_a593a92531678a568d90c1bbcaec85bc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a593a92531678a568d90c1bbcaec85bc9">scheduleMeeting</a> (const <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a> &amp;item, const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a593a92531678a568d90c1bbcaec85bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">预约会议  <br /></td></tr>
+<tr class="separator:a593a92531678a568d90c1bbcaec85bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883e08576bd77dbc79bd03a5e7b14bac" id="r_a883e08576bd77dbc79bd03a5e7b14bac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a883e08576bd77dbc79bd03a5e7b14bac">editMeeting</a> (const <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a> &amp;item, bool editRecurringMeeting, const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a883e08576bd77dbc79bd03a5e7b14bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">编辑会议  <br /></td></tr>
+<tr class="separator:a883e08576bd77dbc79bd03a5e7b14bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b280334d96ae804cee85cdd910b729" id="r_a44b280334d96ae804cee85cdd910b729"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b280334d96ae804cee85cdd910b729">cancelMeeting</a> (const int64_t &amp;meetingId, bool cancelRecurringMeeting, const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a44b280334d96ae804cee85cdd910b729"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消已预约的会议  <br /></td></tr>
+<tr class="separator:a44b280334d96ae804cee85cdd910b729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b2322d2edc0fbfe641dc308b1de2bc" id="r_a21b2322d2edc0fbfe641dc308b1de2bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21b2322d2edc0fbfe641dc308b1de2bc">getMeetingItemByNum</a> (const std::string &amp;meetingNum, const <a class="el" href="#a4be2224c345c7e813546b5b6921ddb09">NEGetMeetingItemByNumberCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a21b2322d2edc0fbfe641dc308b1de2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据 meetingNum 查询预定会议信息  <br /></td></tr>
+<tr class="separator:a21b2322d2edc0fbfe641dc308b1de2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3140cd102fdf6cefa9482533268d6f7e" id="r_a3140cd102fdf6cefa9482533268d6f7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3140cd102fdf6cefa9482533268d6f7e">getMeetingItemById</a> (const int64_t &amp;meetingId, const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a3140cd102fdf6cefa9482533268d6f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询预约会议信息  <br /></td></tr>
+<tr class="separator:a3140cd102fdf6cefa9482533268d6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1631e0a9ded246258ea16c1ff28bab89" id="r_a1631e0a9ded246258ea16c1ff28bab89"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1631e0a9ded246258ea16c1ff28bab89">getMeetingList</a> (std::list&lt; <a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a> &gt; status, const <a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEGetMeetingListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1631e0a9ded246258ea16c1ff28bab89"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询特定状态下的会议列表，目前仅仅支持查询待开始、进行中及已结束，后续将支持已取消和已回收状态。  <br /></td></tr>
+<tr class="separator:a1631e0a9ded246258ea16c1ff28bab89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71825e893a4b776328eed728a781fa77" id="r_a71825e893a4b776328eed728a781fa77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71825e893a4b776328eed728a781fa77">getScheduledMeetingList</a> (std::list&lt; <a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a> &gt; status, const <a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEGetMeetingListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a71825e893a4b776328eed728a781fa77"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询特定状态下的会议列表。如果不指定要查询的状态，则会默认查询 init、started 列表。 目前暂不支持查询 cancel/recycled 状态下的会议列表。 只返回本端预约或者他人预约邀请的会议  <br /></td></tr>
+<tr class="separator:a71825e893a4b776328eed728a781fa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be9a564ad749ea954836267626ca025" id="r_a0be9a564ad749ea954836267626ca025"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0be9a564ad749ea954836267626ca025">getScheduledMeetingMemberList</a> (const std::string &amp;meetingNum, const <a class="el" href="#aae37c526e15c0841eba660cea7691e92">NEGetScheduledMemberListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a0be9a564ad749ea954836267626ca025"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询预约会议成员列表  <br /></td></tr>
+<tr class="separator:a0be9a564ad749ea954836267626ca025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35fff93b9457417034e66c97de03d140" id="r_a35fff93b9457417034e66c97de03d140"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35fff93b9457417034e66c97de03d140">addListener</a> (<a class="el" href="class_n_e_pre_meeting_listener.html">NEPreMeetingListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a35fff93b9457417034e66c97de03d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册预约会议状态变更监听器  <br /></td></tr>
+<tr class="separator:a35fff93b9457417034e66c97de03d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce5c30f417ff02a72d78ca6d3f2c375" id="r_a6ce5c30f417ff02a72d78ca6d3f2c375"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ce5c30f417ff02a72d78ca6d3f2c375">removeListener</a> (<a class="el" href="class_n_e_pre_meeting_listener.html">NEPreMeetingListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a6ce5c30f417ff02a72d78ca6d3f2c375"><td class="mdescLeft">&#160;</td><td class="mdescRight">反注册预约会议状态变更监听器  <br /></td></tr>
+<tr class="separator:a6ce5c30f417ff02a72d78ca6d3f2c375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89be14a01dfaed6b943ab0d08af6f7e" id="r_ae89be14a01dfaed6b943ab0d08af6f7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89be14a01dfaed6b943ab0d08af6f7e">getLocalHistoryMeetingList</a> (const <a class="el" href="#aa577c37dda26fd2bbbdb6297a2754a7c">NEGetLocalMeetingHistoryListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ae89be14a01dfaed6b943ab0d08af6f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地历史会议记录列表，不支持漫游保存，默认保存最近10条记录  <br /></td></tr>
+<tr class="separator:ae89be14a01dfaed6b943ab0d08af6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40392babff3ea13fc04b98306170d724" id="r_a40392babff3ea13fc04b98306170d724"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40392babff3ea13fc04b98306170d724">getMeetingCloudRecordList</a> (const int64_t &amp;meetingId, const <a class="el" href="#ac6f0c1f2bd7585bc2c192add7d77b21e">NEMeetingRecordListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a40392babff3ea13fc04b98306170d724"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取会议云录制记录列表,仅在返回错误码为成功时,才代表有云录制任务,解码任务过程中获取列表可能会有延迟  <br /></td></tr>
+<tr class="separator:a40392babff3ea13fc04b98306170d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152d866e11506d65de70b40c65d2a1c6" id="r_a152d866e11506d65de70b40c65d2a1c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a152d866e11506d65de70b40c65d2a1c6">getHistoryMeetingTranscriptionInfo</a> (const int64_t &amp;meetingId, const <a class="el" href="#a7756e048bae7af00406f1fd6fddb127c">NEMeetingTranscriptionInfoListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a152d866e11506d65de70b40c65d2a1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取历史会议的转写信息  <br /></td></tr>
+<tr class="separator:a152d866e11506d65de70b40c65d2a1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18be8e6119aab03bddf4b27e0e9ce91" id="r_ab18be8e6119aab03bddf4b27e0e9ce91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18be8e6119aab03bddf4b27e0e9ce91">getHistoryMeetingTranscriptionFileUrl</a> (const int64_t &amp;meetingId, const std::string &amp;fileKey, const <a class="el" href="#ad20c3596f022d87ceee24bd20323f7a9">NEMeetingTranscriptionFileUrlCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab18be8e6119aab03bddf4b27e0e9ce91"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取历史会议的转写文件下载地址  <br /></td></tr>
+<tr class="separator:ab18be8e6119aab03bddf4b27e0e9ce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74737a3e33630a1ab34085cf3fc75ce1" id="r_a74737a3e33630a1ab34085cf3fc75ce1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74737a3e33630a1ab34085cf3fc75ce1">getHistoryMeetingTranscriptionMessageList</a> (const int64_t &amp;meetingId, const std::string &amp;fileKey, const <a class="el" href="#ae88883c6d8b38340354ea6db6a35af70">NEMeetingTranscriptionMessageListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a74737a3e33630a1ab34085cf3fc75ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取历史会议的转写文件的消息列表  <br /></td></tr>
+<tr class="separator:a74737a3e33630a1ab34085cf3fc75ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c99fb89e510de88914c3e58a97307a" id="r_a03c99fb89e510de88914c3e58a97307a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03c99fb89e510de88914c3e58a97307a">loadWebAppView</a> (const int64_t &amp;meetingId, const <a class="el" href="kit__define__meeting_8h.html#aa411fb9cf49ea43ffa841370006f4a5d">NEMeetingWebAppItem</a> &amp;meetingWebAppItem, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a03c99fb89e510de88914c3e58a97307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载小应用页面，用于会议历史详情的展示  <br /></td></tr>
+<tr class="separator:a03c99fb89e510de88914c3e58a97307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d4c8d759823f107a4466ecaf80ac54" id="r_a47d4c8d759823f107a4466ecaf80ac54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47d4c8d759823f107a4466ecaf80ac54">fetchChatroomHistoryMessageList</a> (const int64_t &amp;meetingId, const <a class="el" href="kit__define__meeting_8h.html#ab5bff5ac34b4e386d4ff077c27873d38">NEChatroomHistoryMessageSearchOption</a> &amp;option, const <a class="el" href="#a3bc2727fc3b6cc4e28e7bb55ffb3d2c9">NEMeetingFetchChatroomHistoryListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a47d4c8d759823f107a4466ecaf80ac54"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询会议聊天室历史消息  <br /></td></tr>
+<tr class="separator:a47d4c8d759823f107a4466ecaf80ac54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92450fe43aa81028acdf4d0f78d6d200" id="r_a92450fe43aa81028acdf4d0f78d6d200"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92450fe43aa81028acdf4d0f78d6d200">exportChatroomHistoryMessageList</a> (const int64_t &amp;meetingId, const <a class="el" href="#acdfb921de235061dd805676e820d7bc0">NEMeetingExportChatroomHistoryCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a92450fe43aa81028acdf4d0f78d6d200"><td class="mdescLeft">&#160;</td><td class="mdescRight">导出会议聊天室历史消息  <br /></td></tr>
+<tr class="separator:a92450fe43aa81028acdf4d0f78d6d200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03ba56a14e1a069934a83f2a0099bce" id="r_ab03ba56a14e1a069934a83f2a0099bce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab03ba56a14e1a069934a83f2a0099bce">clearLocalHistoryMeetingList</a> (const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab03ba56a14e1a069934a83f2a0099bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空本地历史会议记录列表  <br /></td></tr>
+<tr class="separator:ab03ba56a14e1a069934a83f2a0099bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54c1aadc55fd3ea57c7990b5034a991" id="r_aa54c1aadc55fd3ea57c7990b5034a991"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54c1aadc55fd3ea57c7990b5034a991">loadChatroomHistoryMessageView</a> (const std::string &amp;meetingId, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aa54c1aadc55fd3ea57c7990b5034a991"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载会议聊天室历史消息页面  <br /></td></tr>
+<tr class="separator:aa54c1aadc55fd3ea57c7990b5034a991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76988d122aa5845aa7634901b2c950b1" id="r_a76988d122aa5845aa7634901b2c950b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76988d122aa5845aa7634901b2c950b1">getRecordItemList</a> (const <a class="el" href="kit__define__meeting_8h.html#a4d055e635a245eca006be806bab58b32">NEMeetingRecordQueryParams</a> &amp;params, const <a class="el" href="#a38636cf890dd6de72a8a5d4e51411520">NEGetRecordItemListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a76988d122aa5845aa7634901b2c950b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询录制列表  <br /></td></tr>
+<tr class="separator:a76988d122aa5845aa7634901b2c950b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abd53026fb08376a82764c465f3f692" id="r_a2abd53026fb08376a82764c465f3f692"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2abd53026fb08376a82764c465f3f692">editRecordItem</a> (const std::string &amp;roomArchiveId, const <a class="el" href="kit__define__meeting_8h.html#a7c9f2adcf0ca501e3fb4dadedbd47299">NEMeetingRecordEditData</a> &amp;data, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a2abd53026fb08376a82764c465f3f692"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新录制  <br /></td></tr>
+<tr class="separator:a2abd53026fb08376a82764c465f3f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fa1b0a9a5831b0cb3b92022efac0dc" id="r_ab2fa1b0a9a5831b0cb3b92022efac0dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fa1b0a9a5831b0cb3b92022efac0dc">deleteRecordItem</a> (const std::string &amp;roomArchiveId, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab2fa1b0a9a5831b0cb3b92022efac0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除录制  <br /></td></tr>
+<tr class="separator:ab2fa1b0a9a5831b0cb3b92022efac0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_service.html">NEService</a></td></tr>
+<tr class="memitem:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service" id="r_a39edbaa5283b44e0ca4b5b3f7e5118ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a39edbaa5283b44e0ca4b5b3f7e5118ff">NEService</a> ()</td></tr>
+<tr class="memdesc:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service" id="r_a68d614611401bd7085d6585e26a7a433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a68d614611401bd7085d6585e26a7a433">~NEService</a> ()</td></tr>
+<tr class="memdesc:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>预约会议服务 </p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a342db72ba339d9f269357275108a065f" name="a342db72ba339d9f269357275108a065f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342db72ba339d9f269357275108a065f">&#9670;&#160;</a></span>NEGetFavoriteMeetingListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a342db72ba339d9f269357275108a065f">NEPreMeetingService::NEGetFavoriteMeetingListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a31b1d64f9fc6af3fd1000c533980fa05">NERemoteHistoryMeeting</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d41433dde885c1d8c39bfa2dff66596" name="a7d41433dde885c1d8c39bfa2dff66596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d41433dde885c1d8c39bfa2dff66596">&#9670;&#160;</a></span>NEGetHistoryMeetingCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7d41433dde885c1d8c39bfa2dff66596">NEPreMeetingService::NEGetHistoryMeetingCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a31b1d64f9fc6af3fd1000c533980fa05">NERemoteHistoryMeeting</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f9c6a0f66860df52da02659340e796c" name="a9f9c6a0f66860df52da02659340e796c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9c6a0f66860df52da02659340e796c">&#9670;&#160;</a></span>NEGetHistoryMeetingDetailCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a9f9c6a0f66860df52da02659340e796c">NEPreMeetingService::NEGetHistoryMeetingDetailCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#ab690dc0a35acb61da19a414431462e76">NERemoteHistoryMeetingDetail</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a676eded6cb03af73d65100894eab0011" name="a676eded6cb03af73d65100894eab0011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676eded6cb03af73d65100894eab0011">&#9670;&#160;</a></span>NEGetHistoryMeetingListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a676eded6cb03af73d65100894eab0011">NEPreMeetingService::NEGetHistoryMeetingListCallback</a> = <a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa885e181a1ab4047fcacadd081835a20" name="aa885e181a1ab4047fcacadd081835a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa885e181a1ab4047fcacadd081835a20">&#9670;&#160;</a></span>NEGetInviteInfoCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa885e181a1ab4047fcacadd081835a20">NEPreMeetingService::NEGetInviteInfoCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa577c37dda26fd2bbbdb6297a2754a7c" name="aa577c37dda26fd2bbbdb6297a2754a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa577c37dda26fd2bbbdb6297a2754a7c">&#9670;&#160;</a></span>NEGetLocalMeetingHistoryListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa577c37dda26fd2bbbdb6297a2754a7c">NEPreMeetingService::NEGetLocalMeetingHistoryListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#aa268e2315e22fc5dc31257cde4a5e9ae">NELocalHistoryMeeting</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4be2224c345c7e813546b5b6921ddb09" name="a4be2224c345c7e813546b5b6921ddb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be2224c345c7e813546b5b6921ddb09">&#9670;&#160;</a></span>NEGetMeetingItemByNumberCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4be2224c345c7e813546b5b6921ddb09">NEPreMeetingService::NEGetMeetingItemByNumberCallback</a> = <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4306ff0fdbde187128f6b9366aad1dcb" name="a4306ff0fdbde187128f6b9366aad1dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4306ff0fdbde187128f6b9366aad1dcb">&#9670;&#160;</a></span>NEGetMeetingListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEPreMeetingService::NEGetMeetingListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38636cf890dd6de72a8a5d4e51411520" name="a38636cf890dd6de72a8a5d4e51411520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38636cf890dd6de72a8a5d4e51411520">&#9670;&#160;</a></span>NEGetRecordItemListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a38636cf890dd6de72a8a5d4e51411520">NEPreMeetingService::NEGetRecordItemListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#acd1a398f9fd3f0b909a06ea7cc5a38fe">NEMeetingRecordItem</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae37c526e15c0841eba660cea7691e92" name="aae37c526e15c0841eba660cea7691e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae37c526e15c0841eba660cea7691e92">&#9670;&#160;</a></span>NEGetScheduledMemberListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aae37c526e15c0841eba660cea7691e92">NEPreMeetingService::NEGetScheduledMemberListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a403019f3534c901c5ec2a2a1e979b60f">NEScheduledMember</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdfb921de235061dd805676e820d7bc0" name="acdfb921de235061dd805676e820d7bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfb921de235061dd805676e820d7bc0">&#9670;&#160;</a></span>NEMeetingExportChatroomHistoryCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#acdfb921de235061dd805676e820d7bc0">NEPreMeetingService::NEMeetingExportChatroomHistoryCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bc2727fc3b6cc4e28e7bb55ffb3d2c9" name="a3bc2727fc3b6cc4e28e7bb55ffb3d2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc2727fc3b6cc4e28e7bb55ffb3d2c9">&#9670;&#160;</a></span>NEMeetingFetchChatroomHistoryListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3bc2727fc3b6cc4e28e7bb55ffb3d2c9">NEPreMeetingService::NEMeetingFetchChatroomHistoryListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#ab482d533ce3559b09ac5f397cb45b24a">NEMeetingChatMessage</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a379caa2442004f6a60218c047a8dd902" name="a379caa2442004f6a60218c047a8dd902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379caa2442004f6a60218c047a8dd902">&#9670;&#160;</a></span>NEMeetingItemCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a379caa2442004f6a60218c047a8dd902">NEPreMeetingService::NEMeetingItemCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6f0c1f2bd7585bc2c192add7d77b21e" name="ac6f0c1f2bd7585bc2c192add7d77b21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f0c1f2bd7585bc2c192add7d77b21e">&#9670;&#160;</a></span>NEMeetingRecordListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ac6f0c1f2bd7585bc2c192add7d77b21e">NEPreMeetingService::NEMeetingRecordListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a8a1501c0ecd8765b1629008fa6ea64eb">NEMeetingRecord</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad20c3596f022d87ceee24bd20323f7a9" name="ad20c3596f022d87ceee24bd20323f7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20c3596f022d87ceee24bd20323f7a9">&#9670;&#160;</a></span>NEMeetingTranscriptionFileUrlCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad20c3596f022d87ceee24bd20323f7a9">NEPreMeetingService::NEMeetingTranscriptionFileUrlCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7756e048bae7af00406f1fd6fddb127c" name="a7756e048bae7af00406f1fd6fddb127c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7756e048bae7af00406f1fd6fddb127c">&#9670;&#160;</a></span>NEMeetingTranscriptionInfoListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7756e048bae7af00406f1fd6fddb127c">NEPreMeetingService::NEMeetingTranscriptionInfoListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a27ec84e763ee0a7e56803abb4504ab70">NEMeetingTranscriptionInfo</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae88883c6d8b38340354ea6db6a35af70" name="ae88883c6d8b38340354ea6db6a35af70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88883c6d8b38340354ea6db6a35af70">&#9670;&#160;</a></span>NEMeetingTranscriptionMessageListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ae88883c6d8b38340354ea6db6a35af70">NEPreMeetingService::NEMeetingTranscriptionMessageListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;const std::list&lt;<a class="el" href="kit__define__meeting_8h.html#ae9787e08f61cfaf6931133e2a591e1c0">NEMeetingTranscriptionMessage</a>&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462679f5b342b5815224c281a5576dbf" name="a462679f5b342b5815224c281a5576dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462679f5b342b5815224c281a5576dbf">&#9670;&#160;</a></span>NEOperateScheduleMeetingCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a462679f5b342b5815224c281a5576dbf">NEPreMeetingService::NEOperateScheduleMeetingCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a048615e1b00896163adf8ea027ce03b2" name="a048615e1b00896163adf8ea027ce03b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048615e1b00896163adf8ea027ce03b2">&#9670;&#160;</a></span>NEPreMeetingMeetingItemCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingService::NEPreMeetingMeetingItemCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="add9c6b84dfa0ca582ab0e6c611839f3a" name="add9c6b84dfa0ca582ab0e6c611839f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9c6b84dfa0ca582ab0e6c611839f3a">&#9670;&#160;</a></span>addFavoriteMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::addFavoriteMeeting </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加收藏会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a35fff93b9457417034e66c97de03d140" name="a35fff93b9457417034e66c97de03d140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fff93b9457417034e66c97de03d140">&#9670;&#160;</a></span>addListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::addListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_pre_meeting_listener.html">NEPreMeetingListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册预约会议状态变更监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a44b280334d96ae804cee85cdd910b729" name="a44b280334d96ae804cee85cdd910b729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b280334d96ae804cee85cdd910b729">&#9670;&#160;</a></span>cancelMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::cancelMeeting </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>cancelRecurringMeeting</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消已预约的会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一Id </td></tr>
+    <tr><td class="paramname">cancelRecurringMeeting</td><td>是否取消所有周期性会议 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ab03ba56a14e1a069934a83f2a0099bce" name="ab03ba56a14e1a069934a83f2a0099bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03ba56a14e1a069934a83f2a0099bce">&#9670;&#160;</a></span>clearLocalHistoryMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::clearLocalHistoryMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空本地历史会议记录列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id 已废弃 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a358c2ae1751f0532045ddbd22c194938" name="a358c2ae1751f0532045ddbd22c194938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358c2ae1751f0532045ddbd22c194938">&#9670;&#160;</a></span>createScheduleMeetingItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a> NEPreMeetingService::createScheduleMeetingItem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预约会议 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingItem </dd></dl>
+
+</div>
+</div>
+<a id="ab2fa1b0a9a5831b0cb3b92022efac0dc" name="ab2fa1b0a9a5831b0cb3b92022efac0dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fa1b0a9a5831b0cb3b92022efac0dc">&#9670;&#160;</a></span>deleteRecordItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::deleteRecordItem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomArchiveId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除录制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomArchiveId</td><td>录制文件id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否删除成功 </dd></dl>
+
+</div>
+</div>
+<a id="a883e08576bd77dbc79bd03a5e7b14bac" name="a883e08576bd77dbc79bd03a5e7b14bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a883e08576bd77dbc79bd03a5e7b14bac">&#9670;&#160;</a></span>editMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::editMeeting </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>item</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>editRecurringMeeting</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编辑会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>会议条目 </td></tr>
+    <tr><td class="paramname">editRecurringMeeting</td><td>是否修改所有周期性会议 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a2abd53026fb08376a82764c465f3f692" name="a2abd53026fb08376a82764c465f3f692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abd53026fb08376a82764c465f3f692">&#9670;&#160;</a></span>editRecordItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::editRecordItem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomArchiveId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#a7c9f2adcf0ca501e3fb4dadedbd47299">NEMeetingRecordEditData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新录制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomArchiveId</td><td>录制文件id </td></tr>
+    <tr><td class="paramname">data</td><td>更新数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否更新成功 </dd></dl>
+
+</div>
+</div>
+<a id="a92450fe43aa81028acdf4d0f78d6d200" name="a92450fe43aa81028acdf4d0f78d6d200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92450fe43aa81028acdf4d0f78d6d200">&#9670;&#160;</a></span>exportChatroomHistoryMessageList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::exportChatroomHistoryMessageList </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#acdfb921de235061dd805676e820d7bc0">NEMeetingExportChatroomHistoryCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>导出会议聊天室历史消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47d4c8d759823f107a4466ecaf80ac54" name="a47d4c8d759823f107a4466ecaf80ac54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d4c8d759823f107a4466ecaf80ac54">&#9670;&#160;</a></span>fetchChatroomHistoryMessageList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::fetchChatroomHistoryMessageList </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#ab5bff5ac34b4e386d4ff077c27873d38">NEChatroomHistoryMessageSearchOption</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>option</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a3bc2727fc3b6cc4e28e7bb55ffb3d2c9">NEMeetingFetchChatroomHistoryListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询会议聊天室历史消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id </td></tr>
+    <tr><td class="paramname">option</td><td>获取聊天室历史消息的查询选项 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，返回消息列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb18f9478884c641b98d07dc6bb1fcd5" name="acb18f9478884c641b98d07dc6bb1fcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb18f9478884c641b98d07dc6bb1fcd5">&#9670;&#160;</a></span>getFavoriteMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getFavoriteMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>anchorId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>limit</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取收藏会议列表，返回会议时间早于 anchorId 的最多 limit 个会议。 如果 anchorId 小于等于 0，则从头开始查询。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">anchorId</td><td>锚点 ID，用于分页查询 </td></tr>
+    <tr><td class="paramname">limit</td><td>查询数量 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#a342db72ba339d9f269357275108a065f">NEGetFavoriteMeetingListCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a039518cec5366754a6ee2081f5e250b9" name="a039518cec5366754a6ee2081f5e250b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039518cec5366754a6ee2081f5e250b9">&#9670;&#160;</a></span>getHistoryMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeeting </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a7d41433dde885c1d8c39bfa2dff66596">NEGetHistoryMeetingCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>meetingId </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#a7d41433dde885c1d8c39bfa2dff66596">NEGetHistoryMeetingCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac2730a1b7abafeaa34b321c4002aafb2" name="ac2730a1b7abafeaa34b321c4002aafb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2730a1b7abafeaa34b321c4002aafb2">&#9670;&#160;</a></span>getHistoryMeetingDetail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeetingDetail </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a9f9c6a0f66860df52da02659340e796c">NEGetHistoryMeetingDetailCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取历史会议详情 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#a9f9c6a0f66860df52da02659340e796c">NEGetHistoryMeetingDetailCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a65330b86df3927ff937d6a010b6ebbb0" name="a65330b86df3927ff937d6a010b6ebbb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65330b86df3927ff937d6a010b6ebbb0">&#9670;&#160;</a></span>getHistoryMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>anchorId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>limit</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a676eded6cb03af73d65100894eab0011">NEGetHistoryMeetingListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取历史会议列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">anchorId</td><td>锚点 ID，用于分页查询 </td></tr>
+    <tr><td class="paramname">limit</td><td>查询数量 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#a676eded6cb03af73d65100894eab0011">NEGetHistoryMeetingListCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ab18be8e6119aab03bddf4b27e0e9ce91" name="ab18be8e6119aab03bddf4b27e0e9ce91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18be8e6119aab03bddf4b27e0e9ce91">&#9670;&#160;</a></span>getHistoryMeetingTranscriptionFileUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeetingTranscriptionFileUrl </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fileKey</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad20c3596f022d87ceee24bd20323f7a9">NEMeetingTranscriptionFileUrlCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取历史会议的转写文件下载地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id </td></tr>
+    <tr><td class="paramname">fileKey</td><td>转写文件的文件 key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a152d866e11506d65de70b40c65d2a1c6" name="a152d866e11506d65de70b40c65d2a1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152d866e11506d65de70b40c65d2a1c6">&#9670;&#160;</a></span>getHistoryMeetingTranscriptionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeetingTranscriptionInfo </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a7756e048bae7af00406f1fd6fddb127c">NEMeetingTranscriptionInfoListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取历史会议的转写信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议ID </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，数据类型为[NEMeetingRecord]列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74737a3e33630a1ab34085cf3fc75ce1" name="a74737a3e33630a1ab34085cf3fc75ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74737a3e33630a1ab34085cf3fc75ce1">&#9670;&#160;</a></span>getHistoryMeetingTranscriptionMessageList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getHistoryMeetingTranscriptionMessageList </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fileKey</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ae88883c6d8b38340354ea6db6a35af70">NEMeetingTranscriptionMessageListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取历史会议的转写文件的消息列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id </td></tr>
+    <tr><td class="paramname">fileKey</td><td>转写文件的文件 key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae89be14a01dfaed6b943ab0d08af6f7e" name="ae89be14a01dfaed6b943ab0d08af6f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89be14a01dfaed6b943ab0d08af6f7e">&#9670;&#160;</a></span>getLocalHistoryMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getLocalHistoryMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aa577c37dda26fd2bbbdb6297a2754a7c">NEGetLocalMeetingHistoryListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取本地历史会议记录列表，不支持漫游保存，默认保存最近10条记录 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>结果回调，数据类型为 <code><a class="el" href="kit__define__meeting_8h.html#aa268e2315e22fc5dc31257cde4a5e9ae">NELocalHistoryMeeting</a></code> 列表 已废弃 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40392babff3ea13fc04b98306170d724" name="a40392babff3ea13fc04b98306170d724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40392babff3ea13fc04b98306170d724">&#9670;&#160;</a></span>getMeetingCloudRecordList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getMeetingCloudRecordList </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ac6f0c1f2bd7585bc2c192add7d77b21e">NEMeetingRecordListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取会议云录制记录列表,仅在返回错误码为成功时,才代表有云录制任务,解码任务过程中获取列表可能会有延迟 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议ID </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，数据类型为[NEMeetingRecord]列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3140cd102fdf6cefa9482533268d6f7e" name="a3140cd102fdf6cefa9482533268d6f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3140cd102fdf6cefa9482533268d6f7e">&#9670;&#160;</a></span>getMeetingItemById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getMeetingItemById </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询预约会议信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一Id </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a21b2322d2edc0fbfe641dc308b1de2bc" name="a21b2322d2edc0fbfe641dc308b1de2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b2322d2edc0fbfe641dc308b1de2bc">&#9670;&#160;</a></span>getMeetingItemByNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getMeetingItemByNum </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingNum</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4be2224c345c7e813546b5b6921ddb09">NEGetMeetingItemByNumberCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据 meetingNum 查询预定会议信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingNum</td><td>会议号 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#a4be2224c345c7e813546b5b6921ddb09">NEGetMeetingItemByNumberCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1631e0a9ded246258ea16c1ff28bab89" name="a1631e0a9ded246258ea16c1ff28bab89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1631e0a9ded246258ea16c1ff28bab89">&#9670;&#160;</a></span>getMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; <a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>status</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEGetMeetingListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询特定状态下的会议列表，目前仅仅支持查询待开始、进行中及已结束，后续将支持已取消和已回收状态。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>会议状态 参考<code><a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void</dd></dl>
+<p>已废弃 </p>
+
+</div>
+</div>
+<a id="a76988d122aa5845aa7634901b2c950b1" name="a76988d122aa5845aa7634901b2c950b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76988d122aa5845aa7634901b2c950b1">&#9670;&#160;</a></span>getRecordItemList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getRecordItemList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#a4d055e635a245eca006be806bab58b32">NEMeetingRecordQueryParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a38636cf890dd6de72a8a5d4e51411520">NEGetRecordItemListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询录制列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>查询参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>录制列表 </dd></dl>
+
+</div>
+</div>
+<a id="a71825e893a4b776328eed728a781fa77" name="a71825e893a4b776328eed728a781fa77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71825e893a4b776328eed728a781fa77">&#9670;&#160;</a></span>getScheduledMeetingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getScheduledMeetingList </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; <a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>status</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4306ff0fdbde187128f6b9366aad1dcb">NEGetMeetingListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询特定状态下的会议列表。如果不指定要查询的状态，则会默认查询 init、started 列表。 目前暂不支持查询 cancel/recycled 状态下的会议列表。 只返回本端预约或者他人预约邀请的会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>目标会议状态列表 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0be9a564ad749ea954836267626ca025" name="a0be9a564ad749ea954836267626ca025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be9a564ad749ea954836267626ca025">&#9670;&#160;</a></span>getScheduledMeetingMemberList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::getScheduledMeetingMemberList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingNum</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#aae37c526e15c0841eba660cea7691e92">NEGetScheduledMemberListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询预约会议成员列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingNum</td><td>会议号 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 <code><a class="el" href="#aae37c526e15c0841eba660cea7691e92">NEGetScheduledMemberListCallback</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aa54c1aadc55fd3ea57c7990b5034a991" name="aa54c1aadc55fd3ea57c7990b5034a991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54c1aadc55fd3ea57c7990b5034a991">&#9670;&#160;</a></span>loadChatroomHistoryMessageView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::loadChatroomHistoryMessageView </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载会议聊天室历史消息页面 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[meetingId]</td><td>会议唯一 Id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="a03c99fb89e510de88914c3e58a97307a" name="a03c99fb89e510de88914c3e58a97307a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c99fb89e510de88914c3e58a97307a">&#9670;&#160;</a></span>loadWebAppView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::loadWebAppView </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#aa411fb9cf49ea43ffa841370006f4a5d">NEMeetingWebAppItem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>meetingWebAppItem</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载小应用页面，用于会议历史详情的展示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 Id </td></tr>
+    <tr><td class="paramname">item</td><td>小应用对象，通过 <code><a class="el" href="kit__define__meeting_8h.html#ab690dc0a35acb61da19a414431462e76">NERemoteHistoryMeetingDetail</a></code> 对象获取到 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b1930bf73e3c07991d3b89bc3eb1da0" name="a3b1930bf73e3c07991d3b89bc3eb1da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1930bf73e3c07991d3b89bc3eb1da0">&#9670;&#160;</a></span>removeFavoriteMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::removeFavoriteMeeting </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>meetingId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消收藏会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingId</td><td>会议唯一 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6ce5c30f417ff02a72d78ca6d3f2c375" name="a6ce5c30f417ff02a72d78ca6d3f2c375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce5c30f417ff02a72d78ca6d3f2c375">&#9670;&#160;</a></span>removeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::removeListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_pre_meeting_listener.html">NEPreMeetingListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反注册预约会议状态变更监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a593a92531678a568d90c1bbcaec85bc9" name="a593a92531678a568d90c1bbcaec85bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593a92531678a568d90c1bbcaec85bc9">&#9670;&#160;</a></span>scheduleMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEPreMeetingService::scheduleMeeting </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#a0764b9f31a13064e634f2d768bb2f70d">NEMeetingItem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>item</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a048615e1b00896163adf8ea027ce03b2">NEPreMeetingMeetingItemCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预约会议 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>会议条目 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__service__premeeting_8h_source.html">kit_service_premeeting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

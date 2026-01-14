@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NERealtimeRecorderService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_realtime_recorder_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERealtimeRecorderService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kit__service__realtime__recorder_8h_source.html">kit_service_realtime_recorder.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERealtimeRecorderService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_realtime_recorder_service.png" usemap="#NERealtimeRecorderService_map" alt=""/>
+  <map id="NERealtimeRecorderService_map" name="NERealtimeRecorderService_map">
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="0,56,173,80"/>
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,173,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a933534038e211ab49700bbfc586d4e40" id="r_a933534038e211ab49700bbfc586d4e40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a933534038e211ab49700bbfc586d4e40">startRealtimeRecorder</a> (<a class="el" href="kit__define__realtime__recorder_8h.html#ac8901818e3226da8d445d1c198659515">NEMeetingRealtimeRecorderParams</a> param, <a class="el" href="kit__define__realtime__recorder_8h.html#a953721d1f19a721d9ebeb1ca32151e3d">NEMeetingRealtimeRecorderOptions</a> opt, const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int64_t &gt; &amp;callback)=0</td></tr>
+<tr class="separator:a933534038e211ab49700bbfc586d4e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d0fc75b90bdcf4060b5f7c358084f8" id="r_a45d0fc75b90bdcf4060b5f7c358084f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d0fc75b90bdcf4060b5f7c358084f8">stopRealtimeRecorder</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="separator:a45d0fc75b90bdcf4060b5f7c358084f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f5c0970003c8459769783f0825623b" id="r_ad4f5c0970003c8459769783f0825623b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f5c0970003c8459769783f0825623b">addMeetingRealtimeRecorderStatusListener</a> (<a class="el" href="class_n_e_meeting_realtime_recorder_status_listener.html">NEMeetingRealtimeRecorderStatusListener</a> *listener)=0</td></tr>
+<tr class="separator:ad4f5c0970003c8459769783f0825623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b7be915dcb4507a0d7baac9c35b422" id="r_a15b7be915dcb4507a0d7baac9c35b422"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b7be915dcb4507a0d7baac9c35b422">removeMeetingRealtimeRecorderStatusListener</a> (<a class="el" href="class_n_e_meeting_realtime_recorder_status_listener.html">NEMeetingRealtimeRecorderStatusListener</a> *listener)=0</td></tr>
+<tr class="separator:a15b7be915dcb4507a0d7baac9c35b422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_service.html">NEService</a></td></tr>
+<tr class="memitem:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service" id="r_a39edbaa5283b44e0ca4b5b3f7e5118ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a39edbaa5283b44e0ca4b5b3f7e5118ff">NEService</a> ()</td></tr>
+<tr class="memdesc:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service" id="r_a68d614611401bd7085d6585e26a7a433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a68d614611401bd7085d6585e26a7a433">~NEService</a> ()</td></tr>
+<tr class="memdesc:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad4f5c0970003c8459769783f0825623b" name="ad4f5c0970003c8459769783f0825623b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f5c0970003c8459769783f0825623b">&#9670;&#160;</a></span>addMeetingRealtimeRecorderStatusListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NERealtimeRecorderService::addMeetingRealtimeRecorderStatusListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_meeting_realtime_recorder_status_listener.html">NEMeetingRealtimeRecorderStatusListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15b7be915dcb4507a0d7baac9c35b422" name="a15b7be915dcb4507a0d7baac9c35b422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b7be915dcb4507a0d7baac9c35b422">&#9670;&#160;</a></span>removeMeetingRealtimeRecorderStatusListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NERealtimeRecorderService::removeMeetingRealtimeRecorderStatusListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_meeting_realtime_recorder_status_listener.html">NEMeetingRealtimeRecorderStatusListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a933534038e211ab49700bbfc586d4e40" name="a933534038e211ab49700bbfc586d4e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933534038e211ab49700bbfc586d4e40">&#9670;&#160;</a></span>startRealtimeRecorder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NERealtimeRecorderService::startRealtimeRecorder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__realtime__recorder_8h.html#ac8901818e3226da8d445d1c198659515">NEMeetingRealtimeRecorderParams</a></td>          <td class="paramname"><span class="paramname"><em>param</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="kit__define__realtime__recorder_8h.html#a953721d1f19a721d9ebeb1ca32151e3d">NEMeetingRealtimeRecorderOptions</a></td>          <td class="paramname"><span class="paramname"><em>opt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45d0fc75b90bdcf4060b5f7c358084f8" name="a45d0fc75b90bdcf4060b5f7c358084f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d0fc75b90bdcf4060b5f7c358084f8">&#9670;&#160;</a></span>stopRealtimeRecorder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NERealtimeRecorderService::stopRealtimeRecorder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__service__realtime__recorder_8h_source.html">kit_service_realtime_recorder.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

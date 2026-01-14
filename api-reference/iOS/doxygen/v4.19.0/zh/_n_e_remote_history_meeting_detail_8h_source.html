@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NERemoteHistoryMeetingDetail.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NERemoteHistoryMeetingDetail.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_remote_history_meeting_detail_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_item_8h.html">NEMeetingItem.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3ee">   12</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3ee">NEMeetingWebAppItemType</a>) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea258791e28f3893c76ab8188b21c4ad79">   16</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea258791e28f3893c76ab8188b21c4ad79">NEMeetingWebAppItemTypeOfficial</a>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea163a212b9c2464e8c4fb861c5364361a">   20</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea163a212b9c2464e8c4fb861c5364361a">NEMeetingWebAppItemTypeCorporate</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70">   26</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70">NEChatroomExportAccess</a>) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70aaa3d4df6755cd64973af4626483c401f">   30</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70aaa3d4df6755cd64973af4626483c401f">NEChatroomExportAccessUnknown</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a1f47c14edf949e37efb59b7c0c7ff1c1">   34</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a1f47c14edf949e37efb59b7c0c7ff1c1">NEChatroomExportAccessAvailable</a>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a219c7f208ff7319183ef5886bfd5b025">   38</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a219c7f208ff7319183ef5886bfd5b025">NEChatroomExportAccessNoPermission</a>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a69fd1ca9386d9175d3cfb0e5d9b2402d">   42</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a69fd1ca9386d9175d3cfb0e5d9b2402d">NEChatroomExportAccessOutOfDate</a>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4daf">   48</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4daf">NEChatroomMessageSearchOrder</a>) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa16139949391f2ac9cd2acb91e8a1c0f7">   52</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa16139949391f2ac9cd2acb91e8a1c0f7">NEChatroomMessageSearchOrderDesc</a>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa1ee46599f581c800a3414eb4cebef209">   56</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa1ee46599f581c800a3414eb4cebef209">NEChatroomMessageSearchOrderAsc</a>,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4">   62</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4">NEMeetingChatMessageType</a>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a3db2df6713f82e466356974df6dcd021">   66</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a3db2df6713f82e466356974df6dcd021">NEMeetingChatMessageTypeText</a>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4ac5f1da848edda13632b41e2454a6cbbb">   70</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4ac5f1da848edda13632b41e2454a6cbbb">NEMeetingChatMessageTypeFile</a>,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4af529c7aea32294dd3717e813932e56f3">   74</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4af529c7aea32294dd3717e813932e56f3">NEMeetingChatMessageTypeImage</a>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a1b09a4b83224171bb31c861326f9408e">   78</a></span>  <a class="code hl_enumvalue" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a1b09a4b83224171bb31c861326f9408e">NEMeetingChatMessageTypeCustom</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_icon_item.html">   84</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_web_app_icon_item.html">NEMeetingWebAppIconItem</a> : NSObject</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_icon_item.html#a570e40dd3784ed81b56568ebce40c14a">   88</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_web_app_icon_item.html#a570e40dd3784ed81b56568ebce40c14a">defaultIcon</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_icon_item.html#ac32931e041e8568e163d761c753e2c08">   92</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_web_app_icon_item.html#ac32931e041e8568e163d761c753e2c08">notifyIcon</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_icon_item.html#a41cf0df2dbfea4405626e96f17208873">   96</a></span><span class="keyword">@property</span>(nonatomic, strong) NSDictionary&lt;NSString *, NSString *&gt; *<a class="code hl_property" href="interface_n_e_meeting_web_app_icon_item.html#a81bf68df6e72761a216ae478419a909f">mobileIcon</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>- (NSString *_Nullable)<a class="code hl_function" href="interface_n_e_meeting_web_app_icon_item.html#ae86541212fbd061ea15caaabf71889d0">getLightIcon</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>- (NSString *_Nullable)<a class="code hl_function" href="interface_n_e_meeting_web_app_icon_item.html#a41cf0df2dbfea4405626e96f17208873">getDarkIcon</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html">  111</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_web_app_item.html">NEMeetingWebAppItem</a> : NSObject</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#a48826d3281bac5f46e73690ccd3694af">  115</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *pluginId;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#aa1005a5adeda0a9e337322f2fd7f802b">  120</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *name;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#a7689d1c318302cebbee02cf2c0fe0c1a">  125</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_meeting_web_app_icon_item.html">NEMeetingWebAppIconItem</a> *icon;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#abbaa8e387ade47692544204260dda1ff">  130</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *description;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#a1ff4fe342684f901b8e4205b24ec2765">  135</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3ee">NEMeetingWebAppItemType</a> type;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#ad399eb9b9056464d87e95b32e0533a3d">  140</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *homeUrl;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_item.html#afec6187694b3eaa726527bdc4c65d286">  145</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *sessionId;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_options.html">  152</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_web_app_options.html">NEMeetingWebAppOptions</a> : NSObject</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_web_app_options.html#ae69184caf8574b39884d7b589279de0e">  156</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger memberHistoryId;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_info.html">  163</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_chatroom_info.html">NEChatroomInfo</a> : NSObject</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_info.html#a00fc07bcc8b4e1f4d863dd57e66721f4">  167</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> chatroomId;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_info.html#abc1d35c0c7fd50897f90ba5f7f412eca">  172</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70">NEChatroomExportAccess</a> exportAccess;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting_detail.html">  179</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_remote_history_meeting_detail.html">NERemoteHistoryMeetingDetail</a> : NSObject</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting_detail.html#a91f5d0752fff4152e873520bdc6827f3">  183</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_chatroom_info.html">NEChatroomInfo</a> *chatroomInfo;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting_detail.html#ab4f88e620097121e2c0b7eb6d65b4041">  187</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingWebAppItem *&gt; *pluginInfoList;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html">  194</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_remote_history_meeting.html">NERemoteHistoryMeeting</a> : NSObject</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#aa9aff776f7d8ebff4be1b2f4518b8962">  199</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger anchorId;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a624ae222dda8a69a22198f126acbde48">  204</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger meetingId;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a22da7df28f0b85a74fcce5ca98455d8e">  209</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *meetingNum;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#aebc2ea99a771c1555a2ab332d3fb741f">  214</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *subject;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#ab616bd8f8628d6c42ba34de2cb71c582">  219</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_item_8h.html#a3daf2bbc03230d73f3b8183803bbaa5b">NEMeetingType</a> type;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a150a3ee4d013a07410a66f3e67b4d796">  224</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> roomEntryTime;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a2cc84a8463508dcf3b3688e3c41f4bcc">  229</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> roomStartTime;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#aa78e9c42c39e3f127ecc1ad7ae8fc049">  234</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *ownerAvatar;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#afb6af8883562be5f8bea38bc19c5540b">  239</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *ownerUserUuid;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a5dd575224f51b2455d7eddc832b6fbde">  244</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *ownerNickname;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a4346ba5ced39fc74fd9d62f8fece6da8">  249</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger favoriteId;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a5b73e0c412c0c1528e3c21f8ae998341">  254</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> roomEndTime;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="interface_n_e_remote_history_meeting.html#a5b3528c1dac8c4f4223749218fd13182">  259</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *timeZoneId;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>- (BOOL)isFavorite;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_history_message_search_option.html">  271</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_chatroom_history_message_search_option.html">NEChatroomHistoryMessageSearchOption</a> : NSObject</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_history_message_search_option.html#a7143fc9769bb998dbdce005830492eb8">  275</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> startTime;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_history_message_search_option.html#abd7e0393559feb835ab4002e0bcc53a3">  279</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> limit;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="interface_n_e_chatroom_history_message_search_option.html#a88a7937dda71e11acd47c49003572a7a">  283</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4daf">NEChatroomMessageSearchOrder</a> order;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html">  290</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_chat_message.html">NEMeetingChatMessage</a> : NSObject</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a771e798aaee257421886951f33e76287">  294</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *messageUuid;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a0acead882a62de4f5a8fc8a1cef29d8d">  298</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4">NEMeetingChatMessageType</a> messageType;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a49d53fb9345ecb2a14e9ef22f28d98ce">  302</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *fromUserUuid;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a0a75d843f5b940006f850ef4d43e164d">  306</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *fromNick;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#ac76d72128a03ece612492f6e37961b1b">  310</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *fromAvatar;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a8e9ecb4ef2aa654e12eafdb17d79c48b">  314</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NSString *&gt; *toUserUuidList;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_message.html#a4e4715d9d65c05b61d6d5f3504011a59">  318</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> time;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_text_message.html">  325</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_chat_text_message.html">NEMeetingChatTextMessage</a> : <a class="code hl_interface" href="interface_n_e_meeting_chat_message.html">NEMeetingChatMessage</a></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_text_message.html#a02a7332bda1dadf7826eda28ebf4a83e">  329</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *text;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_custom_message.html">  336</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_chat_custom_message.html">NEMeetingChatCustomMessage</a> : <a class="code hl_interface" href="interface_n_e_meeting_chat_message.html">NEMeetingChatMessage</a></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_custom_message.html#ab356c4536446ef291d2493d1438d0d5a">  341</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *attachStr;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html">  348</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_chat_file_message.html">NEMeetingChatFileMessage</a> : <a class="code hl_interface" href="interface_n_e_meeting_chat_message.html">NEMeetingChatMessage</a></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#ad2b8677db5ca2d08ebc806ed7c187b1e">  352</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *displayName;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#a8902973ddf7e2e6eb90640af1fffaf2e">  356</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *extension;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#aca6f432fabd79569d5c06159f6837e74">  360</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *md5;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#af962af734f51c152674d02b8d6405343">  364</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *url;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#af69a3e522f2d5f9464b9545d80e351ac">  368</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> size;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#aa7260fe4e0a96102276b5621de76dc5e">  372</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *thumbPath;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_file_message.html#aa7282a086a959ee3cf9d35f57ff27c55">  376</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *path;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_image_message.html">  383</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_chat_image_message.html">NEMeetingChatImageMessage</a> : <a class="code hl_interface" href="interface_n_e_meeting_chat_file_message.html">NEMeetingChatFileMessage</a></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_image_message.html#a12cd4a6509aabb3e252882c2133bdc4f">  387</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> width;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_chat_image_message.html#a8b19eba275ccc03bc967a81a32f5aa5e">  391</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> height;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_n_e_meeting_item_8h_html"><div class="ttname"><a href="_n_e_meeting_item_8h.html">NEMeetingItem.h</a></div></div>
+<div class="ttc" id="a_n_e_meeting_item_8h_html_a3daf2bbc03230d73f3b8183803bbaa5b"><div class="ttname"><a href="_n_e_meeting_item_8h.html#a3daf2bbc03230d73f3b8183803bbaa5b">NEMeetingType</a></div><div class="ttdeci">NEMeetingType</div><div class="ttdef"><b>Definition</b> NEMeetingItem.h:17</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a457a50907afef457a997c71ce27b4daf"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4daf">NEChatroomMessageSearchOrder</a></div><div class="ttdeci">NEChatroomMessageSearchOrder</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:48</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a457a50907afef457a997c71ce27b4dafa16139949391f2ac9cd2acb91e8a1c0f7"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa16139949391f2ac9cd2acb91e8a1c0f7">NEChatroomMessageSearchOrderDesc</a></div><div class="ttdeci">@ NEChatroomMessageSearchOrderDesc</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:52</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a457a50907afef457a997c71ce27b4dafa1ee46599f581c800a3414eb4cebef209"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a457a50907afef457a997c71ce27b4dafa1ee46599f581c800a3414eb4cebef209">NEChatroomMessageSearchOrderAsc</a></div><div class="ttdeci">@ NEChatroomMessageSearchOrderAsc</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:56</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a9be140a905c813c26d4ccc0e0eb8e3ee"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3ee">NEMeetingWebAppItemType</a></div><div class="ttdeci">NEMeetingWebAppItemType</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:12</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a9be140a905c813c26d4ccc0e0eb8e3eea163a212b9c2464e8c4fb861c5364361a"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea163a212b9c2464e8c4fb861c5364361a">NEMeetingWebAppItemTypeCorporate</a></div><div class="ttdeci">@ NEMeetingWebAppItemTypeCorporate</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:20</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_a9be140a905c813c26d4ccc0e0eb8e3eea258791e28f3893c76ab8188b21c4ad79"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#a9be140a905c813c26d4ccc0e0eb8e3eea258791e28f3893c76ab8188b21c4ad79">NEMeetingWebAppItemTypeOfficial</a></div><div class="ttdeci">@ NEMeetingWebAppItemTypeOfficial</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:16</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_ad3cf943ea5d73b442f6b5f8530e7caf4"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4">NEMeetingChatMessageType</a></div><div class="ttdeci">NEMeetingChatMessageType</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:62</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_ad3cf943ea5d73b442f6b5f8530e7caf4a1b09a4b83224171bb31c861326f9408e"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a1b09a4b83224171bb31c861326f9408e">NEMeetingChatMessageTypeCustom</a></div><div class="ttdeci">@ NEMeetingChatMessageTypeCustom</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:78</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_ad3cf943ea5d73b442f6b5f8530e7caf4a3db2df6713f82e466356974df6dcd021"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4a3db2df6713f82e466356974df6dcd021">NEMeetingChatMessageTypeText</a></div><div class="ttdeci">@ NEMeetingChatMessageTypeText</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:66</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_ad3cf943ea5d73b442f6b5f8530e7caf4ac5f1da848edda13632b41e2454a6cbbb"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4ac5f1da848edda13632b41e2454a6cbbb">NEMeetingChatMessageTypeFile</a></div><div class="ttdeci">@ NEMeetingChatMessageTypeFile</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:70</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_ad3cf943ea5d73b442f6b5f8530e7caf4af529c7aea32294dd3717e813932e56f3"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#ad3cf943ea5d73b442f6b5f8530e7caf4af529c7aea32294dd3717e813932e56f3">NEMeetingChatMessageTypeImage</a></div><div class="ttdeci">@ NEMeetingChatMessageTypeImage</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:74</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_af1e1394fcd68c283000e8fef4dbbba70"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70">NEChatroomExportAccess</a></div><div class="ttdeci">NEChatroomExportAccess</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:26</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_af1e1394fcd68c283000e8fef4dbbba70a1f47c14edf949e37efb59b7c0c7ff1c1"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a1f47c14edf949e37efb59b7c0c7ff1c1">NEChatroomExportAccessAvailable</a></div><div class="ttdeci">@ NEChatroomExportAccessAvailable</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:34</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_af1e1394fcd68c283000e8fef4dbbba70a219c7f208ff7319183ef5886bfd5b025"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a219c7f208ff7319183ef5886bfd5b025">NEChatroomExportAccessNoPermission</a></div><div class="ttdeci">@ NEChatroomExportAccessNoPermission</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:38</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_af1e1394fcd68c283000e8fef4dbbba70a69fd1ca9386d9175d3cfb0e5d9b2402d"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70a69fd1ca9386d9175d3cfb0e5d9b2402d">NEChatroomExportAccessOutOfDate</a></div><div class="ttdeci">@ NEChatroomExportAccessOutOfDate</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:42</div></div>
+<div class="ttc" id="a_n_e_remote_history_meeting_detail_8h_html_af1e1394fcd68c283000e8fef4dbbba70aaa3d4df6755cd64973af4626483c401f"><div class="ttname"><a href="_n_e_remote_history_meeting_detail_8h.html#af1e1394fcd68c283000e8fef4dbbba70aaa3d4df6755cd64973af4626483c401f">NEChatroomExportAccessUnknown</a></div><div class="ttdeci">@ NEChatroomExportAccessUnknown</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:30</div></div>
+<div class="ttc" id="ainterface_n_e_chatroom_history_message_search_option_html"><div class="ttname"><a href="interface_n_e_chatroom_history_message_search_option.html">NEChatroomHistoryMessageSearchOption</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:272</div></div>
+<div class="ttc" id="ainterface_n_e_chatroom_info_html"><div class="ttname"><a href="interface_n_e_chatroom_info.html">NEChatroomInfo</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:164</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chat_custom_message_html"><div class="ttname"><a href="interface_n_e_meeting_chat_custom_message.html">NEMeetingChatCustomMessage</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:337</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chat_file_message_html"><div class="ttname"><a href="interface_n_e_meeting_chat_file_message.html">NEMeetingChatFileMessage</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:349</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chat_image_message_html"><div class="ttname"><a href="interface_n_e_meeting_chat_image_message.html">NEMeetingChatImageMessage</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:384</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chat_message_html"><div class="ttname"><a href="interface_n_e_meeting_chat_message.html">NEMeetingChatMessage</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:291</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chat_text_message_html"><div class="ttname"><a href="interface_n_e_meeting_chat_text_message.html">NEMeetingChatTextMessage</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:326</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html">NEMeetingWebAppIconItem</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:85</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html_a41cf0df2dbfea4405626e96f17208873"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html#a41cf0df2dbfea4405626e96f17208873">-[NEMeetingWebAppIconItem getDarkIcon]</a></div><div class="ttdeci">NSString *_Nullable getDarkIcon()</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html_a570e40dd3784ed81b56568ebce40c14a"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html#a570e40dd3784ed81b56568ebce40c14a">NEMeetingWebAppIconItem::defaultIcon</a></div><div class="ttdeci">NSString * defaultIcon</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:88</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html_a81bf68df6e72761a216ae478419a909f"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html#a81bf68df6e72761a216ae478419a909f">NEMeetingWebAppIconItem::mobileIcon</a></div><div class="ttdeci">NSDictionary&lt; NSString *, NSString * &gt; * mobileIcon</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:96</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html_ac32931e041e8568e163d761c753e2c08"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html#ac32931e041e8568e163d761c753e2c08">NEMeetingWebAppIconItem::notifyIcon</a></div><div class="ttdeci">NSString * notifyIcon</div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:92</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_icon_item_html_ae86541212fbd061ea15caaabf71889d0"><div class="ttname"><a href="interface_n_e_meeting_web_app_icon_item.html#ae86541212fbd061ea15caaabf71889d0">-[NEMeetingWebAppIconItem getLightIcon]</a></div><div class="ttdeci">NSString *_Nullable getLightIcon()</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_item_html"><div class="ttname"><a href="interface_n_e_meeting_web_app_item.html">NEMeetingWebAppItem</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:112</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_web_app_options_html"><div class="ttname"><a href="interface_n_e_meeting_web_app_options.html">NEMeetingWebAppOptions</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:153</div></div>
+<div class="ttc" id="ainterface_n_e_remote_history_meeting_detail_html"><div class="ttname"><a href="interface_n_e_remote_history_meeting_detail.html">NERemoteHistoryMeetingDetail</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:180</div></div>
+<div class="ttc" id="ainterface_n_e_remote_history_meeting_html"><div class="ttname"><a href="interface_n_e_remote_history_meeting.html">NERemoteHistoryMeeting</a></div><div class="ttdef"><b>Definition</b> NERemoteHistoryMeetingDetail.h:195</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

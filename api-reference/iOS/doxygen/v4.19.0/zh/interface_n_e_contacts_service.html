@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEContactsService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">构造函数</a> &#124;
+<a href="interface_n_e_contacts_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEContactsService类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_contacts_service_8h_source.html">NEContactsService.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEContactsService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_contacts_service.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+构造函数</h2></td></tr>
+<tr class="memitem:a6412bff872c5d72c01a8a6931ee30104" id="r_a6412bff872c5d72c01a8a6931ee30104"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a6412bff872c5d72c01a8a6931ee30104">searchContactListByPhoneNumber:pageSize:pageNum:callback:</a></td></tr>
+<tr class="separator:a6412bff872c5d72c01a8a6931ee30104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a39625523783d70cb40b817cc6f21db" id="r_a9a39625523783d70cb40b817cc6f21db"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a9a39625523783d70cb40b817cc6f21db">searchContactListByName:pageSize:pageNum:callback:</a></td></tr>
+<tr class="separator:a9a39625523783d70cb40b817cc6f21db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa681cee00a39ec2fa93baf177d1c2767" id="r_aa681cee00a39ec2fa93baf177d1c2767"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aa681cee00a39ec2fa93baf177d1c2767">getContactsInfo:callback:</a></td></tr>
+<tr class="separator:aa681cee00a39ec2fa93baf177d1c2767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>通讯录服务提供了账号通讯录相关的能力。通过这个服务可以获取到通讯录成员及其详细信息。可通过 <code><a class="el" href="interface_n_e_meeting_kit.html#a2e30f44addee34516e604bd5c6846c0a">NEMeetingKit#getContactsService()</a></code> 获取对应的服务实例。 </p>
+</div><h2 class="groupheader">函数文档</h2>
+<a id="aa681cee00a39ec2fa93baf177d1c2767" name="aa681cee00a39ec2fa93baf177d1c2767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa681cee00a39ec2fa93baf177d1c2767">&#9670;&#160;</a></span>getContactsInfo:callback:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getContactsInfo: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; NSString * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>userUuids</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">callback:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSInteger code, NSString *message, <a class="el" href="interface_n_e_contacts_info_result.html">NEContactsInfoResult</a> *data))</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>通讯录用户信息查询</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuids</td><td>用户id列表 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，回调数据类型为NEContactsInfoResult。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a39625523783d70cb40b817cc6f21db" name="a9a39625523783d70cb40b817cc6f21db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a39625523783d70cb40b817cc6f21db">&#9670;&#160;</a></span>searchContactListByName:pageSize:pageNum:callback:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) searchContactListByName: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pageSize:</td>
+          <td></td>
+          <td class="paramtype">(int)</td>          <td class="paramname"><span class="paramname"><em>pageSize</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pageNum:</td>
+          <td></td>
+          <td class="paramtype">(int)</td>          <td class="paramname"><span class="paramname"><em>pageNum</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">callback:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSInteger code, NSString *message, NSArray&lt; <a class="el" href="interface_n_e_contact.html">NEContact</a> * &gt; *data))</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据用户名进行企业通讯录模糊搜索</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>用户名，不可空 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>分页大小 </td></tr>
+    <tr><td class="paramname">pageNum</td><td>页码 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，回调数据类型为NEContact列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6412bff872c5d72c01a8a6931ee30104" name="a6412bff872c5d72c01a8a6931ee30104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6412bff872c5d72c01a8a6931ee30104">&#9670;&#160;</a></span>searchContactListByPhoneNumber:pageSize:pageNum:callback:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) searchContactListByPhoneNumber: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>phoneNumber</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pageSize:</td>
+          <td></td>
+          <td class="paramtype">(int)</td>          <td class="paramname"><span class="paramname"><em>pageSize</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pageNum:</td>
+          <td></td>
+          <td class="paramtype">(int)</td>          <td class="paramname"><span class="paramname"><em>pageNum</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">callback:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSInteger code, NSString *message, NSArray&lt; <a class="el" href="interface_n_e_contact.html">NEContact</a> * &gt; *data))</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据电话号码进行企业通讯录模糊搜索</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phoneNumber</td><td>用户电话号码，不可空 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>分页大小 </td></tr>
+    <tr><td class="paramname">pageNum</td><td>页码 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，回调数据类型为NEContact列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>NEMeetingKit/ExportHeaders/<a class="el" href="_n_e_contacts_service_8h_source.html">NEContactsService.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

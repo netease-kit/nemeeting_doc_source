@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingOptions.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingOptions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_options_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_caption_translation_config_8h.html">NEMeetingCaptionTranslationConfig.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_chatroom_config_8h.html">NEMeetingChatroomConfig.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_n_e_meeting_menu_item.html">NEMeetingMenuItem</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_n_e_single_state_menu_item.html">NESingleStateMenuItem</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_n_e_checkable_menu_item.html">NECheckableMenuItem</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_n_e_cloud_record_config.html">NECloudRecordConfig</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5af">   19</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a>) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa6b3e119daa897f671748198c4d002e39">   23</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa6b3e119daa897f671748198c4d002e39">NEChatMessageNotificationTypeBarrage</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afadcacfe597ac1cb4f994112a8d68a89b3">   27</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afadcacfe597ac1cb4f994112a8d68a89b3">NEChatMessageNotificationTypeBubble</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa8447cb807ad9e9a0503a8eb2394a3160">   31</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa8447cb807ad9e9a0503a8eb2394a3160">NEChatMessageNotificationTypeNoRemind</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79">   37</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79">NEMeetingElapsedTimeDisplayType</a>) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79ac157bdf0b85a40d2619cbc8bc1ae5fe2">   41</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79add588341f68c57c498daaeee90a0bc6d">   45</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79add588341f68c57c498daaeee90a0bc6d">MEETING_ELAPSED_TIME</a>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79a10b99cc3f427d01ceeb4409859151272">   49</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79a10b99cc3f427d01ceeb4409859151272">PARTICIPATION_ELAPSED_TIME</a>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747">   55</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747">NEMeetingIdDisplayOption</a>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747ac93f8577a703a4164fc0101749c3bccc">   60</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747ac93f8577a703a4164fc0101749c3bccc">DISPLAY_ALL</a> = 0,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747af1bcb80a1a08f7b4da4b0bd140a807bd">   65</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747af1bcb80a1a08f7b4da4b0bd140a807bd">DISPLAY_LONG_ID_ONLY</a>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747abde4e59d2698042b8df5b4bd47b9fef7">   70</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747abde4e59d2698042b8df5b4bd47b9fef7">DISPLAY_SHORT_ID_ONLY</a>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">   76</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a>) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7ccaf0fed438cd9797a8a2ee15a7280ff066">   80</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7ccaf0fed438cd9797a8a2ee15a7280ff066">NEMeetingWindowModeGallery</a> = 0,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">//    NEMeetingWindowModeScreenShare = 1,//屏幕共享模式 后续启用</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cca7033d32d03c86f8b89f4eec8a945ade4">NEMeetingWindowModeWhiteBoard</a> = 2</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cca7033d32d03c86f8b89f4eec8a945ade4">   88</a></span>};</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="};">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7">   93</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7">NEAudioAINSMode</a>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7aceb4eaff167d040577c0589ffc5cdc8e">   97</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7aceb4eaff167d040577c0589ffc5cdc8e">NEAudioAINSModeOff</a> = 0,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7acbfab92a10173e2ad00292edceaeda44">  101</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7acbfab92a10173e2ad00292edceaeda44">NEAudioAINSModeNormal</a> = 1,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7a6f2cb04dd137e0ec78e87c8415c97f57">  105</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7a6f2cb04dd137e0ec78e87c8415c97f57">NEAudioAINSModeEnhanced</a> = 2,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="};">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26">  111</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26">NEAudioProfileType</a>) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26abb5c698bb3770cf8204e0411ac047aca">  115</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26abb5c698bb3770cf8204e0411ac047aca">NEAudioProfileTypeDefault</a> = 0,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae80e977e83944efa297e95260e4550c8">  119</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae80e977e83944efa297e95260e4550c8">NEAudioProfileTypeStandard</a>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26adab5174a7ccdd29850b26559ec771bc6">  123</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26adab5174a7ccdd29850b26559ec771bc6">NEAudioProfileTypeStandardExtend</a>,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a3ac8f989eab1d3a495ab7515ccdf3ce4">  127</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a3ac8f989eab1d3a495ab7515ccdf3ce4">NEAudioProfileTypeMiddleQuality</a>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a400afc5b7493579ae1f0795b2d7d19cc">  131</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a400afc5b7493579ae1f0795b2d7d19cc">NEAudioProfileTypeMiddleQualityStereo</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae387892115543b6bdedf2053e6c516e0">  135</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae387892115543b6bdedf2053e6c516e0">NEAudioProfileTypeHighQuality</a>,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26af137e850bb794a77dd6f869657683e93">NEAudioProfileTypeHighQualityStereo</a></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26af137e850bb794a77dd6f869657683e93">  140</a></span>};</div>
+</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="};">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9e">  144</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9e">NEAudioScenarioType</a>) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7405734574396250b8bb5cde81f0f4ad">  148</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7405734574396250b8bb5cde81f0f4ad">NEAudioScenarioTypeDefault</a> = 0,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7817a4a9da559a62e76de3b400e0b34f">  152</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7817a4a9da559a62e76de3b400e0b34f">NEAudioScenarioTypeSpeech</a>,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea4221557fa8a0b46bf9fce0171dbcd29c">  156</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea4221557fa8a0b46bf9fce0171dbcd29c">NEAudioScenarioTypeMusic</a>,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea9204ab64ba8d4669394cf58b20348dec">  160</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea9204ab64ba8d4669394cf58b20348dec">NEAudioScenarioTypeChatRoom</a>,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>};</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="};">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895">  166</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895">NEMeetingAudioOutputDevice</a>) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a5d6dbf56180ee1831fcb90c4a92b3180">  170</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a5d6dbf56180ee1831fcb90c4a92b3180">NEMeetingAudioOutputDefault</a> = -1,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895ac6687f1941295e4fca2d86bd9003b24a">  174</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895ac6687f1941295e4fca2d86bd9003b24a">NEMeetingAudioOutputSpeakerPhone</a> = 0,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895aca60e07081048ddde2b56171fbf802ca">  178</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895aca60e07081048ddde2b56171fbf802ca">NEMeetingAudioOutputWiredHeadset</a>,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a3fe2309330cdfb1b792321fab26f5b2d">  182</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a3fe2309330cdfb1b792321fab26f5b2d">NEMeetingAudioOutputEarpiece</a>,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a74d18e63a3deb090f615be1ef628ee68">  186</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a74d18e63a3deb090f615be1ef628ee68">NEMeetingAudioOutputBluetoothHeadset</a>,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>};</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="interface_n_e_audio_profile.html">  192</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_audio_profile.html">NEAudioProfile</a> : NSObject</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>+ (<a class="code hl_interface" href="interface_n_e_audio_profile.html">NEAudioProfile</a> *)<a class="code hl_function" href="interface_n_e_audio_profile.html#ac2ffaca70b75c5551c769b52c35e5e0c">createSpeechAudioProfile</a>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>+ (<a class="code hl_interface" href="interface_n_e_audio_profile.html">NEAudioProfile</a> *)<a class="code hl_function" href="interface_n_e_audio_profile.html#a2cf5eacedb6783484c2d7171db9ad4d2">createMusicAudioProfile</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="interface_n_e_audio_profile.html#a98ef7e0dc2b6a126ad7554e570197fcd">  207</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26">NEAudioProfileType</a> <a class="code hl_property" href="interface_n_e_audio_profile.html#a98ef7e0dc2b6a126ad7554e570197fcd">profile</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="interface_n_e_audio_profile.html#a5fb2d9131622fcd424765479b57e6aab">  213</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9e">NEAudioScenarioType</a> scenario <a class="code hl_function" href="interface_n_e_audio_profile.html#a5fb2d9131622fcd424765479b57e6aab">__deprecated_msg</a>(<span class="stringliteral">&quot;deprecated in 4.17.0&quot;</span>);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="interface_n_e_audio_profile.html#a0277d507ced712a1675786a24ea156dd">  218</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7">NEAudioAINSMode</a> <a class="code hl_property" href="interface_n_e_audio_profile.html#a0277d507ced712a1675786a24ea156dd">audioAINSMode</a>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="interface_n_e_window_size.html">  225</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_window_size.html">NEWindowSize</a> : NSObject</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="interface_n_e_window_size.html#a508136d16907fded05082d9a0f8e8d84">  227</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">double</span> <a class="code hl_property" href="interface_n_e_window_size.html#a508136d16907fded05082d9a0f8e8d84">width</a>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="interface_n_e_window_size.html#ac3470239b33bd5ef52764ec3bfecf942">  228</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">double</span> <a class="code hl_property" href="interface_n_e_window_size.html#ac3470239b33bd5ef52764ec3bfecf942">height</a>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>- (instancetype)initWithWidth:(<span class="keywordtype">double</span>)width height:(<span class="keywordtype">double</span>)height;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_whiteboard_app_config.html">  237</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_whiteboard_app_config.html">NEMeetingWhiteboardAppConfig</a> : NSObject</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_whiteboard_app_config.html#ae7adf4db968943687493803bb0def36c">  242</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL nosAntiLeech;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_whiteboard_app_config.html#a575485fbdeaf845636021e55a40c7947">  247</a></span><span class="keyword">@property</span>(nonatomic, assign) NSUInteger nosAntiLeechExpire;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_whiteboard_app_config.html#a7e445c0cb0c1c7870612acf96b1c526e">  252</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *canvasBgColor;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>- (instancetype)initWithNosAntiLeech:(BOOL)nosAntiLeech</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                  nosAntiLeechExpire:(NSUInteger)nosAntiLeechExpire;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html">  262</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_options.html">NEMeetingOptions</a> : NSObject</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ad83b70e6debd30156f6473739f54333d">  267</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noMuteAllVideo;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a91c32393ff7bd9dc83e4fc64bae3b7b8">  272</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noMuteAllAudio;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a119c26730c44847085272bcdbddd3f83">  277</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noVideo;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a78ba7586b07a2387bd3bfe47168d6ca4">  282</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noAudio;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a42615061f1b71cf9b205d8d1e6a11652">  287</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL frontCamera;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a3558364f29e3a8048d8854f433c8bc82">  292</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895">NEMeetingAudioOutputDevice</a> audioOutputDevice;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a36294b6d92823c8768b4fc6d3990de31">  298</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showMeetingTime <a class="code hl_function" href="interface_n_e_meeting_options.html#a36294b6d92823c8768b4fc6d3990de31">DEPRECATED_MSG_ATTRIBUTE</a>(</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="stringliteral">&quot;deprecated in 4.9.0, use meetingElapsedTimeDisplayType instead&quot;</span>);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a6e1da61aa15e5d2417a1dce3b5520732">  304</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79">NEMeetingElapsedTimeDisplayType</a> meetingElapsedTimeDisplayType;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a5ab5510d0512089aff6bdf0ffd02b17d">  309</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showNameInVideo;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#aa34126681c9f2093a40fa6a7275415c0">  314</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableSpeakerSpotlight;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a1e271a04d475d345078cf4e6f590a882">  320</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noMinimize;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a322395faa0e22427a5f273a35202634b">  325</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noInvite;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a8b7c6cde80aa2468c7f57cb8f74ec758">  330</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noSip;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac82816eca3fa51970d185c92319b16d8">  335</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noChat;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac94d05039ff28ced179a20ddf49dafa2">  340</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noSwitchCamera;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a98300c5536ab5689bc6df209ce3e454d">  345</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableFrontCameraMirror;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a40737711cc8abdfcd4399dedd0a91172">  350</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noSwitchAudioMode;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a2b0b0eb819b6045c25f121833fd5a311">  355</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noGallery;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a1ce805a1736e3bbe42a3bbdf9c762aa8">  360</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noWhiteBoard;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a955613b2ca6772d2b5f476633bab9fa1">  365</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noRename;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac41468c93f3433513589d0cee4c9e5dd">  370</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noLive;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a9534fddaca82e8111d158dc2a14b6eb4">  375</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showMeetingRemainingTip;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ad5a047f02a5a46a271e8a7d745cee521">  381</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showScreenShareUserVideo;</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a7e6cda025fb8517b18b7623a9a46c818">  388</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableAudioShare;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a4e97baaf5ecf18d010331f318890bb9c">  394</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showWhiteboardShareUserVideo;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a7ba2d1fa90920897e21802bf15b2af90">  399</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableTransparentWhiteboard;</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a41434c76b3bb65d592ba621a7ee5ad90">  405</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showFloatingMicrophone;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a36b03b23666070fb28deb6819152a804">  410</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showMemberTag;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#af563081b68e2da134107eb87b75125e7">  416</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL detectMutedMic;</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a2f0e3cacc60e2a60ac054bed3a8f9a44">  421</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL unpubAudioOnMute;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac6b454fdc707497f83c086197c1b8af0">  426</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a> defaultWindowMode;</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a39932489863ca61b26a8f91e4d09cc96">  431</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747">NEMeetingIdDisplayOption</a> meetingIdDisplayOption;</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a61d5aed192174960b41659bb301b8f73">  438</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingMenuItem *&gt; *fullToolbarMenuItems;</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a1fdfea03540c2486ce9c8337885ad4d0">  445</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingMenuItem *&gt; *fullMoreMenuItems;</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#afece383c76827b3ca1cc29cfaa63f42d">  451</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingMenuItem *&gt; *memberActionMenuItems;</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a776906c01f30cc389035ac4bb0663872">  456</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger joinTimeout;</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ad1d47a5d6720085438aa231aa4913b73">  461</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_audio_profile.html">NEAudioProfile</a> *audioProfile;</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a1b8de1d5274dee11dd29e8ae8e779725">  465</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_meeting_chatroom_config.html">NEMeetingChatroomConfig</a> *chatroomConfig;</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#af910fa3196bfd481e21d900371cb4da0">  470</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showCloudRecordMenuItem;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a2f9d49e7edf4d5af3f03083b46b276d3">  475</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showCloudRecordingUI;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#afc5cb3f387b1f26df4cf79c832aff17b">  480</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showLocalRecordingUI;</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a6e21cf706f68db1f2319486d37fbccf8">  485</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noNotifyCenter;</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a4d7222485460571252ec4319f79d7603">  490</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noWebApps;</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#aaf8e7046995a2dbec90b4edf1d3122f8">  495</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noCaptions;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a924cd876badfee6cb2380faba28ecd18">  500</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noTranscription;</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a5274b3f5decfdb45d4c0466ab24869f6">  505</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noAISummary;</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#aee5ca6a0c4d6734652b4c522c6959884">  510</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL autoEnableCaptionsOnJoin;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a9a45a964716eef8dc8dc81ef662a5a7d">  515</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a> chatMessageNotificationType;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a233fbaebfe932a3b887146ca3ebc6cc8">  520</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> pluginNotifyDuration;</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a1898ecf5a23b95eac2692b91c56aed90">  525</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enablePictureInPicture;</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ab1cf1e03be303a78705aa392aff11cf2">  530</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showNotYetJoinedMembers;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#afe7b8b8cd638ec7ea81461e4a1210175">  535</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableDirectMemberMediaControlByHost;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ae2536fb9ef361f311cb613bee1ca4e23">  540</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableLeaveTheMeetingRequiresConfirmation;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span> </div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ad54aab6ce0b70a67388a8efc470cbfb4">  545</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showHandsUp;</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a4c9deb456124a9875c26068ca48f3dd9">  550</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showEmojiResponse;</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a5134b3876399c88d4310a1c64f42f9d6">  555</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_window_size.html">NEWindowSize</a> *floatingWindowSize;</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac5e1341c059877950cdbf06b78ac6e2d">  560</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL showMeetingInfo;</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#a5df30417a0d2a4cdfc4f71e052b26101">  565</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_interface" href="interface_n_e_meeting_whiteboard_app_config.html">NEMeetingWhiteboardAppConfig</a> *whiteboardAppConfig;</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_options.html#ac6a8f795df56b307dd816b9b947f2442">  570</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_meeting_caption_translation_config.html">NEMeetingCaptionTranslationConfig</a> *captionTranslationConfig;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_options.html">  576</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_start_meeting_options.html">NEStartMeetingOptions</a> : <a class="code hl_interface" href="interface_n_e_meeting_options.html">NEMeetingOptions</a></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_options.html#ad8b4dfac74e7f2d7b322df78035e4725">  582</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL noCloudRecord <a class="code hl_function" href="interface_n_e_start_meeting_options.html#ad8b4dfac74e7f2d7b322df78035e4725">DEPRECATED_MSG_ATTRIBUTE</a>(</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="stringliteral">&quot;deprecated in 4.7.0, use cloudRecordConfig instead&quot;</span>);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_options.html#adac12e1b3e6a919c1f2c5a858c1f0b6f">  588</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_cloud_record_config.html">NECloudRecordConfig</a> *cloudRecordConfig;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_options.html#ad7e1f7fa78afbac5bc50299cb670d790">  594</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableWaitingRoom;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_options.html#a4e67b57902fd37c6467938640b2c8121">  599</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableGuestJoin;</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="interface_n_e_join_meeting_options.html">  606</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_join_meeting_options.html">NEJoinMeetingOptions</a> : <a class="code hl_interface" href="interface_n_e_meeting_options.html">NEMeetingOptions</a></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_realtime_recorder_options.html">  613</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_realtime_recorder_options.html">NEMeetingRealtimeRecorderOptions</a> : NSObject</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_realtime_recorder_options.html#a8e93941ca0c8cfc6751aff7c90350bb4">  618</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7">NEAudioAINSMode</a> audioAINSMode;</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="interface_n_e_audio_profile.html#a2cf5eacedb6783484c2d7171db9ad4d2">  622</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_n_e_meeting_caption_translation_config_8h_html"><div class="ttname"><a href="_n_e_meeting_caption_translation_config_8h.html">NEMeetingCaptionTranslationConfig.h</a></div></div>
+<div class="ttc" id="a_n_e_meeting_chatroom_config_8h_html"><div class="ttname"><a href="_n_e_meeting_chatroom_config_8h.html">NEMeetingChatroomConfig.h</a></div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a233a9e924604ac5e9a7589dd5630a5af"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a></div><div class="ttdeci">NEChatMessageNotificationType</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:19</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a233a9e924604ac5e9a7589dd5630a5afa6b3e119daa897f671748198c4d002e39"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa6b3e119daa897f671748198c4d002e39">NEChatMessageNotificationTypeBarrage</a></div><div class="ttdeci">@ NEChatMessageNotificationTypeBarrage</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:23</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a233a9e924604ac5e9a7589dd5630a5afa8447cb807ad9e9a0503a8eb2394a3160"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afa8447cb807ad9e9a0503a8eb2394a3160">NEChatMessageNotificationTypeNoRemind</a></div><div class="ttdeci">@ NEChatMessageNotificationTypeNoRemind</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:31</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a233a9e924604ac5e9a7589dd5630a5afadcacfe597ac1cb4f994112a8d68a89b3"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a233a9e924604ac5e9a7589dd5630a5afadcacfe597ac1cb4f994112a8d68a89b3">NEChatMessageNotificationTypeBubble</a></div><div class="ttdeci">@ NEChatMessageNotificationTypeBubble</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:27</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a569bd610b81405519ed672359aaa1ed7"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7">NEAudioAINSMode</a></div><div class="ttdeci">NEAudioAINSMode</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:93</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a569bd610b81405519ed672359aaa1ed7a6f2cb04dd137e0ec78e87c8415c97f57"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7a6f2cb04dd137e0ec78e87c8415c97f57">NEAudioAINSModeEnhanced</a></div><div class="ttdeci">@ NEAudioAINSModeEnhanced</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:105</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a569bd610b81405519ed672359aaa1ed7acbfab92a10173e2ad00292edceaeda44"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7acbfab92a10173e2ad00292edceaeda44">NEAudioAINSModeNormal</a></div><div class="ttdeci">@ NEAudioAINSModeNormal</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:101</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a569bd610b81405519ed672359aaa1ed7aceb4eaff167d040577c0589ffc5cdc8e"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a569bd610b81405519ed672359aaa1ed7aceb4eaff167d040577c0589ffc5cdc8e">NEAudioAINSModeOff</a></div><div class="ttdeci">@ NEAudioAINSModeOff</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:97</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a5a3a34f45adf4083f79a55b3e522b7cc"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a></div><div class="ttdeci">NEMeetingWindowMode</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:76</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a5a3a34f45adf4083f79a55b3e522b7cca7033d32d03c86f8b89f4eec8a945ade4"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7cca7033d32d03c86f8b89f4eec8a945ade4">NEMeetingWindowModeWhiteBoard</a></div><div class="ttdeci">@ NEMeetingWindowModeWhiteBoard</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:87</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a5a3a34f45adf4083f79a55b3e522b7ccaf0fed438cd9797a8a2ee15a7280ff066"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a5a3a34f45adf4083f79a55b3e522b7ccaf0fed438cd9797a8a2ee15a7280ff066">NEMeetingWindowModeGallery</a></div><div class="ttdeci">@ NEMeetingWindowModeGallery</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:80</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a64e542133668bfcc79956414fd3fbc79"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79">NEMeetingElapsedTimeDisplayType</a></div><div class="ttdeci">NEMeetingElapsedTimeDisplayType</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:37</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a64e542133668bfcc79956414fd3fbc79a10b99cc3f427d01ceeb4409859151272"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79a10b99cc3f427d01ceeb4409859151272">PARTICIPATION_ELAPSED_TIME</a></div><div class="ttdeci">@ PARTICIPATION_ELAPSED_TIME</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:49</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a64e542133668bfcc79956414fd3fbc79ac157bdf0b85a40d2619cbc8bc1ae5fe2"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a></div><div class="ttdeci">@ NONE</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:41</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a64e542133668bfcc79956414fd3fbc79add588341f68c57c498daaeee90a0bc6d"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a64e542133668bfcc79956414fd3fbc79add588341f68c57c498daaeee90a0bc6d">MEETING_ELAPSED_TIME</a></div><div class="ttdeci">@ MEETING_ELAPSED_TIME</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:45</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26">NEAudioProfileType</a></div><div class="ttdeci">NEAudioProfileType</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:111</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26a3ac8f989eab1d3a495ab7515ccdf3ce4"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a3ac8f989eab1d3a495ab7515ccdf3ce4">NEAudioProfileTypeMiddleQuality</a></div><div class="ttdeci">@ NEAudioProfileTypeMiddleQuality</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:127</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26a400afc5b7493579ae1f0795b2d7d19cc"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26a400afc5b7493579ae1f0795b2d7d19cc">NEAudioProfileTypeMiddleQualityStereo</a></div><div class="ttdeci">@ NEAudioProfileTypeMiddleQualityStereo</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:131</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26abb5c698bb3770cf8204e0411ac047aca"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26abb5c698bb3770cf8204e0411ac047aca">NEAudioProfileTypeDefault</a></div><div class="ttdeci">@ NEAudioProfileTypeDefault</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:115</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26adab5174a7ccdd29850b26559ec771bc6"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26adab5174a7ccdd29850b26559ec771bc6">NEAudioProfileTypeStandardExtend</a></div><div class="ttdeci">@ NEAudioProfileTypeStandardExtend</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:123</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26ae387892115543b6bdedf2053e6c516e0"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae387892115543b6bdedf2053e6c516e0">NEAudioProfileTypeHighQuality</a></div><div class="ttdeci">@ NEAudioProfileTypeHighQuality</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:135</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26ae80e977e83944efa297e95260e4550c8"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26ae80e977e83944efa297e95260e4550c8">NEAudioProfileTypeStandard</a></div><div class="ttdeci">@ NEAudioProfileTypeStandard</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:119</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a85b1ed23fe472746dc962ede9e3cba26af137e850bb794a77dd6f869657683e93"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a85b1ed23fe472746dc962ede9e3cba26af137e850bb794a77dd6f869657683e93">NEAudioProfileTypeHighQualityStereo</a></div><div class="ttdeci">@ NEAudioProfileTypeHighQualityStereo</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:139</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a877a9d403202b6542abb934c197f3747"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747">NEMeetingIdDisplayOption</a></div><div class="ttdeci">NEMeetingIdDisplayOption</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:55</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a877a9d403202b6542abb934c197f3747abde4e59d2698042b8df5b4bd47b9fef7"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747abde4e59d2698042b8df5b4bd47b9fef7">DISPLAY_SHORT_ID_ONLY</a></div><div class="ttdeci">@ DISPLAY_SHORT_ID_ONLY</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:70</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a877a9d403202b6542abb934c197f3747ac93f8577a703a4164fc0101749c3bccc"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747ac93f8577a703a4164fc0101749c3bccc">DISPLAY_ALL</a></div><div class="ttdeci">@ DISPLAY_ALL</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:60</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a877a9d403202b6542abb934c197f3747af1bcb80a1a08f7b4da4b0bd140a807bd"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a877a9d403202b6542abb934c197f3747af1bcb80a1a08f7b4da4b0bd140a807bd">DISPLAY_LONG_ID_ONLY</a></div><div class="ttdeci">@ DISPLAY_LONG_ID_ONLY</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:65</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a956d4c5a8dc4ede57c0fd3bc746b0c9e"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9e">NEAudioScenarioType</a></div><div class="ttdeci">NEAudioScenarioType</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:144</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a956d4c5a8dc4ede57c0fd3bc746b0c9ea4221557fa8a0b46bf9fce0171dbcd29c"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea4221557fa8a0b46bf9fce0171dbcd29c">NEAudioScenarioTypeMusic</a></div><div class="ttdeci">@ NEAudioScenarioTypeMusic</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:156</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a956d4c5a8dc4ede57c0fd3bc746b0c9ea7405734574396250b8bb5cde81f0f4ad"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7405734574396250b8bb5cde81f0f4ad">NEAudioScenarioTypeDefault</a></div><div class="ttdeci">@ NEAudioScenarioTypeDefault</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:148</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a956d4c5a8dc4ede57c0fd3bc746b0c9ea7817a4a9da559a62e76de3b400e0b34f"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea7817a4a9da559a62e76de3b400e0b34f">NEAudioScenarioTypeSpeech</a></div><div class="ttdeci">@ NEAudioScenarioTypeSpeech</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:152</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a956d4c5a8dc4ede57c0fd3bc746b0c9ea9204ab64ba8d4669394cf58b20348dec"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a956d4c5a8dc4ede57c0fd3bc746b0c9ea9204ab64ba8d4669394cf58b20348dec">NEAudioScenarioTypeChatRoom</a></div><div class="ttdeci">@ NEAudioScenarioTypeChatRoom</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:160</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895">NEMeetingAudioOutputDevice</a></div><div class="ttdeci">NEMeetingAudioOutputDevice</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:166</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895a3fe2309330cdfb1b792321fab26f5b2d"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a3fe2309330cdfb1b792321fab26f5b2d">NEMeetingAudioOutputEarpiece</a></div><div class="ttdeci">@ NEMeetingAudioOutputEarpiece</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:182</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895a5d6dbf56180ee1831fcb90c4a92b3180"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a5d6dbf56180ee1831fcb90c4a92b3180">NEMeetingAudioOutputDefault</a></div><div class="ttdeci">@ NEMeetingAudioOutputDefault</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:170</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895a74d18e63a3deb090f615be1ef628ee68"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895a74d18e63a3deb090f615be1ef628ee68">NEMeetingAudioOutputBluetoothHeadset</a></div><div class="ttdeci">@ NEMeetingAudioOutputBluetoothHeadset</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:186</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895ac6687f1941295e4fca2d86bd9003b24a"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895ac6687f1941295e4fca2d86bd9003b24a">NEMeetingAudioOutputSpeakerPhone</a></div><div class="ttdeci">@ NEMeetingAudioOutputSpeakerPhone</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:174</div></div>
+<div class="ttc" id="a_n_e_meeting_options_8h_html_a98236d7b55c39036eb90342367295895aca60e07081048ddde2b56171fbf802ca"><div class="ttname"><a href="_n_e_meeting_options_8h.html#a98236d7b55c39036eb90342367295895aca60e07081048ddde2b56171fbf802ca">NEMeetingAudioOutputWiredHeadset</a></div><div class="ttdeci">@ NEMeetingAudioOutputWiredHeadset</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:178</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html"><div class="ttname"><a href="interface_n_e_audio_profile.html">NEAudioProfile</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:193</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html_a0277d507ced712a1675786a24ea156dd"><div class="ttname"><a href="interface_n_e_audio_profile.html#a0277d507ced712a1675786a24ea156dd">NEAudioProfile::audioAINSMode</a></div><div class="ttdeci">NEAudioAINSMode audioAINSMode</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:218</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html_a2cf5eacedb6783484c2d7171db9ad4d2"><div class="ttname"><a href="interface_n_e_audio_profile.html#a2cf5eacedb6783484c2d7171db9ad4d2">+[NEAudioProfile createMusicAudioProfile]</a></div><div class="ttdeci">NEAudioProfile * createMusicAudioProfile()</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html_a5fb2d9131622fcd424765479b57e6aab"><div class="ttname"><a href="interface_n_e_audio_profile.html#a5fb2d9131622fcd424765479b57e6aab">-[NEAudioProfile __deprecated_msg]</a></div><div class="ttdeci">NEAudioScenarioType scenario __deprecated_msg(&quot;deprecated in 4.17.0&quot;)</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html_a98ef7e0dc2b6a126ad7554e570197fcd"><div class="ttname"><a href="interface_n_e_audio_profile.html#a98ef7e0dc2b6a126ad7554e570197fcd">NEAudioProfile::profile</a></div><div class="ttdeci">NEAudioProfileType profile</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:207</div></div>
+<div class="ttc" id="ainterface_n_e_audio_profile_html_ac2ffaca70b75c5551c769b52c35e5e0c"><div class="ttname"><a href="interface_n_e_audio_profile.html#ac2ffaca70b75c5551c769b52c35e5e0c">+[NEAudioProfile createSpeechAudioProfile]</a></div><div class="ttdeci">NEAudioProfile * createSpeechAudioProfile()</div></div>
+<div class="ttc" id="ainterface_n_e_checkable_menu_item_html"><div class="ttname"><a href="interface_n_e_checkable_menu_item.html">NECheckableMenuItem</a></div><div class="ttdef"><b>Definition</b> NEMeetingMenuItem.h:386</div></div>
+<div class="ttc" id="ainterface_n_e_cloud_record_config_html"><div class="ttname"><a href="interface_n_e_cloud_record_config.html">NECloudRecordConfig</a></div><div class="ttdef"><b>Definition</b> NECloudRecordConfig.h:46</div></div>
+<div class="ttc" id="ainterface_n_e_join_meeting_options_html"><div class="ttname"><a href="interface_n_e_join_meeting_options.html">NEJoinMeetingOptions</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:607</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_caption_translation_config_html"><div class="ttname"><a href="interface_n_e_meeting_caption_translation_config.html">NEMeetingCaptionTranslationConfig</a></div><div class="ttdef"><b>Definition</b> NEMeetingCaptionTranslationConfig.h:13</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_chatroom_config_html"><div class="ttname"><a href="interface_n_e_meeting_chatroom_config.html">NEMeetingChatroomConfig</a></div><div class="ttdoc">聊天室配置</div><div class="ttdef"><b>Definition</b> NEMeetingChatroomConfig.h:10</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_menu_item_html"><div class="ttname"><a href="interface_n_e_meeting_menu_item.html">NEMeetingMenuItem</a></div><div class="ttdef"><b>Definition</b> NEMeetingMenuItem.h:350</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_options_html"><div class="ttname"><a href="interface_n_e_meeting_options.html">NEMeetingOptions</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:263</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_options_html_a36294b6d92823c8768b4fc6d3990de31"><div class="ttname"><a href="interface_n_e_meeting_options.html#a36294b6d92823c8768b4fc6d3990de31">-[NEMeetingOptions DEPRECATED_MSG_ATTRIBUTE]</a></div><div class="ttdeci">BOOL showMeetingTime DEPRECATED_MSG_ATTRIBUTE(&quot;deprecated in 4.9.0, use meetingElapsedTimeDisplayType instead&quot;)</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_realtime_recorder_options_html"><div class="ttname"><a href="interface_n_e_meeting_realtime_recorder_options.html">NEMeetingRealtimeRecorderOptions</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:614</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_whiteboard_app_config_html"><div class="ttname"><a href="interface_n_e_meeting_whiteboard_app_config.html">NEMeetingWhiteboardAppConfig</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:238</div></div>
+<div class="ttc" id="ainterface_n_e_single_state_menu_item_html"><div class="ttname"><a href="interface_n_e_single_state_menu_item.html">NESingleStateMenuItem</a></div><div class="ttdef"><b>Definition</b> NEMeetingMenuItem.h:373</div></div>
+<div class="ttc" id="ainterface_n_e_start_meeting_options_html"><div class="ttname"><a href="interface_n_e_start_meeting_options.html">NEStartMeetingOptions</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:577</div></div>
+<div class="ttc" id="ainterface_n_e_start_meeting_options_html_ad8b4dfac74e7f2d7b322df78035e4725"><div class="ttname"><a href="interface_n_e_start_meeting_options.html#ad8b4dfac74e7f2d7b322df78035e4725">-[NEStartMeetingOptions DEPRECATED_MSG_ATTRIBUTE]</a></div><div class="ttdeci">BOOL noCloudRecord DEPRECATED_MSG_ATTRIBUTE(&quot;deprecated in 4.7.0, use cloudRecordConfig instead&quot;)</div></div>
+<div class="ttc" id="ainterface_n_e_window_size_html"><div class="ttname"><a href="interface_n_e_window_size.html">NEWindowSize</a></div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:226</div></div>
+<div class="ttc" id="ainterface_n_e_window_size_html_a508136d16907fded05082d9a0f8e8d84"><div class="ttname"><a href="interface_n_e_window_size.html#a508136d16907fded05082d9a0f8e8d84">NEWindowSize::width</a></div><div class="ttdeci">double width</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:227</div></div>
+<div class="ttc" id="ainterface_n_e_window_size_html_ac3470239b33bd5ef52764ec3bfecf942"><div class="ttname"><a href="interface_n_e_window_size.html#ac3470239b33bd5ef52764ec3bfecf942">NEWindowSize::height</a></div><div class="ttdeci">double height</div><div class="ttdef"><b>Definition</b> NEMeetingOptions.h:228</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

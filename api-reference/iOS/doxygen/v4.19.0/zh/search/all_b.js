@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['kickotherdevice_0',['kickOtherDevice',['../interface_n_e_join_meeting_params.html#a626c263e3afd6f1bb164de55d695e6ec',1,'NEJoinMeetingParams']]],
+  ['kit_5fintroduction_2eh_1',['kit_introduction.h',['../kit__introduction_8h.html',1,'']]],
+  ['knemeetingdegradationpreferencebalanced_2',['kNEMeetingDegradationPreferenceBalanced',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa081c9bd0ef560df04ad4ce8682b9efa1',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencedefault_3',['kNEMeetingDegradationPreferenceDefault',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa81b240cdf6cee3c6fcf061dd0259bb7a',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencemaintainframerate_4',['kNEMeetingDegradationPreferenceMaintainFramerate',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa0880e50cae9225c559ceb740ce51ede7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencemaintainquality_5',['kNEMeetingDegradationPreferenceMaintainQuality',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878faaa7f59a287406311eaff41ad71afdf96',1,'NEScreenSharingParams.h']]],
+  ['knemeetingsubstreamcontentpreferdetails_6',['kNEMeetingSubStreamContentPreferDetails',['../_n_e_screen_sharing_params_8h.html#a040b457aed2f09ab4eca4cc38f0762b4a14a01bdf00b6f0e7db087728746d87ae',1,'NEScreenSharingParams.h']]],
+  ['knemeetingsubstreamcontentprefermotion_7',['kNEMeetingSubStreamContentPreferMotion',['../_n_e_screen_sharing_params_8h.html#a040b457aed2f09ab4eca4cc38f0762b4aab7a1b9fb9c75df95d0ffd7c299495e8',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps10_8',['kNEMeetingVideoFrameRateFps10',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da1bda1498b146dee503e43c3f11a06063',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps15_9',['kNEMeetingVideoFrameRateFps15',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da4df9f8cd8978e4cde986cff3a75420b1',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps24_10',['kNEMeetingVideoFrameRateFps24',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3daca87abc4cb8b20db10c97f1c3ba1c7fd',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps30_11',['kNEMeetingVideoFrameRateFps30',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da31cd78982e410e3cb42dfad8ecdfc566',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps60_12',['kNEMeetingVideoFrameRateFps60',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3daf62c3f60e2f8b2c976390065226714c7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps7_13',['kNEMeetingVideoFrameRateFps7',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da1991c02a22d528e9fc6f78a80eb45d52',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefpsdefault_14',['kNEMeetingVideoFrameRateFpsDefault',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da5926b606ba1dbb1b486802675d4ad962',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilehd1080p_15',['kNEMeetingVideoProfileHD1080P',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeabae22026936ae66034bcb73bcd8e4897e7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilehd720p_16',['kNEMeetingVideoProfileHD720P',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeaba506351b9add5570bbe5efc9666934701',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilelow_17',['kNEMeetingVideoProfileLow',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeabab877d345bbb26496771160678cc46183',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilelowest_18',['kNEMeetingVideoProfileLowest',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeaba974567ee8307f5fe221e2da3e343d332',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilestandard_19',['kNEMeetingVideoProfileStandard',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeababd5ec0d0a314820204b5b1ce25ea1c1a',1,'NEScreenSharingParams.h']]],
+  ['korean_20',['korean',['../interface_n_e_interpretation_languages.html#aa36362a836647ed3d0fa6f6a7343d197',1,'NEInterpretationLanguages']]]
+];

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingMenuItem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_meeting_menu_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingMenuItem类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_meeting_menu_item_8h_source.html">NEMeetingMenuItem.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEMeetingMenuItem 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_meeting_menu_item.png" usemap="#NEMeetingMenuItem_map" alt=""/>
+  <map id="NEMeetingMenuItem_map" name="NEMeetingMenuItem_map">
+<area href="interface_n_e_checkable_menu_item.html" alt="NECheckableMenuItem" shape="rect" coords="0,112,146,136"/>
+<area href="interface_n_e_single_state_menu_item.html" alt="NESingleStateMenuItem" shape="rect" coords="156,112,302,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a4b6d120fe16bef3156e2001aca329f96" id="r_a4b6d120fe16bef3156e2001aca329f96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b6d120fe16bef3156e2001aca329f96">itemId</a></td></tr>
+<tr class="separator:a4b6d120fe16bef3156e2001aca329f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8312e92c0794a05cb9f3aff90b13f6bf" id="r_a8312e92c0794a05cb9f3aff90b13f6bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_meeting_menu_item_8h.html#af33dfae958b63a441f26cf8b2ba8ca1a">NEMenuVisibility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8312e92c0794a05cb9f3aff90b13f6bf">visibility</a></td></tr>
+<tr class="separator:a8312e92c0794a05cb9f3aff90b13f6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>菜单项基类对象。菜单项由 itemId 唯一标识，包含标题和图标，并可控制对不同参会者角色是否可见。 目前SDK提供了单状态菜单项 <a class="el" href="interface_n_e_single_state_menu_item.html">NESingleStateMenuItem</a> 、双状态菜单项 <a class="el" href="interface_n_e_checkable_menu_item.html">NECheckableMenuItem</a> 实现可供使用。单状态菜单始终展示相同的标题与图标；多状态的菜单包含与状态数一一对应的标题与图标，在菜单状态变更时会触发UI更新。通过注册回调可监听自定义注入菜单的点击事件(SDK内置菜单不会触发回调)。 </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="a4b6d120fe16bef3156e2001aca329f96" name="a4b6d120fe16bef3156e2001aca329f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6d120fe16bef3156e2001aca329f96">&#9670;&#160;</a></span>itemId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) itemId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>菜单ID；Id大于等于 100 的菜单项为自定义菜单，小于为SDK内置菜单 </p>
+
+</div>
+</div>
+<a id="a8312e92c0794a05cb9f3aff90b13f6bf" name="a8312e92c0794a05cb9f3aff90b13f6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8312e92c0794a05cb9f3aff90b13f6bf">&#9670;&#160;</a></span>visibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_meeting_menu_item_8h.html#af33dfae958b63a441f26cf8b2ba8ca1a">NEMenuVisibility</a>) visibility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>菜单项名称，允许的最大长度为 10 个字符</p>
+<p>菜单可见性 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>NEMeetingKit/ExportHeaders/<a class="el" href="_n_e_meeting_menu_item_8h_source.html">NEMeetingMenuItem.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

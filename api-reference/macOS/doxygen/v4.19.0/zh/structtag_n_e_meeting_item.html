@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: tagNEMeetingItem结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structtag_n_e_meeting_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">tagNEMeetingItem结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>预约会议的信息  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a172786c947186c5261a0e9638a043fa3" id="r_a172786c947186c5261a0e9638a043fa3"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a172786c947186c5261a0e9638a043fa3">meetingId</a> {0}</td></tr>
+<tr class="memdesc:a172786c947186c5261a0e9638a043fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议唯一标识  <br /></td></tr>
+<tr class="separator:a172786c947186c5261a0e9638a043fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77440fe95ed99835f0b6bad43ae0d0a2" id="r_a77440fe95ed99835f0b6bad43ae0d0a2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77440fe95ed99835f0b6bad43ae0d0a2">meetingNum</a></td></tr>
+<tr class="memdesc:a77440fe95ed99835f0b6bad43ae0d0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议号  <br /></td></tr>
+<tr class="separator:a77440fe95ed99835f0b6bad43ae0d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7d8feb3c89ffef0659ff3a4c8e2cce" id="r_abb7d8feb3c89ffef0659ff3a4c8e2cce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb7d8feb3c89ffef0659ff3a4c8e2cce">shortMeetingNum</a></td></tr>
+<tr class="memdesc:abb7d8feb3c89ffef0659ff3a4c8e2cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议短号  <br /></td></tr>
+<tr class="separator:abb7d8feb3c89ffef0659ff3a4c8e2cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51ffc5d3aa402c2fdb18030de13f344" id="r_ae51ffc5d3aa402c2fdb18030de13f344"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51ffc5d3aa402c2fdb18030de13f344">subject</a></td></tr>
+<tr class="memdesc:ae51ffc5d3aa402c2fdb18030de13f344"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议主题  <br /></td></tr>
+<tr class="separator:ae51ffc5d3aa402c2fdb18030de13f344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5faeb97ce33829e9ce24c7e2c279785" id="r_ac5faeb97ce33829e9ce24c7e2c279785"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5faeb97ce33829e9ce24c7e2c279785">roomUuid</a></td></tr>
+<tr class="memdesc:ac5faeb97ce33829e9ce24c7e2c279785"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间号  <br /></td></tr>
+<tr class="separator:ac5faeb97ce33829e9ce24c7e2c279785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a94eb1a5312cd4c0e2dcb66d335e8a" id="r_a07a94eb1a5312cd4c0e2dcb66d335e8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07a94eb1a5312cd4c0e2dcb66d335e8a">ownerUserUuid</a></td></tr>
+<tr class="memdesc:a07a94eb1a5312cd4c0e2dcb66d335e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建者 ID  <br /></td></tr>
+<tr class="separator:a07a94eb1a5312cd4c0e2dcb66d335e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e95d7bb1d01a8ba6e321a3defaf79f" id="r_ad0e95d7bb1d01a8ba6e321a3defaf79f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0e95d7bb1d01a8ba6e321a3defaf79f">ownerNickname</a></td></tr>
+<tr class="memdesc:ad0e95d7bb1d01a8ba6e321a3defaf79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建人昵称  <br /></td></tr>
+<tr class="separator:ad0e95d7bb1d01a8ba6e321a3defaf79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614e86fdf70e0b38ca4f1d6d2be62268" id="r_a614e86fdf70e0b38ca4f1d6d2be62268"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a614e86fdf70e0b38ca4f1d6d2be62268">startTime</a> {0}</td></tr>
+<tr class="memdesc:a614e86fdf70e0b38ca4f1d6d2be62268"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议开始时间戳（标准 UNIX 时间戳格式，单位为 ms）  <br /></td></tr>
+<tr class="separator:a614e86fdf70e0b38ca4f1d6d2be62268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1e69b158109d63ebef90607e80f302" id="r_a6d1e69b158109d63ebef90607e80f302"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d1e69b158109d63ebef90607e80f302">endTime</a> {0}</td></tr>
+<tr class="memdesc:a6d1e69b158109d63ebef90607e80f302"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议结束时间戳（标准 UNIX 时间戳格式，单位为 ms）  <br /></td></tr>
+<tr class="separator:a6d1e69b158109d63ebef90607e80f302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b90b7a9ca40d7b2a062f312759a097" id="r_af6b90b7a9ca40d7b2a062f312759a097"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6b90b7a9ca40d7b2a062f312759a097">password</a></td></tr>
+<tr class="memdesc:af6b90b7a9ca40d7b2a062f312759a097"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议密码  <br /></td></tr>
+<tr class="separator:af6b90b7a9ca40d7b2a062f312759a097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda4908230ef5441d35711bfee97373d" id="r_afda4908230ef5441d35711bfee97373d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#a18a1c1a479d5e4b53f6d02a0bcc30d68">NEMeetingItemSetting</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afda4908230ef5441d35711bfee97373d">settings</a></td></tr>
+<tr class="memdesc:afda4908230ef5441d35711bfee97373d"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议额外选项  <br /></td></tr>
+<tr class="separator:afda4908230ef5441d35711bfee97373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808404753bbd6e8179eedaeb1d1d54f0" id="r_a808404753bbd6e8179eedaeb1d1d54f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a808404753bbd6e8179eedaeb1d1d54f0">status</a> {<a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375feadaa98c28e7268cc44b241886b8ebec20e6">MEETING_INVALID</a>}</td></tr>
+<tr class="memdesc:a808404753bbd6e8179eedaeb1d1d54f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议状态  <br /></td></tr>
+<tr class="separator:a808404753bbd6e8179eedaeb1d1d54f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab08a895aa0a55d032fa20e54c3c7758" id="r_aab08a895aa0a55d032fa20e54c3c7758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#a3daf2bbc03230d73f3b8183803bbaa5b">NEMeetingType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab08a895aa0a55d032fa20e54c3c7758">meetingType</a> {<a class="el" href="kit__define__meeting_8h.html#a3daf2bbc03230d73f3b8183803bbaa5ba77d1e9e7bf0a18ca9e2e272954291936">NEMeetingTypeRandom</a>}</td></tr>
+<tr class="memdesc:aab08a895aa0a55d032fa20e54c3c7758"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议类型  <br /></td></tr>
+<tr class="separator:aab08a895aa0a55d032fa20e54c3c7758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e4aed48b11b85dc1e18a1dcd1a7e3e" id="r_aa9e4aed48b11b85dc1e18a1dcd1a7e3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e4aed48b11b85dc1e18a1dcd1a7e3e">noSip</a> {false}</td></tr>
+<tr class="memdesc:aa9e4aed48b11b85dc1e18a1dcd1a7e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启 SIP 功能，默认为 false  <br /></td></tr>
+<tr class="separator:aa9e4aed48b11b85dc1e18a1dcd1a7e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad850fac36b797118cb6849e909f8543" id="r_aad850fac36b797118cb6849e909f8543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad850fac36b797118cb6849e909f8543">waitingRoomEnabled</a> {false}</td></tr>
+<tr class="memdesc:aad850fac36b797118cb6849e909f8543"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议是否默认开启等候室  <br /></td></tr>
+<tr class="separator:aad850fac36b797118cb6849e909f8543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0971edb6bf0490c4d18ed8f800bd51b7" id="r_a0971edb6bf0490c4d18ed8f800bd51b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0971edb6bf0490c4d18ed8f800bd51b7">enableJoinBeforeHost</a> {false}</td></tr>
+<tr class="memdesc:a0971edb6bf0490c4d18ed8f800bd51b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议是否允许参会者在主持人进入会议前加入会议，默认为允许  <br /></td></tr>
+<tr class="separator:a0971edb6bf0490c4d18ed8f800bd51b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f41ce82876da4828e482e0637f5058" id="r_a21f41ce82876da4828e482e0637f5058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f41ce82876da4828e482e0637f5058">enableGuestJoin</a> {false}</td></tr>
+<tr class="memdesc:a21f41ce82876da4828e482e0637f5058"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否允许访客入会  <br /></td></tr>
+<tr class="separator:a21f41ce82876da4828e482e0637f5058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ede661aceb469097ae6ed395a2f3dab" id="r_a1ede661aceb469097ae6ed395a2f3dab"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ede661aceb469097ae6ed395a2f3dab">inviteUrl</a></td></tr>
+<tr class="memdesc:a1ede661aceb469097ae6ed395a2f3dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议邀请链接  <br /></td></tr>
+<tr class="separator:a1ede661aceb469097ae6ed395a2f3dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d817ff32cbe1ca1dc87ca3f20dea3" id="r_a9a2d817ff32cbe1ca1dc87ca3f20dea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#a35e731a5f3245e270e9de6fbabd5d26f">NEMeetingItemLive</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a2d817ff32cbe1ca1dc87ca3f20dea3">live</a></td></tr>
+<tr class="memdesc:a9a2d817ff32cbe1ca1dc87ca3f20dea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议直播信息设置  <br /></td></tr>
+<tr class="separator:a9a2d817ff32cbe1ca1dc87ca3f20dea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac8c8b15c66c8800ddccc36c010fbca" id="r_acac8c8b15c66c8800ddccc36c010fbca"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acac8c8b15c66c8800ddccc36c010fbca">extraData</a></td></tr>
+<tr class="memdesc:acac8c8b15c66c8800ddccc36c010fbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议扩展字段，可空，最大长度为 2K。  <br /></td></tr>
+<tr class="separator:acac8c8b15c66c8800ddccc36c010fbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3952b3b9902b9dc290980fee11d7e807" id="r_a3952b3b9902b9dc290980fee11d7e807"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="kit__define__meeting_8h.html#a650b710f13757961464931febe29b321">NEMeetingRoleType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3952b3b9902b9dc290980fee11d7e807">roleBinds</a></td></tr>
+<tr class="memdesc:a3952b3b9902b9dc290980fee11d7e807"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定成员角色  <br /></td></tr>
+<tr class="separator:a3952b3b9902b9dc290980fee11d7e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b913ce398e48e9dddc7f4c710dbb2c" id="r_ab3b913ce398e48e9dddc7f4c710dbb2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#a13c03d9da7bfbb9806366ef2e54a71db">NEMeetingRecurringRule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3b913ce398e48e9dddc7f4c710dbb2c">recurringRule</a></td></tr>
+<tr class="memdesc:ab3b913ce398e48e9dddc7f4c710dbb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">周期性会议规则  <br /></td></tr>
+<tr class="separator:ab3b913ce398e48e9dddc7f4c710dbb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075bb7aaeb7c65242e89bb33c481e132" id="r_a075bb7aaeb7c65242e89bb33c481e132"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="kit__define__meeting_8h.html#a403019f3534c901c5ec2a2a1e979b60f">NEScheduledMember</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a075bb7aaeb7c65242e89bb33c481e132">scheduledMemberList</a></td></tr>
+<tr class="memdesc:a075bb7aaeb7c65242e89bb33c481e132"><td class="mdescLeft">&#160;</td><td class="mdescRight">预约指定角色的成员，后台配置开启预定成员功能时有效  <br /></td></tr>
+<tr class="separator:a075bb7aaeb7c65242e89bb33c481e132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4b1b0776e2eb0389b9b8a58d00e3db" id="r_aeb4b1b0776e2eb0389b9b8a58d00e3db"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb4b1b0776e2eb0389b9b8a58d00e3db">timezoneId</a></td></tr>
+<tr class="memdesc:aeb4b1b0776e2eb0389b9b8a58d00e3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">时区 ID  <br /></td></tr>
+<tr class="separator:aeb4b1b0776e2eb0389b9b8a58d00e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87ae4dce3de2182da134091a0539c71" id="r_af87ae4dce3de2182da134091a0539c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_e_meeting_interpretation_settings.html">NEMeetingInterpretationSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af87ae4dce3de2182da134091a0539c71">interpretationSettings</a></td></tr>
+<tr class="memdesc:af87ae4dce3de2182da134091a0539c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">同声传译设置。如果译员列表为空，则表示关闭同声传译  <br /></td></tr>
+<tr class="separator:af87ae4dce3de2182da134091a0539c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af666c3ff417c56244fc40c30770c5228" id="r_af666c3ff417c56244fc40c30770c5228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af666c3ff417c56244fc40c30770c5228">cloudRecordConfig</a></td></tr>
+<tr class="memdesc:af666c3ff417c56244fc40c30770c5228"><td class="mdescLeft">&#160;</td><td class="mdescRight">云录制配置  <br /></td></tr>
+<tr class="separator:af666c3ff417c56244fc40c30770c5228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcebc45fbadae7615663da33d1aaa06" id="r_acbcebc45fbadae7615663da33d1aaa06"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcebc45fbadae7615663da33d1aaa06">sipCid</a></td></tr>
+<tr class="memdesc:acbcebc45fbadae7615663da33d1aaa06"><td class="mdescLeft">&#160;</td><td class="mdescRight">sip号  <br /></td></tr>
+<tr class="separator:acbcebc45fbadae7615663da33d1aaa06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>预约会议的信息 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="af666c3ff417c56244fc40c30770c5228" name="af666c3ff417c56244fc40c30770c5228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af666c3ff417c56244fc40c30770c5228">&#9670;&#160;</a></span>cloudRecordConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a> tagNEMeetingItem::cloudRecordConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>云录制配置 </p>
+
+</div>
+</div>
+<a id="a21f41ce82876da4828e482e0637f5058" name="a21f41ce82876da4828e482e0637f5058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f41ce82876da4828e482e0637f5058">&#9670;&#160;</a></span>enableGuestJoin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tagNEMeetingItem::enableGuestJoin {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否允许访客入会 </p>
+
+</div>
+</div>
+<a id="a0971edb6bf0490c4d18ed8f800bd51b7" name="a0971edb6bf0490c4d18ed8f800bd51b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0971edb6bf0490c4d18ed8f800bd51b7">&#9670;&#160;</a></span>enableJoinBeforeHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tagNEMeetingItem::enableJoinBeforeHost {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议是否允许参会者在主持人进入会议前加入会议，默认为允许 </p>
+
+</div>
+</div>
+<a id="a6d1e69b158109d63ebef90607e80f302" name="a6d1e69b158109d63ebef90607e80f302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1e69b158109d63ebef90607e80f302">&#9670;&#160;</a></span>endTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t tagNEMeetingItem::endTime {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议结束时间戳（标准 UNIX 时间戳格式，单位为 ms） </p>
+
+</div>
+</div>
+<a id="acac8c8b15c66c8800ddccc36c010fbca" name="acac8c8b15c66c8800ddccc36c010fbca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac8c8b15c66c8800ddccc36c010fbca">&#9670;&#160;</a></span>extraData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::extraData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议扩展字段，可空，最大长度为 2K。 </p>
+
+</div>
+</div>
+<a id="af87ae4dce3de2182da134091a0539c71" name="af87ae4dce3de2182da134091a0539c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87ae4dce3de2182da134091a0539c71">&#9670;&#160;</a></span>interpretationSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_e_meeting_interpretation_settings.html">NEMeetingInterpretationSettings</a> tagNEMeetingItem::interpretationSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同声传译设置。如果译员列表为空，则表示关闭同声传译 </p>
+
+</div>
+</div>
+<a id="a1ede661aceb469097ae6ed395a2f3dab" name="a1ede661aceb469097ae6ed395a2f3dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ede661aceb469097ae6ed395a2f3dab">&#9670;&#160;</a></span>inviteUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::inviteUrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议邀请链接 </p>
+
+</div>
+</div>
+<a id="a9a2d817ff32cbe1ca1dc87ca3f20dea3" name="a9a2d817ff32cbe1ca1dc87ca3f20dea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2d817ff32cbe1ca1dc87ca3f20dea3">&#9670;&#160;</a></span>live</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#a35e731a5f3245e270e9de6fbabd5d26f">NEMeetingItemLive</a> tagNEMeetingItem::live</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议直播信息设置 </p>
+
+</div>
+</div>
+<a id="a172786c947186c5261a0e9638a043fa3" name="a172786c947186c5261a0e9638a043fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172786c947186c5261a0e9638a043fa3">&#9670;&#160;</a></span>meetingId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t tagNEMeetingItem::meetingId {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议唯一标识 </p>
+
+</div>
+</div>
+<a id="a77440fe95ed99835f0b6bad43ae0d0a2" name="a77440fe95ed99835f0b6bad43ae0d0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77440fe95ed99835f0b6bad43ae0d0a2">&#9670;&#160;</a></span>meetingNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::meetingNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议号 </p>
+
+</div>
+</div>
+<a id="aab08a895aa0a55d032fa20e54c3c7758" name="aab08a895aa0a55d032fa20e54c3c7758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab08a895aa0a55d032fa20e54c3c7758">&#9670;&#160;</a></span>meetingType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#a3daf2bbc03230d73f3b8183803bbaa5b">NEMeetingType</a> tagNEMeetingItem::meetingType {<a class="el" href="kit__define__meeting_8h.html#a3daf2bbc03230d73f3b8183803bbaa5ba77d1e9e7bf0a18ca9e2e272954291936">NEMeetingTypeRandom</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议类型 </p>
+
+</div>
+</div>
+<a id="aa9e4aed48b11b85dc1e18a1dcd1a7e3e" name="aa9e4aed48b11b85dc1e18a1dcd1a7e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e4aed48b11b85dc1e18a1dcd1a7e3e">&#9670;&#160;</a></span>noSip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tagNEMeetingItem::noSip {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否开启 SIP 功能，默认为 false </p>
+
+</div>
+</div>
+<a id="ad0e95d7bb1d01a8ba6e321a3defaf79f" name="ad0e95d7bb1d01a8ba6e321a3defaf79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e95d7bb1d01a8ba6e321a3defaf79f">&#9670;&#160;</a></span>ownerNickname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::ownerNickname</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建人昵称 </p>
+
+</div>
+</div>
+<a id="a07a94eb1a5312cd4c0e2dcb66d335e8a" name="a07a94eb1a5312cd4c0e2dcb66d335e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a94eb1a5312cd4c0e2dcb66d335e8a">&#9670;&#160;</a></span>ownerUserUuid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::ownerUserUuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建者 ID </p>
+
+</div>
+</div>
+<a id="af6b90b7a9ca40d7b2a062f312759a097" name="af6b90b7a9ca40d7b2a062f312759a097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b90b7a9ca40d7b2a062f312759a097">&#9670;&#160;</a></span>password</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::password</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议密码 </p>
+
+</div>
+</div>
+<a id="ab3b913ce398e48e9dddc7f4c710dbb2c" name="ab3b913ce398e48e9dddc7f4c710dbb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b913ce398e48e9dddc7f4c710dbb2c">&#9670;&#160;</a></span>recurringRule</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#a13c03d9da7bfbb9806366ef2e54a71db">NEMeetingRecurringRule</a> tagNEMeetingItem::recurringRule</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>周期性会议规则 </p>
+
+</div>
+</div>
+<a id="a3952b3b9902b9dc290980fee11d7e807" name="a3952b3b9902b9dc290980fee11d7e807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3952b3b9902b9dc290980fee11d7e807">&#9670;&#160;</a></span>roleBinds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="kit__define__meeting_8h.html#a650b710f13757961464931febe29b321">NEMeetingRoleType</a>&gt; tagNEMeetingItem::roleBinds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定成员角色 </p>
+
+</div>
+</div>
+<a id="ac5faeb97ce33829e9ce24c7e2c279785" name="ac5faeb97ce33829e9ce24c7e2c279785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5faeb97ce33829e9ce24c7e2c279785">&#9670;&#160;</a></span>roomUuid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::roomUuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>房间号 </p>
+
+</div>
+</div>
+<a id="a075bb7aaeb7c65242e89bb33c481e132" name="a075bb7aaeb7c65242e89bb33c481e132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075bb7aaeb7c65242e89bb33c481e132">&#9670;&#160;</a></span>scheduledMemberList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="kit__define__meeting_8h.html#a403019f3534c901c5ec2a2a1e979b60f">NEScheduledMember</a>&gt; tagNEMeetingItem::scheduledMemberList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>预约指定角色的成员，后台配置开启预定成员功能时有效 </p>
+
+</div>
+</div>
+<a id="afda4908230ef5441d35711bfee97373d" name="afda4908230ef5441d35711bfee97373d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda4908230ef5441d35711bfee97373d">&#9670;&#160;</a></span>settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#a18a1c1a479d5e4b53f6d02a0bcc30d68">NEMeetingItemSetting</a> tagNEMeetingItem::settings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议额外选项 </p>
+
+</div>
+</div>
+<a id="abb7d8feb3c89ffef0659ff3a4c8e2cce" name="abb7d8feb3c89ffef0659ff3a4c8e2cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7d8feb3c89ffef0659ff3a4c8e2cce">&#9670;&#160;</a></span>shortMeetingNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::shortMeetingNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议短号 </p>
+
+</div>
+</div>
+<a id="acbcebc45fbadae7615663da33d1aaa06" name="acbcebc45fbadae7615663da33d1aaa06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcebc45fbadae7615663da33d1aaa06">&#9670;&#160;</a></span>sipCid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::sipCid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sip号 </p>
+
+</div>
+</div>
+<a id="a614e86fdf70e0b38ca4f1d6d2be62268" name="a614e86fdf70e0b38ca4f1d6d2be62268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614e86fdf70e0b38ca4f1d6d2be62268">&#9670;&#160;</a></span>startTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t tagNEMeetingItem::startTime {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议开始时间戳（标准 UNIX 时间戳格式，单位为 ms） </p>
+
+</div>
+</div>
+<a id="a808404753bbd6e8179eedaeb1d1d54f0" name="a808404753bbd6e8179eedaeb1d1d54f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808404753bbd6e8179eedaeb1d1d54f0">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375fead">NEMeetingItemStatus</a> tagNEMeetingItem::status {<a class="el" href="kit__define__meeting_8h.html#ae02c60b67fd06cfa3f98060d3375feadaa98c28e7268cc44b241886b8ebec20e6">MEETING_INVALID</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议状态 </p>
+
+</div>
+</div>
+<a id="ae51ffc5d3aa402c2fdb18030de13f344" name="ae51ffc5d3aa402c2fdb18030de13f344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51ffc5d3aa402c2fdb18030de13f344">&#9670;&#160;</a></span>subject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::subject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议主题 </p>
+
+</div>
+</div>
+<a id="aeb4b1b0776e2eb0389b9b8a58d00e3db" name="aeb4b1b0776e2eb0389b9b8a58d00e3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4b1b0776e2eb0389b9b8a58d00e3db">&#9670;&#160;</a></span>timezoneId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tagNEMeetingItem::timezoneId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>时区 ID </p>
+
+</div>
+</div>
+<a id="aad850fac36b797118cb6849e909f8543" name="aad850fac36b797118cb6849e909f8543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad850fac36b797118cb6849e909f8543">&#9670;&#160;</a></span>waitingRoomEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tagNEMeetingItem::waitingRoomEnabled {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议是否默认开启等候室 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

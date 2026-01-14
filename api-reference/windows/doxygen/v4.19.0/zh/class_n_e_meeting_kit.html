@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_n_e_meeting_kit-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingKit类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SDK单例  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__meeting__sdk_8h_source.html">kit_meeting_sdk.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEMeetingKit 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_meeting_kit.png" usemap="#NEMeetingKit_map" alt=""/>
+  <map id="NEMeetingKit_map" name="NEMeetingKit_map">
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,88,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4df8e48dd428f27bb06ea3e458064cfa" id="r_a4df8e48dd428f27bb06ea3e458064cfa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4df8e48dd428f27bb06ea3e458064cfa">NEInitializeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="class_n_e_meeting_corp_info.html">NEMeetingCorpInfo</a>&gt;</td></tr>
+<tr class="separator:a4df8e48dd428f27bb06ea3e458064cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed124fdd1f08e163de9067263a0f8f8" id="r_a8ed124fdd1f08e163de9067263a0f8f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed124fdd1f08e163de9067263a0f8f8">NEUnInitializeCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td></tr>
+<tr class="separator:a8ed124fdd1f08e163de9067263a0f8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceac4f1646da08138770852bece036f3" id="r_aceac4f1646da08138770852bece036f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceac4f1646da08138770852bece036f3">NEQueryKitVersionCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td></tr>
+<tr class="separator:aceac4f1646da08138770852bece036f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd7d7a0c26425c2bea868f3698c5ad8" id="r_a1bd7d7a0c26425c2bea868f3698c5ad8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bd7d7a0c26425c2bea868f3698c5ad8">NEActiveWindowCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td></tr>
+<tr class="separator:a1bd7d7a0c26425c2bea868f3698c5ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8881bb9b067d05361222c3dd74515355" id="r_a8881bb9b067d05361222c3dd74515355"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8881bb9b067d05361222c3dd74515355">NEExceptionHandler</a> = std::function&lt;void(const <a class="el" href="class_n_e_exception.html">NEException</a>&amp;)&gt;</td></tr>
+<tr class="separator:a8881bb9b067d05361222c3dd74515355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5000a39a6cd3205465972cca78fb0810" id="r_a5000a39a6cd3205465972cca78fb0810"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5000a39a6cd3205465972cca78fb0810">initialize</a> (const <a class="el" href="class_n_e_meeting_kit_config.html">NEMeetingKitConfig</a> &amp;config, const <a class="el" href="#a4df8e48dd428f27bb06ea3e458064cfa">NEInitializeCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a5000a39a6cd3205465972cca78fb0810"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化  <br /></td></tr>
+<tr class="separator:a5000a39a6cd3205465972cca78fb0810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7852afaf34e51f19bac44f538c86e107" id="r_a7852afaf34e51f19bac44f538c86e107"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7852afaf34e51f19bac44f538c86e107">isInitialized</a> ()=0</td></tr>
+<tr class="memdesc:a7852afaf34e51f19bac44f538c86e107"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否初始化的状态  <br /></td></tr>
+<tr class="separator:a7852afaf34e51f19bac44f538c86e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37bec3743ba9342a5f92ede090c9b3ab" id="r_a37bec3743ba9342a5f92ede090c9b3ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37bec3743ba9342a5f92ede090c9b3ab">unInitialize</a> (const <a class="el" href="#a8ed124fdd1f08e163de9067263a0f8f8">NEUnInitializeCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a37bec3743ba9342a5f92ede090c9b3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">反初始化  <br /></td></tr>
+<tr class="separator:a37bec3743ba9342a5f92ede090c9b3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cabe0db470ed3433f6770aca179169" id="r_a29cabe0db470ed3433f6770aca179169"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_meeting_service.html">NEMeetingService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29cabe0db470ed3433f6770aca179169">getMeetingService</a> ()=0</td></tr>
+<tr class="memdesc:a29cabe0db470ed3433f6770aca179169"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取会议服务  <br /></td></tr>
+<tr class="separator:a29cabe0db470ed3433f6770aca179169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f20eb69133bccaa384be9b8e3fb5020" id="r_a6f20eb69133bccaa384be9b8e3fb5020"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_account_service.html">NEAccountService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f20eb69133bccaa384be9b8e3fb5020">getAccountService</a> ()=0</td></tr>
+<tr class="memdesc:a6f20eb69133bccaa384be9b8e3fb5020"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取账户服务  <br /></td></tr>
+<tr class="separator:a6f20eb69133bccaa384be9b8e3fb5020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cdeb4a8ca38310c758264750de9b06" id="r_af3cdeb4a8ca38310c758264750de9b06"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_settings_service.html">NESettingsService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3cdeb4a8ca38310c758264750de9b06">getSettingsService</a> ()=0</td></tr>
+<tr class="memdesc:af3cdeb4a8ca38310c758264750de9b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取配置服务  <br /></td></tr>
+<tr class="separator:af3cdeb4a8ca38310c758264750de9b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4aa52a6c045a6b91ca857d599ccd3c" id="r_a0d4aa52a6c045a6b91ca857d599ccd3c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_pre_meeting_service.html">NEPreMeetingService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d4aa52a6c045a6b91ca857d599ccd3c">getPreMeetingService</a> ()=0</td></tr>
+<tr class="memdesc:a0d4aa52a6c045a6b91ca857d599ccd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取预约会议服务  <br /></td></tr>
+<tr class="separator:a0d4aa52a6c045a6b91ca857d599ccd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fecefeaf8575becb2b8b4a824136946" id="r_a3fecefeaf8575becb2b8b4a824136946"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_meeting_invite_service.html">NEMeetingInviteService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fecefeaf8575becb2b8b4a824136946">getMeetingInviteService</a> ()=0</td></tr>
+<tr class="memdesc:a3fecefeaf8575becb2b8b4a824136946"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取邀请服务  <br /></td></tr>
+<tr class="separator:a3fecefeaf8575becb2b8b4a824136946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f964eca420814026c84d86859697bb" id="r_a89f964eca420814026c84d86859697bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f964eca420814026c84d86859697bb">getMessageService</a> ()=0</td></tr>
+<tr class="memdesc:a89f964eca420814026c84d86859697bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取消息服务  <br /></td></tr>
+<tr class="separator:a89f964eca420814026c84d86859697bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae503ebb5768810a751f14de91ab0ba03" id="r_ae503ebb5768810a751f14de91ab0ba03"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_feedback_service.html">NEFeedbackService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae503ebb5768810a751f14de91ab0ba03">getFeedbackService</a> ()=0</td></tr>
+<tr class="memdesc:ae503ebb5768810a751f14de91ab0ba03"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取意见反馈服务实例  <br /></td></tr>
+<tr class="separator:ae503ebb5768810a751f14de91ab0ba03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f08e088a610a1718b67a6fb88c0015" id="r_aa4f08e088a610a1718b67a6fb88c0015"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_contacts_service.html">NEContactsService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4f08e088a610a1718b67a6fb88c0015">getContactsService</a> ()=0</td></tr>
+<tr class="memdesc:aa4f08e088a610a1718b67a6fb88c0015"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取通讯服务  <br /></td></tr>
+<tr class="separator:aa4f08e088a610a1718b67a6fb88c0015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649b0909a46d9f8f00dc33e13b87b611" id="r_a649b0909a46d9f8f00dc33e13b87b611"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_realtime_recorder_service.html">NERealtimeRecorderService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649b0909a46d9f8f00dc33e13b87b611">getRealtimeRecorderService</a> ()=0</td></tr>
+<tr class="memdesc:a649b0909a46d9f8f00dc33e13b87b611"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取秒录服务  <br /></td></tr>
+<tr class="separator:a649b0909a46d9f8f00dc33e13b87b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85e4dbd5e04af6bb15c5daa808c8609" id="r_af85e4dbd5e04af6bb15c5daa808c8609"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_screen_sharing_service.html">NEScreenSharingService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af85e4dbd5e04af6bb15c5daa808c8609">getScreenSharingService</a> ()=0</td></tr>
+<tr class="memdesc:af85e4dbd5e04af6bb15c5daa808c8609"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取屏幕共享服务  <br /></td></tr>
+<tr class="separator:af85e4dbd5e04af6bb15c5daa808c8609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7d6baec5777cd463181b2ea24e7217" id="r_a1a7d6baec5777cd463181b2ea24e7217"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_n_e_meeting_web_app_service.html">NEMeetingWebAppService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a7d6baec5777cd463181b2ea24e7217">getMeetingWebAppService</a> ()=0</td></tr>
+<tr class="memdesc:a1a7d6baec5777cd463181b2ea24e7217"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取会议WebApp服务  <br /></td></tr>
+<tr class="separator:a1a7d6baec5777cd463181b2ea24e7217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0288f27de7b5b2ec33f82ab8775638b9" id="r_a0288f27de7b5b2ec33f82ab8775638b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0288f27de7b5b2ec33f82ab8775638b9">addGlobalEventListener</a> (<a class="el" href="class_n_e_global_event_listener.html">NEGlobalEventListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a0288f27de7b5b2ec33f82ab8775638b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加全局监听器  <br /></td></tr>
+<tr class="separator:a0288f27de7b5b2ec33f82ab8775638b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1230bcc8a0712dbe392654e89d8147e" id="r_ad1230bcc8a0712dbe392654e89d8147e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1230bcc8a0712dbe392654e89d8147e">removeGlobalEventListener</a> (<a class="el" href="class_n_e_global_event_listener.html">NEGlobalEventListener</a> *listener)=0</td></tr>
+<tr class="memdesc:ad1230bcc8a0712dbe392654e89d8147e"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除全局监听器  <br /></td></tr>
+<tr class="separator:ad1230bcc8a0712dbe392654e89d8147e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ae0b4937e24f9aa9f2247bb88a73b0" id="r_af1ae0b4937e24f9aa9f2247bb88a73b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ae0b4937e24f9aa9f2247bb88a73b0">switchLanguage</a> (<a class="el" href="kit__define__meeting_8h.html#a2ff3dbbfa2bfc7a2bb3dca4748eb654a">NEMeetingLanguage</a> language, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af1ae0b4937e24f9aa9f2247bb88a73b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换语言  <br /></td></tr>
+<tr class="separator:af1ae0b4937e24f9aa9f2247bb88a73b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260b299aaf1fadd2e43fbccf37019055" id="r_a260b299aaf1fadd2e43fbccf37019055"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a260b299aaf1fadd2e43fbccf37019055">switchTheme</a> (<a class="el" href="kit__define__meeting_8h.html#a435c88486b665725798279a74a512789">NEMeetingThemeType</a> theme, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a260b299aaf1fadd2e43fbccf37019055"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换主题  <br /></td></tr>
+<tr class="separator:a260b299aaf1fadd2e43fbccf37019055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4e0dba322b0004fcf1523098bb2337" id="r_adc4e0dba322b0004fcf1523098bb2337"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc4e0dba322b0004fcf1523098bb2337">getLogPath</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:adc4e0dba322b0004fcf1523098bb2337"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取组件日志目录  <br /></td></tr>
+<tr class="separator:adc4e0dba322b0004fcf1523098bb2337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d05c0e23647c3d589c1942bfd10b1b4" id="r_a1d05c0e23647c3d589c1942bfd10b1b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d05c0e23647c3d589c1942bfd10b1b4">getAppNoticeTips</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; <a class="el" href="struct_n_e_meeting_app_notice_tips.html">NEMeetingAppNoticeTips</a> &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a1d05c0e23647c3d589c1942bfd10b1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取公告提示  <br /></td></tr>
+<tr class="separator:a1d05c0e23647c3d589c1942bfd10b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbad1f393bd93febb436c3752924115" id="r_abdbad1f393bd93febb436c3752924115"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdbad1f393bd93febb436c3752924115">setExceptionHandler</a> (const <a class="el" href="#a8881bb9b067d05361222c3dd74515355">NEExceptionHandler</a> &amp;handler)=0</td></tr>
+<tr class="memdesc:abdbad1f393bd93febb436c3752924115"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置异常回调  <br /></td></tr>
+<tr class="separator:abdbad1f393bd93febb436c3752924115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0445aa961840d279e0d699df68d7d6b9" id="r_a0445aa961840d279e0d699df68d7d6b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0445aa961840d279e0d699df68d7d6b9">setLogHandler</a> (const std::function&lt; void(int level, const std::string &amp;log)&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a0445aa961840d279e0d699df68d7d6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置日志回调  <br /></td></tr>
+<tr class="separator:a0445aa961840d279e0d699df68d7d6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aeaa14bc17e9286579828fe8485560b4f" id="r_aeaa14bc17e9286579828fe8485560b4f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_e_meeting_kit.html">NEMeetingKit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaa14bc17e9286579828fe8485560b4f">getInstance</a> ()</td></tr>
+<tr class="memdesc:aeaa14bc17e9286579828fe8485560b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SDK单例  <br /></td></tr>
+<tr class="separator:aeaa14bc17e9286579828fe8485560b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK单例 </p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a1bd7d7a0c26425c2bea868f3698c5ad8" name="a1bd7d7a0c26425c2bea868f3698c5ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd7d7a0c26425c2bea868f3698c5ad8">&#9670;&#160;</a></span>NEActiveWindowCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1bd7d7a0c26425c2bea868f3698c5ad8">NEMeetingKit::NEActiveWindowCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8881bb9b067d05361222c3dd74515355" name="a8881bb9b067d05361222c3dd74515355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8881bb9b067d05361222c3dd74515355">&#9670;&#160;</a></span>NEExceptionHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8881bb9b067d05361222c3dd74515355">NEMeetingKit::NEExceptionHandler</a> = std::function&lt;void(const <a class="el" href="class_n_e_exception.html">NEException</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4df8e48dd428f27bb06ea3e458064cfa" name="a4df8e48dd428f27bb06ea3e458064cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df8e48dd428f27bb06ea3e458064cfa">&#9670;&#160;</a></span>NEInitializeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4df8e48dd428f27bb06ea3e458064cfa">NEMeetingKit::NEInitializeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="class_n_e_meeting_corp_info.html">NEMeetingCorpInfo</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aceac4f1646da08138770852bece036f3" name="aceac4f1646da08138770852bece036f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceac4f1646da08138770852bece036f3">&#9670;&#160;</a></span>NEQueryKitVersionCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aceac4f1646da08138770852bece036f3">NEMeetingKit::NEQueryKitVersionCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ed124fdd1f08e163de9067263a0f8f8" name="a8ed124fdd1f08e163de9067263a0f8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed124fdd1f08e163de9067263a0f8f8">&#9670;&#160;</a></span>NEUnInitializeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8ed124fdd1f08e163de9067263a0f8f8">NEMeetingKit::NEUnInitializeCallback</a> = <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a0288f27de7b5b2ec33f82ab8775638b9" name="a0288f27de7b5b2ec33f82ab8775638b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0288f27de7b5b2ec33f82ab8775638b9">&#9670;&#160;</a></span>addGlobalEventListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::addGlobalEventListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_global_event_listener.html">NEGlobalEventListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加全局监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>全局事件监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f20eb69133bccaa384be9b8e3fb5020" name="a6f20eb69133bccaa384be9b8e3fb5020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f20eb69133bccaa384be9b8e3fb5020">&#9670;&#160;</a></span>getAccountService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_account_service.html">NEAccountService</a> * NEMeetingKit::getAccountService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取账户服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEAccountService* 账户服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a1d05c0e23647c3d589c1942bfd10b1b4" name="a1d05c0e23647c3d589c1942bfd10b1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d05c0e23647c3d589c1942bfd10b1b4">&#9670;&#160;</a></span>getAppNoticeTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::getAppNoticeTips </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; <a class="el" href="struct_n_e_meeting_app_notice_tips.html">NEMeetingAppNoticeTips</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取公告提示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调接口，返回应用公告提示文案 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4f08e088a610a1718b67a6fb88c0015" name="aa4f08e088a610a1718b67a6fb88c0015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f08e088a610a1718b67a6fb88c0015">&#9670;&#160;</a></span>getContactsService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_contacts_service.html">NEContactsService</a> * NEMeetingKit::getContactsService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取通讯服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEContactsService* 通讯服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="ae503ebb5768810a751f14de91ab0ba03" name="ae503ebb5768810a751f14de91ab0ba03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae503ebb5768810a751f14de91ab0ba03">&#9670;&#160;</a></span>getFeedbackService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_feedback_service.html">NEFeedbackService</a> * NEMeetingKit::getFeedbackService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取意见反馈服务实例 </p>
+<dl class="section return"><dt>返回</dt><dd>NEFeedbackService* 意见反馈服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="aeaa14bc17e9286579828fe8485560b4f" name="aeaa14bc17e9286579828fe8485560b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa14bc17e9286579828fe8485560b4f">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_n_e_meeting_kit.html">NEMeetingKit</a> * NEMeetingKit::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取SDK单例 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingKit* 单例对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="adc4e0dba322b0004fcf1523098bb2337" name="adc4e0dba322b0004fcf1523098bb2337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4e0dba322b0004fcf1523098bb2337">&#9670;&#160;</a></span>getLogPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::getLogPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取组件日志目录 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a3fecefeaf8575becb2b8b4a824136946" name="a3fecefeaf8575becb2b8b4a824136946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fecefeaf8575becb2b8b4a824136946">&#9670;&#160;</a></span>getMeetingInviteService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_meeting_invite_service.html">NEMeetingInviteService</a> * NEMeetingKit::getMeetingInviteService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取邀请服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingInviteService* 邀请服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a29cabe0db470ed3433f6770aca179169" name="a29cabe0db470ed3433f6770aca179169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cabe0db470ed3433f6770aca179169">&#9670;&#160;</a></span>getMeetingService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_meeting_service.html">NEMeetingService</a> * NEMeetingKit::getMeetingService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取会议服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingService* 会议服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a1a7d6baec5777cd463181b2ea24e7217" name="a1a7d6baec5777cd463181b2ea24e7217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7d6baec5777cd463181b2ea24e7217">&#9670;&#160;</a></span>getMeetingWebAppService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_meeting_web_app_service.html">NEMeetingWebAppService</a> * NEMeetingKit::getMeetingWebAppService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取会议WebApp服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingWebAppService* WebApp对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a89f964eca420814026c84d86859697bb" name="a89f964eca420814026c84d86859697bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f964eca420814026c84d86859697bb">&#9670;&#160;</a></span>getMessageService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a> * NEMeetingKit::getMessageService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取消息服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEMeetingMessageChannelService* 消息服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a0d4aa52a6c045a6b91ca857d599ccd3c" name="a0d4aa52a6c045a6b91ca857d599ccd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4aa52a6c045a6b91ca857d599ccd3c">&#9670;&#160;</a></span>getPreMeetingService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_pre_meeting_service.html">NEPreMeetingService</a> * NEMeetingKit::getPreMeetingService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取预约会议服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEPreMeetingService* 预约会服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a649b0909a46d9f8f00dc33e13b87b611" name="a649b0909a46d9f8f00dc33e13b87b611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649b0909a46d9f8f00dc33e13b87b611">&#9670;&#160;</a></span>getRealtimeRecorderService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_realtime_recorder_service.html">NERealtimeRecorderService</a> * NEMeetingKit::getRealtimeRecorderService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取秒录服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NERealtimeRecorderService* 秒录对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="af85e4dbd5e04af6bb15c5daa808c8609" name="af85e4dbd5e04af6bb15c5daa808c8609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85e4dbd5e04af6bb15c5daa808c8609">&#9670;&#160;</a></span>getScreenSharingService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_screen_sharing_service.html">NEScreenSharingService</a> * NEMeetingKit::getScreenSharingService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取屏幕共享服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NEScreenSharingService* 屏幕共享对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="af3cdeb4a8ca38310c758264750de9b06" name="af3cdeb4a8ca38310c758264750de9b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cdeb4a8ca38310c758264750de9b06">&#9670;&#160;</a></span>getSettingsService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_e_settings_service.html">NESettingsService</a> * NEMeetingKit::getSettingsService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取配置服务 </p>
+<dl class="section return"><dt>返回</dt><dd>NESettingsService* 配置服务对象指针 </dd></dl>
+
+</div>
+</div>
+<a id="a5000a39a6cd3205465972cca78fb0810" name="a5000a39a6cd3205465972cca78fb0810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5000a39a6cd3205465972cca78fb0810">&#9670;&#160;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::initialize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_e_meeting_kit_config.html">NEMeetingKitConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4df8e48dd428f27bb06ea3e458064cfa">NEInitializeCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>初始化配置 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调，NEInitializeCallback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7852afaf34e51f19bac44f538c86e107" name="a7852afaf34e51f19bac44f538c86e107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7852afaf34e51f19bac44f538c86e107">&#9670;&#160;</a></span>isInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool NEMeetingKit::isInitialized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取是否初始化的状态 </p>
+<dl class="section return"><dt>返回</dt><dd>bool<ul>
+<li>true: 已初始化</li>
+<li>false: 未初始化 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad1230bcc8a0712dbe392654e89d8147e" name="ad1230bcc8a0712dbe392654e89d8147e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1230bcc8a0712dbe392654e89d8147e">&#9670;&#160;</a></span>removeGlobalEventListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::removeGlobalEventListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_global_event_listener.html">NEGlobalEventListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除全局监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>全局事件监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdbad1f393bd93febb436c3752924115" name="abdbad1f393bd93febb436c3752924115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdbad1f393bd93febb436c3752924115">&#9670;&#160;</a></span>setExceptionHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::setExceptionHandler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a8881bb9b067d05361222c3dd74515355">NEExceptionHandler</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>handler</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置异常回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a0445aa961840d279e0d699df68d7d6b9" name="a0445aa961840d279e0d699df68d7d6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0445aa961840d279e0d699df68d7d6b9">&#9670;&#160;</a></span>setLogHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::setLogHandler </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(int level, const std::string &amp;log)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置日志回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>level 日志级别 </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>只有少量的组件接口层关键日志 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af1ae0b4937e24f9aa9f2247bb88a73b0" name="af1ae0b4937e24f9aa9f2247bb88a73b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ae0b4937e24f9aa9f2247bb88a73b0">&#9670;&#160;</a></span>switchLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::switchLanguage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__meeting_8h.html#a2ff3dbbfa2bfc7a2bb3dca4748eb654a">NEMeetingLanguage</a></td>          <td class="paramname"><span class="paramname"><em>language</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>切换语言 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>目标语言 <code><a class="el" href="kit__define__meeting_8h.html#a2ff3dbbfa2bfc7a2bb3dca4748eb654a">NEMeetingLanguage</a></code>。如果设置为空，则使用当前系统语言 </td></tr>
+    <tr><td class="paramname">int</td><td>0是成功，其他为失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a260b299aaf1fadd2e43fbccf37019055" name="a260b299aaf1fadd2e43fbccf37019055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260b299aaf1fadd2e43fbccf37019055">&#9670;&#160;</a></span>switchTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::switchTheme </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__meeting_8h.html#a435c88486b665725798279a74a512789">NEMeetingThemeType</a></td>          <td class="paramname"><span class="paramname"><em>theme</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>切换主题 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theme</td><td>目标主题 <code><a class="el" href="kit__define__meeting_8h.html#a435c88486b665725798279a74a512789">NEMeetingThemeType</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37bec3743ba9342a5f92ede090c9b3ab" name="a37bec3743ba9342a5f92ede090c9b3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37bec3743ba9342a5f92ede090c9b3ab">&#9670;&#160;</a></span>unInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingKit::unInitialize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a8ed124fdd1f08e163de9067263a0f8f8">NEUnInitializeCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__meeting__sdk_8h_source.html">kit_meeting_sdk.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

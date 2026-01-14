@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEObject类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_object-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEObject类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>公共对象  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__define__public_8h_source.html">kit_define_public.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEObject 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_object.png" usemap="#NEObject_map" alt=""/>
+  <map id="NEObject_map" name="NEObject_map">
+<area href="class_n_e_account_service_listener.html" title="监听登录状态变更通知" alt="NEAccountServiceListener" shape="rect" coords="272,56,534,80"/>
+<area href="class_n_e_controller.html" title="通用控制接口基类" alt="NEController" shape="rect" coords="272,112,534,136"/>
+<area href="class_n_e_exception.html" title="异常信息" alt="NEException" shape="rect" coords="272,168,534,192"/>
+<area href="class_n_e_extra_object.html" alt="NEExtraObject" shape="rect" coords="272,224,534,248"/>
+<area href="class_n_e_logger_config.html" title="日志配置" alt="NELoggerConfig" shape="rect" coords="272,280,534,304"/>
+<area href="class_n_e_m_app_info.html" title="应用信息" alt="NEMAppInfo" shape="rect" coords="272,336,534,360"/>
+<area href="class_n_e_meeting_invite_status_listener.html" title="回调接口，用于监听消息变更事件" alt="NEMeetingInviteStatusListener" shape="rect" coords="272,392,534,416"/>
+<area href="class_n_e_meeting_kit.html" title="SDK单例" alt="NEMeetingKit" shape="rect" coords="272,448,534,472"/>
+<area href="class_n_e_meeting_kit_config.html" title="SDK的配置" alt="NEMeetingKitConfig" shape="rect" coords="272,504,534,528"/>
+<area href="class_n_e_meeting_message_channel_listener.html" title="回调接口，用于监听消息变更事件" alt="NEMeetingMessageChannelListener" shape="rect" coords="272,560,534,584"/>
+<area href="class_n_e_meeting_on_injected_menu_item_click_listener.html" title="监听会议中按钮点击状态变更通知" alt="NEMeetingOnInjectedMenuItemClickListener" shape="rect" coords="272,616,534,640"/>
+<area href="class_n_e_meeting_options.html" title="会议选项" alt="NEMeetingOptions" shape="rect" coords="272,672,534,696"/>
+<area href="class_n_e_meeting_params.html" title="菜单项当前的状态（即对应当前显示的名称），默认为1，1是itemTitle， 2是itemTitle2" alt="NEMeetingParams" shape="rect" coords="272,728,534,752"/>
+<area href="class_n_e_meeting_realtime_recorder_status_listener.html" alt="NEMeetingRealtimeRecorderStatusListener" shape="rect" coords="272,784,534,808"/>
+<area href="class_n_e_meeting_status_listener.html" title="监听会议状态变更通知" alt="NEMeetingStatusListener" shape="rect" coords="272,840,534,864"/>
+<area href="class_n_e_meeting_view_click_listener.html" alt="NEMeetingViewClickListener" shape="rect" coords="272,896,534,920"/>
+<area href="class_n_e_meeting_web_app_click_listener.html" alt="NEMeetingWebAppClickListener" shape="rect" coords="272,952,534,976"/>
+<area href="class_n_e_pre_meeting_listener.html" title="监听预约会议状态变更通知" alt="NEPreMeetingListener" shape="rect" coords="272,1008,534,1032"/>
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="272,1064,534,1088"/>
+<area href="class_n_e_settings_changed_listener.html" title="设置变更监听器" alt="NESettingsChangedListener" shape="rect" coords="272,1120,534,1144"/>
+<area href="class_n_e_settings_u_i_wnd_config.html" title="配置窗口设置" alt="NESettingsUIWndConfig" shape="rect" coords="272,1176,534,1200"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>公共对象 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a970bc89c54e91e6748c15d0965f57f61" name="a970bc89c54e91e6748c15d0965f57f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970bc89c54e91e6748c15d0965f57f61">&#9670;&#160;</a></span>NEObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NEObject::NEObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="aba7d7df8f9f9de9a94f553cbe27730fd" name="aba7d7df8f9f9de9a94f553cbe27730fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7d7df8f9f9de9a94f553cbe27730fd">&#9670;&#160;</a></span>~NEObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual NEObject::~NEObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__define__public_8h_source.html">kit_define_public.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

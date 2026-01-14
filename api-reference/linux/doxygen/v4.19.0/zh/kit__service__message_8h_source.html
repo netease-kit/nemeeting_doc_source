@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_service_message.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">kit_service_message.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="kit__service__message_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef NEM_SDK_INTERFACE_INTERFACE_MESSAGE_SERVICE_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define NEM_SDK_INTERFACE_INTERFACE_MESSAGE_SERVICE_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__message_8h.html">kit_define_message.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__define_8h.html">kit_service_define.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_listener.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_e_object.html">NEObject</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_listener.html#a775668381258bbdc102a5a108bbf165a">   35</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_listener.html#a775668381258bbdc102a5a108bbf165a">onSessionMessageReceived</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_e_meeting_session_message.html">NEMeetingSessionMessage</a>&amp; message) {}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_listener.html#a99edfa37b34b6d87d6a7ee61c475ddab">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_listener.html#a99edfa37b34b6d87d6a7ee61c475ddab">onSessionMessageRecentChanged</a>(<span class="keyword">const</span> std::list&lt;NEMeetingRecentSession&gt;&amp; messages) {}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_listener.html#a26996a6a15741d78d713454a475c7c8f">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_listener.html#a26996a6a15741d78d713454a475c7c8f">onSessionMessageDeleted</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_e_meeting_session_message.html">NEMeetingSessionMessage</a>&amp; message) {}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_listener.html#ad4baf9002c124cf969a5de026da9cbb2">   57</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_listener.html#ad4baf9002c124cf969a5de026da9cbb2">onSessionMessageAllDeleted</a>(<span class="keyword">const</span> std::string&amp; sessionId, <span class="keyword">const</span> <a class="code hl_enumeration" href="kit__define__message_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a>&amp; sessionType) {}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html">   63</a></span><span class="keyword">class </span><a class="code hl_define" href="kit__interface__export_8h.html#a49bb450b054cce5c9000b2a029403851">NEM_SDK_INTERFACE_EXPORT</a> <a class="code hl_class" href="class_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_e_service.html">NEService</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a67a67e4ee205462f2c190c74f166d710">   65</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="class_n_e_meeting_message_channel_service.html#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a> = <a class="code hl_typedef" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback&lt;std::list&lt;NEMeetingSessionMessage&gt;</a>&gt;;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a10767c7c629c3808ba6da1f969860097">   71</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a10767c7c629c3808ba6da1f969860097">addMeetingMessageChannelListener</a>(<a class="code hl_class" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a56f10db8cf765c388779be3c22cf25e1">   78</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a56f10db8cf765c388779be3c22cf25e1">removeMeetingMessageChannelListener</a>(<a class="code hl_class" href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a2826355a147d6890bcd070199e92a8ac">   86</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a2826355a147d6890bcd070199e92a8ac">queryUnreadMessageList</a>(<span class="keyword">const</span> std::string&amp; sessionId, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_meeting_message_channel_service.html#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a5b366f1308cab990c3bfaecb1c088007">   95</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a5b366f1308cab990c3bfaecb1c088007">clearUnreadCount</a>(<span class="keyword">const</span> std::string&amp; sessionId, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a32f4e6eec143379131e80cc859b7200a">  104</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a32f4e6eec143379131e80cc859b7200a">deleteAllSessionMessage</a>(<span class="keyword">const</span> std::string&amp; sessionId, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_n_e_meeting_message_channel_service.html#a3116e93a17dbfa6313ec8b3a756fb377">  112</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_meeting_message_channel_service.html#a3116e93a17dbfa6313ec8b3a756fb377">getSessionMessagesHistory</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a>&amp; param, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_meeting_message_channel_service.html#a67a67e4ee205462f2c190c74f166d710">NEMessagesCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><a class="code hl_define" href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif  </span><span class="comment">// NEM_SDK_INTERFACE_INTERFACE_MESSAGE_SERVICE_H_</span></div>
+<div class="ttc" id="abuild__config_8h_html_a3b8bd0abb315cddac95fc1618a08b3f2"><div class="ttname"><a href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_BEGIN_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:16</div></div>
+<div class="ttc" id="abuild__config_8h_html_afe70f582596ac89529c8608119c585e6"><div class="ttname"><a href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_END_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:17</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_listener_html"><div class="ttname"><a href="class_n_e_meeting_message_channel_listener.html">NEMeetingMessageChannelListener</a></div><div class="ttdoc">回调接口，用于监听消息变更事件</div><div class="ttdef"><b>Definition</b> kit_service_message.h:28</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_listener_html_a26996a6a15741d78d713454a475c7c8f"><div class="ttname"><a href="class_n_e_meeting_message_channel_listener.html#a26996a6a15741d78d713454a475c7c8f">NEMeetingMessageChannelListener::onSessionMessageDeleted</a></div><div class="ttdeci">virtual void onSessionMessageDeleted(const NEMeetingSessionMessage &amp;message)</div><div class="ttdoc">会话消息被删除时会回调该方法</div><div class="ttdef"><b>Definition</b> kit_service_message.h:49</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_listener_html_a775668381258bbdc102a5a108bbf165a"><div class="ttname"><a href="class_n_e_meeting_message_channel_listener.html#a775668381258bbdc102a5a108bbf165a">NEMeetingMessageChannelListener::onSessionMessageReceived</a></div><div class="ttdeci">virtual void onSessionMessageReceived(const NEMeetingSessionMessage &amp;message)</div><div class="ttdoc">接收到自定义消息时会回调该方法</div><div class="ttdef"><b>Definition</b> kit_service_message.h:35</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_listener_html_a99edfa37b34b6d87d6a7ee61c475ddab"><div class="ttname"><a href="class_n_e_meeting_message_channel_listener.html#a99edfa37b34b6d87d6a7ee61c475ddab">NEMeetingMessageChannelListener::onSessionMessageRecentChanged</a></div><div class="ttdeci">virtual void onSessionMessageRecentChanged(const std::list&lt; NEMeetingRecentSession &gt; &amp;messages)</div><div class="ttdoc">会话消息未读数变更时会回调该方法</div><div class="ttdef"><b>Definition</b> kit_service_message.h:42</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_listener_html_ad4baf9002c124cf969a5de026da9cbb2"><div class="ttname"><a href="class_n_e_meeting_message_channel_listener.html#ad4baf9002c124cf969a5de026da9cbb2">NEMeetingMessageChannelListener::onSessionMessageAllDeleted</a></div><div class="ttdeci">virtual void onSessionMessageAllDeleted(const std::string &amp;sessionId, const NEMeetingSessionType &amp;sessionType)</div><div class="ttdoc">会话消息全部被删除时会回调该方法</div><div class="ttdef"><b>Definition</b> kit_service_message.h:57</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a></div><div class="ttdoc">消息服务</div><div class="ttdef"><b>Definition</b> kit_service_message.h:63</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a10767c7c629c3808ba6da1f969860097"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a10767c7c629c3808ba6da1f969860097">NEMeetingMessageChannelService::addMeetingMessageChannelListener</a></div><div class="ttdeci">virtual void addMeetingMessageChannelListener(NEMeetingMessageChannelListener *listener)=0</div><div class="ttdoc">添加自定义消息监听</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a2826355a147d6890bcd070199e92a8ac"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a2826355a147d6890bcd070199e92a8ac">NEMeetingMessageChannelService::queryUnreadMessageList</a></div><div class="ttdeci">virtual void queryUnreadMessageList(const std::string &amp;sessionId, const NEMessagesCallback &amp;callback)=0</div><div class="ttdoc">获取指定会话的未读消息列表</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a3116e93a17dbfa6313ec8b3a756fb377"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a3116e93a17dbfa6313ec8b3a756fb377">NEMeetingMessageChannelService::getSessionMessagesHistory</a></div><div class="ttdeci">virtual void getSessionMessagesHistory(const NEMeetingGetMessageHistoryParams &amp;param, const NEMessagesCallback &amp;callback)=0</div><div class="ttdoc">获取指定会话的历史消息</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a32f4e6eec143379131e80cc859b7200a"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a32f4e6eec143379131e80cc859b7200a">NEMeetingMessageChannelService::deleteAllSessionMessage</a></div><div class="ttdeci">virtual void deleteAllSessionMessage(const std::string &amp;sessionId, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">删除指定会话的所有消息 该接口会触发 NEMeetingMessageChannelListener#onSessionMessageAllDeleted 回调通知。</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a56f10db8cf765c388779be3c22cf25e1"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a56f10db8cf765c388779be3c22cf25e1">NEMeetingMessageChannelService::removeMeetingMessageChannelListener</a></div><div class="ttdeci">virtual void removeMeetingMessageChannelListener(NEMeetingMessageChannelListener *listener)=0</div><div class="ttdoc">移除自定义消息监听</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a5b366f1308cab990c3bfaecb1c088007"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a5b366f1308cab990c3bfaecb1c088007">NEMeetingMessageChannelService::clearUnreadCount</a></div><div class="ttdeci">virtual void clearUnreadCount(const std::string &amp;sessionId, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">清除指定会话的历史消息列表 该接口会触发 NEMeetingMessageChannelListener#onSessionMessageRecentChanged 回调通知。</div></div>
+<div class="ttc" id="aclass_n_e_meeting_message_channel_service_html_a67a67e4ee205462f2c190c74f166d710"><div class="ttname"><a href="class_n_e_meeting_message_channel_service.html#a67a67e4ee205462f2c190c74f166d710">NEMeetingMessageChannelService::NEMessagesCallback</a></div><div class="ttdeci">NECallback&lt; std::list&lt; NEMeetingSessionMessage &gt; &gt; NEMessagesCallback</div><div class="ttdef"><b>Definition</b> kit_service_message.h:65</div></div>
+<div class="ttc" id="aclass_n_e_object_html"><div class="ttname"><a href="class_n_e_object.html">NEObject</a></div><div class="ttdoc">公共对象</div><div class="ttdef"><b>Definition</b> kit_define_public.h:24</div></div>
+<div class="ttc" id="aclass_n_e_service_html"><div class="ttname"><a href="class_n_e_service.html">NEService</a></div><div class="ttdoc">公共服务</div><div class="ttdef"><b>Definition</b> kit_service_define.h:23</div></div>
+<div class="ttc" id="akit__define__callback_8h_html_a1fa184463e4799c8374cd65ad3ee43f1"><div class="ttname"><a href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></div><div class="ttdeci">NECallback&lt;&gt; NEEmptyCallback</div><div class="ttdef"><b>Definition</b> kit_define_callback.h:27</div></div>
+<div class="ttc" id="akit__define__callback_8h_html_ace434984c94183b5a0534f48f2fea7c6"><div class="ttname"><a href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a></div><div class="ttdeci">std::function&lt; void(MeetingErrorCode, const std::string &amp;, const TResultParam &amp;...)&gt; NECallback</div><div class="ttdef"><b>Definition</b> kit_define_callback.h:25</div></div>
+<div class="ttc" id="akit__define__message_8h_html"><div class="ttname"><a href="kit__define__message_8h.html">kit_define_message.h</a></div><div class="ttdoc">消息头文件</div></div>
+<div class="ttc" id="akit__define__message_8h_html_ab04ba9f7099eaeea614cddbc41669759"><div class="ttname"><a href="kit__define__message_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a></div><div class="ttdeci">NEMeetingSessionType</div><div class="ttdef"><b>Definition</b> kit_define_message.h:25</div></div>
+<div class="ttc" id="akit__interface__export_8h_html_a49bb450b054cce5c9000b2a029403851"><div class="ttname"><a href="kit__interface__export_8h.html#a49bb450b054cce5c9000b2a029403851">NEM_SDK_INTERFACE_EXPORT</a></div><div class="ttdeci">#define NEM_SDK_INTERFACE_EXPORT</div><div class="ttdef"><b>Definition</b> kit_interface_export.h:35</div></div>
+<div class="ttc" id="akit__service__define_8h_html"><div class="ttname"><a href="kit__service__define_8h.html">kit_service_define.h</a></div><div class="ttdoc">公共服务定义头文件</div></div>
+<div class="ttc" id="astruct_n_e_meeting_get_message_history_params_html"><div class="ttname"><a href="struct_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a></div><div class="ttdoc">查询自定义消息历史的参数</div><div class="ttdef"><b>Definition</b> kit_define_message.h:117</div></div>
+<div class="ttc" id="astruct_n_e_meeting_session_message_html"><div class="ttname"><a href="struct_n_e_meeting_session_message.html">NEMeetingSessionMessage</a></div><div class="ttdoc">会话消息</div><div class="ttdef"><b>Definition</b> kit_define_message.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

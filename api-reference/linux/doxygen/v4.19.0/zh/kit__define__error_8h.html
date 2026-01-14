@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_define_error.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">kit_define_error.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>错误码头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="kit__define__public_8h_source.html">kit_define_public.h</a>&quot;</code><br />
+</div>
+<p><a href="kit__define__error_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a1f766590104aad602ad9544696026a85" id="r_a1f766590104aad602ad9544696026a85"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f766590104aad602ad9544696026a85">MeetingErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85a0e3987dbf3ad397e0075a4ba90c51585">kCancelled</a> = -9
+, <a class="el" href="#a1f766590104aad602ad9544696026a85af531d9fd442d303e97bc95b3f8f18965">kNoAuthSdk</a> = -7
+, <a class="el" href="#a1f766590104aad602ad9544696026a85ad74f4d110f4a2985b348b9e4ea0742b1">kAlreadyInMeeting</a> = -6
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a160eee6ba9df071e8df6b26be79b2c69">kParamError</a> = -5
+, <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85a47995b395c63116758ad76da303ef190">kMeetingAlreadyExist</a> = -4
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a2d5a58ad5135216923a113180b2c5fd9">kNoNetwork</a> = -3
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a48ee4661a1d96abae7dda31fbcaec970">kFailed</a> = -1
+, <a class="el" href="#a1f766590104aad602ad9544696026a85af0536797208144380691e2b376ffc1d1">kSuccess</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85a3de2b5251d70502a2bc77ede73d55918">kReuseImNotLogin</a> = 1801
+, <a class="el" href="#a1f766590104aad602ad9544696026a85ad12a567bbe81e3f163ed22a5ee15fd88">kReuseImAccountNotMatch</a> = 1802
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a661d1590c557d911263ccb486bed2eb0">kCorpNotFound</a> = 1834
+, <a class="el" href="#a1f766590104aad602ad9544696026a85aae8c3b6c88760e60a28cda6c0b72e508">kAccountPasswordNeedReset</a> = 3426
+, <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85abb0f1cd3956c165236dcbc892ddf928f">kMeetingLocked</a> = 2001
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a6183618265e06c5ac14ceec4a45f52d8">kBadPassword</a> = 2002
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a6492d98e80303d1f74ea178023eb821c">kMeetingRecycled</a> = 2003
+, <a class="el" href="#a1f766590104aad602ad9544696026a85af78c37197208d6d173acf4032d20599a">kMeetingNotExist</a> = 2004
+, <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85a45f47c213432cbb96eedcce5d02b10da">kMeetingNotInProgress</a> = 2005
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a7a0e5cbaf253b004476b648d01d661e4">kAuthExpired</a> = 2006
+, <a class="el" href="#a1f766590104aad602ad9544696026a85aede3eb76338d26711fe04f61d6144cf1">kChatroomNotExists</a> = 110001
+, <a class="el" href="#a1f766590104aad602ad9544696026a85a973b39665dddda6d3c323858e6e64713">kCorpNotSupportSso</a> = 112002
+, <br />
+&#160;&#160;<a class="el" href="#a1f766590104aad602ad9544696026a85a4e70608bcc028c3c619b3eead0a28419">kReuseImNotSupportAnonymousLogin</a> = 112001
+<br />
+ }</td></tr>
+<tr class="memdesc:a1f766590104aad602ad9544696026a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误枚举  <a href="#a1f766590104aad602ad9544696026a85">更多...</a><br /></td></tr>
+<tr class="separator:a1f766590104aad602ad9544696026a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>错误码头文件 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>(c) 2014-2021, NetEase Inc. All rights reserved </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021/04/08 </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a1f766590104aad602ad9544696026a85" name="a1f766590104aad602ad9544696026a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f766590104aad602ad9544696026a85">&#9670;&#160;</a></span>MeetingErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a1f766590104aad602ad9544696026a85">MeetingErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>错误枚举 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a0e3987dbf3ad397e0075a4ba90c51585" name="a1f766590104aad602ad9544696026a85a0e3987dbf3ad397e0075a4ba90c51585"></a>kCancelled&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85af531d9fd442d303e97bc95b3f8f18965" name="a1f766590104aad602ad9544696026a85af531d9fd442d303e97bc95b3f8f18965"></a>kNoAuthSdk&#160;</td><td class="fielddoc"><p>取消操作 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85ad74f4d110f4a2985b348b9e4ea0742b1" name="a1f766590104aad602ad9544696026a85ad74f4d110f4a2985b348b9e4ea0742b1"></a>kAlreadyInMeeting&#160;</td><td class="fielddoc"><p>没有登录 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a160eee6ba9df071e8df6b26be79b2c69" name="a1f766590104aad602ad9544696026a85a160eee6ba9df071e8df6b26be79b2c69"></a>kParamError&#160;</td><td class="fielddoc"><p>创建或加入会议失败，原因为当前已经处于一个会议中 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a47995b395c63116758ad76da303ef190" name="a1f766590104aad602ad9544696026a85a47995b395c63116758ad76da303ef190"></a>kMeetingAlreadyExist&#160;</td><td class="fielddoc"><p>接口调用失败，原因为参数错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a2d5a58ad5135216923a113180b2c5fd9" name="a1f766590104aad602ad9544696026a85a2d5a58ad5135216923a113180b2c5fd9"></a>kNoNetwork&#160;</td><td class="fielddoc"><p>创建会议失败，原因为当前已经存在一个使用相同会议ID的会议。调用方此时可以加入该会议或者等待该会议结束后重新创建 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a48ee4661a1d96abae7dda31fbcaec970" name="a1f766590104aad602ad9544696026a85a48ee4661a1d96abae7dda31fbcaec970"></a>kFailed&#160;</td><td class="fielddoc"><p>接口调用失败，原因为无网络连接 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85af0536797208144380691e2b376ffc1d1" name="a1f766590104aad602ad9544696026a85af0536797208144380691e2b376ffc1d1"></a>kSuccess&#160;</td><td class="fielddoc"><p>对应接口调用失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a3de2b5251d70502a2bc77ede73d55918" name="a1f766590104aad602ad9544696026a85a3de2b5251d70502a2bc77ede73d55918"></a>kReuseImNotLogin&#160;</td><td class="fielddoc"><p>对应接口调用成功 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85ad12a567bbe81e3f163ed22a5ee15fd88" name="a1f766590104aad602ad9544696026a85ad12a567bbe81e3f163ed22a5ee15fd88"></a>kReuseImAccountNotMatch&#160;</td><td class="fielddoc"><p>开启了IM复用，请先登录IM </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a661d1590c557d911263ccb486bed2eb0" name="a1f766590104aad602ad9544696026a85a661d1590c557d911263ccb486bed2eb0"></a>kCorpNotFound&#160;</td><td class="fielddoc"><p>开启了IM复用，IM账号不匹配 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85aae8c3b6c88760e60a28cda6c0b72e508" name="a1f766590104aad602ad9544696026a85aae8c3b6c88760e60a28cda6c0b72e508"></a>kAccountPasswordNeedReset&#160;</td><td class="fielddoc"><p>企业不存在 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85abb0f1cd3956c165236dcbc892ddf928f" name="a1f766590104aad602ad9544696026a85abb0f1cd3956c165236dcbc892ddf928f"></a>kMeetingLocked&#160;</td><td class="fielddoc"><p>账号需要重置密码才能允许登录 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a6183618265e06c5ac14ceec4a45f52d8" name="a1f766590104aad602ad9544696026a85a6183618265e06c5ac14ceec4a45f52d8"></a>kBadPassword&#160;</td><td class="fielddoc"><p>会议被锁定 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a6492d98e80303d1f74ea178023eb821c" name="a1f766590104aad602ad9544696026a85a6492d98e80303d1f74ea178023eb821c"></a>kMeetingRecycled&#160;</td><td class="fielddoc"><p>会议密码错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85af78c37197208d6d173acf4032d20599a" name="a1f766590104aad602ad9544696026a85af78c37197208d6d173acf4032d20599a"></a>kMeetingNotExist&#160;</td><td class="fielddoc"><p>会议已回收 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a45f47c213432cbb96eedcce5d02b10da" name="a1f766590104aad602ad9544696026a85a45f47c213432cbb96eedcce5d02b10da"></a>kMeetingNotInProgress&#160;</td><td class="fielddoc"><p>会议不存在 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a7a0e5cbaf253b004476b648d01d661e4" name="a1f766590104aad602ad9544696026a85a7a0e5cbaf253b004476b648d01d661e4"></a>kAuthExpired&#160;</td><td class="fielddoc"><p>会议不存在 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85aede3eb76338d26711fe04f61d6144cf1" name="a1f766590104aad602ad9544696026a85aede3eb76338d26711fe04f61d6144cf1"></a>kChatroomNotExists&#160;</td><td class="fielddoc"><p>鉴权过期，如密码重置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a973b39665dddda6d3c323858e6e64713" name="a1f766590104aad602ad9544696026a85a973b39665dddda6d3c323858e6e64713"></a>kCorpNotSupportSso&#160;</td><td class="fielddoc"><p>聊天室不存在 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f766590104aad602ad9544696026a85a4e70608bcc028c3c619b3eead0a28419" name="a1f766590104aad602ad9544696026a85a4e70608bcc028c3c619b3eead0a28419"></a>kReuseImNotSupportAnonymousLogin&#160;</td><td class="fielddoc"><p>企业不支持 SSO 登录 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

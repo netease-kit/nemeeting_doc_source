@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_define_account.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">kit_define_account.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="kit__define__account_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef NEM_SDK_INTERFACE_DEFINE_ACCOUNT_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define NEM_SDK_INTERFACE_DEFINE_ACCOUNT_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__public_8h.html">kit_define_public.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_n_e_service_bundle.html">NEServiceBundle</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html#a985e103b1c94f36a3d2ab996e75c70e4">   24</a></span>    std::string <a class="code hl_variable" href="struct_n_e_service_bundle.html#a985e103b1c94f36a3d2ab996e75c70e4">name</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html#a95dbef6142c94c40497a63c6834c979e">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_n_e_service_bundle.html#a95dbef6142c94c40497a63c6834c979e">maxMinutes</a> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html#ad1f159f14fac9ab71e55316ccd00657a">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_n_e_service_bundle.html#ad1f159f14fac9ab71e55316ccd00657a">maxMembers</a> = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html#a57005954f5c1593ec9aa3e78b3052abf">   33</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_n_e_service_bundle.html#a57005954f5c1593ec9aa3e78b3052abf">expireTimestamp</a> = -1;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_n_e_service_bundle.html#ac3cdbe10c58f09334e3fedc99c3de62a">   36</a></span>    std::string <a class="code hl_variable" href="struct_n_e_service_bundle.html#ac3cdbe10c58f09334e3fedc99c3de62a">expireTip</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html">   39</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_n_e_account_info.html">NEAccountInfo</a> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a3cbccd6d6baa4b19bcff8a04fae59d57">   41</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a3cbccd6d6baa4b19bcff8a04fae59d57">corpName</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a9d81f48dd589b76f166e9177fba78bdd">   44</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a9d81f48dd589b76f166e9177fba78bdd">userUuid</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a0dae5335b25492f6fedcae535278f9db">   47</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a0dae5335b25492f6fedcae535278f9db">userToken</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a4b77d9f45db9b847d51da3342d5eeefd">   50</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a4b77d9f45db9b847d51da3342d5eeefd">nickname</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a522600929c6fa1718c1c32fa25646607">   53</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a522600929c6fa1718c1c32fa25646607">avatar</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#ae1f1a7c76dabc78e4d90f874683e8634">   56</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#ae1f1a7c76dabc78e4d90f874683e8634">phoneNumber</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a21ebaf7c53d04f7c1be59d473a7465c0">   59</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a21ebaf7c53d04f7c1be59d473a7465c0">email</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a6285e69ccdc910375b7592331b078923">   62</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a6285e69ccdc910375b7592331b078923">privateMeetingNum</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a2ccb406144e0211f9b8ffd08c642b5c8">   65</a></span>    std::string <a class="code hl_variable" href="struct_n_e_account_info.html#a2ccb406144e0211f9b8ffd08c642b5c8">privateShortMeetingNum</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a858d81e50b18ed34fea6cd70aa927660">   68</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_n_e_account_info.html#a858d81e50b18ed34fea6cd70aa927660">isInitialPassword</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#aed305b8f8a1cc4eafff694b0d255a8f2">   71</a></span>    std::shared_ptr&lt;NEServiceBundle&gt; <a class="code hl_variable" href="struct_n_e_account_info.html#aed305b8f8a1cc4eafff694b0d255a8f2">serviceBundle</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="struct_n_e_account_info.html#a7312eaf4d074e23ebc2a30a1235c58b1">   74</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_n_e_account_info.html#a7312eaf4d074e23ebc2a30a1235c58b1">isAnonymous</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><a class="code hl_define" href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif  </span><span class="comment">// NEM_SDK_INTERFACE_DEFINE_ACCOUNT_H_</span></div>
+<div class="ttc" id="abuild__config_8h_html_a3b8bd0abb315cddac95fc1618a08b3f2"><div class="ttname"><a href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_BEGIN_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:16</div></div>
+<div class="ttc" id="abuild__config_8h_html_afe70f582596ac89529c8608119c585e6"><div class="ttname"><a href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_END_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:17</div></div>
+<div class="ttc" id="akit__define__public_8h_html"><div class="ttname"><a href="kit__define__public_8h.html">kit_define_public.h</a></div><div class="ttdoc">公共对象定义头文件</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html"><div class="ttname"><a href="struct_n_e_account_info.html">NEAccountInfo</a></div><div class="ttdef"><b>Definition</b> kit_define_account.h:39</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a0dae5335b25492f6fedcae535278f9db"><div class="ttname"><a href="struct_n_e_account_info.html#a0dae5335b25492f6fedcae535278f9db">NEAccountInfo::userToken</a></div><div class="ttdeci">std::string userToken</div><div class="ttdoc">用户 Token</div><div class="ttdef"><b>Definition</b> kit_define_account.h:47</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a21ebaf7c53d04f7c1be59d473a7465c0"><div class="ttname"><a href="struct_n_e_account_info.html#a21ebaf7c53d04f7c1be59d473a7465c0">NEAccountInfo::email</a></div><div class="ttdeci">std::string email</div><div class="ttdoc">用户邮箱</div><div class="ttdef"><b>Definition</b> kit_define_account.h:59</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a2ccb406144e0211f9b8ffd08c642b5c8"><div class="ttname"><a href="struct_n_e_account_info.html#a2ccb406144e0211f9b8ffd08c642b5c8">NEAccountInfo::privateShortMeetingNum</a></div><div class="ttdeci">std::string privateShortMeetingNum</div><div class="ttdoc">个人会议短号</div><div class="ttdef"><b>Definition</b> kit_define_account.h:65</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a3cbccd6d6baa4b19bcff8a04fae59d57"><div class="ttname"><a href="struct_n_e_account_info.html#a3cbccd6d6baa4b19bcff8a04fae59d57">NEAccountInfo::corpName</a></div><div class="ttdeci">std::string corpName</div><div class="ttdoc">企业名称</div><div class="ttdef"><b>Definition</b> kit_define_account.h:41</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a4b77d9f45db9b847d51da3342d5eeefd"><div class="ttname"><a href="struct_n_e_account_info.html#a4b77d9f45db9b847d51da3342d5eeefd">NEAccountInfo::nickname</a></div><div class="ttdeci">std::string nickname</div><div class="ttdoc">用户昵称</div><div class="ttdef"><b>Definition</b> kit_define_account.h:50</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a522600929c6fa1718c1c32fa25646607"><div class="ttname"><a href="struct_n_e_account_info.html#a522600929c6fa1718c1c32fa25646607">NEAccountInfo::avatar</a></div><div class="ttdeci">std::string avatar</div><div class="ttdoc">用户头像</div><div class="ttdef"><b>Definition</b> kit_define_account.h:53</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a6285e69ccdc910375b7592331b078923"><div class="ttname"><a href="struct_n_e_account_info.html#a6285e69ccdc910375b7592331b078923">NEAccountInfo::privateMeetingNum</a></div><div class="ttdeci">std::string privateMeetingNum</div><div class="ttdoc">个人会议号</div><div class="ttdef"><b>Definition</b> kit_define_account.h:62</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a7312eaf4d074e23ebc2a30a1235c58b1"><div class="ttname"><a href="struct_n_e_account_info.html#a7312eaf4d074e23ebc2a30a1235c58b1">NEAccountInfo::isAnonymous</a></div><div class="ttdeci">bool isAnonymous</div><div class="ttdoc">是否是匿名账号</div><div class="ttdef"><b>Definition</b> kit_define_account.h:74</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a858d81e50b18ed34fea6cd70aa927660"><div class="ttname"><a href="struct_n_e_account_info.html#a858d81e50b18ed34fea6cd70aa927660">NEAccountInfo::isInitialPassword</a></div><div class="ttdeci">bool isInitialPassword</div><div class="ttdoc">是否为初始密码</div><div class="ttdef"><b>Definition</b> kit_define_account.h:68</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_a9d81f48dd589b76f166e9177fba78bdd"><div class="ttname"><a href="struct_n_e_account_info.html#a9d81f48dd589b76f166e9177fba78bdd">NEAccountInfo::userUuid</a></div><div class="ttdeci">std::string userUuid</div><div class="ttdoc">用户唯一 Id</div><div class="ttdef"><b>Definition</b> kit_define_account.h:44</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_ae1f1a7c76dabc78e4d90f874683e8634"><div class="ttname"><a href="struct_n_e_account_info.html#ae1f1a7c76dabc78e4d90f874683e8634">NEAccountInfo::phoneNumber</a></div><div class="ttdeci">std::string phoneNumber</div><div class="ttdoc">电话号码</div><div class="ttdef"><b>Definition</b> kit_define_account.h:56</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html_aed305b8f8a1cc4eafff694b0d255a8f2"><div class="ttname"><a href="struct_n_e_account_info.html#aed305b8f8a1cc4eafff694b0d255a8f2">NEAccountInfo::serviceBundle</a></div><div class="ttdeci">std::shared_ptr&lt; NEServiceBundle &gt; serviceBundle</div><div class="ttdoc">会议套餐信息</div><div class="ttdef"><b>Definition</b> kit_define_account.h:71</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html"><div class="ttname"><a href="struct_n_e_service_bundle.html">NEServiceBundle</a></div><div class="ttdef"><b>Definition</b> kit_define_account.h:22</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html_a57005954f5c1593ec9aa3e78b3052abf"><div class="ttname"><a href="struct_n_e_service_bundle.html#a57005954f5c1593ec9aa3e78b3052abf">NEServiceBundle::expireTimestamp</a></div><div class="ttdeci">int expireTimestamp</div><div class="ttdoc">套餐过期时间戳，-1表示永不过期</div><div class="ttdef"><b>Definition</b> kit_define_account.h:33</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html_a95dbef6142c94c40497a63c6834c979e"><div class="ttname"><a href="struct_n_e_service_bundle.html#a95dbef6142c94c40497a63c6834c979e">NEServiceBundle::maxMinutes</a></div><div class="ttdeci">int maxMinutes</div><div class="ttdoc">套餐支持的单会议最大时长，以分钟为单位，小于0或为空表示不限时长</div><div class="ttdef"><b>Definition</b> kit_define_account.h:27</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html_a985e103b1c94f36a3d2ab996e75c70e4"><div class="ttname"><a href="struct_n_e_service_bundle.html#a985e103b1c94f36a3d2ab996e75c70e4">NEServiceBundle::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">套餐名称</div><div class="ttdef"><b>Definition</b> kit_define_account.h:24</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html_ac3cdbe10c58f09334e3fedc99c3de62a"><div class="ttname"><a href="struct_n_e_service_bundle.html#ac3cdbe10c58f09334e3fedc99c3de62a">NEServiceBundle::expireTip</a></div><div class="ttdeci">std::string expireTip</div><div class="ttdoc">套餐过期提示</div><div class="ttdef"><b>Definition</b> kit_define_account.h:36</div></div>
+<div class="ttc" id="astruct_n_e_service_bundle_html_ad1f159f14fac9ab71e55316ccd00657a"><div class="ttname"><a href="struct_n_e_service_bundle.html#ad1f159f14fac9ab71e55316ccd00657a">NEServiceBundle::maxMembers</a></div><div class="ttdeci">int maxMembers</div><div class="ttdoc">套餐支持的单会议最大成员数</div><div class="ttdef"><b>Definition</b> kit_define_account.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingParams.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingParams.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_params_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_control_8h.html">NEMeetingControl.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_role_8h.html">NEMeetingRole.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751df">   13</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751df">NEEncryptionMode</a>) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751dfaad84cd4b4c3ed6e2d241e55f10e2cb3b">   17</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751dfaad84cd4b4c3ed6e2d241e55f10e2cb3b">GMCryptoSM4ECB</a>,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_n_e_encryption_config.html">   20</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_encryption_config.html">NEEncryptionConfig</a> : NSObject</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="interface_n_e_encryption_config.html#a235748d603f39fbd5fb14ffcc32c3f47">   24</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751df">NEEncryptionMode</a> <a class="code hl_property" href="interface_n_e_encryption_config.html#a235748d603f39fbd5fb14ffcc32c3f47">encryptionMode</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="interface_n_e_encryption_config.html#ab577838342db06991e3ed0a45b4e36b2">   28</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_encryption_config.html#ab577838342db06991e3ed0a45b4e36b2">encryptKey</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="interface_n_e_watermark_config.html">   35</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_watermark_config.html">NEWatermarkConfig</a> : NSObject</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="interface_n_e_watermark_config.html#a4330d825dfb05942ab5b92e5db3cae4e">   39</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *name;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="interface_n_e_watermark_config.html#ada920ffab59ce870e98aeed57ca27e36">   43</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *phone;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="interface_n_e_watermark_config.html#a55c648782d2853aab3c50cfc5a40aaeb">   47</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *email;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="interface_n_e_watermark_config.html#afd2eaf2d47c309f4e58e213188ca2b2e">   51</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *jobNumber;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html">   58</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_params.html">NEMeetingParams</a> : NSObject</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a7387a9064864980a16329d4014f08e68">   63</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *displayName;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a069b002077fdead6ad8fa75ac6222e45">   68</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *avatar;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a03f9abab0e97fa9d9ba69eb6f328e5ba">   78</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *meetingNum;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#af53182e5048216c8733e030fc94f3249">   83</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *tag;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a414922cdf3eed4d974bc1a9b05a7d4c1">   88</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *password;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#ab4f975a23f0818012681452a98cb576a">   93</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_encryption_config.html">NEEncryptionConfig</a> *encryptionConfig;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a36a18e6fa0d43adaf90b4002a43f4c92">   98</a></span><span class="keyword">@property</span>(nonatomic, strong) <a class="code hl_interface" href="interface_n_e_watermark_config.html">NEWatermarkConfig</a> *watermarkConfig;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_params.html#a3b4ced11a57563828271ed619c069e86">  103</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *orgName;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html">  110</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_start_meeting_params.html">NEStartMeetingParams</a> : <a class="code hl_interface" href="interface_n_e_meeting_params.html">NEMeetingParams</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html#a81b6c79f0c3a9da6713658479a43e184">  115</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *extraData;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html#a909b74ed74f20662d17fde76c8b174e4">  119</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *subject;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html#a1a39206ba7a3d34fed933c5a8a0225ed">  124</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingControl *&gt; *controls;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html#a87df1fa993763d91e08635a46b47f440">  129</a></span><span class="keyword">@property</span>(nonatomic, strong) NSMutableDictionary&lt;NSString *, NSNumber *&gt; *roleBinds;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="interface_n_e_start_meeting_params.html#a50ce9956b23669f03b28806fd6da6d02">  134</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL enableMultiDevice;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="interface_n_e_join_meeting_params.html">  141</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_join_meeting_params.html">NEJoinMeetingParams</a> : <a class="code hl_interface" href="interface_n_e_meeting_params.html">NEMeetingParams</a></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="interface_n_e_join_meeting_params.html#a626c263e3afd6f1bb164de55d695e6ec">  146</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL kickOtherDevice;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_realtime_recorder_params.html">  153</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_realtime_recorder_params.html">NEMeetingRealtimeRecorderParams</a> : NSObject</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_realtime_recorder_params.html#ad5b1e3e3ce997d38bedff144e5a65cb1">  158</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *displayName;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_realtime_recorder_params.html#a35579e811c022bb1065609effb628043">  164</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *meetingNum;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_n_e_meeting_control_8h_html"><div class="ttname"><a href="_n_e_meeting_control_8h.html">NEMeetingControl.h</a></div></div>
+<div class="ttc" id="a_n_e_meeting_params_8h_html_ae4e6c16979011c5207aaff4383a751df"><div class="ttname"><a href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751df">NEEncryptionMode</a></div><div class="ttdeci">NEEncryptionMode</div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:13</div></div>
+<div class="ttc" id="a_n_e_meeting_params_8h_html_ae4e6c16979011c5207aaff4383a751dfaad84cd4b4c3ed6e2d241e55f10e2cb3b"><div class="ttname"><a href="_n_e_meeting_params_8h.html#ae4e6c16979011c5207aaff4383a751dfaad84cd4b4c3ed6e2d241e55f10e2cb3b">GMCryptoSM4ECB</a></div><div class="ttdeci">@ GMCryptoSM4ECB</div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:17</div></div>
+<div class="ttc" id="a_n_e_meeting_role_8h_html"><div class="ttname"><a href="_n_e_meeting_role_8h.html">NEMeetingRole.h</a></div></div>
+<div class="ttc" id="ainterface_n_e_encryption_config_html"><div class="ttname"><a href="interface_n_e_encryption_config.html">NEEncryptionConfig</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:21</div></div>
+<div class="ttc" id="ainterface_n_e_encryption_config_html_a235748d603f39fbd5fb14ffcc32c3f47"><div class="ttname"><a href="interface_n_e_encryption_config.html#a235748d603f39fbd5fb14ffcc32c3f47">NEEncryptionConfig::encryptionMode</a></div><div class="ttdeci">NEEncryptionMode encryptionMode</div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:24</div></div>
+<div class="ttc" id="ainterface_n_e_encryption_config_html_ab577838342db06991e3ed0a45b4e36b2"><div class="ttname"><a href="interface_n_e_encryption_config.html#ab577838342db06991e3ed0a45b4e36b2">NEEncryptionConfig::encryptKey</a></div><div class="ttdeci">NSString * encryptKey</div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:28</div></div>
+<div class="ttc" id="ainterface_n_e_join_meeting_params_html"><div class="ttname"><a href="interface_n_e_join_meeting_params.html">NEJoinMeetingParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:142</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_params_html"><div class="ttname"><a href="interface_n_e_meeting_params.html">NEMeetingParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:59</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_realtime_recorder_params_html"><div class="ttname"><a href="interface_n_e_meeting_realtime_recorder_params.html">NEMeetingRealtimeRecorderParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:154</div></div>
+<div class="ttc" id="ainterface_n_e_start_meeting_params_html"><div class="ttname"><a href="interface_n_e_start_meeting_params.html">NEStartMeetingParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:111</div></div>
+<div class="ttc" id="ainterface_n_e_watermark_config_html"><div class="ttname"><a href="interface_n_e_watermark_config.html">NEWatermarkConfig</a></div><div class="ttdef"><b>Definition</b> NEMeetingParams.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

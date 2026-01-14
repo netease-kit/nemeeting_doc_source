@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['knemeetingdegradationpreferencebalanced_0',['kNEMeetingDegradationPreferenceBalanced',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa081c9bd0ef560df04ad4ce8682b9efa1',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencedefault_1',['kNEMeetingDegradationPreferenceDefault',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa81b240cdf6cee3c6fcf061dd0259bb7a',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencemaintainframerate_2',['kNEMeetingDegradationPreferenceMaintainFramerate',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878fa0880e50cae9225c559ceb740ce51ede7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingdegradationpreferencemaintainquality_3',['kNEMeetingDegradationPreferenceMaintainQuality',['../_n_e_screen_sharing_params_8h.html#a2eaf7ba8a03e0459f715f3a0d71d878faaa7f59a287406311eaff41ad71afdf96',1,'NEScreenSharingParams.h']]],
+  ['knemeetingsubstreamcontentpreferdetails_4',['kNEMeetingSubStreamContentPreferDetails',['../_n_e_screen_sharing_params_8h.html#a040b457aed2f09ab4eca4cc38f0762b4a14a01bdf00b6f0e7db087728746d87ae',1,'NEScreenSharingParams.h']]],
+  ['knemeetingsubstreamcontentprefermotion_5',['kNEMeetingSubStreamContentPreferMotion',['../_n_e_screen_sharing_params_8h.html#a040b457aed2f09ab4eca4cc38f0762b4aab7a1b9fb9c75df95d0ffd7c299495e8',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps10_6',['kNEMeetingVideoFrameRateFps10',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da1bda1498b146dee503e43c3f11a06063',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps15_7',['kNEMeetingVideoFrameRateFps15',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da4df9f8cd8978e4cde986cff3a75420b1',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps24_8',['kNEMeetingVideoFrameRateFps24',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3daca87abc4cb8b20db10c97f1c3ba1c7fd',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps30_9',['kNEMeetingVideoFrameRateFps30',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da31cd78982e410e3cb42dfad8ecdfc566',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps60_10',['kNEMeetingVideoFrameRateFps60',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3daf62c3f60e2f8b2c976390065226714c7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefps7_11',['kNEMeetingVideoFrameRateFps7',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da1991c02a22d528e9fc6f78a80eb45d52',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoframeratefpsdefault_12',['kNEMeetingVideoFrameRateFpsDefault',['../_n_e_screen_sharing_params_8h.html#a0f819815e07a0a113d69184b90ac8a3da5926b606ba1dbb1b486802675d4ad962',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilehd1080p_13',['kNEMeetingVideoProfileHD1080P',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeabae22026936ae66034bcb73bcd8e4897e7',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilehd720p_14',['kNEMeetingVideoProfileHD720P',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeaba506351b9add5570bbe5efc9666934701',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilelow_15',['kNEMeetingVideoProfileLow',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeabab877d345bbb26496771160678cc46183',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilelowest_16',['kNEMeetingVideoProfileLowest',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeaba974567ee8307f5fe221e2da3e343d332',1,'NEScreenSharingParams.h']]],
+  ['knemeetingvideoprofilestandard_17',['kNEMeetingVideoProfileStandard',['../_n_e_screen_sharing_params_8h.html#accc7d4a2e55cf2c74c9948b7c82ffeababd5ec0d0a314820204b5b1ce25ea1c1a',1,'NEScreenSharingParams.h']]]
+];

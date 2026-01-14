@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_interface_include.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">kit_interface_include.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="kit__interface__include_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef NEM_SDK_INTERFACE_INCLUDE_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define NEM_SDK_INTERFACE_INCLUDE_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="build__config_8h.html">build_config.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__account_8h.html">kit_define_account.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__error_8h.html">kit_define_error.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__meeting__sdk_8h.html">kit_define_meeting_sdk.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="kit__interface__export_8h.html">kit_interface_export.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="kit__meeting__sdk_8h.html">kit_meeting_sdk.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__account_8h.html">kit_service_account.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__contacts_8h.html">kit_service_contacts.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__invite_8h.html">kit_service_invite.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__meeting_8h.html">kit_service_meeting.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__message_8h.html">kit_service_message.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__premeeting_8h.html">kit_service_premeeting.h</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__setting_8h.html">kit_service_setting.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__feedback_8h.html">kit_service_feedback.h</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__realtime__recorder_8h.html">kit_service_realtime_recorder.h</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__web__app_8h.html">kit_service_web_app.h</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__screen__sharing_8h.html">kit_service_screen_sharing.h</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif  </span><span class="comment">// NEM_SDK_INTERFACE_INCLUDE_H_</span></div>
+<div class="ttc" id="abuild__config_8h_html"><div class="ttname"><a href="build__config_8h.html">build_config.h</a></div><div class="ttdoc">编译配置头文件</div></div>
+<div class="ttc" id="akit__define__account_8h_html"><div class="ttname"><a href="kit__define__account_8h.html">kit_define_account.h</a></div><div class="ttdoc">账号服务头文件</div></div>
+<div class="ttc" id="akit__define__error_8h_html"><div class="ttname"><a href="kit__define__error_8h.html">kit_define_error.h</a></div><div class="ttdoc">错误码头文件</div></div>
+<div class="ttc" id="akit__define__meeting__sdk_8h_html"><div class="ttname"><a href="kit__define__meeting__sdk_8h.html">kit_define_meeting_sdk.h</a></div><div class="ttdoc">SDK初始化配置头文件</div></div>
+<div class="ttc" id="akit__interface__export_8h_html"><div class="ttname"><a href="kit__interface__export_8h.html">kit_interface_export.h</a></div><div class="ttdoc">库导入导出定义头文件</div></div>
+<div class="ttc" id="akit__meeting__sdk_8h_html"><div class="ttname"><a href="kit__meeting__sdk_8h.html">kit_meeting_sdk.h</a></div><div class="ttdoc">SDK头文件</div></div>
+<div class="ttc" id="akit__service__account_8h_html"><div class="ttname"><a href="kit__service__account_8h.html">kit_service_account.h</a></div><div class="ttdoc">账号服务头文件</div></div>
+<div class="ttc" id="akit__service__contacts_8h_html"><div class="ttname"><a href="kit__service__contacts_8h.html">kit_service_contacts.h</a></div><div class="ttdoc">通讯服务头文件</div></div>
+<div class="ttc" id="akit__service__feedback_8h_html"><div class="ttname"><a href="kit__service__feedback_8h.html">kit_service_feedback.h</a></div><div class="ttdoc">意见服务头文件</div></div>
+<div class="ttc" id="akit__service__invite_8h_html"><div class="ttname"><a href="kit__service__invite_8h.html">kit_service_invite.h</a></div><div class="ttdoc">邀请服务头文件</div></div>
+<div class="ttc" id="akit__service__meeting_8h_html"><div class="ttname"><a href="kit__service__meeting_8h.html">kit_service_meeting.h</a></div><div class="ttdoc">会议服务头文件</div></div>
+<div class="ttc" id="akit__service__message_8h_html"><div class="ttname"><a href="kit__service__message_8h.html">kit_service_message.h</a></div><div class="ttdoc">消息服务头文件</div></div>
+<div class="ttc" id="akit__service__premeeting_8h_html"><div class="ttname"><a href="kit__service__premeeting_8h.html">kit_service_premeeting.h</a></div><div class="ttdoc">预约会议头文件</div></div>
+<div class="ttc" id="akit__service__realtime__recorder_8h_html"><div class="ttname"><a href="kit__service__realtime__recorder_8h.html">kit_service_realtime_recorder.h</a></div></div>
+<div class="ttc" id="akit__service__screen__sharing_8h_html"><div class="ttname"><a href="kit__service__screen__sharing_8h.html">kit_service_screen_sharing.h</a></div><div class="ttdoc">屏幕共享</div></div>
+<div class="ttc" id="akit__service__setting_8h_html"><div class="ttname"><a href="kit__service__setting_8h.html">kit_service_setting.h</a></div><div class="ttdoc">配置服务头文件</div></div>
+<div class="ttc" id="akit__service__web__app_8h_html"><div class="ttname"><a href="kit__service__web__app_8h.html">kit_service_web_app.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

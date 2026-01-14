@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: &lt;NEPreMeetingListener&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">构造函数</a> &#124;
+<a href="protocol_n_e_pre_meeting_listener-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NEPreMeetingListener&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_pre_meeting_service_8h_source.html">NEPreMeetingService.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NEPreMeetingListener&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_pre_meeting_listener-p.png" usemap="#_3CNEPreMeetingListener_3E_map" alt=""/>
+  <map id="_3CNEPreMeetingListener_3E_map" name="_3CNEPreMeetingListener_3E_map">
+<area href="protocol_n_e_schedule_meeting_listener-p.html" alt="&lt;NEScheduleMeetingListener&gt;" shape="rect" coords="0,112,186,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+构造函数</h2></td></tr>
+<tr class="memitem:aaa3e34ece54b43e72fffa2e2532cdcb6" id="r_aaa3e34ece54b43e72fffa2e2532cdcb6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aaa3e34ece54b43e72fffa2e2532cdcb6">onScheduleMeetingStatusChange:incremental:</a></td></tr>
+<tr class="separator:aaa3e34ece54b43e72fffa2e2532cdcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1235c36a3266165a59583812f68f2b19" id="r_a1235c36a3266165a59583812f68f2b19"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a1235c36a3266165a59583812f68f2b19">onMeetingItemInfoChanged:</a></td></tr>
+<tr class="separator:a1235c36a3266165a59583812f68f2b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>会前监听器，通过<code><a class="el" href="">NEPreMeetingService#addListener(NEPreMeetingListener)</a></code>监听会议信息变更 </p>
+</div><h2 class="groupheader">函数文档</h2>
+<a id="a1235c36a3266165a59583812f68f2b19" name="a1235c36a3266165a59583812f68f2b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1235c36a3266165a59583812f68f2b19">&#9670;&#160;</a></span>onMeetingItemInfoChanged:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onMeetingItemInfoChanged: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_n_e_meeting_item.html">NEMeetingItem</a> * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>meetingItemList</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>会议信息变更回调，一次回调可能包含多个会议信息或状态的变更</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meetingItemList</td><td>变更的会议列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa3e34ece54b43e72fffa2e2532cdcb6" name="aaa3e34ece54b43e72fffa2e2532cdcb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3e34ece54b43e72fffa2e2532cdcb6">&#9670;&#160;</a></span>onScheduleMeetingStatusChange:incremental:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onScheduleMeetingStatusChange: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_n_e_meeting_item.html">NEMeetingItem</a> * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>changedMeetingItemList</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">incremental:</td>
+          <td></td>
+          <td class="paramtype">(&quot;deprecated in 4.6.)</td>          <td class="paramname"><span class="paramname"><em>0</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(use NEPreMeetingListener.onMeetingItemInfoChanged:instead&quot;)</td>          <td class="paramname"><span class="paramname"><em>DEPRECATED_MSG_ATTRIBUTE</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>会议信息变更回调，一次回调可能包含多个会议信息的变更 </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">弃用</a></b></dt><dd>该方法已废弃，请使用 <a class="el" href="#a1235c36a3266165a59583812f68f2b19">onMeetingItemInfoChanged:</a> 代替 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changedMeetingItemList</td><td>变更的会议列表 </td></tr>
+    <tr><td class="paramname">incremental</td><td>此次更新是否为增量更新；如果为true，则是增量更新，需要逐一对比新旧数据并替换；如果为false，则为全量更新，全部替换即可。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>NEMeetingKit/ExportHeaders/<a class="el" href="_n_e_pre_meeting_service_8h_source.html">NEPreMeetingService.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>NEMeetingRoomsKit | NEMeetingKit</title><meta name="description" content="Documentation for NEMeetingKit"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base="..">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">NEMeetingKit</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb">
+<li><a href="../modules.html">NEMeetingKit</a></li>
+<li><a href="NEMeetingRoomsKit.html">NEMeetingRoomsKit</a></li></ul>
+<h1>Class NEMeetingRoomsKit</h1></div>
+<section class="tsd-panel tsd-hierarchy">
+<h4>Hierarchy</h4>
+<ul class="tsd-hierarchy">
+<li><span class="target">NEMeetingRoomsKit</span></li></ul></section>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
+<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z" fill="var(--color-text)"></path></svg> Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Constructors</h3>
+<div class="tsd-index-list"><a href="NEMeetingRoomsKit.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-512"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Properties</h3>
+<div class="tsd-index-list"><a href="NEMeetingRoomsKit.html#_accountService" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_account<wbr/>Service</span></a>
+<a href="NEMeetingRoomsKit.html#_appKey" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_app<wbr/>Key</span></a>
+<a href="NEMeetingRoomsKit.html#_eventLogger" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_event<wbr/>Logger</span></a>
+<a href="NEMeetingRoomsKit.html#_idpList" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_idp<wbr/>List</span></a>
+<a href="NEMeetingRoomsKit.html#_isInitialized" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_is<wbr/>Initialized</span></a>
+<a href="NEMeetingRoomsKit.html#_meetingService" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_meeting<wbr/>Service</span></a>
+<a href="NEMeetingRoomsKit.html#_neMeeting" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ne<wbr/>Meeting</span></a>
+<a href="NEMeetingRoomsKit.html#_preMeetingService" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_pre<wbr/>Meeting<wbr/>Service</span></a>
+<a href="NEMeetingRoomsKit.html#_roomsController" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_rooms<wbr/>Controller</span></a>
+<a href="NEMeetingRoomsKit.html#_settingsService" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_settings<wbr/>Service</span></a>
+<a href="NEMeetingRoomsKit.html#KIT_MODULE_NAME" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>KIT_<wbr/>MODULE_<wbr/>NAME</span></a>
+<a href="NEMeetingRoomsKit.html#_instance" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_instance</span></a>
+<a href="NEMeetingRoomsKit.html#_logger" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_logger</span></a>
+<a href="NEMeetingRoomsKit.html#_resultLogger" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_result<wbr/>Logger</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Accessors</h3>
+<div class="tsd-index-list"><a href="NEMeetingRoomsKit.html#isInitialized" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>is<wbr/>Initialized</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Methods</h3>
+<div class="tsd-index-list"><a href="NEMeetingRoomsKit.html#_electronMethodCallListener" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>_electron<wbr/>Method<wbr/>Call<wbr/>Listener</span></a>
+<a href="NEMeetingRoomsKit.html#_initListener" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_init<wbr/>Listener</span></a>
+<a href="NEMeetingRoomsKit.html#_setAccountInfo" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Account<wbr/>Info</span></a>
+<a href="NEMeetingRoomsKit.html#activateRooms" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>activate<wbr/>Rooms</span></a>
+<a href="NEMeetingRoomsKit.html#addMeetingStatusListener" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Meeting<wbr/>Status<wbr/>Listener</span></a>
+<a href="NEMeetingRoomsKit.html#deactivateRooms" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>deactivate<wbr/>Rooms</span></a>
+<a href="NEMeetingRoomsKit.html#destroy" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>destroy</span></a>
+<a href="NEMeetingRoomsKit.html#getActivateRoomsInfo" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Activate<wbr/>Rooms<wbr/>Info</span></a>
+<a href="NEMeetingRoomsKit.html#getMeetingList" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Meeting<wbr/>List</span></a>
+<a href="NEMeetingRoomsKit.html#getRoomsInfo" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Rooms<wbr/>Info</span></a>
+<a href="NEMeetingRoomsKit.html#getRoomsQRCode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>RoomsQRCode</span></a>
+<a href="NEMeetingRoomsKit.html#getSDKLogPath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getSDKLog<wbr/>Path</span></a>
+<a href="NEMeetingRoomsKit.html#initialize" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>initialize</span></a>
+<a href="NEMeetingRoomsKit.html#isTurnOnMyAudioWhenJoinMeetingEnabled" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Audio<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span></a>
+<a href="NEMeetingRoomsKit.html#isTurnOnMyVideoWhenJoinMeetingEnabled" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Video<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span></a>
+<a href="NEMeetingRoomsKit.html#joinMeeting" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>join<wbr/>Meeting</span></a>
+<a href="NEMeetingRoomsKit.html#loginByToken" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>login<wbr/>By<wbr/>Token</span></a>
+<a href="NEMeetingRoomsKit.html#logout" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>logout</span></a>
+<a href="NEMeetingRoomsKit.html#openSettingsWindow" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>Settings<wbr/>Window</span></a>
+<a href="NEMeetingRoomsKit.html#removeMeetingStatusListener" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Meeting<wbr/>Status<wbr/>Listener</span></a>
+<a href="NEMeetingRoomsKit.html#startMarvel" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>start<wbr/>Marvel</span></a>
+<a href="NEMeetingRoomsKit.html#startMeeting" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>start<wbr/>Meeting</span></a>
+<a href="NEMeetingRoomsKit.html#switchLanguage" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>switch<wbr/>Language</span></a>
+<a href="NEMeetingRoomsKit.html#switchTheme" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>switch<wbr/>Theme</span></a>
+<a href="NEMeetingRoomsKit.html#unInitialize" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>un<wbr/>Initialize</span></a>
+<a href="NEMeetingRoomsKit.html#getInstance" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Instance</span></a>
+</div></section></div></details></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Constructors</h2>
+<section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_NEMeetingRoomsKit"><span class="tsd-kind-constructor-signature">new NEMeeting<wbr/>Rooms<wbr/>Kit</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="NEMeetingRoomsKit.html" class="tsd-signature-type tsd-kind-class">NEMeetingRoomsKit</a><a href="#constructor.new_NEMeetingRoomsKit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <a href="NEMeetingRoomsKit.html" class="tsd-signature-type tsd-kind-class">NEMeetingRoomsKit</a></h4></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Properties</h2>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_accountService" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_account<wbr/>Service</span><a href="#_accountService" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_account<wbr/>Service</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">NEMeetingAccountService</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_appKey" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_app<wbr/>Key</span><a href="#_appKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_app<wbr/>Key</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39;&#39;</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_eventLogger" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_event<wbr/>Logger</span><a href="#_eventLogger" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_event<wbr/>Logger</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">ApiEventLog</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_idpList" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_idp<wbr/>List</span><a href="#_idpList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_idp<wbr/>List</span><span class="tsd-signature-symbol">:</span> <a href="../types/NEMeetingIdpInfo.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingIdpInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_isInitialized" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_is<wbr/>Initialized</span><a href="#_isInitialized" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_is<wbr/>Initialized</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_meetingService" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_meeting<wbr/>Service</span><a href="#_meetingService" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_meeting<wbr/>Service</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">default</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_neMeeting" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_ne<wbr/>Meeting</span><a href="#_neMeeting" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_ne<wbr/>Meeting</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">default</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_preMeetingService" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_pre<wbr/>Meeting<wbr/>Service</span><a href="#_preMeetingService" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_pre<wbr/>Meeting<wbr/>Service</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">NEPreMeetingService</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_roomsController" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_rooms<wbr/>Controller</span><a href="#_roomsController" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_rooms<wbr/>Controller</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">default</span></div></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_settingsService" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_settings<wbr/>Service</span><a href="#_settingsService" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_settings<wbr/>Service</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">default</span></div></section>
+<section class="tsd-panel tsd-member"><a id="KIT_MODULE_NAME" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>KIT_<wbr/>MODULE_<wbr/>NAME</span><a href="#KIT_MODULE_NAME" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">KIT_<wbr/>MODULE_<wbr/>NAME</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39;ROOMS_KIT&#39;</span></div></section>
+<section class="tsd-panel tsd-member"><a id="_instance" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>_instance</span><a href="#_instance" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_instance</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="NEMeetingRoomsKit.html" class="tsd-signature-type tsd-kind-class">NEMeetingRoomsKit</a><span class="tsd-signature-symbol"> = null</span></div></section>
+<section class="tsd-panel tsd-member"><a id="_logger" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>_logger</span><a href="#_logger" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_logger</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">ApiLog</span><span class="tsd-signature-symbol"> = ...</span></div></section>
+<section class="tsd-panel tsd-member"><a id="_resultLogger" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>_result<wbr/>Logger</span><a href="#_resultLogger" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_result<wbr/>Logger</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">ApiResultLog</span><span class="tsd-signature-symbol"> = ...</span></div></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Accessors</h2>
+<section class="tsd-panel tsd-member"><a id="isInitialized" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>is<wbr/>Initialized</span><a href="#isInitialized" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="isInitialized.isInitialized-1"><span class="tsd-signature-symbol">get</span> isInitialized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_electronMethodCallListener" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_electron<wbr/>Method<wbr/>Call<wbr/>Listener</span><a href="#_electronMethodCallListener" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="_electronMethodCallListener._electronMethodCallListener-1"><span class="tsd-kind-call-signature">_electron<wbr/>Method<wbr/>Call<wbr/>Listener</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_electronMethodCallListener._electronMethodCallListener-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_initListener" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_init<wbr/>Listener</span><a href="#_initListener" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="_initListener._initListener-1"><span class="tsd-kind-call-signature">_init<wbr/>Listener</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_initListener._initListener-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_setAccountInfo" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_set<wbr/>Account<wbr/>Info</span><a href="#_setAccountInfo" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="_setAccountInfo._setAccountInfo-1"><span class="tsd-kind-call-signature">_set<wbr/>Account<wbr/>Info</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setAccountInfo._setAccountInfo-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">data</span>: <a href="../types/NERoomsAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsAccountInfo</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="activateRooms" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>activate<wbr/>Rooms</span><a href="#activateRooms" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="activateRooms.activateRooms-1"><span class="tsd-kind-call-signature">activate<wbr/>Rooms</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">code</span>, <span class="tsd-kind-parameter">baseURL</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#activateRooms.activateRooms-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">code</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">baseURL</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = DEFAULT_SERVER_RUL</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="addMeetingStatusListener" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>add<wbr/>Meeting<wbr/>Status<wbr/>Listener</span><a href="#addMeetingStatusListener" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="addMeetingStatusListener.addMeetingStatusListener-1"><span class="tsd-kind-call-signature">add<wbr/>Meeting<wbr/>Status<wbr/>Listener</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">listener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#addMeetingStatusListener.addMeetingStatusListener-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">listener</span>: <a href="../interfaces/NEMeetingStatusListener.html" class="tsd-signature-type tsd-kind-interface">NEMeetingStatusListener</a><span class="tsd-signature-symbol"> &amp; </span><a href="../types/NEPreMeetingListener.html" class="tsd-signature-type tsd-kind-type-alias">NEPreMeetingListener</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type ">NERoomsEventListener</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="deactivateRooms" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>deactivate<wbr/>Rooms</span><a href="#deactivateRooms" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="deactivateRooms.deactivateRooms-1"><span class="tsd-kind-call-signature">deactivate<wbr/>Rooms</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#deactivateRooms.deactivateRooms-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="destroy" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>destroy</span><a href="#destroy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="destroy.destroy-1"><span class="tsd-kind-call-signature">destroy</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#destroy.destroy-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getActivateRoomsInfo" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Activate<wbr/>Rooms<wbr/>Info</span><a href="#getActivateRoomsInfo" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getActivateRoomsInfo.getActivateRoomsInfo-1"><span class="tsd-kind-call-signature">get<wbr/>Activate<wbr/>Rooms<wbr/>Info</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getActivateRoomsInfo.getActivateRoomsInfo-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getMeetingList" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Meeting<wbr/>List</span><a href="#getMeetingList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getMeetingList.getMeetingList-1"><span class="tsd-kind-call-signature">get<wbr/>Meeting<wbr/>List</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">status</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">size</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NEMeetingItem.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getMeetingList.getMeetingList-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">status</span>: <a href="../enums/NEMeetingItemStatus.html" class="tsd-signature-type tsd-kind-enum">NEMeetingItemStatus</a><span class="tsd-signature-symbol">[]</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">size</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NEMeetingItem.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getRoomsInfo" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Rooms<wbr/>Info</span><a href="#getRoomsInfo" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getRoomsInfo.getRoomsInfo-1"><span class="tsd-kind-call-signature">get<wbr/>Rooms<wbr/>Info</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getRoomsInfo.getRoomsInfo-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NERoomsInfo.html" class="tsd-signature-type tsd-kind-type-alias">NERoomsInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getRoomsQRCode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>RoomsQRCode</span><a href="#getRoomsQRCode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getRoomsQRCode.getRoomsQRCode-1"><span class="tsd-kind-call-signature">get<wbr/>RoomsQRCode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">baseURL</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/NERoomsQRCodeInfo.html" class="tsd-signature-type tsd-kind-interface">NERoomsQRCodeInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getRoomsQRCode.getRoomsQRCode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">baseURL</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = DEFAULT_SERVER_RUL</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/NERoomsQRCodeInfo.html" class="tsd-signature-type tsd-kind-interface">NERoomsQRCodeInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getSDKLogPath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>getSDKLog<wbr/>Path</span><a href="#getSDKLogPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getSDKLogPath.getSDKLogPath-1"><span class="tsd-kind-call-signature">getSDKLog<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#getSDKLogPath.getSDKLogPath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="initialize" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>initialize</span><a href="#initialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="initialize.initialize-1"><span class="tsd-kind-call-signature">initialize</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">config</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../types/NEMeetingCorpInfo.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingCorpInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#initialize.initialize-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">config</span>: <a href="../types/NEMeetingKitConfig.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingKitConfig</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../types/NEMeetingCorpInfo.html" class="tsd-signature-type tsd-kind-type-alias">NEMeetingCorpInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="isTurnOnMyAudioWhenJoinMeetingEnabled" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Audio<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span><a href="#isTurnOnMyAudioWhenJoinMeetingEnabled" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="isTurnOnMyAudioWhenJoinMeetingEnabled.isTurnOnMyAudioWhenJoinMeetingEnabled-1"><span class="tsd-kind-call-signature">is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Audio<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#isTurnOnMyAudioWhenJoinMeetingEnabled.isTurnOnMyAudioWhenJoinMeetingEnabled-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="isTurnOnMyVideoWhenJoinMeetingEnabled" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Video<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span><a href="#isTurnOnMyVideoWhenJoinMeetingEnabled" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="isTurnOnMyVideoWhenJoinMeetingEnabled.isTurnOnMyVideoWhenJoinMeetingEnabled-1"><span class="tsd-kind-call-signature">is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Video<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#isTurnOnMyVideoWhenJoinMeetingEnabled.isTurnOnMyVideoWhenJoinMeetingEnabled-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="joinMeeting" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>join<wbr/>Meeting</span><a href="#joinMeeting" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="joinMeeting.joinMeeting-1"><span class="tsd-kind-call-signature">join<wbr/>Meeting</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">param</span>, <span class="tsd-kind-parameter">opts</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#joinMeeting.joinMeeting-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">param</span>: <a href="../interfaces/NEJoinMeetingParams.html" class="tsd-signature-type tsd-kind-interface">NEJoinMeetingParams</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">opts</span>: <a href="../types/NEJoinMeetingOptions.html" class="tsd-signature-type tsd-kind-type-alias">NEJoinMeetingOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="loginByToken" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>login<wbr/>By<wbr/>Token</span><a href="#loginByToken" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="loginByToken.loginByToken-1"><span class="tsd-kind-call-signature">login<wbr/>By<wbr/>Token</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">userUuid</span>, <span class="tsd-kind-parameter">token</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NEAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NEAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#loginByToken.loginByToken-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">userUuid</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">token</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/NEAccountInfo.html" class="tsd-signature-type tsd-kind-type-alias">NEAccountInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="logout" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>logout</span><a href="#logout" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="logout.logout-1"><span class="tsd-kind-call-signature">logout</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#logout.logout-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="openSettingsWindow" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>open<wbr/>Settings<wbr/>Window</span><a href="#openSettingsWindow" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="openSettingsWindow.openSettingsWindow-1"><span class="tsd-kind-call-signature">open<wbr/>Settings<wbr/>Window</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">type</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#openSettingsWindow.openSettingsWindow-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">type</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="removeMeetingStatusListener" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>remove<wbr/>Meeting<wbr/>Status<wbr/>Listener</span><a href="#removeMeetingStatusListener" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="removeMeetingStatusListener.removeMeetingStatusListener-1"><span class="tsd-kind-call-signature">remove<wbr/>Meeting<wbr/>Status<wbr/>Listener</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">listener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#removeMeetingStatusListener.removeMeetingStatusListener-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">listener</span>: <a href="../interfaces/NEMeetingStatusListener.html" class="tsd-signature-type tsd-kind-interface">NEMeetingStatusListener</a><span class="tsd-signature-symbol"> &amp; </span><a href="../types/NEPreMeetingListener.html" class="tsd-signature-type tsd-kind-type-alias">NEPreMeetingListener</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type ">NERoomsEventListener</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="startMarvel" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>start<wbr/>Marvel</span><a href="#startMarvel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="startMarvel.startMarvel-1"><span class="tsd-kind-call-signature">start<wbr/>Marvel</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#startMarvel.startMarvel-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="startMeeting" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>start<wbr/>Meeting</span><a href="#startMeeting" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="startMeeting.startMeeting-1"><span class="tsd-kind-call-signature">start<wbr/>Meeting</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">param</span>, <span class="tsd-kind-parameter">opts</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#startMeeting.startMeeting-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">param</span>: <a href="../types/NEStartMeetingParams.html" class="tsd-signature-type tsd-kind-type-alias">NEStartMeetingParams</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">opts</span>: <a href="../types/NEStartMeetingOptions.html" class="tsd-signature-type tsd-kind-type-alias">NEStartMeetingOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="switchLanguage" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>switch<wbr/>Language</span><a href="#switchLanguage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="switchLanguage.switchLanguage-1"><span class="tsd-kind-call-signature">switch<wbr/>Language</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">language</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#switchLanguage.switchLanguage-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">language</span>: <a href="../enums/NEMeetingLanguage.html" class="tsd-signature-type tsd-kind-enum">NEMeetingLanguage</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="switchTheme" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>switch<wbr/>Theme</span><a href="#switchTheme" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="switchTheme.switchTheme-1"><span class="tsd-kind-call-signature">switch<wbr/>Theme</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">theme</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#switchTheme.switchTheme-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">theme</span>: <a href="../enums/NEMeetingThemeType.html" class="tsd-signature-type tsd-kind-enum">NEMeetingThemeType</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="unInitialize" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>un<wbr/>Initialize</span><a href="#unInitialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="unInitialize.unInitialize-1"><span class="tsd-kind-call-signature">un<wbr/>Initialize</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#unInitialize.unInitialize-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NEResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getInstance" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>get<wbr/>Instance</span><a href="#getInstance" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getInstance.getInstance-1"><span class="tsd-kind-call-signature">get<wbr/>Instance</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="NEMeetingRoomsKit.html" class="tsd-signature-type tsd-kind-class">NEMeetingRoomsKit</a><a href="#getInstance.getInstance-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <a href="NEMeetingRoomsKit.html" class="tsd-signature-type tsd-kind-class">NEMeetingRoomsKit</a></h4></li></ul></section></section></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)" id="icon-chevronDown"></path></svg>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#_accountService" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_account<wbr/>Service</span></a></li>
+<li><a href="#_appKey" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_app<wbr/>Key</span></a></li>
+<li><a href="#_eventLogger" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_event<wbr/>Logger</span></a></li>
+<li><a href="#_idpList" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_idp<wbr/>List</span></a></li>
+<li><a href="#_isInitialized" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_is<wbr/>Initialized</span></a></li>
+<li><a href="#_meetingService" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_meeting<wbr/>Service</span></a></li>
+<li><a href="#_neMeeting" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ne<wbr/>Meeting</span></a></li>
+<li><a href="#_preMeetingService" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_pre<wbr/>Meeting<wbr/>Service</span></a></li>
+<li><a href="#_roomsController" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_rooms<wbr/>Controller</span></a></li>
+<li><a href="#_settingsService" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_settings<wbr/>Service</span></a></li>
+<li><a href="#KIT_MODULE_NAME" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>KIT_<wbr/>MODULE_<wbr/>NAME</span></a></li>
+<li><a href="#_instance" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_instance</span></a></li>
+<li><a href="#_logger" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_logger</span></a></li>
+<li><a href="#_resultLogger" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_result<wbr/>Logger</span></a></li>
+<li><a href="#isInitialized" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>is<wbr/>Initialized</span></a></li>
+<li><a href="#_electronMethodCallListener" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_electron<wbr/>Method<wbr/>Call<wbr/>Listener</span></a></li>
+<li><a href="#_initListener" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_init<wbr/>Listener</span></a></li>
+<li><a href="#_setAccountInfo" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Account<wbr/>Info</span></a></li>
+<li><a href="#activateRooms" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>activate<wbr/>Rooms</span></a></li>
+<li><a href="#addMeetingStatusListener" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Meeting<wbr/>Status<wbr/>Listener</span></a></li>
+<li><a href="#deactivateRooms" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>deactivate<wbr/>Rooms</span></a></li>
+<li><a href="#destroy" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>destroy</span></a></li>
+<li><a href="#getActivateRoomsInfo" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Activate<wbr/>Rooms<wbr/>Info</span></a></li>
+<li><a href="#getMeetingList" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Meeting<wbr/>List</span></a></li>
+<li><a href="#getRoomsInfo" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Rooms<wbr/>Info</span></a></li>
+<li><a href="#getRoomsQRCode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>RoomsQRCode</span></a></li>
+<li><a href="#getSDKLogPath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getSDKLog<wbr/>Path</span></a></li>
+<li><a href="#initialize" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>initialize</span></a></li>
+<li><a href="#isTurnOnMyAudioWhenJoinMeetingEnabled" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Audio<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span></a></li>
+<li><a href="#isTurnOnMyVideoWhenJoinMeetingEnabled" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Turn<wbr/>On<wbr/>My<wbr/>Video<wbr/>When<wbr/>Join<wbr/>Meeting<wbr/>Enabled</span></a></li>
+<li><a href="#joinMeeting" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>join<wbr/>Meeting</span></a></li>
+<li><a href="#loginByToken" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>login<wbr/>By<wbr/>Token</span></a></li>
+<li><a href="#logout" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>logout</span></a></li>
+<li><a href="#openSettingsWindow" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>Settings<wbr/>Window</span></a></li>
+<li><a href="#removeMeetingStatusListener" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Meeting<wbr/>Status<wbr/>Listener</span></a></li>
+<li><a href="#startMarvel" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>start<wbr/>Marvel</span></a></li>
+<li><a href="#startMeeting" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>start<wbr/>Meeting</span></a></li>
+<li><a href="#switchLanguage" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>switch<wbr/>Language</span></a></li>
+<li><a href="#switchTheme" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>switch<wbr/>Theme</span></a></li>
+<li><a href="#unInitialize" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>un<wbr/>Initialize</span></a></li>
+<li><a href="#getInstance" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Instance</span></a></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>NEMeeting<wbr/>Kit</span></a>
+<ul class="tsd-small-nested-navigation">
+<li><a href="../enums/MenuClickType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)"></path></g></svg><span>Menu<wbr/>Click<wbr/>Type</span></a></li>
+<li><a href="../enums/NEChatMessageNotificationType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEChat<wbr/>Message<wbr/>Notification<wbr/>Type</span></a></li>
+<li><a href="../enums/NEChatroomExportAccess.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEChatroom<wbr/>Export<wbr/>Access</span></a></li>
+<li><a href="../enums/NEChatroomMessageSearchOrder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEChatroom<wbr/>Message<wbr/>Search<wbr/>Order</span></a></li>
+<li><a href="../enums/NEEncryptionMode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEEncryption<wbr/>Mode</span></a></li>
+<li><a href="../enums/NEErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEError<wbr/>Code</span></a></li>
+<li><a href="../enums/NEMeetingAttendeeOffType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Attendee<wbr/>Off<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMeetingChatMessageType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>Message<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMeetingCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Code</span></a></li>
+<li><a href="../enums/NEMeetingCorpSSOLevel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>CorpSSOLevel</span></a></li>
+<li><a href="../enums/NEMeetingErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Error<wbr/>Code</span></a></li>
+<li><a href="../enums/NEMeetingInviteStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Invite<wbr/>Status</span></a></li>
+<li><a href="../enums/NEMeetingItemLiveStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Item<wbr/>Live<wbr/>Status</span></a></li>
+<li><a href="../enums/NEMeetingItemStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Item<wbr/>Status</span></a></li>
+<li><a href="../enums/NEMeetingLanguage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Language</span></a></li>
+<li><a href="../enums/NEMeetingLayout.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Layout</span></a></li>
+<li><a href="../enums/NEMeetingLeaveType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Leave<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMeetingLiveAuthLevel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Live<wbr/>Auth<wbr/>Level</span></a></li>
+<li><a href="../enums/NEMeetingRoleType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Role<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMeetingStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Status</span></a></li>
+<li><a href="../enums/NEMeetingThemeType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Theme<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMeetingType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMeeting<wbr/>Type</span></a></li>
+<li><a href="../enums/NEMenuVisibility.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEMenu<wbr/>Visibility</span></a></li>
+<li><a href="../enums/NERoomSipDeviceInviteProtocolType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NERoom<wbr/>Sip<wbr/>Device<wbr/>Invite<wbr/>Protocol<wbr/>Type</span></a></li>
+<li><a href="../enums/NERoomsMessageCommandId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NERooms<wbr/>Message<wbr/>Command<wbr/>Id</span></a></li>
+<li><a href="../enums/NEWindowMode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>NEWindow<wbr/>Mode</span></a></li>
+<li><a href="NEMeetingRoomsKit.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>NEMeeting<wbr/>Rooms<wbr/>Kit</span></a></li>
+<li><a href="../interfaces/DynamicDocParam.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>Dynamic<wbr/>Doc<wbr/>Param</span></a></li>
+<li><a href="../interfaces/MediaDocParam.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Media<wbr/>Doc<wbr/>Param</span></a></li>
+<li><a href="../interfaces/NEAccountService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEAccount<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEContactsService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEContacts<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEFeedbackService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEFeedback<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEJoinMeetingParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEJoin<wbr/>Meeting<wbr/>Params</span></a></li>
+<li><a href="../interfaces/NELocalHistoryMeeting.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NELocal<wbr/>History<wbr/>Meeting</span></a></li>
+<li><a href="../interfaces/NELocalRecordInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NELocal<wbr/>Record<wbr/>Info</span></a></li>
+<li><a href="../interfaces/NEMeetingCaptionTranslationConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Caption<wbr/>Translation<wbr/>Config</span></a></li>
+<li><a href="../interfaces/NEMeetingInviteInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Invite<wbr/>Info</span></a></li>
+<li><a href="../interfaces/NEMeetingInviteService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Invite<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEMeetingKit.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Kit</span></a></li>
+<li><a href="../interfaces/NEMeetingListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Listener</span></a></li>
+<li><a href="../interfaces/NEMeetingMessageChannelService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Message<wbr/>Channel<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEMeetingRealtimeRecorderService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Realtime<wbr/>Recorder<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEMeetingScheduledMember.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Scheduled<wbr/>Member</span></a></li>
+<li><a href="../interfaces/NEMeetingService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEMeetingStatusListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Status<wbr/>Listener</span></a></li>
+<li><a href="../interfaces/NEMeetingWebAppService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEMeeting<wbr/>Web<wbr/>App<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEPreMeetingService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEPre<wbr/>Meeting<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NERoomsQRCodeInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NERoomsQRCode<wbr/>Info</span></a></li>
+<li><a href="../interfaces/NEScreenSharingService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEScreen<wbr/>Sharing<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NESettingsService.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NESettings<wbr/>Service</span></a></li>
+<li><a href="../interfaces/NEVirtualBackgroundItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>NEVirtual<wbr/>Background<wbr/>Item</span></a></li>
+<li><a href="../interfaces/StaticDocParam.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Static<wbr/>Doc<wbr/>Param</span></a></li>
+<li><a href="../interfaces/UrlDocParam.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Url<wbr/>Doc<wbr/>Param</span></a></li>
+<li><a href="../types/ExceptionHandler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Exception<wbr/>Handler</span></a></li>
+<li><a href="../types/NEAccountInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEAccount<wbr/>Info</span></a></li>
+<li><a href="../types/NEAccountServiceListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEAccount<wbr/>Service<wbr/>Listener</span></a></li>
+<li><a href="../types/NEChatroomHistoryMessageSearchOption.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEChatroom<wbr/>History<wbr/>Message<wbr/>Search<wbr/>Option</span></a></li>
+<li><a href="../types/NECheckableMenuItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NECheckable<wbr/>Menu<wbr/>Item</span></a></li>
+<li><a href="../types/NECloudRecordConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NECloud<wbr/>Record<wbr/>Config</span></a></li>
+<li><a href="../types/NEContact.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEContact</span></a></li>
+<li><a href="../types/NEContactsInfoResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEContacts<wbr/>Info<wbr/>Result</span></a></li>
+<li><a href="../types/NEEncryptionConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEEncryption<wbr/>Config</span></a></li>
+<li><a href="../types/NEFeedback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEFeedback</span></a></li>
+<li><a href="../types/NEInMeetingUserInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEIn<wbr/>Meeting<wbr/>User<wbr/>Info</span></a></li>
+<li><a href="../types/NEInterpretationConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEInterpretation<wbr/>Config</span></a></li>
+<li><a href="../types/NEJoinMeetingOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEJoin<wbr/>Meeting<wbr/>Options</span></a></li>
+<li><a href="../types/NELocalRecordConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NELocal<wbr/>Record<wbr/>Config</span></a></li>
+<li><a href="../types/NEMeetingASRTranslationLanguage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeetingASRTranslation<wbr/>Language</span></a></li>
+<li><a href="../types/NEMeetingChatCustomMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>Custom<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingChatFileMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>File<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingChatImageMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>Image<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingChatMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingChatTextMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Chat<wbr/>Text<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingControl.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Control</span></a></li>
+<li><a href="../types/NEMeetingCorpInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Corp<wbr/>Info</span></a></li>
+<li><a href="../types/NEMeetingGetMessageHistoryParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Get<wbr/>Message<wbr/>History<wbr/>Params</span></a></li>
+<li><a href="../types/NEMeetingIdpInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Idp<wbr/>Info</span></a></li>
+<li><a href="../types/NEMeetingInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Info</span></a></li>
+<li><a href="../types/NEMeetingInterpreter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Interpreter</span></a></li>
+<li><a href="../types/NEMeetingInviteStatusListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Invite<wbr/>Status<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Item</span></a></li>
+<li><a href="../types/NEMeetingItemLive.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Item<wbr/>Live</span></a></li>
+<li><a href="../types/NEMeetingItemLiveBackground.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Item<wbr/>Live<wbr/>Background</span></a></li>
+<li><a href="../types/NEMeetingItemSetting.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Item<wbr/>Setting</span></a></li>
+<li><a href="../types/NEMeetingKitConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Kit<wbr/>Config</span></a></li>
+<li><a href="../types/NEMeetingKitServerConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Kit<wbr/>Server<wbr/>Config</span></a></li>
+<li><a href="../types/NEMeetingMenuItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Menu<wbr/>Item</span></a></li>
+<li><a href="../types/NEMeetingMessageChannelListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Message<wbr/>Channel<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingOnInjectedMenuItemClickListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>On<wbr/>Injected<wbr/>Menu<wbr/>Item<wbr/>Click<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Options</span></a></li>
+<li><a href="../types/NEMeetingParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Params</span></a></li>
+<li><a href="../types/NEMeetingRecentSession.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Recent<wbr/>Session</span></a></li>
+<li><a href="../types/NEMeetingRecord.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Record</span></a></li>
+<li><a href="../types/NEMeetingRecordEditData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Record<wbr/>Edit<wbr/>Data</span></a></li>
+<li><a href="../types/NEMeetingRecordItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Record<wbr/>Item</span></a></li>
+<li><a href="../types/NEMeetingRecordQueryParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Record<wbr/>Query<wbr/>Params</span></a></li>
+<li><a href="../types/NEMeetingRecurringRule.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Recurring<wbr/>Rule</span></a></li>
+<li><a href="../types/NEMeetingServiceListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Service<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingSessionMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Session<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingSessionTypeEnum.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Session<wbr/>Type<wbr/>Enum</span></a></li>
+<li><a href="../types/NEMeetingTranscriptionInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Transcription<wbr/>Info</span></a></li>
+<li><a href="../types/NEMeetingTranscriptionInterval.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Transcription<wbr/>Interval</span></a></li>
+<li><a href="../types/NEMeetingTranscriptionMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Transcription<wbr/>Message</span></a></li>
+<li><a href="../types/NEMeetingVideoSubStreamConfiguration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Video<wbr/>Sub<wbr/>Stream<wbr/>Configuration</span></a></li>
+<li><a href="../types/NEMeetingViewClickListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>View<wbr/>Click<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingWebAppClickListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Web<wbr/>App<wbr/>Click<wbr/>Listener</span></a></li>
+<li><a href="../types/NEMeetingWebAppItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMeeting<wbr/>Web<wbr/>App<wbr/>Item</span></a></li>
+<li><a href="../types/NEMenuClickInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMenu<wbr/>Click<wbr/>Info</span></a></li>
+<li><a href="../types/NEMenuItemInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEMenu<wbr/>Item<wbr/>Info</span></a></li>
+<li><a href="../types/NEPreMeetingListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEPre<wbr/>Meeting<wbr/>Listener</span></a></li>
+<li><a href="../types/NERemoteHistoryMeeting.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERemote<wbr/>History<wbr/>Meeting</span></a></li>
+<li><a href="../types/NERemoteHistoryMeetingDetail.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERemote<wbr/>History<wbr/>Meeting<wbr/>Detail</span></a></li>
+<li><a href="../types/NERoomSIPCallInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERoomSIPCall<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomSystemDevice.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERoom<wbr/>System<wbr/>Device</span></a></li>
+<li><a href="../types/NERoomsAccountInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Account<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomsBrandInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Brand<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomsControl.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Control</span></a></li>
+<li><a href="../types/NERoomsDeviceInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Device<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomsDevicesInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Devices<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomsInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Info</span></a></li>
+<li><a href="../types/NERoomsMessageChannelListener.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Message<wbr/>Channel<wbr/>Listener</span></a></li>
+<li><a href="../types/NERoomsSettings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NERooms<wbr/>Settings</span></a></li>
+<li><a href="../types/NEScheduledMember.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEScheduled<wbr/>Member</span></a></li>
+<li><a href="../types/NEScreenSharingOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEScreen<wbr/>Sharing<wbr/>Options</span></a></li>
+<li><a href="../types/NEScreenSharingParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEScreen<wbr/>Sharing<wbr/>Params</span></a></li>
+<li><a href="../types/NESingleStateMenuItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NESingle<wbr/>State<wbr/>Menu<wbr/>Item</span></a></li>
+<li><a href="../types/NEStartMeetingOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEStart<wbr/>Meeting<wbr/>Options</span></a></li>
+<li><a href="../types/NEStartMeetingParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEStart<wbr/>Meeting<wbr/>Params</span></a></li>
+<li><a href="../types/NEWebAppClickInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEWeb<wbr/>App<wbr/>Click<wbr/>Info</span></a></li>
+<li><a href="../types/NEmeetingItemLivePushThirdPart.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NEmeeting<wbr/>Item<wbr/>Live<wbr/>Push<wbr/>Third<wbr/>Part</span></a></li>
+<li><a href="../types/ScheduleCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Schedule<wbr/>Callback</span></a></li>
+<li><a href="../types/ScheduledMemberConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Scheduled<wbr/>Member<wbr/>Config</span></a></li>
+<li><a href="../types/UpdateInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Update<wbr/>Info</span></a></li></ul></nav></div></div></div>
+<div class="overlay"></div></body></html>

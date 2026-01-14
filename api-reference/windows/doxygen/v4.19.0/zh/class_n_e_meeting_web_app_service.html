@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingWebAppService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_meeting_web_app_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingWebAppService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kit__service__web__app_8h_source.html">kit_service_web_app.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEMeetingWebAppService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_meeting_web_app_service.png" usemap="#NEMeetingWebAppService_map" alt=""/>
+  <map id="NEMeetingWebAppService_map" name="NEMeetingWebAppService_map">
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="0,56,166,80"/>
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,166,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a62bb8f395d3f45c7bfc33e5765deb97e" id="r_a62bb8f395d3f45c7bfc33e5765deb97e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62bb8f395d3f45c7bfc33e5765deb97e">NEGetMeetingWebAppListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#aa411fb9cf49ea43ffa841370006f4a5d">NEMeetingWebAppItem</a>&gt;&gt;</td></tr>
+<tr class="separator:a62bb8f395d3f45c7bfc33e5765deb97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a81c0c31ad18548f8c0f37038dc3d38d9" id="r_a81c0c31ad18548f8c0f37038dc3d38d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81c0c31ad18548f8c0f37038dc3d38d9">getWebAppList</a> (const <a class="el" href="#a62bb8f395d3f45c7bfc33e5765deb97e">NEGetMeetingWebAppListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a81c0c31ad18548f8c0f37038dc3d38d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取会议中已安装的插件列表  <br /></td></tr>
+<tr class="separator:a81c0c31ad18548f8c0f37038dc3d38d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b8ddd5b8e03845e8077e7da39ae8ae" id="r_ab7b8ddd5b8e03845e8077e7da39ae8ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7b8ddd5b8e03845e8077e7da39ae8ae">enableWebApp</a> (const std::string &amp;pluginId, const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ab7b8ddd5b8e03845e8077e7da39ae8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用插件  <br /></td></tr>
+<tr class="separator:ab7b8ddd5b8e03845e8077e7da39ae8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb874ecbc3a6ca9f5379b34906597b34" id="r_aeb874ecbc3a6ca9f5379b34906597b34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb874ecbc3a6ca9f5379b34906597b34">disableWebApp</a> (const std::string &amp;pluginId, const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aeb874ecbc3a6ca9f5379b34906597b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁用插件  <br /></td></tr>
+<tr class="separator:aeb874ecbc3a6ca9f5379b34906597b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ea4885172ec233605efb3dccf2d1d9" id="r_a54ea4885172ec233605efb3dccf2d1d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ea4885172ec233605efb3dccf2d1d9">setWebAppClickListener</a> (<a class="el" href="class_n_e_meeting_web_app_click_listener.html">NEMeetingWebAppClickListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a54ea4885172ec233605efb3dccf2d1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置插件点击事件监听器  <br /></td></tr>
+<tr class="separator:a54ea4885172ec233605efb3dccf2d1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_service.html">NEService</a></td></tr>
+<tr class="memitem:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service" id="r_a39edbaa5283b44e0ca4b5b3f7e5118ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a39edbaa5283b44e0ca4b5b3f7e5118ff">NEService</a> ()</td></tr>
+<tr class="memdesc:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service" id="r_a68d614611401bd7085d6585e26a7a433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a68d614611401bd7085d6585e26a7a433">~NEService</a> ()</td></tr>
+<tr class="memdesc:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员类型定义说明</h2>
+<a id="a62bb8f395d3f45c7bfc33e5765deb97e" name="a62bb8f395d3f45c7bfc33e5765deb97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bb8f395d3f45c7bfc33e5765deb97e">&#9670;&#160;</a></span>NEGetMeetingWebAppListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a62bb8f395d3f45c7bfc33e5765deb97e">NEMeetingWebAppService::NEGetMeetingWebAppListCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;std::list&lt;<a class="el" href="kit__define__meeting_8h.html#aa411fb9cf49ea43ffa841370006f4a5d">NEMeetingWebAppItem</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aeb874ecbc3a6ca9f5379b34906597b34" name="aeb874ecbc3a6ca9f5379b34906597b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb874ecbc3a6ca9f5379b34906597b34">&#9670;&#160;</a></span>disableWebApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingWebAppService::disableWebApp </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pluginId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>禁用插件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginId</td><td>插件ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7b8ddd5b8e03845e8077e7da39ae8ae" name="ab7b8ddd5b8e03845e8077e7da39ae8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b8ddd5b8e03845e8077e7da39ae8ae">&#9670;&#160;</a></span>enableWebApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingWebAppService::enableWebApp </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pluginId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>启用插件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginId</td><td>插件ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81c0c31ad18548f8c0f37038dc3d38d9" name="a81c0c31ad18548f8c0f37038dc3d38d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c0c31ad18548f8c0f37038dc3d38d9">&#9670;&#160;</a></span>getWebAppList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingWebAppService::getWebAppList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a62bb8f395d3f45c7bfc33e5765deb97e">NEGetMeetingWebAppListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取会议中已安装的插件列表 </p>
+<dl class="section return"><dt>返回</dt><dd>插件列表 </dd></dl>
+
+</div>
+</div>
+<a id="a54ea4885172ec233605efb3dccf2d1d9" name="a54ea4885172ec233605efb3dccf2d1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ea4885172ec233605efb3dccf2d1d9">&#9670;&#160;</a></span>setWebAppClickListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NEMeetingWebAppService::setWebAppClickListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_meeting_web_app_click_listener.html">NEMeetingWebAppClickListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置插件点击事件监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__service__web__app_8h_source.html">kit_service_web_app.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

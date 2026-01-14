@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingCorpInfo类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_meeting_corp_info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingCorpInfo类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SDK初始化的到的企业信息  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__define__meeting__sdk_8h_source.html">kit_define_meeting_sdk.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a30df2e0868ed10c02428bbc8fef45d0b" id="r_a30df2e0868ed10c02428bbc8fef45d0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30df2e0868ed10c02428bbc8fef45d0b">NEMeetingCorpSSOLevel</a> { <a class="el" href="#a30df2e0868ed10c02428bbc8fef45d0babaa5e1ff08311980ec8d9f4652ea9158">kNone</a>
+, <a class="el" href="#a30df2e0868ed10c02428bbc8fef45d0baab1e8df8cf28ca818671b0383fa084df">kOptional</a>
+, <a class="el" href="#a30df2e0868ed10c02428bbc8fef45d0baa5aa2e5e8bbe31efa5762f176b724643">kForce</a>
+ }</td></tr>
+<tr class="memdesc:a30df2e0868ed10c02428bbc8fef45d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用SSO登录等级  <a href="#a30df2e0868ed10c02428bbc8fef45d0b">更多...</a><br /></td></tr>
+<tr class="separator:a30df2e0868ed10c02428bbc8fef45d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab5ad6b68b252e8ac77ef5028c2f0b29d" id="r_ab5ad6b68b252e8ac77ef5028c2f0b29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5ad6b68b252e8ac77ef5028c2f0b29d">setAppKey</a> (const std::string &amp;newAppKey)</td></tr>
+<tr class="memdesc:ab5ad6b68b252e8ac77ef5028c2f0b29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 appKey  <br /></td></tr>
+<tr class="separator:ab5ad6b68b252e8ac77ef5028c2f0b29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06322d2240196a2799cba0417fae2c5" id="r_ac06322d2240196a2799cba0417fae2c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac06322d2240196a2799cba0417fae2c5">getAppKey</a> () const</td></tr>
+<tr class="memdesc:ac06322d2240196a2799cba0417fae2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 appKey  <br /></td></tr>
+<tr class="separator:ac06322d2240196a2799cba0417fae2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49eff5771997ca1e05d73fea8ef9590b" id="r_a49eff5771997ca1e05d73fea8ef9590b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49eff5771997ca1e05d73fea8ef9590b">setCorpName</a> (const std::string &amp;newCorpName)</td></tr>
+<tr class="memdesc:a49eff5771997ca1e05d73fea8ef9590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 corpName  <br /></td></tr>
+<tr class="separator:a49eff5771997ca1e05d73fea8ef9590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c669f080216ae2012100e1ac8ac40e" id="r_a99c669f080216ae2012100e1ac8ac40e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c669f080216ae2012100e1ac8ac40e">getCorpName</a> () const</td></tr>
+<tr class="memdesc:a99c669f080216ae2012100e1ac8ac40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 corpName  <br /></td></tr>
+<tr class="separator:a99c669f080216ae2012100e1ac8ac40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5471ee995addf1e68d905a70c6edf029" id="r_a5471ee995addf1e68d905a70c6edf029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5471ee995addf1e68d905a70c6edf029">setCorpCode</a> (const std::string &amp;newCorpCode)</td></tr>
+<tr class="memdesc:a5471ee995addf1e68d905a70c6edf029"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 corpCode  <br /></td></tr>
+<tr class="separator:a5471ee995addf1e68d905a70c6edf029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1464ceb3b244a619cccb70ffa0310610" id="r_a1464ceb3b244a619cccb70ffa0310610"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1464ceb3b244a619cccb70ffa0310610">getCorpCode</a> () const</td></tr>
+<tr class="memdesc:a1464ceb3b244a619cccb70ffa0310610"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 corpCode  <br /></td></tr>
+<tr class="separator:a1464ceb3b244a619cccb70ffa0310610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79f971758866b0df838b180d294ce41" id="r_ac79f971758866b0df838b180d294ce41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac79f971758866b0df838b180d294ce41">setSSOLevel</a> (int newSSOLevel)</td></tr>
+<tr class="memdesc:ac79f971758866b0df838b180d294ce41"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 ssoLevel  <br /></td></tr>
+<tr class="separator:ac79f971758866b0df838b180d294ce41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4cd4f8bd16e93e8d74dc699d8ed5d0" id="r_a7f4cd4f8bd16e93e8d74dc699d8ed5d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4cd4f8bd16e93e8d74dc699d8ed5d0">getSSOLevel</a> () const</td></tr>
+<tr class="memdesc:a7f4cd4f8bd16e93e8d74dc699d8ed5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 ssoLevel  <br /></td></tr>
+<tr class="separator:a7f4cd4f8bd16e93e8d74dc699d8ed5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a823669130f4fe639c9e509ffc72b04" id="r_a3a823669130f4fe639c9e509ffc72b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a823669130f4fe639c9e509ffc72b04">setIdpList</a> (const std::vector&lt; <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &gt; &amp;newIdpList)</td></tr>
+<tr class="memdesc:a3a823669130f4fe639c9e509ffc72b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 idpList  <br /></td></tr>
+<tr class="separator:a3a823669130f4fe639c9e509ffc72b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9850f6b581587775d7fa8edac22ca2" id="r_a0e9850f6b581587775d7fa8edac22ca2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e9850f6b581587775d7fa8edac22ca2">getIdpList</a> () const</td></tr>
+<tr class="memdesc:a0e9850f6b581587775d7fa8edac22ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 idpList  <br /></td></tr>
+<tr class="separator:a0e9850f6b581587775d7fa8edac22ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebe5680769b2b1df3171d0bfe02756a" id="r_abebe5680769b2b1df3171d0bfe02756a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abebe5680769b2b1df3171d0bfe02756a">addIdp</a> (const <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &amp;idp)</td></tr>
+<tr class="memdesc:abebe5680769b2b1df3171d0bfe02756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加单个 idp  <br /></td></tr>
+<tr class="separator:abebe5680769b2b1df3171d0bfe02756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b0f5a01df8b4aec21d8aeef471311e" id="r_a08b0f5a01df8b4aec21d8aeef471311e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08b0f5a01df8b4aec21d8aeef471311e">clearIdpList</a> ()</td></tr>
+<tr class="memdesc:a08b0f5a01df8b4aec21d8aeef471311e"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空 idpList  <br /></td></tr>
+<tr class="separator:a08b0f5a01df8b4aec21d8aeef471311e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK初始化的到的企业信息 </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a30df2e0868ed10c02428bbc8fef45d0b" name="a30df2e0868ed10c02428bbc8fef45d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30df2e0868ed10c02428bbc8fef45d0b">&#9670;&#160;</a></span>NEMeetingCorpSSOLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a30df2e0868ed10c02428bbc8fef45d0b">NEMeetingCorpInfo::NEMeetingCorpSSOLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>应用SSO登录等级 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a30df2e0868ed10c02428bbc8fef45d0babaa5e1ff08311980ec8d9f4652ea9158" name="a30df2e0868ed10c02428bbc8fef45d0babaa5e1ff08311980ec8d9f4652ea9158"></a>kNone&#160;</td><td class="fielddoc"><p>未开启SSO登录 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30df2e0868ed10c02428bbc8fef45d0baab1e8df8cf28ca818671b0383fa084df" name="a30df2e0868ed10c02428bbc8fef45d0baab1e8df8cf28ca818671b0383fa084df"></a>kOptional&#160;</td><td class="fielddoc"><p>可选SSO登录 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30df2e0868ed10c02428bbc8fef45d0baa5aa2e5e8bbe31efa5762f176b724643" name="a30df2e0868ed10c02428bbc8fef45d0baa5aa2e5e8bbe31efa5762f176b724643"></a>kForce&#160;</td><td class="fielddoc"><p>强制SSO登录 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="abebe5680769b2b1df3171d0bfe02756a" name="abebe5680769b2b1df3171d0bfe02756a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebe5680769b2b1df3171d0bfe02756a">&#9670;&#160;</a></span>addIdp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::addIdp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>idp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加单个 idp </p>
+
+</div>
+</div>
+<a id="a08b0f5a01df8b4aec21d8aeef471311e" name="a08b0f5a01df8b4aec21d8aeef471311e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b0f5a01df8b4aec21d8aeef471311e">&#9670;&#160;</a></span>clearIdpList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::clearIdpList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空 idpList </p>
+
+</div>
+</div>
+<a id="ac06322d2240196a2799cba0417fae2c5" name="ac06322d2240196a2799cba0417fae2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06322d2240196a2799cba0417fae2c5">&#9670;&#160;</a></span>getAppKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NEMeetingCorpInfo::getAppKey </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 appKey </p>
+
+</div>
+</div>
+<a id="a1464ceb3b244a619cccb70ffa0310610" name="a1464ceb3b244a619cccb70ffa0310610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1464ceb3b244a619cccb70ffa0310610">&#9670;&#160;</a></span>getCorpCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NEMeetingCorpInfo::getCorpCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 corpCode </p>
+
+</div>
+</div>
+<a id="a99c669f080216ae2012100e1ac8ac40e" name="a99c669f080216ae2012100e1ac8ac40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c669f080216ae2012100e1ac8ac40e">&#9670;&#160;</a></span>getCorpName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NEMeetingCorpInfo::getCorpName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 corpName </p>
+
+</div>
+</div>
+<a id="a0e9850f6b581587775d7fa8edac22ca2" name="a0e9850f6b581587775d7fa8edac22ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9850f6b581587775d7fa8edac22ca2">&#9670;&#160;</a></span>getIdpList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &gt; NEMeetingCorpInfo::getIdpList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 idpList </p>
+
+</div>
+</div>
+<a id="a7f4cd4f8bd16e93e8d74dc699d8ed5d0" name="a7f4cd4f8bd16e93e8d74dc699d8ed5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4cd4f8bd16e93e8d74dc699d8ed5d0">&#9670;&#160;</a></span>getSSOLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NEMeetingCorpInfo::getSSOLevel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 ssoLevel </p>
+
+</div>
+</div>
+<a id="ab5ad6b68b252e8ac77ef5028c2f0b29d" name="ab5ad6b68b252e8ac77ef5028c2f0b29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ad6b68b252e8ac77ef5028c2f0b29d">&#9670;&#160;</a></span>setAppKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::setAppKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>newAppKey</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 appKey </p>
+
+</div>
+</div>
+<a id="a5471ee995addf1e68d905a70c6edf029" name="a5471ee995addf1e68d905a70c6edf029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5471ee995addf1e68d905a70c6edf029">&#9670;&#160;</a></span>setCorpCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::setCorpCode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>newCorpCode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 corpCode </p>
+
+</div>
+</div>
+<a id="a49eff5771997ca1e05d73fea8ef9590b" name="a49eff5771997ca1e05d73fea8ef9590b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49eff5771997ca1e05d73fea8ef9590b">&#9670;&#160;</a></span>setCorpName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::setCorpName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>newCorpName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 corpName </p>
+
+</div>
+</div>
+<a id="a3a823669130f4fe639c9e509ffc72b04" name="a3a823669130f4fe639c9e509ffc72b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a823669130f4fe639c9e509ffc72b04">&#9670;&#160;</a></span>setIdpList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::setIdpList </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="class_n_e_meeting_idp_info.html">NEMeetingIdpInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>newIdpList</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 idpList </p>
+
+</div>
+</div>
+<a id="ac79f971758866b0df838b180d294ce41" name="ac79f971758866b0df838b180d294ce41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79f971758866b0df838b180d294ce41">&#9670;&#160;</a></span>setSSOLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NEMeetingCorpInfo::setSSOLevel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newSSOLevel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置 ssoLevel </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__define__meeting__sdk_8h_source.html">kit_define_meeting_sdk.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

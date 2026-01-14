@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingKitDefine.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingKitDefine.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_kit_define_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">   17</a></span><span class="keyword">typedef</span> void (^<a class="code hl_typedef" href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">NECallback</a>)(NSInteger resultCode, NSString *resultMessage, <span class="keywordtype">id</span> resultData);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#ac5296e164220b3548f06d14cf5d22364">   28</a></span><span class="keyword">typedef</span> void (^<a class="code hl_typedef" href="_n_e_meeting_kit_define_8h.html#ac5296e164220b3548f06d14cf5d22364">NEMeetingCallback</a>)(NSInteger resultCode, NSString *resultMessage);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054">   33</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054">NEMeetingErrorCode</a>) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afe1b28524be2dc615f6aa2d71fa67abf">   37</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afe1b28524be2dc615f6aa2d71fa67abf">ERROR_CODE_SDK_UNINITIALIZE</a> = -100002,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a716fb64be4387b1dd987dbea8eb50dd8">   42</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a716fb64be4387b1dd987dbea8eb50dd8">ERROR_CODE_NOT_IMPLEMENTED</a> = -100001,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0271b02321fcda4e9ff070718e2b93ab">   47</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0271b02321fcda4e9ff070718e2b93ab">ERROR_CODE_UNEXPECTED</a> = -100000,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa418ee204bfacc96b9a0bfcb28354661">   53</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa418ee204bfacc96b9a0bfcb28354661">ERROR_CODE_CANCELLED</a> = -9,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054af7a071333228255fd83aba2e96dcf663">   59</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054af7a071333228255fd83aba2e96dcf663">ERROR_MEETING_PASSWORD_ERROR</a> = -8,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4d3c368c5a817368d6930afaa8543f1c">   64</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4d3c368c5a817368d6930afaa8543f1c">MEETING_ERROR_FAILED_LOGIN_ON_OTHER_DEVICE</a> = -7,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa910c313e4c3da8b30e0f363d05da297">   69</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa910c313e4c3da8b30e0f363d05da297">MEETING_ERROR_FAILED_ALREADY_IN_MEETING</a> = -6,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4c5e4d5bea3e3483a777bb6d20a5934c">   74</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4c5e4d5bea3e3483a777bb6d20a5934c">MEETING_ERROR_FAILED_PARAM_ERROR</a> = -5,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a2f33d42612fe9b884467020c921f0f9c">   79</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a2f33d42612fe9b884467020c921f0f9c">ERROR_CODE_PARAM_ERROR</a> = -5,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a44c4379eaf53cf557271aa42bae6fc23">   85</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a44c4379eaf53cf557271aa42bae6fc23">MEETING_ERROR_FAILED_MEETING_ALREADY_EXIST</a> = -4,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054abe12166180008b01088af2abf489f49f">   90</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054abe12166180008b01088af2abf489f49f">MEETING_ERROR_NO_NETWORK</a> = -3,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a3cb3ffbe87eb6501097f385bf23a62c4">   95</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a3cb3ffbe87eb6501097f385bf23a62c4">MEETING_ERROR_FAILED_IM_LOGIN_ERROR</a> = -2,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ac12a7a1b028375ef5774590eb2c9bfaf">  100</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ac12a7a1b028375ef5774590eb2c9bfaf">ERROR_CODE_FAILED</a> = -1,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0ae04ac7165f891a0792ba503b4978dd">  105</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0ae04ac7165f891a0792ba503b4978dd">ERROR_CODE_SUCCESS</a> = 0,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4ef18c230c914d7da877a2530698095f">  110</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4ef18c230c914d7da877a2530698095f">RROR_CODE_CORP_NOT_FOUND</a> = 1834,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa9b272b236644304e40a23befbb45c05">  115</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa9b272b236644304e40a23befbb45c05">ERROR_CODE_ACCOUNT_PASSWORD_NEED_RESET</a> = 3426,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ade8d50f08d6bd05037d563fb65cc2571">  120</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ade8d50f08d6bd05037d563fb65cc2571">ERROR_CODE_REUSE_IM_NOT_LOGIN</a> = 100004,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4dd1111875f596790ca4ebc5cb0590d7">  124</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4dd1111875f596790ca4ebc5cb0590d7">ERROR_CODE_REUSE_IM_ACCOUT_NOT_MATCH</a> = 100005,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054acba62f9b6e7e8c6560ddda88260909b0">  129</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054acba62f9b6e7e8c6560ddda88260909b0">ERROR_CODE_REUSE_IM_NO_SUPPORT_ANONYMOUS_JOIN_MEETING</a> = 112001,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afd3d70df6c9356ca9d928f099187ae28">  134</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afd3d70df6c9356ca9d928f099187ae28">ERROR_CODE_CORP_NOT_SUPPORT_SSO</a> = 112002,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
+</div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054">NEMeetingErrorCode</a></div><div class="ttdeci">NEMeetingErrorCode</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:33</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a0271b02321fcda4e9ff070718e2b93ab"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0271b02321fcda4e9ff070718e2b93ab">ERROR_CODE_UNEXPECTED</a></div><div class="ttdeci">@ ERROR_CODE_UNEXPECTED</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:47</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a0ae04ac7165f891a0792ba503b4978dd"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a0ae04ac7165f891a0792ba503b4978dd">ERROR_CODE_SUCCESS</a></div><div class="ttdeci">@ ERROR_CODE_SUCCESS</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:105</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a2f33d42612fe9b884467020c921f0f9c"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a2f33d42612fe9b884467020c921f0f9c">ERROR_CODE_PARAM_ERROR</a></div><div class="ttdeci">@ ERROR_CODE_PARAM_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:79</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a3cb3ffbe87eb6501097f385bf23a62c4"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a3cb3ffbe87eb6501097f385bf23a62c4">MEETING_ERROR_FAILED_IM_LOGIN_ERROR</a></div><div class="ttdeci">@ MEETING_ERROR_FAILED_IM_LOGIN_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:95</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a44c4379eaf53cf557271aa42bae6fc23"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a44c4379eaf53cf557271aa42bae6fc23">MEETING_ERROR_FAILED_MEETING_ALREADY_EXIST</a></div><div class="ttdeci">@ MEETING_ERROR_FAILED_MEETING_ALREADY_EXIST</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:85</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a4c5e4d5bea3e3483a777bb6d20a5934c"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4c5e4d5bea3e3483a777bb6d20a5934c">MEETING_ERROR_FAILED_PARAM_ERROR</a></div><div class="ttdeci">@ MEETING_ERROR_FAILED_PARAM_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:74</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a4d3c368c5a817368d6930afaa8543f1c"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4d3c368c5a817368d6930afaa8543f1c">MEETING_ERROR_FAILED_LOGIN_ON_OTHER_DEVICE</a></div><div class="ttdeci">@ MEETING_ERROR_FAILED_LOGIN_ON_OTHER_DEVICE</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:64</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a4dd1111875f596790ca4ebc5cb0590d7"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4dd1111875f596790ca4ebc5cb0590d7">ERROR_CODE_REUSE_IM_ACCOUT_NOT_MATCH</a></div><div class="ttdeci">@ ERROR_CODE_REUSE_IM_ACCOUT_NOT_MATCH</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:124</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a4ef18c230c914d7da877a2530698095f"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a4ef18c230c914d7da877a2530698095f">RROR_CODE_CORP_NOT_FOUND</a></div><div class="ttdeci">@ RROR_CODE_CORP_NOT_FOUND</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:110</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054a716fb64be4387b1dd987dbea8eb50dd8"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054a716fb64be4387b1dd987dbea8eb50dd8">ERROR_CODE_NOT_IMPLEMENTED</a></div><div class="ttdeci">@ ERROR_CODE_NOT_IMPLEMENTED</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:42</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054aa418ee204bfacc96b9a0bfcb28354661"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa418ee204bfacc96b9a0bfcb28354661">ERROR_CODE_CANCELLED</a></div><div class="ttdeci">@ ERROR_CODE_CANCELLED</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:53</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054aa910c313e4c3da8b30e0f363d05da297"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa910c313e4c3da8b30e0f363d05da297">MEETING_ERROR_FAILED_ALREADY_IN_MEETING</a></div><div class="ttdeci">@ MEETING_ERROR_FAILED_ALREADY_IN_MEETING</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:69</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054aa9b272b236644304e40a23befbb45c05"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054aa9b272b236644304e40a23befbb45c05">ERROR_CODE_ACCOUNT_PASSWORD_NEED_RESET</a></div><div class="ttdeci">@ ERROR_CODE_ACCOUNT_PASSWORD_NEED_RESET</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:115</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054abe12166180008b01088af2abf489f49f"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054abe12166180008b01088af2abf489f49f">MEETING_ERROR_NO_NETWORK</a></div><div class="ttdeci">@ MEETING_ERROR_NO_NETWORK</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:90</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054ac12a7a1b028375ef5774590eb2c9bfaf"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ac12a7a1b028375ef5774590eb2c9bfaf">ERROR_CODE_FAILED</a></div><div class="ttdeci">@ ERROR_CODE_FAILED</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:100</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054acba62f9b6e7e8c6560ddda88260909b0"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054acba62f9b6e7e8c6560ddda88260909b0">ERROR_CODE_REUSE_IM_NO_SUPPORT_ANONYMOUS_JOIN_MEETING</a></div><div class="ttdeci">@ ERROR_CODE_REUSE_IM_NO_SUPPORT_ANONYMOUS_JOIN_MEETING</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:129</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054ade8d50f08d6bd05037d563fb65cc2571"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054ade8d50f08d6bd05037d563fb65cc2571">ERROR_CODE_REUSE_IM_NOT_LOGIN</a></div><div class="ttdeci">@ ERROR_CODE_REUSE_IM_NOT_LOGIN</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:120</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054af7a071333228255fd83aba2e96dcf663"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054af7a071333228255fd83aba2e96dcf663">ERROR_MEETING_PASSWORD_ERROR</a></div><div class="ttdeci">@ ERROR_MEETING_PASSWORD_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:59</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054afd3d70df6c9356ca9d928f099187ae28"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afd3d70df6c9356ca9d928f099187ae28">ERROR_CODE_CORP_NOT_SUPPORT_SSO</a></div><div class="ttdeci">@ ERROR_CODE_CORP_NOT_SUPPORT_SSO</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:134</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_a65793dcee05185379aa4eb882d553054afe1b28524be2dc615f6aa2d71fa67abf"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#a65793dcee05185379aa4eb882d553054afe1b28524be2dc615f6aa2d71fa67abf">ERROR_CODE_SDK_UNINITIALIZE</a></div><div class="ttdeci">@ ERROR_CODE_SDK_UNINITIALIZE</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:37</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_aa65dcfd52574e6a5f446b36d5b1c467a"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">NECallback</a></div><div class="ttdeci">void(^ NECallback)(NSInteger resultCode, NSString *resultMessage, id resultData)</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:17</div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_ac5296e164220b3548f06d14cf5d22364"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#ac5296e164220b3548f06d14cf5d22364">NEMeetingCallback</a></div><div class="ttdeci">void(^ NEMeetingCallback)(NSInteger resultCode, NSString *resultMessage)</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

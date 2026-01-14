@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_define_realtime_recorder.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">kit_define_realtime_recorder.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="kit__define__realtime__recorder_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef NEM_SDK_INTERFACE_DEFINE_REALTIME_RECORDER_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define NEM_SDK_INTERFACE_DEFINE_REALTIME_RECORDER_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__public_8h.html">kit_define_public.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9">   22</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9">NEMeetingRealtimeRecorderStatus</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a13c05a83c9cda2076bc355501329d194">   23</a></span>    <a class="code hl_enumvalue" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a13c05a83c9cda2076bc355501329d194">kNEMeetingRealtimeRecorderStatusUnknown</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a78bac679756108023e74928553946a2e">   24</a></span>    <a class="code hl_enumvalue" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a78bac679756108023e74928553946a2e">kNEMeetingRealtimeRecorderStatusStart</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9ae429d9eb85f74b35c5f7a4255cbfce27">   25</a></span>    <a class="code hl_enumvalue" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9ae429d9eb85f74b35c5f7a4255cbfce27">kNEMeetingRealtimeRecorderStatusRecording</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9af6a5cb9a546b197e1ee35bb5c924175d">   26</a></span>    <a class="code hl_enumvalue" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9af6a5cb9a546b197e1ee35bb5c924175d">kNEMeetingRealtimeRecorderStatusPaused</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a23c13c8284a20951dd7680538625962b">kNEMeetingRealtimeRecorderStatusEnd</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a23c13c8284a20951dd7680538625962b">   28</a></span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_event.html">   30</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtag_n_e_meeting_realtime_recorder_event.html">tagNEMeetingRealtimeRecorderEvent</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_event.html#adccde07cadaab4642c214428878f4758">   34</a></span>  <a class="code hl_enumeration" href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9">NEMeetingRealtimeRecorderStatus</a> <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_event.html#adccde07cadaab4642c214428878f4758">status</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_event.html#a93a0d1f9d044494a44513be05f9bb4a5">   39</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_event.html#a93a0d1f9d044494a44513be05f9bb4a5">code</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_event.html#aec1624a1b43671a8e335db06adf7fcc9">   44</a></span>  std::string <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_event.html#aec1624a1b43671a8e335db06adf7fcc9">meetingNum</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#aa702f9397f35f0f48f80a5bb08a92abe">   45</a></span>} <a class="code hl_typedef" href="kit__define__realtime__recorder_8h.html#aa702f9397f35f0f48f80a5bb08a92abe">NEMeetingRealtimeRecorderEvent</a>;</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_params.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtag_n_e_meeting_realtime_recorder_params.html">tagNEMeetingRealtimeRecorderParams</a> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_params.html#ab51aad9bf526b801a410f30f05057f5c">   52</a></span>    std::string <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_params.html#ab51aad9bf526b801a410f30f05057f5c">displayName</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_params.html#a085d261c38264475c23898353a9b5534">   58</a></span>    std::string <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_params.html#a085d261c38264475c23898353a9b5534">meetingNum</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#ac8901818e3226da8d445d1c198659515">   59</a></span>} <a class="code hl_typedef" href="kit__define__realtime__recorder_8h.html#ac8901818e3226da8d445d1c198659515">NEMeetingRealtimeRecorderParams</a>;</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_options.html">   61</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtag_n_e_meeting_realtime_recorder_options.html">tagNEMeetingRealtimeRecorderOptions</a> {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structtag_n_e_meeting_realtime_recorder_options.html#a7455a3d81f57bdc54fc2354529ee26e1">   62</a></span>    std::string <a class="code hl_variable" href="structtag_n_e_meeting_realtime_recorder_options.html#a7455a3d81f57bdc54fc2354529ee26e1">extraData</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="kit__define__realtime__recorder_8h.html#a953721d1f19a721d9ebeb1ca32151e3d">   63</a></span>} <a class="code hl_typedef" href="kit__define__realtime__recorder_8h.html#a953721d1f19a721d9ebeb1ca32151e3d">NEMeetingRealtimeRecorderOptions</a>;</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_define" href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif  </span><span class="comment">// NEM_SDK_INTERFACE_DEFINE_REALTIME_RECORDER_H_</span></div>
+<div class="ttc" id="abuild__config_8h_html_a3b8bd0abb315cddac95fc1618a08b3f2"><div class="ttname"><a href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_BEGIN_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:16</div></div>
+<div class="ttc" id="abuild__config_8h_html_afe70f582596ac89529c8608119c585e6"><div class="ttname"><a href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_END_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:17</div></div>
+<div class="ttc" id="akit__define__public_8h_html"><div class="ttname"><a href="kit__define__public_8h.html">kit_define_public.h</a></div><div class="ttdoc">公共对象定义头文件</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9">NEMeetingRealtimeRecorderStatus</a></div><div class="ttdeci">NEMeetingRealtimeRecorderStatus</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:22</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9a13c05a83c9cda2076bc355501329d194"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a13c05a83c9cda2076bc355501329d194">kNEMeetingRealtimeRecorderStatusUnknown</a></div><div class="ttdeci">@ kNEMeetingRealtimeRecorderStatusUnknown</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:23</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9a23c13c8284a20951dd7680538625962b"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a23c13c8284a20951dd7680538625962b">kNEMeetingRealtimeRecorderStatusEnd</a></div><div class="ttdeci">@ kNEMeetingRealtimeRecorderStatusEnd</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:27</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9a78bac679756108023e74928553946a2e"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9a78bac679756108023e74928553946a2e">kNEMeetingRealtimeRecorderStatusStart</a></div><div class="ttdeci">@ kNEMeetingRealtimeRecorderStatusStart</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:24</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9ae429d9eb85f74b35c5f7a4255cbfce27"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9ae429d9eb85f74b35c5f7a4255cbfce27">kNEMeetingRealtimeRecorderStatusRecording</a></div><div class="ttdeci">@ kNEMeetingRealtimeRecorderStatusRecording</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:25</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a0e4d017cb269e455d57e655878f4b4f9af6a5cb9a546b197e1ee35bb5c924175d"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a0e4d017cb269e455d57e655878f4b4f9af6a5cb9a546b197e1ee35bb5c924175d">kNEMeetingRealtimeRecorderStatusPaused</a></div><div class="ttdeci">@ kNEMeetingRealtimeRecorderStatusPaused</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:26</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_a953721d1f19a721d9ebeb1ca32151e3d"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#a953721d1f19a721d9ebeb1ca32151e3d">NEMeetingRealtimeRecorderOptions</a></div><div class="ttdeci">struct tagNEMeetingRealtimeRecorderOptions NEMeetingRealtimeRecorderOptions</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_aa702f9397f35f0f48f80a5bb08a92abe"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#aa702f9397f35f0f48f80a5bb08a92abe">NEMeetingRealtimeRecorderEvent</a></div><div class="ttdeci">struct tagNEMeetingRealtimeRecorderEvent NEMeetingRealtimeRecorderEvent</div></div>
+<div class="ttc" id="akit__define__realtime__recorder_8h_html_ac8901818e3226da8d445d1c198659515"><div class="ttname"><a href="kit__define__realtime__recorder_8h.html#ac8901818e3226da8d445d1c198659515">NEMeetingRealtimeRecorderParams</a></div><div class="ttdeci">struct tagNEMeetingRealtimeRecorderParams NEMeetingRealtimeRecorderParams</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_event_html"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_event.html">tagNEMeetingRealtimeRecorderEvent</a></div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:30</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_event_html_a93a0d1f9d044494a44513be05f9bb4a5"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_event.html#a93a0d1f9d044494a44513be05f9bb4a5">tagNEMeetingRealtimeRecorderEvent::code</a></div><div class="ttdeci">int code</div><div class="ttdoc">NEMeetingRealtimeRecorderStatus.end.</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:39</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_event_html_adccde07cadaab4642c214428878f4758"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_event.html#adccde07cadaab4642c214428878f4758">tagNEMeetingRealtimeRecorderEvent::status</a></div><div class="ttdeci">NEMeetingRealtimeRecorderStatus status</div><div class="ttdoc">用户状态</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:34</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_event_html_aec1624a1b43671a8e335db06adf7fcc9"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_event.html#aec1624a1b43671a8e335db06adf7fcc9">tagNEMeetingRealtimeRecorderEvent::meetingNum</a></div><div class="ttdeci">std::string meetingNum</div><div class="ttdoc">会议号</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:44</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_options_html"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_options.html">tagNEMeetingRealtimeRecorderOptions</a></div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:61</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_options_html_a7455a3d81f57bdc54fc2354529ee26e1"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_options.html#a7455a3d81f57bdc54fc2354529ee26e1">tagNEMeetingRealtimeRecorderOptions::extraData</a></div><div class="ttdeci">std::string extraData</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:62</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_params_html"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_params.html">tagNEMeetingRealtimeRecorderParams</a></div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:48</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_params_html_a085d261c38264475c23898353a9b5534"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_params.html#a085d261c38264475c23898353a9b5534">tagNEMeetingRealtimeRecorderParams::meetingNum</a></div><div class="ttdeci">std::string meetingNum</div><div class="ttdoc">秒录会议号 如果是重新加入秒录会议指定秒录会议号，其他不传</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:58</div></div>
+<div class="ttc" id="astructtag_n_e_meeting_realtime_recorder_params_html_ab51aad9bf526b801a410f30f05057f5c"><div class="ttname"><a href="structtag_n_e_meeting_realtime_recorder_params.html#ab51aad9bf526b801a410f30f05057f5c">tagNEMeetingRealtimeRecorderParams::displayName</a></div><div class="ttdeci">std::string displayName</div><div class="ttdoc">用户昵称</div><div class="ttdef"><b>Definition</b> kit_define_realtime_recorder.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

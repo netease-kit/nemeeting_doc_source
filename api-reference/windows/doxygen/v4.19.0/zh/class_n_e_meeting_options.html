@@ -1,0 +1,1248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingOptions类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_n_e_meeting_options-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NEMeetingOptions类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>会议选项  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NEMeetingOptions 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_meeting_options.png" usemap="#NEMeetingOptions_map" alt=""/>
+  <map id="NEMeetingOptions_map" name="NEMeetingOptions_map">
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="76,0,219,24"/>
+<area href="class_n_e_join_meeting_options.html" title="加入会议选项" alt="NEJoinMeetingOptions" shape="rect" coords="0,112,143,136"/>
+<area href="class_n_e_start_meeting_options.html" title="开始会议选项" alt="NEStartMeetingOptions" shape="rect" coords="153,112,296,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9933dd489d5721d369d085c8cbbbe8a7" id="r_a9933dd489d5721d369d085c8cbbbe8a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9933dd489d5721d369d085c8cbbbe8a7">NEMeetingOptions</a> (bool bNoVideo=true, bool bNoAudio=true, bool bNoChat=false, bool bNoInvite=false, bool bNoScreenShare=true, bool bNoView=true, bool bNoWhiteboard=false, bool bNoRename=false, bool bNoSip=true, bool bNoMuteAllVideo=true, bool bNoMuteAllAudio=false, bool bAudioAINSEnabled=true, bool bShowMemberTag=false, bool bShowMeetingRemainingTip=false, bool bDetectMutedMic=true, bool bUnpubAudioOnMute=true, <a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a> bEmViewMode=<a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cca83feb61d42f8db9f494019fcea2c0148">NORMAL_MODE</a>, <a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a> bChatroomConfigIn=<a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a>(), bool bNoCaptions=false, bool bAutoEnableCaptionsOnJoin=false, bool bNoTranscription=false)</td></tr>
+<tr class="memdesc:a9933dd489d5721d369d085c8cbbbe8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a9933dd489d5721d369d085c8cbbbe8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aad4bb33da4490a0385ae53f9791190d1" id="r_aad4bb33da4490a0385ae53f9791190d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4bb33da4490a0385ae53f9791190d1">noVideo</a></td></tr>
+<tr class="memdesc:aad4bb33da4490a0385ae53f9791190d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置入会时是否关闭本端视频，默认为true，即关闭视频，但在会议中可重新打开  <br /></td></tr>
+<tr class="separator:aad4bb33da4490a0385ae53f9791190d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb6dbc4958651260fedf676743cf1bc" id="r_a7eb6dbc4958651260fedf676743cf1bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eb6dbc4958651260fedf676743cf1bc">noAudio</a></td></tr>
+<tr class="memdesc:a7eb6dbc4958651260fedf676743cf1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置入会时是否关闭本端音频，默认为true，即关闭音频，但在会议中可重新打开  <br /></td></tr>
+<tr class="separator:a7eb6dbc4958651260fedf676743cf1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa408ba68ba301bcad17d1aed8fbf176e" id="r_aa408ba68ba301bcad17d1aed8fbf176e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa408ba68ba301bcad17d1aed8fbf176e">showMeetingTime</a></td></tr>
+<tr class="memdesc:aa408ba68ba301bcad17d1aed8fbf176e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否在会议界面中显示会议时长，入会前设置，会议中无法设置  <br /></td></tr>
+<tr class="separator:aa408ba68ba301bcad17d1aed8fbf176e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80326c56b447b0afef50bc19620c49e" id="r_ac80326c56b447b0afef50bc19620c49e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac80326c56b447b0afef50bc19620c49e">showNameInVideo</a></td></tr>
+<tr class="memdesc:ac80326c56b447b0afef50bc19620c49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否始终在视频画面上显示名字，默认显示  <br /></td></tr>
+<tr class="separator:ac80326c56b447b0afef50bc19620c49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b01fd908c9bb5890490b9383b01d83a" id="r_a4b01fd908c9bb5890490b9383b01d83a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b01fd908c9bb5890490b9383b01d83a">enableSpeakerSpotlight</a></td></tr>
+<tr class="memdesc:a4b01fd908c9bb5890490b9383b01d83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否开启语音激励  <br /></td></tr>
+<tr class="separator:a4b01fd908c9bb5890490b9383b01d83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18f3a382c91a641d377efaefa77d65d" id="r_ac18f3a382c91a641d377efaefa77d65d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18f3a382c91a641d377efaefa77d65d">noMinimize</a></td></tr>
+<tr class="memdesc:ac18f3a382c91a641d377efaefa77d65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否允许最小化会议页面。最小化会议页面后，应用可以导航到其他页面， 并在某一时刻重新打开会议页面，最小化过程中会议正常进行，不受影响。  <br /></td></tr>
+<tr class="separator:ac18f3a382c91a641d377efaefa77d65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e672bd936f8b856197ccb04f2ce52f6" id="r_a4e672bd936f8b856197ccb04f2ce52f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e672bd936f8b856197ccb04f2ce52f6">noSwitchCamera</a></td></tr>
+<tr class="memdesc:a4e672bd936f8b856197ccb04f2ce52f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"切换摄像头"按钮  <br /></td></tr>
+<tr class="separator:a4e672bd936f8b856197ccb04f2ce52f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd09f33040542dbba99f68ea1352265b" id="r_acd09f33040542dbba99f68ea1352265b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd09f33040542dbba99f68ea1352265b">noSwitchAudioMode</a></td></tr>
+<tr class="memdesc:acd09f33040542dbba99f68ea1352265b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"切换音频模式"按钮  <br /></td></tr>
+<tr class="separator:acd09f33040542dbba99f68ea1352265b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506d7e4d15aec6ef62541b2e35e5b385" id="r_a506d7e4d15aec6ef62541b2e35e5b385"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506d7e4d15aec6ef62541b2e35e5b385">noLive</a></td></tr>
+<tr class="memdesc:a506d7e4d15aec6ef62541b2e35e5b385"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否在会议界面中显示"直播"入口  <br /></td></tr>
+<tr class="separator:a506d7e4d15aec6ef62541b2e35e5b385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc8e25eaa7e52919c46119268bb8513" id="r_afcc8e25eaa7e52919c46119268bb8513"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcc8e25eaa7e52919c46119268bb8513">showScreenShareUserVideo</a></td></tr>
+<tr class="memdesc:afcc8e25eaa7e52919c46119268bb8513"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中主页是否显示屏幕共享者的摄像头画面，当前正在共享的内容画面不受影响。 如果设置为关闭，屏幕共享者的摄像头画面会被隐藏，不会遮挡共享内容画面。  <br /></td></tr>
+<tr class="separator:afcc8e25eaa7e52919c46119268bb8513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c" id="r_ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c">enableAudioShare</a></td></tr>
+<tr class="memdesc:ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭音频共享功能。 开启后，在发起屏幕共享时，会同时自动开启设备的音频共享； 关闭后，在发起屏幕共享时，不会自动打开音频共享，但可以通过UI手动开启音频共享。 该设置默认为关闭。  <br /></td></tr>
+<tr class="separator:ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147c1abbc646c1e5f988e32670292a5b" id="r_a147c1abbc646c1e5f988e32670292a5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147c1abbc646c1e5f988e32670292a5b">showWhiteboardShareUserVideo</a></td></tr>
+<tr class="memdesc:a147c1abbc646c1e5f988e32670292a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中主页是否显示白板共享者的摄像头画面。 如果设置为开启，白板共享者的摄像头画面会以小窗口的方法覆盖在白板画面上显示。  <br /></td></tr>
+<tr class="separator:a147c1abbc646c1e5f988e32670292a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d70629735d5c4eea70faa193959871e" id="r_a2d70629735d5c4eea70faa193959871e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d70629735d5c4eea70faa193959871e">enableTransparentWhiteboard</a></td></tr>
+<tr class="memdesc:a2d70629735d5c4eea70faa193959871e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中白板共享时是否开启标注模式。  <br /></td></tr>
+<tr class="separator:a2d70629735d5c4eea70faa193959871e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0adc0c7e6f01044334ece4d8ae0e724" id="r_af0adc0c7e6f01044334ece4d8ae0e724"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0adc0c7e6f01044334ece4d8ae0e724">showFloatingMicrophone</a></td></tr>
+<tr class="memdesc:af0adc0c7e6f01044334ece4d8ae0e724"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示麦克风浮窗，默认为显示  <br /></td></tr>
+<tr class="separator:af0adc0c7e6f01044334ece4d8ae0e724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41542c27a2c882d778439e8bbc9fcdd5" id="r_a41542c27a2c882d778439e8bbc9fcdd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41542c27a2c882d778439e8bbc9fcdd5">noChat</a></td></tr>
+<tr class="memdesc:a41542c27a2c882d778439e8bbc9fcdd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"聊天"按钮，比自定义菜单中的优先级高  <br /></td></tr>
+<tr class="separator:a41542c27a2c882d778439e8bbc9fcdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f636c271b53377e4b738a386bdb458" id="r_a58f636c271b53377e4b738a386bdb458"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58f636c271b53377e4b738a386bdb458">noInvite</a></td></tr>
+<tr class="memdesc:a58f636c271b53377e4b738a386bdb458"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"邀请"按钮，比自定义菜单中的优先级高  <br /></td></tr>
+<tr class="separator:a58f636c271b53377e4b738a386bdb458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fe6e3e6a4822bfd28c18fc9f03613a" id="r_a93fe6e3e6a4822bfd28c18fc9f03613a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93fe6e3e6a4822bfd28c18fc9f03613a">noScreenShare</a></td></tr>
+<tr class="memdesc:a93fe6e3e6a4822bfd28c18fc9f03613a"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"屏幕共享"按钮，比自定义菜单中的优先级高，默认为true，即显示  <br /></td></tr>
+<tr class="separator:a93fe6e3e6a4822bfd28c18fc9f03613a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841b0105f0047f96c54b64e8d52d03f8" id="r_a841b0105f0047f96c54b64e8d52d03f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841b0105f0047f96c54b64e8d52d03f8">noView</a></td></tr>
+<tr class="memdesc:a841b0105f0047f96c54b64e8d52d03f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"视图"按钮，比自定义菜单中的优先级高，默认为true，即显示  <br /></td></tr>
+<tr class="separator:a841b0105f0047f96c54b64e8d52d03f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4708378ea74cea86e07bd1ff51ceee53" id="r_a4708378ea74cea86e07bd1ff51ceee53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4708378ea74cea86e07bd1ff51ceee53">noWhiteboard</a></td></tr>
+<tr class="memdesc:a4708378ea74cea86e07bd1ff51ceee53"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"白板"按钮，比自定义菜单中的优先级高  <br /></td></tr>
+<tr class="separator:a4708378ea74cea86e07bd1ff51ceee53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ce5e784c26e672a10d02b0bb96f5ac" id="r_a48ce5e784c26e672a10d02b0bb96f5ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48ce5e784c26e672a10d02b0bb96f5ac">noRename</a></td></tr>
+<tr class="memdesc:a48ce5e784c26e672a10d02b0bb96f5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"改名"菜单  <br /></td></tr>
+<tr class="separator:a48ce5e784c26e672a10d02b0bb96f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75f380632fa89eed7ab2c495f11968f" id="r_af75f380632fa89eed7ab2c495f11968f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af75f380632fa89eed7ab2c495f11968f">noSip</a></td></tr>
+<tr class="memdesc:af75f380632fa89eed7ab2c495f11968f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否显示"sip"按钮，默认为true，即不显示  <br /></td></tr>
+<tr class="separator:af75f380632fa89eed7ab2c495f11968f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c559243c0aed3909da266d0ffc3b56" id="r_a29c559243c0aed3909da266d0ffc3b56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c559243c0aed3909da266d0ffc3b56">noMuteAllVideo</a></td></tr>
+<tr class="memdesc:a29c559243c0aed3909da266d0ffc3b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中成员列表是否显示"全体关闭/打开视频"，默认为true，即不显示  <br /></td></tr>
+<tr class="separator:a29c559243c0aed3909da266d0ffc3b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0c720dae51dd9841b0d5e505439417" id="r_a3d0c720dae51dd9841b0d5e505439417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d0c720dae51dd9841b0d5e505439417">noMuteAllAudio</a></td></tr>
+<tr class="memdesc:a3d0c720dae51dd9841b0d5e505439417"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中成员列表是否显示"全体禁音/解除全体静音"，默认为false，即显示  <br /></td></tr>
+<tr class="separator:a3d0c720dae51dd9841b0d5e505439417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cdc131da1708fa2e178d0529bf9b21" id="r_ad1cdc131da1708fa2e178d0529bf9b21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1cdc131da1708fa2e178d0529bf9b21">audioAINSEnabled</a></td></tr>
+<tr class="memdesc:ad1cdc131da1708fa2e178d0529bf9b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中智能语音降噪开关，默认为true，即开启  <br /></td></tr>
+<tr class="separator:ad1cdc131da1708fa2e178d0529bf9b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506da7856ae046b9924701ebd4d2837c" id="r_a506da7856ae046b9924701ebd4d2837c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506da7856ae046b9924701ebd4d2837c">showMemberTag</a></td></tr>
+<tr class="memdesc:a506da7856ae046b9924701ebd4d2837c"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中成员列表是否显示成员标签，默认为false，即不显示  <br /></td></tr>
+<tr class="separator:a506da7856ae046b9924701ebd4d2837c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3554b7c8c67f8163079baa8dfb98078" id="r_ab3554b7c8c67f8163079baa8dfb98078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3554b7c8c67f8163079baa8dfb98078">showMeetingRemainingTip</a></td></tr>
+<tr class="memdesc:ab3554b7c8c67f8163079baa8dfb98078"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否显示会议时长到期提示，默认为false，即不显示  <br /></td></tr>
+<tr class="separator:ab3554b7c8c67f8163079baa8dfb98078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e20510fc98f0d32676806d1483adfa" id="r_ae0e20510fc98f0d32676806d1483adfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e20510fc98f0d32676806d1483adfa">detectMutedMic</a></td></tr>
+<tr class="memdesc:ae0e20510fc98f0d32676806d1483adfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否开启麦克风静音检测，默认开启。开启该功能后，SDK在检测到麦克风有音频输入，但此时处于静音打开的状态时，会提示用户关闭静音  <br /></td></tr>
+<tr class="separator:ae0e20510fc98f0d32676806d1483adfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca896d4b5c02051bdebc362effacd6d4" id="r_aca896d4b5c02051bdebc362effacd6d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca896d4b5c02051bdebc362effacd6d4">unpubAudioOnMute</a></td></tr>
+<tr class="memdesc:aca896d4b5c02051bdebc362effacd6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置本地静音时，是否关闭静音包发送。默认为true，即关闭静音包  <br /></td></tr>
+<tr class="separator:aca896d4b5c02051bdebc362effacd6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b454fdc707497f83c086197c1b8af0" id="r_ac6b454fdc707497f83c086197c1b8af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6b454fdc707497f83c086197c1b8af0">defaultWindowMode</a></td></tr>
+<tr class="memdesc:ac6b454fdc707497f83c086197c1b8af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议模式  <br /></td></tr>
+<tr class="separator:ac6b454fdc707497f83c086197c1b8af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1591efc0fcc32544a454b241625bf6f4" id="r_a1591efc0fcc32544a454b241625bf6f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#ac76bb2bc2786bb685ce642711ad2e1c4">NEShowMeetingIdOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1591efc0fcc32544a454b241625bf6f4">meetingIdDisplayOption</a></td></tr>
+<tr class="memdesc:a1591efc0fcc32544a454b241625bf6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议ID的展示形式  <br /></td></tr>
+<tr class="separator:a1591efc0fcc32544a454b241625bf6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d69a7b6ea07e33079e73314dd685190" id="r_a2d69a7b6ea07e33079e73314dd685190"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d69a7b6ea07e33079e73314dd685190">fullToolbarMenuItems</a></td></tr>
+<tr class="memdesc:a2d69a7b6ea07e33079e73314dd685190"><td class="mdescLeft">&#160;</td><td class="mdescRight">底部Toolbar菜单栏自定义菜单，最多显示7项，如果为空则显示默认的  <br /></td></tr>
+<tr class="separator:a2d69a7b6ea07e33079e73314dd685190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7deba0330d4c852dec608dcdbddadcac" id="r_a7deba0330d4c852dec608dcdbddadcac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7deba0330d4c852dec608dcdbddadcac">fullMoreMenuItems</a></td></tr>
+<tr class="memdesc:a7deba0330d4c852dec608dcdbddadcac"><td class="mdescLeft">&#160;</td><td class="mdescRight">底部“更多”菜单栏自定义菜单，最多添加10项，代替injected_more_menu_items_，这两个不能同时使用  <br /></td></tr>
+<tr class="separator:a7deba0330d4c852dec608dcdbddadcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b377863ee86b63d97579e808a78e5f" id="r_a14b377863ee86b63d97579e808a78e5f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14b377863ee86b63d97579e808a78e5f">memberActionMenuItems</a></td></tr>
+<tr class="memdesc:a14b377863ee86b63d97579e808a78e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议内"成员列表菜单操作项"菜单列表中的菜单操作项。通过提供一个完整的菜单列表，其中可包含SDK内置菜单操作项和自定义注入菜单操作项，SDK会根据该列表排序依次显示对应菜单操作项，并在自定义菜单点击时触发对应回调。该配置仅会议前设置生效，会议过程中修改列表不会触发更新。如果不配置该列表，  <br /></td></tr>
+<tr class="separator:a14b377863ee86b63d97579e808a78e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9943bce185d2761eca474a915c7836a" id="r_ab9943bce185d2761eca474a915c7836a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9943bce185d2761eca474a915c7836a">joinTimeout</a> = 45 * 1000</td></tr>
+<tr class="memdesc:ab9943bce185d2761eca474a915c7836a"><td class="mdescLeft">&#160;</td><td class="mdescRight">入会超时时间，如果小于等于0，则使用默认值，默认为45秒，单位为毫秒  <br /></td></tr>
+<tr class="separator:ab9943bce185d2761eca474a915c7836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc412d244b603a784d8b61af8aa29607" id="r_acc412d244b603a784d8b61af8aa29607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc412d244b603a784d8b61af8aa29607">chatroomConfig</a></td></tr>
+<tr class="memdesc:acc412d244b603a784d8b61af8aa29607"><td class="mdescLeft">&#160;</td><td class="mdescRight">聊天室配置 <code><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a></code>  <br /></td></tr>
+<tr class="separator:acc412d244b603a784d8b61af8aa29607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8ed70cecc25408d0f9626b6774c710" id="r_ade8ed70cecc25408d0f9626b6774c710"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8ed70cecc25408d0f9626b6774c710">audioProfile</a></td></tr>
+<tr class="memdesc:ade8ed70cecc25408d0f9626b6774c710"><td class="mdescLeft">&#160;</td><td class="mdescRight">语音相关参数 NEAudioProfile  <br /></td></tr>
+<tr class="separator:ade8ed70cecc25408d0f9626b6774c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3073c4dd05a321f5db9bc4e676743f" id="r_aee3073c4dd05a321f5db9bc4e676743f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee3073c4dd05a321f5db9bc4e676743f">showCloudRecordMenuItem</a> = true</td></tr>
+<tr class="memdesc:aee3073c4dd05a321f5db9bc4e676743f"><td class="mdescLeft">&#160;</td><td class="mdescRight">菜单按钮是否显示"云录制"  <br /></td></tr>
+<tr class="separator:aee3073c4dd05a321f5db9bc4e676743f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bbc7fd8ef14181a4cf0cc9b69a02023" id="r_a8bbc7fd8ef14181a4cf0cc9b69a02023"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bbc7fd8ef14181a4cf0cc9b69a02023">showCloudRecordingUI</a> = true</td></tr>
+<tr class="memdesc:a8bbc7fd8ef14181a4cf0cc9b69a02023"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议中是否展示云录制中UI  <br /></td></tr>
+<tr class="separator:a8bbc7fd8ef14181a4cf0cc9b69a02023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac482b67e8625e6834252219793821821" id="r_ac482b67e8625e6834252219793821821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac482b67e8625e6834252219793821821">enableAudioDeviceSwitch</a> = true</td></tr>
+<tr class="memdesc:ac482b67e8625e6834252219793821821"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否允许音频设备切换  <br /></td></tr>
+<tr class="separator:ac482b67e8625e6834252219793821821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4859a28e5033cd5845a656db55f88e08" id="r_a4859a28e5033cd5845a656db55f88e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4859a28e5033cd5845a656db55f88e08">noReadPhoneState</a> = false</td></tr>
+<tr class="memdesc:a4859a28e5033cd5845a656db55f88e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否允许SDK请求电话权限，默认允许。在获取电话权限后，SDK会监听系统电话状态，在接听来电或拨打电话时， 会自动断开会议内的音视频（不会退出会议），并在系统电话结束后，自动重新连接会议的音视频。  <br /></td></tr>
+<tr class="separator:a4859a28e5033cd5845a656db55f88e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6645184ad8d71f812b5a18bd2142aab" id="r_af6645184ad8d71f812b5a18bd2142aab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6645184ad8d71f812b5a18bd2142aab">noNotifyCenter</a> = false</td></tr>
+<tr class="memdesc:af6645184ad8d71f812b5a18bd2142aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否展示通知中心菜单，默认展示  <br /></td></tr>
+<tr class="separator:af6645184ad8d71f812b5a18bd2142aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3ada97eb87ed1098170cb7037367c2" id="r_a0d3ada97eb87ed1098170cb7037367c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d3ada97eb87ed1098170cb7037367c2">noWebApps</a> = false</td></tr>
+<tr class="memdesc:a0d3ada97eb87ed1098170cb7037367c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会议中是否展示 web 小应用，如签到应用。 默认会拉取小应用列表并展示  <br /></td></tr>
+<tr class="separator:a0d3ada97eb87ed1098170cb7037367c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0228dcf181869c76f4b1a5b7a3dfd08c" id="r_a0228dcf181869c76f4b1a5b7a3dfd08c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0228dcf181869c76f4b1a5b7a3dfd08c">noCaptions</a> = false</td></tr>
+<tr class="memdesc:a0228dcf181869c76f4b1a5b7a3dfd08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会中是否展示“字幕”菜单，默认展示。  <br /></td></tr>
+<tr class="separator:a0228dcf181869c76f4b1a5b7a3dfd08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc6b31311998cd0938da40ac8d95a43" id="r_a2cc6b31311998cd0938da40ac8d95a43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc6b31311998cd0938da40ac8d95a43">autoEnableCaptionsOnJoin</a> = false</td></tr>
+<tr class="memdesc:a2cc6b31311998cd0938da40ac8d95a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置入会后是否自动开启“字幕”，默认不开启。  <br /></td></tr>
+<tr class="separator:a2cc6b31311998cd0938da40ac8d95a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b4d3723ded9beb89074d20e8555350" id="r_a15b4d3723ded9beb89074d20e8555350"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b4d3723ded9beb89074d20e8555350">noTranscription</a> = false</td></tr>
+<tr class="memdesc:a15b4d3723ded9beb89074d20e8555350"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会中是否展示“转写”菜单，默认展示。  <br /></td></tr>
+<tr class="separator:a15b4d3723ded9beb89074d20e8555350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233fbaebfe932a3b887146ca3ebc6cc8" id="r_a233fbaebfe932a3b887146ca3ebc6cc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a233fbaebfe932a3b887146ca3ebc6cc8">pluginNotifyDuration</a> = 5000</td></tr>
+<tr class="memdesc:a233fbaebfe932a3b887146ca3ebc6cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置会中插件通知弹窗持续时间，单位毫秒(ms)，默认5000ms；value=0时，不显示通知弹窗；value&lt;0时，弹窗不自动消失。  <br /></td></tr>
+<tr class="separator:a233fbaebfe932a3b887146ca3ebc6cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6d67e0baee3a4d1c8fbd8897090589" id="r_a3d6d67e0baee3a4d1c8fbd8897090589"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d6d67e0baee3a4d1c8fbd8897090589">showNotYetJoinedMembers</a> = false</td></tr>
+<tr class="memdesc:a3d6d67e0baee3a4d1c8fbd8897090589"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置是否在会议界面中显示未加入成员，默认展示。  <br /></td></tr>
+<tr class="separator:a3d6d67e0baee3a4d1c8fbd8897090589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a45a964716eef8dc8dc81ef662a5a7d" id="r_a9a45a964716eef8dc8dc81ef662a5a7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a45a964716eef8dc8dc81ef662a5a7d">chatMessageNotificationType</a> = <a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5afa55681ea27c984cac0212510b8c6a2a85">kBarrage</a></td></tr>
+<tr class="memdesc:a9a45a964716eef8dc8dc81ef662a5a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置新聊天消息提醒类型  <br /></td></tr>
+<tr class="separator:a9a45a964716eef8dc8dc81ef662a5a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6604f0ae6f848cee37cc7e684f77aa" id="r_a1d6604f0ae6f848cee37cc7e684f77aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6604f0ae6f848cee37cc7e684f77aa">enableDirectMemberMediaControlByHost</a> = false</td></tr>
+<tr class="memdesc:a1d6604f0ae6f848cee37cc7e684f77aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置主持人和联席主持人是否可以直接开关参会者的音视频，不需要参会者同意，默认需要参会者同意。  <br /></td></tr>
+<tr class="separator:a1d6604f0ae6f848cee37cc7e684f77aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1ff441fd7e782e1abf4c79d6c7d116" id="r_a9b1ff441fd7e782e1abf4c79d6c7d116"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b1ff441fd7e782e1abf4c79d6c7d116">showParticipationTime</a></td></tr>
+<tr class="memdesc:a9b1ff441fd7e782e1abf4c79d6c7d116"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示参会时间  <br /></td></tr>
+<tr class="separator:a9b1ff441fd7e782e1abf4c79d6c7d116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b06e81036996c08f7b65088ad6af8a" id="r_a52b06e81036996c08f7b65088ad6af8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52b06e81036996c08f7b65088ad6af8a">enableLeaveTheMeetingRequiresConfirmation</a></td></tr>
+<tr class="memdesc:a52b06e81036996c08f7b65088ad6af8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置成员离开会议是否需要弹窗确认  <br /></td></tr>
+<tr class="separator:a52b06e81036996c08f7b65088ad6af8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>会议选项 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9933dd489d5721d369d085c8cbbbe8a7" name="a9933dd489d5721d369d085c8cbbbe8a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9933dd489d5721d369d085c8cbbbe8a7">&#9670;&#160;</a></span>NEMeetingOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NEMeetingOptions::NEMeetingOptions </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoVideo</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoAudio</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoChat</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoInvite</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoScreenShare</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoView</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoWhiteboard</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoRename</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoSip</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoMuteAllVideo</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoMuteAllAudio</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bAudioAINSEnabled</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bShowMemberTag</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bShowMeetingRemainingTip</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bDetectMutedMic</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bUnpubAudioOnMute</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a></td>          <td class="paramname"><span class="paramname"><em>bEmViewMode</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cca83feb61d42f8db9f494019fcea2c0148">NORMAL_MODE</a></span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a></td>          <td class="paramname"><span class="paramname"><em>bChatroomConfigIn</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a>()</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoCaptions</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bAutoEnableCaptionsOnJoin</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNoTranscription</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bNoVideo</td><td>配置入会时是否关闭本端视频，默认为true，即关闭视频，但在会议中可重新打开 </td></tr>
+    <tr><td class="paramname">bNoAudio</td><td>配置入会时是否关闭本端音频，默认为true，即关闭音频，但在会议中可重新打开 </td></tr>
+    <tr><td class="paramname">bNoChat</td><td>配置会议中是否显示"聊天"按钮，比自定义菜单中的优先级高 </td></tr>
+    <tr><td class="paramname">bNoInvite</td><td>配置会议中是否显示"邀请"按钮，比自定义菜单中的优先级高 </td></tr>
+    <tr><td class="paramname">bNoScreenShare</td><td>配置会议中是否显示"屏幕共享"按钮，比自定义菜单中的优先级高 </td></tr>
+    <tr><td class="paramname">bNoView</td><td>配置会议中是否显示"视图"按钮，比自定义菜单中的优先级高 </td></tr>
+    <tr><td class="paramname">bNoWhiteboard</td><td>配置会议中是否显示"白板"按钮，比自定义菜单中的优先级高 </td></tr>
+    <tr><td class="paramname">bNoRename</td><td>配置会议中是否显示"改名"菜单 </td></tr>
+    <tr><td class="paramname">bNoSip</td><td>配置会议中是否显示"sip"按钮，默认为true，即不显示 </td></tr>
+    <tr><td class="paramname">bNoMuteAllVideo</td><td>配置会议中成员列表是否显示"全体关闭/打开视频"，默认为true，即不显示 </td></tr>
+    <tr><td class="paramname">bNoMuteAllAudio</td><td>配置会议中成员列表是否显示"全体禁音/解除全体静音"，默认为false，即显示 </td></tr>
+    <tr><td class="paramname">bAudioAINSEnabled</td><td>配置会议中智能语音降噪开关，默认为true，即开启 </td></tr>
+    <tr><td class="paramname">bShowMemberTag</td><td>配置会议中成员列表是否显示成员标签，默认为false，即不显示 </td></tr>
+    <tr><td class="paramname">bShowMeetingRemainingTip</td><td>配置会议中是否显示会议结束倒计时提示，默认为false，即不显示 </td></tr>
+    <tr><td class="paramname">bDetectMutedMic</td><td>配置是否开启麦克风静音检测，默认开启。开启该功能后，SDK在检测到麦克风有音频输入，但此时处于静音打开的状态时，会提示用户关闭静音 </td></tr>
+    <tr><td class="paramname">bUnpubAudioOnMute</td><td>配置本地静音时，是否关闭静音包发送。默认为true，即关闭静音包 </td></tr>
+    <tr><td class="paramname">bEmViewMode</td><td>配置会议模式 </td></tr>
+    <tr><td class="paramname">bChatroomConfigIn</td><td>聊天室配置 </td></tr>
+    <tr><td class="paramname">bNoCaptions</td><td>是否显示字幕 </td></tr>
+    <tr><td class="paramname">bAutoEnableCaptionsOnJoin</td><td>是否自动开启字幕 </td></tr>
+    <tr><td class="paramname">bNoTranscription</td><td>是否显示转录 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ad1cdc131da1708fa2e178d0529bf9b21" name="ad1cdc131da1708fa2e178d0529bf9b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1cdc131da1708fa2e178d0529bf9b21">&#9670;&#160;</a></span>audioAINSEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::audioAINSEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中智能语音降噪开关，默认为true，即开启 </p>
+
+</div>
+</div>
+<a id="ade8ed70cecc25408d0f9626b6774c710" name="ade8ed70cecc25408d0f9626b6774c710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8ed70cecc25408d0f9626b6774c710">&#9670;&#160;</a></span>audioProfile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NEMeetingOptions::audioProfile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>语音相关参数 NEAudioProfile </p>
+
+</div>
+</div>
+<a id="a2cc6b31311998cd0938da40ac8d95a43" name="a2cc6b31311998cd0938da40ac8d95a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc6b31311998cd0938da40ac8d95a43">&#9670;&#160;</a></span>autoEnableCaptionsOnJoin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::autoEnableCaptionsOnJoin = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置入会后是否自动开启“字幕”，默认不开启。 </p>
+
+</div>
+</div>
+<a id="a9a45a964716eef8dc8dc81ef662a5a7d" name="a9a45a964716eef8dc8dc81ef662a5a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a45a964716eef8dc8dc81ef662a5a7d">&#9670;&#160;</a></span>chatMessageNotificationType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a> NEMeetingOptions::chatMessageNotificationType = <a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5afa55681ea27c984cac0212510b8c6a2a85">kBarrage</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置新聊天消息提醒类型 </p>
+
+</div>
+</div>
+<a id="acc412d244b603a784d8b61af8aa29607" name="acc412d244b603a784d8b61af8aa29607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc412d244b603a784d8b61af8aa29607">&#9670;&#160;</a></span>chatroomConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a> NEMeetingOptions::chatroomConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>聊天室配置 <code><a class="el" href="kit__define__meeting_8h.html#aa56cfa88c4b1ccb33b7703d23f4f541b">NEMeetingChatroomConfig</a></code> </p>
+
+</div>
+</div>
+<a id="ac6b454fdc707497f83c086197c1b8af0" name="ac6b454fdc707497f83c086197c1b8af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b454fdc707497f83c086197c1b8af0">&#9670;&#160;</a></span>defaultWindowMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#a5a3a34f45adf4083f79a55b3e522b7cc">NEMeetingWindowMode</a> NEMeetingOptions::defaultWindowMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议模式 </p>
+
+</div>
+</div>
+<a id="ae0e20510fc98f0d32676806d1483adfa" name="ae0e20510fc98f0d32676806d1483adfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e20510fc98f0d32676806d1483adfa">&#9670;&#160;</a></span>detectMutedMic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::detectMutedMic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否开启麦克风静音检测，默认开启。开启该功能后，SDK在检测到麦克风有音频输入，但此时处于静音打开的状态时，会提示用户关闭静音 </p>
+
+</div>
+</div>
+<a id="ac482b67e8625e6834252219793821821" name="ac482b67e8625e6834252219793821821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac482b67e8625e6834252219793821821">&#9670;&#160;</a></span>enableAudioDeviceSwitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableAudioDeviceSwitch = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否允许音频设备切换 </p>
+
+</div>
+</div>
+<a id="ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c" name="ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cc4d5568c1ea8d68e5e4f1b5e9fb4c">&#9670;&#160;</a></span>enableAudioShare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableAudioShare</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启/关闭音频共享功能。 开启后，在发起屏幕共享时，会同时自动开启设备的音频共享； 关闭后，在发起屏幕共享时，不会自动打开音频共享，但可以通过UI手动开启音频共享。 该设置默认为关闭。 </p>
+
+</div>
+</div>
+<a id="a1d6604f0ae6f848cee37cc7e684f77aa" name="a1d6604f0ae6f848cee37cc7e684f77aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6604f0ae6f848cee37cc7e684f77aa">&#9670;&#160;</a></span>enableDirectMemberMediaControlByHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableDirectMemberMediaControlByHost = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置主持人和联席主持人是否可以直接开关参会者的音视频，不需要参会者同意，默认需要参会者同意。 </p>
+
+</div>
+</div>
+<a id="a52b06e81036996c08f7b65088ad6af8a" name="a52b06e81036996c08f7b65088ad6af8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b06e81036996c08f7b65088ad6af8a">&#9670;&#160;</a></span>enableLeaveTheMeetingRequiresConfirmation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableLeaveTheMeetingRequiresConfirmation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置成员离开会议是否需要弹窗确认 </p>
+
+</div>
+</div>
+<a id="a4b01fd908c9bb5890490b9383b01d83a" name="a4b01fd908c9bb5890490b9383b01d83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b01fd908c9bb5890490b9383b01d83a">&#9670;&#160;</a></span>enableSpeakerSpotlight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableSpeakerSpotlight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否开启语音激励 </p>
+
+</div>
+</div>
+<a id="a2d70629735d5c4eea70faa193959871e" name="a2d70629735d5c4eea70faa193959871e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d70629735d5c4eea70faa193959871e">&#9670;&#160;</a></span>enableTransparentWhiteboard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::enableTransparentWhiteboard</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中白板共享时是否开启标注模式。 </p>
+
+</div>
+</div>
+<a id="a7deba0330d4c852dec608dcdbddadcac" name="a7deba0330d4c852dec608dcdbddadcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7deba0330d4c852dec608dcdbddadcac">&#9670;&#160;</a></span>fullMoreMenuItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a>&gt; NEMeetingOptions::fullMoreMenuItems</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底部“更多”菜单栏自定义菜单，最多添加10项，代替injected_more_menu_items_，这两个不能同时使用 </p>
+
+</div>
+</div>
+<a id="a2d69a7b6ea07e33079e73314dd685190" name="a2d69a7b6ea07e33079e73314dd685190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d69a7b6ea07e33079e73314dd685190">&#9670;&#160;</a></span>fullToolbarMenuItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a>&gt; NEMeetingOptions::fullToolbarMenuItems</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>底部Toolbar菜单栏自定义菜单，最多显示7项，如果为空则显示默认的 </p>
+
+</div>
+</div>
+<a id="ab9943bce185d2761eca474a915c7836a" name="ab9943bce185d2761eca474a915c7836a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9943bce185d2761eca474a915c7836a">&#9670;&#160;</a></span>joinTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NEMeetingOptions::joinTimeout = 45 * 1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>入会超时时间，如果小于等于0，则使用默认值，默认为45秒，单位为毫秒 </p>
+
+</div>
+</div>
+<a id="a1591efc0fcc32544a454b241625bf6f4" name="a1591efc0fcc32544a454b241625bf6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1591efc0fcc32544a454b241625bf6f4">&#9670;&#160;</a></span>meetingIdDisplayOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kit__define__meeting_8h.html#ac76bb2bc2786bb685ce642711ad2e1c4">NEShowMeetingIdOption</a> NEMeetingOptions::meetingIdDisplayOption</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议ID的展示形式 </p>
+
+</div>
+</div>
+<a id="a14b377863ee86b63d97579e808a78e5f" name="a14b377863ee86b63d97579e808a78e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b377863ee86b63d97579e808a78e5f">&#9670;&#160;</a></span>memberActionMenuItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="kit__define__meeting_8h.html#a8b6a519b71ec387f9b3bbbf333da2347">NEMeetingMenuItemPtr</a>&gt; NEMeetingOptions::memberActionMenuItems</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议内"成员列表菜单操作项"菜单列表中的菜单操作项。通过提供一个完整的菜单列表，其中可包含SDK内置菜单操作项和自定义注入菜单操作项，SDK会根据该列表排序依次显示对应菜单操作项，并在自定义菜单点击时触发对应回调。该配置仅会议前设置生效，会议过程中修改列表不会触发更新。如果不配置该列表， </p>
+
+</div>
+</div>
+<a id="a7eb6dbc4958651260fedf676743cf1bc" name="a7eb6dbc4958651260fedf676743cf1bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb6dbc4958651260fedf676743cf1bc">&#9670;&#160;</a></span>noAudio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noAudio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置入会时是否关闭本端音频，默认为true，即关闭音频，但在会议中可重新打开 </p>
+
+</div>
+</div>
+<a id="a0228dcf181869c76f4b1a5b7a3dfd08c" name="a0228dcf181869c76f4b1a5b7a3dfd08c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0228dcf181869c76f4b1a5b7a3dfd08c">&#9670;&#160;</a></span>noCaptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noCaptions = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会中是否展示“字幕”菜单，默认展示。 </p>
+
+</div>
+</div>
+<a id="a41542c27a2c882d778439e8bbc9fcdd5" name="a41542c27a2c882d778439e8bbc9fcdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41542c27a2c882d778439e8bbc9fcdd5">&#9670;&#160;</a></span>noChat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noChat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"聊天"按钮，比自定义菜单中的优先级高 </p>
+
+</div>
+</div>
+<a id="a58f636c271b53377e4b738a386bdb458" name="a58f636c271b53377e4b738a386bdb458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f636c271b53377e4b738a386bdb458">&#9670;&#160;</a></span>noInvite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noInvite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"邀请"按钮，比自定义菜单中的优先级高 </p>
+
+</div>
+</div>
+<a id="a506d7e4d15aec6ef62541b2e35e5b385" name="a506d7e4d15aec6ef62541b2e35e5b385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506d7e4d15aec6ef62541b2e35e5b385">&#9670;&#160;</a></span>noLive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noLive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否在会议界面中显示"直播"入口 </p>
+
+</div>
+</div>
+<a id="ac18f3a382c91a641d377efaefa77d65d" name="ac18f3a382c91a641d377efaefa77d65d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18f3a382c91a641d377efaefa77d65d">&#9670;&#160;</a></span>noMinimize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noMinimize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否允许最小化会议页面。最小化会议页面后，应用可以导航到其他页面， 并在某一时刻重新打开会议页面，最小化过程中会议正常进行，不受影响。 </p>
+
+</div>
+</div>
+<a id="a3d0c720dae51dd9841b0d5e505439417" name="a3d0c720dae51dd9841b0d5e505439417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0c720dae51dd9841b0d5e505439417">&#9670;&#160;</a></span>noMuteAllAudio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noMuteAllAudio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中成员列表是否显示"全体禁音/解除全体静音"，默认为false，即显示 </p>
+
+</div>
+</div>
+<a id="a29c559243c0aed3909da266d0ffc3b56" name="a29c559243c0aed3909da266d0ffc3b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c559243c0aed3909da266d0ffc3b56">&#9670;&#160;</a></span>noMuteAllVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noMuteAllVideo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中成员列表是否显示"全体关闭/打开视频"，默认为true，即不显示 </p>
+
+</div>
+</div>
+<a id="af6645184ad8d71f812b5a18bd2142aab" name="af6645184ad8d71f812b5a18bd2142aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6645184ad8d71f812b5a18bd2142aab">&#9670;&#160;</a></span>noNotifyCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noNotifyCenter = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否展示通知中心菜单，默认展示 </p>
+
+</div>
+</div>
+<a id="a4859a28e5033cd5845a656db55f88e08" name="a4859a28e5033cd5845a656db55f88e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4859a28e5033cd5845a656db55f88e08">&#9670;&#160;</a></span>noReadPhoneState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noReadPhoneState = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否允许SDK请求电话权限，默认允许。在获取电话权限后，SDK会监听系统电话状态，在接听来电或拨打电话时， 会自动断开会议内的音视频（不会退出会议），并在系统电话结束后，自动重新连接会议的音视频。 </p>
+
+</div>
+</div>
+<a id="a48ce5e784c26e672a10d02b0bb96f5ac" name="a48ce5e784c26e672a10d02b0bb96f5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ce5e784c26e672a10d02b0bb96f5ac">&#9670;&#160;</a></span>noRename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noRename</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"改名"菜单 </p>
+
+</div>
+</div>
+<a id="a93fe6e3e6a4822bfd28c18fc9f03613a" name="a93fe6e3e6a4822bfd28c18fc9f03613a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fe6e3e6a4822bfd28c18fc9f03613a">&#9670;&#160;</a></span>noScreenShare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noScreenShare</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"屏幕共享"按钮，比自定义菜单中的优先级高，默认为true，即显示 </p>
+
+</div>
+</div>
+<a id="af75f380632fa89eed7ab2c495f11968f" name="af75f380632fa89eed7ab2c495f11968f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75f380632fa89eed7ab2c495f11968f">&#9670;&#160;</a></span>noSip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noSip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"sip"按钮，默认为true，即不显示 </p>
+
+</div>
+</div>
+<a id="acd09f33040542dbba99f68ea1352265b" name="acd09f33040542dbba99f68ea1352265b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd09f33040542dbba99f68ea1352265b">&#9670;&#160;</a></span>noSwitchAudioMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noSwitchAudioMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"切换音频模式"按钮 </p>
+
+</div>
+</div>
+<a id="a4e672bd936f8b856197ccb04f2ce52f6" name="a4e672bd936f8b856197ccb04f2ce52f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e672bd936f8b856197ccb04f2ce52f6">&#9670;&#160;</a></span>noSwitchCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noSwitchCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"切换摄像头"按钮 </p>
+
+</div>
+</div>
+<a id="a15b4d3723ded9beb89074d20e8555350" name="a15b4d3723ded9beb89074d20e8555350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b4d3723ded9beb89074d20e8555350">&#9670;&#160;</a></span>noTranscription</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noTranscription = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会中是否展示“转写”菜单，默认展示。 </p>
+
+</div>
+</div>
+<a id="aad4bb33da4490a0385ae53f9791190d1" name="aad4bb33da4490a0385ae53f9791190d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4bb33da4490a0385ae53f9791190d1">&#9670;&#160;</a></span>noVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noVideo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置入会时是否关闭本端视频，默认为true，即关闭视频，但在会议中可重新打开 </p>
+
+</div>
+</div>
+<a id="a841b0105f0047f96c54b64e8d52d03f8" name="a841b0105f0047f96c54b64e8d52d03f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841b0105f0047f96c54b64e8d52d03f8">&#9670;&#160;</a></span>noView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noView</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"视图"按钮，比自定义菜单中的优先级高，默认为true，即显示 </p>
+
+</div>
+</div>
+<a id="a0d3ada97eb87ed1098170cb7037367c2" name="a0d3ada97eb87ed1098170cb7037367c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3ada97eb87ed1098170cb7037367c2">&#9670;&#160;</a></span>noWebApps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noWebApps = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否展示 web 小应用，如签到应用。 默认会拉取小应用列表并展示 </p>
+
+</div>
+</div>
+<a id="a4708378ea74cea86e07bd1ff51ceee53" name="a4708378ea74cea86e07bd1ff51ceee53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4708378ea74cea86e07bd1ff51ceee53">&#9670;&#160;</a></span>noWhiteboard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::noWhiteboard</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示"白板"按钮，比自定义菜单中的优先级高 </p>
+
+</div>
+</div>
+<a id="a233fbaebfe932a3b887146ca3ebc6cc8" name="a233fbaebfe932a3b887146ca3ebc6cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233fbaebfe932a3b887146ca3ebc6cc8">&#9670;&#160;</a></span>pluginNotifyDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NEMeetingOptions::pluginNotifyDuration = 5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会中插件通知弹窗持续时间，单位毫秒(ms)，默认5000ms；value=0时，不显示通知弹窗；value&lt;0时，弹窗不自动消失。 </p>
+
+</div>
+</div>
+<a id="a8bbc7fd8ef14181a4cf0cc9b69a02023" name="a8bbc7fd8ef14181a4cf0cc9b69a02023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bbc7fd8ef14181a4cf0cc9b69a02023">&#9670;&#160;</a></span>showCloudRecordingUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showCloudRecordingUI = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>会议中是否展示云录制中UI </p>
+
+</div>
+</div>
+<a id="aee3073c4dd05a321f5db9bc4e676743f" name="aee3073c4dd05a321f5db9bc4e676743f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3073c4dd05a321f5db9bc4e676743f">&#9670;&#160;</a></span>showCloudRecordMenuItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showCloudRecordMenuItem = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>菜单按钮是否显示"云录制" </p>
+
+</div>
+</div>
+<a id="af0adc0c7e6f01044334ece4d8ae0e724" name="af0adc0c7e6f01044334ece4d8ae0e724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0adc0c7e6f01044334ece4d8ae0e724">&#9670;&#160;</a></span>showFloatingMicrophone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showFloatingMicrophone</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中是否显示麦克风浮窗，默认为显示 </p>
+
+</div>
+</div>
+<a id="ab3554b7c8c67f8163079baa8dfb98078" name="ab3554b7c8c67f8163079baa8dfb98078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3554b7c8c67f8163079baa8dfb98078">&#9670;&#160;</a></span>showMeetingRemainingTip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showMeetingRemainingTip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否显示会议时长到期提示，默认为false，即不显示 </p>
+
+</div>
+</div>
+<a id="aa408ba68ba301bcad17d1aed8fbf176e" name="aa408ba68ba301bcad17d1aed8fbf176e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa408ba68ba301bcad17d1aed8fbf176e">&#9670;&#160;</a></span>showMeetingTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showMeetingTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否在会议界面中显示会议时长，入会前设置，会议中无法设置 </p>
+
+</div>
+</div>
+<a id="a506da7856ae046b9924701ebd4d2837c" name="a506da7856ae046b9924701ebd4d2837c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506da7856ae046b9924701ebd4d2837c">&#9670;&#160;</a></span>showMemberTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showMemberTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中成员列表是否显示成员标签，默认为false，即不显示 </p>
+
+</div>
+</div>
+<a id="ac80326c56b447b0afef50bc19620c49e" name="ac80326c56b447b0afef50bc19620c49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80326c56b447b0afef50bc19620c49e">&#9670;&#160;</a></span>showNameInVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showNameInVideo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否始终在视频画面上显示名字，默认显示 </p>
+
+</div>
+</div>
+<a id="a3d6d67e0baee3a4d1c8fbd8897090589" name="a3d6d67e0baee3a4d1c8fbd8897090589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6d67e0baee3a4d1c8fbd8897090589">&#9670;&#160;</a></span>showNotYetJoinedMembers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showNotYetJoinedMembers = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置是否在会议界面中显示未加入成员，默认展示。 </p>
+
+</div>
+</div>
+<a id="a9b1ff441fd7e782e1abf4c79d6c7d116" name="a9b1ff441fd7e782e1abf4c79d6c7d116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1ff441fd7e782e1abf4c79d6c7d116">&#9670;&#160;</a></span>showParticipationTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showParticipationTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否显示参会时间 </p>
+
+</div>
+</div>
+<a id="afcc8e25eaa7e52919c46119268bb8513" name="afcc8e25eaa7e52919c46119268bb8513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc8e25eaa7e52919c46119268bb8513">&#9670;&#160;</a></span>showScreenShareUserVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showScreenShareUserVideo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中主页是否显示屏幕共享者的摄像头画面，当前正在共享的内容画面不受影响。 如果设置为关闭，屏幕共享者的摄像头画面会被隐藏，不会遮挡共享内容画面。 </p>
+
+</div>
+</div>
+<a id="a147c1abbc646c1e5f988e32670292a5b" name="a147c1abbc646c1e5f988e32670292a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147c1abbc646c1e5f988e32670292a5b">&#9670;&#160;</a></span>showWhiteboardShareUserVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::showWhiteboardShareUserVideo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置会议中主页是否显示白板共享者的摄像头画面。 如果设置为开启，白板共享者的摄像头画面会以小窗口的方法覆盖在白板画面上显示。 </p>
+
+</div>
+</div>
+<a id="aca896d4b5c02051bdebc362effacd6d4" name="aca896d4b5c02051bdebc362effacd6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca896d4b5c02051bdebc362effacd6d4">&#9670;&#160;</a></span>unpubAudioOnMute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NEMeetingOptions::unpubAudioOnMute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置本地静音时，是否关闭静音包发送。默认为true，即关闭静音包 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__define__meeting_8h_source.html">kit_define_meeting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

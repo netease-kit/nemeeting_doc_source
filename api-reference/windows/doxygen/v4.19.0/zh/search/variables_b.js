@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['name_0',['name',['../struct_n_e_service_bundle.html#a985e103b1c94f36a3d2ab996e75c70e4',1,'NEServiceBundle::name'],['../struct_n_e_contact.html#a113372ee6e53633b1eed8bbf803b45ac',1,'NEContact::name'],['../struct_n_e_watermark_config.html#a57a82d1b9ee98e9a44d600d5ed87ac0d',1,'NEWatermarkConfig::name'],['../structtag_n_e_meeting_web_app_item.html#a1e15320db161ad795ddb1507bb624908',1,'tagNEMeetingWebAppItem::name'],['../structtag_n_e_room_system_device.html#a77987ee808c23817b8253eb856916d86',1,'tagNERoomSystemDevice::name']]],
+  ['needaudiodump_1',['needAudioDump',['../struct_n_e_feedback.html#a5d96e426b0f84e5371be7f46d5d733dc',1,'NEFeedback']]],
+  ['nickname_2',['nickname',['../struct_n_e_account_info.html#a4b77d9f45db9b847d51da3342d5eeefd',1,'NEAccountInfo::nickname'],['../structtag_n_e_history_meeting_item.html#a815f4c33cfca6ee59672909c6243c577',1,'tagNEHistoryMeetingItem::nickname'],['../structtag_n_e_local_history_meeting.html#ab85402b7dc67c045a7dd3ccd5d67a803',1,'tagNELocalHistoryMeeting::nickname'],['../structtag_n_e_meeting_record_file_info.html#a769b38f1672cef5d9d989d82eb70d2d3',1,'tagNEMeetingRecordFileInfo::nickname']]],
+  ['noaudio_3',['noAudio',['../class_n_e_meeting_options.html#a7eb6dbc4958651260fedf676743cf1bc',1,'NEMeetingOptions']]],
+  ['nocaptions_4',['noCaptions',['../class_n_e_meeting_options.html#a0228dcf181869c76f4b1a5b7a3dfd08c',1,'NEMeetingOptions']]],
+  ['nochat_5',['noChat',['../class_n_e_meeting_options.html#a41542c27a2c882d778439e8bbc9fcdd5',1,'NEMeetingOptions']]],
+  ['noinvite_6',['noInvite',['../class_n_e_meeting_options.html#a58f636c271b53377e4b738a386bdb458',1,'NEMeetingOptions']]],
+  ['nolive_7',['noLive',['../class_n_e_meeting_options.html#a506d7e4d15aec6ef62541b2e35e5b385',1,'NEMeetingOptions']]],
+  ['nominimize_8',['noMinimize',['../class_n_e_meeting_options.html#ac18f3a382c91a641d377efaefa77d65d',1,'NEMeetingOptions']]],
+  ['nomuteallaudio_9',['noMuteAllAudio',['../class_n_e_meeting_options.html#a3d0c720dae51dd9841b0d5e505439417',1,'NEMeetingOptions']]],
+  ['nomuteallvideo_10',['noMuteAllVideo',['../class_n_e_meeting_options.html#a29c559243c0aed3909da266d0ffc3b56',1,'NEMeetingOptions']]],
+  ['nonotifycenter_11',['noNotifyCenter',['../class_n_e_meeting_options.html#af6645184ad8d71f812b5a18bd2142aab',1,'NEMeetingOptions']]],
+  ['noreadphonestate_12',['noReadPhoneState',['../class_n_e_meeting_options.html#a4859a28e5033cd5845a656db55f88e08',1,'NEMeetingOptions']]],
+  ['norename_13',['noRename',['../class_n_e_meeting_options.html#a48ce5e784c26e672a10d02b0bb96f5ac',1,'NEMeetingOptions']]],
+  ['noscreenshare_14',['noScreenShare',['../class_n_e_meeting_options.html#a93fe6e3e6a4822bfd28c18fc9f03613a',1,'NEMeetingOptions']]],
+  ['nosip_15',['noSip',['../class_n_e_meeting_options.html#af75f380632fa89eed7ab2c495f11968f',1,'NEMeetingOptions::noSip'],['../structtag_n_e_meeting_item.html#aa9e4aed48b11b85dc1e18a1dcd1a7e3e',1,'tagNEMeetingItem::noSip']]],
+  ['noswitchaudiomode_16',['noSwitchAudioMode',['../class_n_e_meeting_options.html#acd09f33040542dbba99f68ea1352265b',1,'NEMeetingOptions']]],
+  ['noswitchcamera_17',['noSwitchCamera',['../class_n_e_meeting_options.html#a4e672bd936f8b856197ccb04f2ce52f6',1,'NEMeetingOptions']]],
+  ['notfoundlist_18',['notFoundList',['../struct_n_e_contacts_info_result.html#af9f0c9dfb0b4db911c012e20b7c0e706',1,'NEContactsInfoResult']]],
+  ['notifyicon_19',['notifyIcon',['../structtag_n_e_meeting_web_app_icon_item.html#a82594364a7b42af2965cda4979dcccc9',1,'tagNEMeetingWebAppIconItem']]],
+  ['notranscription_20',['noTranscription',['../class_n_e_meeting_options.html#a15b4d3723ded9beb89074d20e8555350',1,'NEMeetingOptions']]],
+  ['novideo_21',['noVideo',['../class_n_e_meeting_options.html#aad4bb33da4490a0385ae53f9791190d1',1,'NEMeetingOptions']]],
+  ['noview_22',['noView',['../class_n_e_meeting_options.html#a841b0105f0047f96c54b64e8d52d03f8',1,'NEMeetingOptions']]],
+  ['nowebapps_23',['noWebApps',['../class_n_e_meeting_options.html#a0d3ada97eb87ed1098170cb7037367c2',1,'NEMeetingOptions']]],
+  ['nowhiteboard_24',['noWhiteboard',['../class_n_e_meeting_options.html#a4708378ea74cea86e07bd1ff51ceee53',1,'NEMeetingOptions']]]
+];

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingRecord.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingRecord.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_record_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html">   12</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record_file_info.html">NEMeetingRecordFileInfo</a> : NSObject</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#abe46eff71595ad7acfed0556ac13ef85">   16</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#abe46eff71595ad7acfed0556ac13ef85">type</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a97ca448c901ce3e003c53885918918a0">   20</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a97ca448c901ce3e003c53885918918a0">mix</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#aa88846a7b65e8c667d27ca554e6f3bdd">   24</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#aa88846a7b65e8c667d27ca554e6f3bdd">filename</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a55009b9787608ca0b8c9b075ec74a8e2">   28</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a55009b9787608ca0b8c9b075ec74a8e2">md5</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#aafc510cec4a262e8ed69d86c828d664a">   32</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> <a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#aafc510cec4a262e8ed69d86c828d664a">size</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a25fda9a255008503e3a3ee3cc31f9682">   36</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a25fda9a255008503e3a3ee3cc31f9682">url</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a27aee8e8d5a4f512d2cb14a4b09db316">   40</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> <a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a27aee8e8d5a4f512d2cb14a4b09db316">vid</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#ab71ba276e8c69807f2b95630ccc24042">   44</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> <a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#ab71ba276e8c69807f2b95630ccc24042">pieceIndex</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a0bc8f04eb6a898e29d4c87b8c5ac6a32">   48</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a0bc8f04eb6a898e29d4c87b8c5ac6a32">userUuid</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_file_info.html#a924c5df660203dd55fe03558a33964c9">   52</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_record_file_info.html#a924c5df660203dd55fe03558a33964c9">nickname</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record.html">   59</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record.html">NEMeetingRecord</a> : NSObject</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record.html#adb8cda26645f0867bd55327f2a653275">   63</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *recordId;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record.html#a144f15dc32843a8d3b9ce0eeab7cd732">   67</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger recordStartTime;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record.html#aced7247da771f837a65a3b7ea2d730c2">   71</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger recordEndTime;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record.html#aaa7ff2567633744d415b75c81ca21f24">   75</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingRecordFileInfo *&gt; *infoList;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html">   82</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record_item.html">NEMeetingRecordItem</a> : NSObject</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#aa14bdbaacb73991237a91a79fce3a34c">   87</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *recordSubject;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#ac029e29d0e7a4addf6dc7b62cfce4eed">   91</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *meetingNum;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#a67c07278fa5e85416d894535148a38f8">   95</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *roomArchiveId;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#ab45c9384e7fb559193f28b45e8ff8e01">   99</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger recordCreateTime;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#a2cb09ea85974a58a7d5e317c54e88b06">  103</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger recordFileSize;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#aef59a349d14d24e6b4c1a0a12f27da32">  107</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger recordFileCount;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#aec580b2c5a41d727d0f3ba05217fc110">  111</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger type;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#a73fecf32fba60285327301395560f9c1">  115</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger subType;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#ace8028c1bbcb0db78024f1480298db41">  119</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *owner;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#a6345f6a0b2d8ca068630d83c5ee57729">  123</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL editable;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#a15b43a30e694199d8a77722b557e77ac">  127</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL hidable;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item.html#aff3d4c621047ec11ec174b2967cb7ae9">  131</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL deletable;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item_list_info.html">  138</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record_item_list_info.html">NEMeetingRecordItemListInfo</a> : NSObject</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item_list_info.html#a6bdb20f49aa07d0cee31854977eeefe4">  143</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger total;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_item_list_info.html#ab0774abced44c4ce0ad739a77134c556">  147</a></span><span class="keyword">@property</span>(nonatomic, strong) NSArray&lt;NEMeetingRecordItem *&gt; *data;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html">  151</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record_query_params.html">NEMeetingRecordQueryParams</a> : NSObject</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#aeca94defa3d352ec094cd4a553daa86f">  155</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger startTime;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#a201ec01ba3f9b7dca43656d50cb871b5">  159</a></span><span class="keyword">@property</span>(nonatomic, assign) NSInteger endTime;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#af774576e93bebac2e500ef80b6d0883f">  163</a></span><span class="keyword">@property</span>(nonatomic, strong) NSNumber *pageNum;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#a5bc37ca8adcb1e31ba3f279b80c26f1b">  167</a></span><span class="keyword">@property</span>(nonatomic, strong) NSNumber *pageSize;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#a47bd87afd42ce0cbb068285784236948">  171</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *owner;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#af83dbdb1e440fdcb5d975c5044572d38">  175</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *ownerUserName;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#a52c19d7a7cb309ba49436f5e12b5cea2">  179</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *subject;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_query_params.html#acf9806783cfab28f6f3acd21c7a3dfd6">  184</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *meetingNum;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_edit_data.html">  188</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_record_edit_data.html">NEMeetingRecordEditData</a> : NSObject</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_edit_data.html#a4913ee74ed256e71c118e2fb10e75725">  192</a></span><span class="keyword">@property</span>(nonatomic, copy, nullable) NSString *subject;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_record_edit_data.html#a8e35d839c24c356fad9f66ad9f5cecf1">  196</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL hide;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_e_meeting_record_edit_data_html"><div class="ttname"><a href="interface_n_e_meeting_record_edit_data.html">NEMeetingRecordEditData</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:189</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html">NEMeetingRecordFileInfo</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:13</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a0bc8f04eb6a898e29d4c87b8c5ac6a32"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a0bc8f04eb6a898e29d4c87b8c5ac6a32">NEMeetingRecordFileInfo::userUuid</a></div><div class="ttdeci">NSString * userUuid</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:48</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a25fda9a255008503e3a3ee3cc31f9682"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a25fda9a255008503e3a3ee3cc31f9682">NEMeetingRecordFileInfo::url</a></div><div class="ttdeci">NSString * url</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:36</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a27aee8e8d5a4f512d2cb14a4b09db316"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a27aee8e8d5a4f512d2cb14a4b09db316">NEMeetingRecordFileInfo::vid</a></div><div class="ttdeci">long vid</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:40</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a55009b9787608ca0b8c9b075ec74a8e2"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a55009b9787608ca0b8c9b075ec74a8e2">NEMeetingRecordFileInfo::md5</a></div><div class="ttdeci">NSString * md5</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:28</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a924c5df660203dd55fe03558a33964c9"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a924c5df660203dd55fe03558a33964c9">NEMeetingRecordFileInfo::nickname</a></div><div class="ttdeci">NSString * nickname</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:52</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_a97ca448c901ce3e003c53885918918a0"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#a97ca448c901ce3e003c53885918918a0">NEMeetingRecordFileInfo::mix</a></div><div class="ttdeci">BOOL mix</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:20</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_aa88846a7b65e8c667d27ca554e6f3bdd"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#aa88846a7b65e8c667d27ca554e6f3bdd">NEMeetingRecordFileInfo::filename</a></div><div class="ttdeci">NSString * filename</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:24</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_aafc510cec4a262e8ed69d86c828d664a"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#aafc510cec4a262e8ed69d86c828d664a">NEMeetingRecordFileInfo::size</a></div><div class="ttdeci">long size</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:32</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_ab71ba276e8c69807f2b95630ccc24042"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#ab71ba276e8c69807f2b95630ccc24042">NEMeetingRecordFileInfo::pieceIndex</a></div><div class="ttdeci">int pieceIndex</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:44</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_file_info_html_abe46eff71595ad7acfed0556ac13ef85"><div class="ttname"><a href="interface_n_e_meeting_record_file_info.html#abe46eff71595ad7acfed0556ac13ef85">NEMeetingRecordFileInfo::type</a></div><div class="ttdeci">NSString * type</div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:16</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_html"><div class="ttname"><a href="interface_n_e_meeting_record.html">NEMeetingRecord</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:60</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_item_html"><div class="ttname"><a href="interface_n_e_meeting_record_item.html">NEMeetingRecordItem</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:83</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_item_list_info_html"><div class="ttname"><a href="interface_n_e_meeting_record_item_list_info.html">NEMeetingRecordItemListInfo</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:139</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_record_query_params_html"><div class="ttname"><a href="interface_n_e_meeting_record_query_params.html">NEMeetingRecordQueryParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingRecord.h:152</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

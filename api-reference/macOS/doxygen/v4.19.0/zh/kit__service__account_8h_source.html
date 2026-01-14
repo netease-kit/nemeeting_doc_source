@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: nem_sdk_interface/kit_service_account.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_066864215930fcb1de91ced207833729.html">nem_sdk_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">kit_service_account.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="kit__service__account_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef NEM_SDK_INTERFACE_INTERFACE_CLIENT_SERVICE_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define NEM_SDK_INTERFACE_INTERFACE_CLIENT_SERVICE_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="kit__define__account_8h.html">kit_define_account.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="kit__service__define_8h.html">kit_service_define.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_e_account_service_listener.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="class_n_e_account_service_listener.html">NEAccountServiceListener</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_e_object.html">NEObject</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_e_account_service_listener.html#a499f34112cf7253cc38c26a4c718eacf">   33</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service_listener.html#a499f34112cf7253cc38c26a4c718eacf">onKickOut</a>() = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_e_account_service_listener.html#adb8021b361602ae13aa677ee791a1e72">   39</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service_listener.html#adb8021b361602ae13aa677ee791a1e72">onAuthInfoExpired</a>() = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_n_e_account_service_listener.html#ac40e167ef85be2ebced97fd2b91f9a66">   45</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service_listener.html#ac40e167ef85be2ebced97fd2b91f9a66">onReconnected</a>() = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_n_e_account_service_listener.html#af79c073d126cd252dd2f1ccddb42d72f">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service_listener.html#af79c073d126cd252dd2f1ccddb42d72f">onAccountInfoUpdated</a>(<a class="code hl_struct" href="struct_n_e_account_info.html">NEAccountInfo</a> accountInfo) = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html">   58</a></span><span class="keyword">class </span><a class="code hl_define" href="kit__interface__export_8h.html#a49bb450b054cce5c9000b2a029403851">NEM_SDK_INTERFACE_EXPORT</a> <a class="code hl_class" href="class_n_e_account_service.html">NEAccountService</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_e_service.html">NEService</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">   60</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a> = <a class="code hl_typedef" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback&lt;NEAccountInfo&gt;</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a1540d92456407c3dedf80f0ea02da966">   67</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a1540d92456407c3dedf80f0ea02da966">tryAutoLogin</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a8c52b16d525aa8983fc871413773b0dd">   75</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a8c52b16d525aa8983fc871413773b0dd">loginByToken</a>(<span class="keyword">const</span> std::string&amp; userUuid, <span class="keyword">const</span> std::string&amp; token, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#af4e67b55dbce0627d87bc10999ce650c">   83</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#af4e67b55dbce0627d87bc10999ce650c">loginByPassword</a>(<span class="keyword">const</span> std::string&amp; userUuid, <span class="keyword">const</span> std::string&amp; password, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a3a17c0b783a84deaa01948bb0dd716dd">   91</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a3a17c0b783a84deaa01948bb0dd716dd">requestSmsCodeForLogin</a>(<span class="keyword">const</span> std::string&amp; phoneNumber, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#accc206ccb410c1d09a272242b2fc7635">   99</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#accc206ccb410c1d09a272242b2fc7635">requestSmsCodeForGuest</a>(<span class="keyword">const</span> std::string&amp; phoneNumber, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a707c0e842a37518be8d573967e06c3f5">  108</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a707c0e842a37518be8d573967e06c3f5">loginBySmsCode</a>(<span class="keyword">const</span> std::string&amp; phoneNumber, <span class="keyword">const</span> std::string&amp; smsCode, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#af50e7640cebd3a0a9fe52c85e76f7161">  115</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#af50e7640cebd3a0a9fe52c85e76f7161">generateSSOLoginWebURL</a>(<span class="keyword">const</span> std::string&amp; schemaUrl, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback&lt;std::string&gt;</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a9916bd20c9e7bad81559bb019ea1df23">  123</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a9916bd20c9e7bad81559bb019ea1df23">loginBySSOUri</a>(<span class="keyword">const</span> std::string&amp; ssoUri, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a121048b46b6a9b5826389079e5b88b6a">  132</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a121048b46b6a9b5826389079e5b88b6a">loginByEmail</a>(<span class="keyword">const</span> std::string&amp; email, <span class="keyword">const</span> std::string&amp; password, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a26b05721bec005701cbe66c8761de348">  141</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a26b05721bec005701cbe66c8761de348">loginByPhoneNumber</a>(<span class="keyword">const</span> std::string&amp; phoneNumber, <span class="keyword">const</span> std::string&amp; password, <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#ae6da09f6ff6cd8696d7851f053ecfef1">  148</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#ae6da09f6ff6cd8696d7851f053ecfef1">getAccountInfo</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NELoginCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#adc5781e448f7bf19affc263c6438fd34">  154</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#adc5781e448f7bf19affc263c6438fd34">addListener</a>(<a class="code hl_class" href="class_n_e_account_service_listener.html">NEAccountServiceListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a78e0df06c654b85ef514a4efd6a28d20">  160</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a78e0df06c654b85ef514a4efd6a28d20">removeListener</a>(<a class="code hl_class" href="class_n_e_account_service_listener.html">NEAccountServiceListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#ad40ce5a46f65c3ac990b3ca011319996">  169</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#ad40ce5a46f65c3ac990b3ca011319996">resetPassword</a>(<span class="keyword">const</span> std::string&amp; userUuid,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keyword">const</span> std::string&amp; newPassword,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keyword">const</span> std::string&amp; oldPassword,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a0c9aeadb198edd112af1039df6cb7bf7">  179</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a0c9aeadb198edd112af1039df6cb7bf7">updateAvatar</a>(<span class="keyword">const</span> std::string&amp; imagePath, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#a06faa4a2142f06f481976886d51a3d5a">  186</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#a06faa4a2142f06f481976886d51a3d5a">updateNickname</a>(<span class="keyword">const</span> std::string&amp; nickname, <span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="class_n_e_account_service.html#ae97810255d4c3470661474cb61fddccb">  192</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_e_account_service.html#ae97810255d4c3470661474cb61fddccb">logout</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
+</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><a class="code hl_define" href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#endif  </span><span class="comment">// NEM_SDK_INTERFACE_INTERFACE_CLIENT_SERVICE_H_</span></div>
+<div class="ttc" id="abuild__config_8h_html_a3b8bd0abb315cddac95fc1618a08b3f2"><div class="ttname"><a href="build__config_8h.html#a3b8bd0abb315cddac95fc1618a08b3f2">NNEM_SDK_INTERFACE_BEGIN_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_BEGIN_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:16</div></div>
+<div class="ttc" id="abuild__config_8h_html_afe70f582596ac89529c8608119c585e6"><div class="ttname"><a href="build__config_8h.html#afe70f582596ac89529c8608119c585e6">NNEM_SDK_INTERFACE_END_DECLS</a></div><div class="ttdeci">#define NNEM_SDK_INTERFACE_END_DECLS</div><div class="ttdef"><b>Definition</b> build_config.h:17</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html"><div class="ttname"><a href="class_n_e_account_service.html">NEAccountService</a></div><div class="ttdoc">账户服务</div><div class="ttdef"><b>Definition</b> kit_service_account.h:58</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a06faa4a2142f06f481976886d51a3d5a"><div class="ttname"><a href="class_n_e_account_service.html#a06faa4a2142f06f481976886d51a3d5a">NEAccountService::updateNickname</a></div><div class="ttdeci">virtual void updateNickname(const std::string &amp;nickname, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">修改当前登录账号昵称</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a0c9aeadb198edd112af1039df6cb7bf7"><div class="ttname"><a href="class_n_e_account_service.html#a0c9aeadb198edd112af1039df6cb7bf7">NEAccountService::updateAvatar</a></div><div class="ttdeci">virtual void updateAvatar(const std::string &amp;imagePath, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">修改当前登录账号头像</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a121048b46b6a9b5826389079e5b88b6a"><div class="ttname"><a href="class_n_e_account_service.html#a121048b46b6a9b5826389079e5b88b6a">NEAccountService::loginByEmail</a></div><div class="ttdeci">virtual void loginByEmail(const std::string &amp;email, const std::string &amp;password, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过邮箱密码登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a1540d92456407c3dedf80f0ea02da966"><div class="ttname"><a href="class_n_e_account_service.html#a1540d92456407c3dedf80f0ea02da966">NEAccountService::tryAutoLogin</a></div><div class="ttdeci">virtual void tryAutoLogin(const NELoginCallback &amp;callback)=0</div><div class="ttdoc">自动登录鉴权。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a26b05721bec005701cbe66c8761de348"><div class="ttname"><a href="class_n_e_account_service.html#a26b05721bec005701cbe66c8761de348">NEAccountService::loginByPhoneNumber</a></div><div class="ttdeci">virtual void loginByPhoneNumber(const std::string &amp;phoneNumber, const std::string &amp;password, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过电话号码密码登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a3a17c0b783a84deaa01948bb0dd716dd"><div class="ttname"><a href="class_n_e_account_service.html#a3a17c0b783a84deaa01948bb0dd716dd">NEAccountService::requestSmsCodeForLogin</a></div><div class="ttdeci">virtual void requestSmsCodeForLogin(const std::string &amp;phoneNumber, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">请求登录验证码。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a532be7a747e33d3f1ff279dc7c7196de"><div class="ttname"><a href="class_n_e_account_service.html#a532be7a747e33d3f1ff279dc7c7196de">NEAccountService::NELoginCallback</a></div><div class="ttdeci">NECallback&lt; NEAccountInfo &gt; NELoginCallback</div><div class="ttdef"><b>Definition</b> kit_service_account.h:60</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a707c0e842a37518be8d573967e06c3f5"><div class="ttname"><a href="class_n_e_account_service.html#a707c0e842a37518be8d573967e06c3f5">NEAccountService::loginBySmsCode</a></div><div class="ttdeci">virtual void loginBySmsCode(const std::string &amp;phoneNumber, const std::string &amp;smsCode, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过验证码登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a78e0df06c654b85ef514a4efd6a28d20"><div class="ttname"><a href="class_n_e_account_service.html#a78e0df06c654b85ef514a4efd6a28d20">NEAccountService::removeListener</a></div><div class="ttdeci">virtual void removeListener(NEAccountServiceListener *listener)=0</div><div class="ttdoc">移除账号服务监听实例</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a8c52b16d525aa8983fc871413773b0dd"><div class="ttname"><a href="class_n_e_account_service.html#a8c52b16d525aa8983fc871413773b0dd">NEAccountService::loginByToken</a></div><div class="ttdeci">virtual void loginByToken(const std::string &amp;userUuid, const std::string &amp;token, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过用户唯一ID和Token登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_a9916bd20c9e7bad81559bb019ea1df23"><div class="ttname"><a href="class_n_e_account_service.html#a9916bd20c9e7bad81559bb019ea1df23">NEAccountService::loginBySSOUri</a></div><div class="ttdeci">virtual void loginBySSOUri(const std::string &amp;ssoUri, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过SSO登录结果uri完成会议组件登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_accc206ccb410c1d09a272242b2fc7635"><div class="ttname"><a href="class_n_e_account_service.html#accc206ccb410c1d09a272242b2fc7635">NEAccountService::requestSmsCodeForGuest</a></div><div class="ttdeci">virtual void requestSmsCodeForGuest(const std::string &amp;phoneNumber, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">请求访客认证手机验证码</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_ad40ce5a46f65c3ac990b3ca011319996"><div class="ttname"><a href="class_n_e_account_service.html#ad40ce5a46f65c3ac990b3ca011319996">NEAccountService::resetPassword</a></div><div class="ttdeci">virtual void resetPassword(const std::string &amp;userUuid, const std::string &amp;newPassword, const std::string &amp;oldPassword, const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">重置密码</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_adc5781e448f7bf19affc263c6438fd34"><div class="ttname"><a href="class_n_e_account_service.html#adc5781e448f7bf19affc263c6438fd34">NEAccountService::addListener</a></div><div class="ttdeci">virtual void addListener(NEAccountServiceListener *listener)=0</div><div class="ttdoc">注册账号服务监听实例</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_ae6da09f6ff6cd8696d7851f053ecfef1"><div class="ttname"><a href="class_n_e_account_service.html#ae6da09f6ff6cd8696d7851f053ecfef1">NEAccountService::getAccountInfo</a></div><div class="ttdeci">virtual void getAccountInfo(const NELoginCallback &amp;callback)=0</div><div class="ttdoc">获取当前登录账号信息。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_ae97810255d4c3470661474cb61fddccb"><div class="ttname"><a href="class_n_e_account_service.html#ae97810255d4c3470661474cb61fddccb">NEAccountService::logout</a></div><div class="ttdeci">virtual void logout(const NEEmptyCallback &amp;callback)=0</div><div class="ttdoc">登出</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_af4e67b55dbce0627d87bc10999ce650c"><div class="ttname"><a href="class_n_e_account_service.html#af4e67b55dbce0627d87bc10999ce650c">NEAccountService::loginByPassword</a></div><div class="ttdeci">virtual void loginByPassword(const std::string &amp;userUuid, const std::string &amp;password, const NELoginCallback &amp;callback)=0</div><div class="ttdoc">通过用户唯一ID和密码登录鉴权。成功时返回 NEAccountInfo。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_html_af50e7640cebd3a0a9fe52c85e76f7161"><div class="ttname"><a href="class_n_e_account_service.html#af50e7640cebd3a0a9fe52c85e76f7161">NEAccountService::generateSSOLoginWebURL</a></div><div class="ttdeci">virtual void generateSSOLoginWebURL(const std::string &amp;schemaUrl, const NECallback&lt; std::string &gt; &amp;callback)=0</div><div class="ttdoc">生成SSO登录链接，调用方使用该链接通过浏览器去完成SSO登录。</div></div>
+<div class="ttc" id="aclass_n_e_account_service_listener_html"><div class="ttname"><a href="class_n_e_account_service_listener.html">NEAccountServiceListener</a></div><div class="ttdoc">监听登录状态变更通知</div><div class="ttdef"><b>Definition</b> kit_service_account.h:27</div></div>
+<div class="ttc" id="aclass_n_e_account_service_listener_html_a499f34112cf7253cc38c26a4c718eacf"><div class="ttname"><a href="class_n_e_account_service_listener.html#a499f34112cf7253cc38c26a4c718eacf">NEAccountServiceListener::onKickOut</a></div><div class="ttdeci">virtual void onKickOut()=0</div><div class="ttdoc">被踢出，登录状态变更为未登录，原因为当前登录账号已在其他设备上重新登录</div></div>
+<div class="ttc" id="aclass_n_e_account_service_listener_html_ac40e167ef85be2ebced97fd2b91f9a66"><div class="ttname"><a href="class_n_e_account_service_listener.html#ac40e167ef85be2ebced97fd2b91f9a66">NEAccountServiceListener::onReconnected</a></div><div class="ttdeci">virtual void onReconnected()=0</div><div class="ttdoc">断线重连成功</div></div>
+<div class="ttc" id="aclass_n_e_account_service_listener_html_adb8021b361602ae13aa677ee791a1e72"><div class="ttname"><a href="class_n_e_account_service_listener.html#adb8021b361602ae13aa677ee791a1e72">NEAccountServiceListener::onAuthInfoExpired</a></div><div class="ttdeci">virtual void onAuthInfoExpired()=0</div><div class="ttdoc">账号信息过期通知，原因为用户修改了密码，应用层随后应该重新登录</div></div>
+<div class="ttc" id="aclass_n_e_account_service_listener_html_af79c073d126cd252dd2f1ccddb42d72f"><div class="ttname"><a href="class_n_e_account_service_listener.html#af79c073d126cd252dd2f1ccddb42d72f">NEAccountServiceListener::onAccountInfoUpdated</a></div><div class="ttdeci">virtual void onAccountInfoUpdated(NEAccountInfo accountInfo)=0</div><div class="ttdoc">账号信息更新通知</div></div>
+<div class="ttc" id="aclass_n_e_object_html"><div class="ttname"><a href="class_n_e_object.html">NEObject</a></div><div class="ttdoc">公共对象</div><div class="ttdef"><b>Definition</b> kit_define_public.h:24</div></div>
+<div class="ttc" id="aclass_n_e_service_html"><div class="ttname"><a href="class_n_e_service.html">NEService</a></div><div class="ttdoc">公共服务</div><div class="ttdef"><b>Definition</b> kit_service_define.h:23</div></div>
+<div class="ttc" id="akit__define__account_8h_html"><div class="ttname"><a href="kit__define__account_8h.html">kit_define_account.h</a></div><div class="ttdoc">账号服务头文件</div></div>
+<div class="ttc" id="akit__define__callback_8h_html_a1fa184463e4799c8374cd65ad3ee43f1"><div class="ttname"><a href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a></div><div class="ttdeci">NECallback&lt;&gt; NEEmptyCallback</div><div class="ttdef"><b>Definition</b> kit_define_callback.h:27</div></div>
+<div class="ttc" id="akit__define__callback_8h_html_ace434984c94183b5a0534f48f2fea7c6"><div class="ttname"><a href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a></div><div class="ttdeci">std::function&lt; void(MeetingErrorCode, const std::string &amp;, const TResultParam &amp;...)&gt; NECallback</div><div class="ttdef"><b>Definition</b> kit_define_callback.h:25</div></div>
+<div class="ttc" id="akit__interface__export_8h_html_a49bb450b054cce5c9000b2a029403851"><div class="ttname"><a href="kit__interface__export_8h.html#a49bb450b054cce5c9000b2a029403851">NEM_SDK_INTERFACE_EXPORT</a></div><div class="ttdeci">#define NEM_SDK_INTERFACE_EXPORT</div><div class="ttdef"><b>Definition</b> kit_interface_export.h:35</div></div>
+<div class="ttc" id="akit__service__define_8h_html"><div class="ttname"><a href="kit__service__define_8h.html">kit_service_define.h</a></div><div class="ttdoc">公共服务定义头文件</div></div>
+<div class="ttc" id="astruct_n_e_account_info_html"><div class="ttname"><a href="struct_n_e_account_info.html">NEAccountInfo</a></div><div class="ttdef"><b>Definition</b> kit_define_account.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

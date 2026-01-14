@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['category_0',['category',['../struct_n_e_feedback.html#a7dcee895e71f7090a16c861cd42441f5',1,'NEFeedback']]],
+  ['chatmessagenotificationtype_1',['chatMessageNotificationType',['../class_n_e_meeting_options.html#a9a45a964716eef8dc8dc81ef662a5a7d',1,'NEMeetingOptions']]],
+  ['chatroomconfig_2',['chatroomConfig',['../class_n_e_meeting_options.html#acc412d244b603a784d8b61af8aa29607',1,'NEMeetingOptions']]],
+  ['chatroomid_3',['chatroomId',['../structtag_n_e_chatroom_info.html#ac5868d91f31d4463ea186ea8f78f1d83',1,'tagNEChatroomInfo']]],
+  ['chatroomid_4',['chatRoomId',['../structtag_n_e_meeting_item_live.html#ab9fd6d963c025950ad1ae7db8b10b3fe',1,'tagNEMeetingItemLive']]],
+  ['chatroominfo_5',['chatroomInfo',['../structtag_n_e_remote_history_meeting_detail.html#ad6ff3cf188a67af8874666f25e18e8d8',1,'tagNERemoteHistoryMeetingDetail']]],
+  ['checked_6',['checked',['../structtag_n_e_checkable_menu_item.html#ac0bd4b9b5cb8678b005c193455c7844b',1,'tagNECheckableMenuItem']]],
+  ['checkedstateitem_7',['checkedStateItem',['../structtag_n_e_checkable_menu_item.html#ab30a737e2a8729d055c03c4203983e35',1,'tagNECheckableMenuItem']]],
+  ['cloudrecordconfig_8',['cloudRecordConfig',['../class_n_e_start_meeting_options.html#a575e6dc7d14d3e2e540936f942fa7feb',1,'NEStartMeetingOptions::cloudRecordConfig'],['../structtag_n_e_meeting_item.html#af666c3ff417c56244fc40c30770c5228',1,'tagNEMeetingItem::cloudRecordConfig']]],
+  ['cloudrecordon_9',['cloudRecordOn',['../structtag_n_e_meeting_item_setting.html#a2e3be729515661850e94b61f0f05ed21',1,'tagNEMeetingItemSetting']]],
+  ['code_10',['code',['../structtag_n_e_meeting_scene.html#a16c5a5543ee75477306b43f638dbcb8e',1,'tagNEMeetingScene::code'],['../structtag_n_e_meeting_realtime_recorder_event.html#a93a0d1f9d044494a44513be05f9bb4a5',1,'tagNEMeetingRealtimeRecorderEvent::code'],['../struct_n_e_meeting_status_listener_1_1_event.html#aa4b46e5149ef592072690a3576c60fd2',1,'NEMeetingStatusListener::Event::code']]],
+  ['cohostlimit_11',['coHostLimit',['../structtag_n_e_scheduled_member_config.html#a231b9d94e559421e949e5aeb0aabd981',1,'tagNEScheduledMemberConfig']]],
+  ['content_12',['content',['../structtag_n_e_meeting_transcription_message.html#a0efa1595386b775bc55d8d6ac3eed381',1,'tagNEMeetingTranscriptionMessage::content'],['../struct_n_e_meeting_app_notice_tip.html#a4716fbbeca15bd4466d0eb00b3c1ddef',1,'NEMeetingAppNoticeTip::content'],['../struct_n_e_meeting_recent_session.html#a1df8529f2a139bc0f1ec0a26786e7e64',1,'NEMeetingRecentSession::content'],['../struct_n_e_meeting_get_message_history_params.html#a0e8ed2edba32e2879d484ee068830754',1,'NEMeetingGetMessageHistoryParams::content']]],
+  ['controls_13',['controls',['../class_n_e_start_meeting_params.html#af0f582a9de4b52ba9b53f404abb8ea1f',1,'NEStartMeetingParams::controls'],['../structtag_n_e_meeting_item_setting.html#a0cab90e952eb439fe1ea4c7e3839633a',1,'tagNEMeetingItemSetting::controls']]],
+  ['corpname_14',['corpName',['../struct_n_e_account_info.html#a3cbccd6d6baa4b19bcff8a04fae59d57',1,'NEAccountInfo']]],
+  ['currentaudiocontrol_15',['currentAudioControl',['../structtag_n_e_meeting_item_setting.html#afa792144848198b182472bb25bb178de',1,'tagNEMeetingItemSetting']]],
+  ['currentvideocontrol_16',['currentVideoControl',['../structtag_n_e_meeting_item_setting.html#a495b906c61aa51291e2d9dddcaebf11c',1,'tagNEMeetingItemSetting']]],
+  ['curtime_17',['curTime',['../struct_n_e_meeting_app_notice_tips.html#a436f969e4faa8a5fcc78a3f69733d780',1,'NEMeetingAppNoticeTips']]],
+  ['customizedfrequency_18',['customizedFrequency',['../structtag_n_e_meeting_recurring_rule.html#abaa5d27f577e3badf8164ea98db55256',1,'tagNEMeetingRecurringRule']]]
+];

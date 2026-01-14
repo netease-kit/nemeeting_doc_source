@@ -1,105 +1,105 @@
-# NEMeeting SDK Documentation
+# NEMeeting SDK 文档
 
-Welcome to the NEMeeting SDK documentation. This repository contains comprehensive guides and references for integrating NEMeeting SDK into your applications.
+欢迎使用 NEMeeting SDK 文档。此仓库包含将 NEMeeting SDK 集成到您的应用程序中的全面指南和参考。
 
-## Documentation Structure
+## 文档结构
 
-### Guides (`/guides`)
+### 指南 (`/guides`)
 
-Complete integration guides, tutorials, and best practices for all supported platforms:
+所有支持平台的完整集成指南、教程和最佳实践：
 
-- **Android** - Mobile Android integration
-- **iOS** - Mobile iOS integration
-- **Web** - Web browser integration
-- **H5** - Mobile H5 integration
-- **Windows** - Windows desktop integration
-- **macOS** - macOS desktop integration
-- **Linux** - Linux platform integration
-- **Electron** - Cross-platform desktop apps
+- **Android** - 移动端 Android 集成
+- **iOS** - 移动端 iOS 集成
+- **Web** - Web 浏览器集成
+- **H5** - 移动 H5 集成
+- **Windows** - Windows 桌面端集成
+- **macOS** - macOS 桌面端集成
+- **Linux** - Linux 平台集成
+- **Electron** - 跨平台桌面应用
 
-Each platform guide includes:
-- **Quick Start** - Download SDK, run demos, basic integration
-- **Meeting Management** - Create, schedule, join meetings, and invitations
-- **Meeting Security** - Watermarks, audio/video controls, media encryption
-- **UI Customization** - Theme settings, custom menus, UI components
-- **Advanced Features** - Beauty filters, virtual backgrounds, meeting extensions, IM integration
-- **Troubleshooting** - FAQs and common issues
+每个平台指南包括：
+- **快速入门** - 下载 SDK、运行示例、基本集成
+- **会议管理** - 创建、安排、加入会议和邀请
+- **会议安全** - 水印、音视频控制、媒体加密
+- **UI 自定义** - 主题设置、自定义菜单、UI 组件
+- **高级功能** - 美颜滤镜、虚拟背景、会议扩展、IM 集成
+- **故障排除** - 常见问题解答和常见问题
 
-### API Reference (`/api-reference`)
+### API 参考 (`/api-reference`)
 
-*Detailed API references* - Visit: [API Reference](./api-reference/README.md)
+*详细的 API 参考* - 访问：[API 参考](./api-reference/README.md)
 
-## Getting Started
+## 开始使用
 
-1. Choose your target platform from the `/guides` directory
-2. Follow the Quick Start guide to download SDK and run the sample code
-3. Integrate the SDK into your project following the integration guide
-4. Explore advanced features based on your use case
+1. 从 `/guides` 目录中选择您的目标平台
+2. 按照快速入门指南下载 SDK 并运行示例代码
+3. 根据集成指南将 SDK 集成到您的项目中
+4. 根据您的用例探索高级功能
 
-## Platform-Specific Quick Links
+## 平台特定快速链接
 
-### Mobile Platforms
+### 移动平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速入门 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Android** | [实现音视频会议](guides/Android/快速开始/) | [集成 SDK](guides/Android/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/Android/快速开始/) |
 | **iOS** | [实现音视频会议](guides/iOS/快速开始/) | [集成 SDK](guides/iOS/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/iOS/快速开始/) |
 | **H5** | [实现音视频会议](guides/H5/快速开始/) | [集成 SDK](guides/H5/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/H5/快速开始/) |
 
-### Desktop Platforms
+### 桌面平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速入门 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Windows** | [实现音视频会议](guides/Windows/快速开始/) | [集成 SDK](guides/Windows/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/Windows/快速开始/) |
 | **macOS** | [实现音视频会议](guides/macOS/快速开始/) | [集成 SDK](guides/macOS/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/macOS/快速开始/) |
 | **Linux** | [实现音视频会议](guides/Linux/快速开始/) | [集成 SDK](guides/Linux/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/Linux/快速开始/) |
 
-### Web & Cross-Platform
+### Web 和跨平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速入门 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Web** | [实现音视频会议](guides/Web/快速开始/) | [集成 SDK](guides/Web/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/Web/快速开始/) |
 | **Electron** | [实现音视频会议](guides/Electron/快速开始/) | [集成 SDK](guides/Electron/快速开始/集成并初始化%20SDK.md) | [下载 SDK](guides/Electron/快速开始/) |
 
-## Key Features
+## 关键特性
 
-### Core Capabilities
+### 核心能力
 
-- **Multi-platform Support** - Native SDKs for 8 platforms including mobile, desktop, and web
-- **High Quality Audio/Video** - Professional-grade real-time video conferencing
-- **Flexible Architecture** - Support for various scenarios:
-  - 1-on-1 video calls
-  - Multi-party group meetings
-  - Scheduled meetings and instant meetings
-  - Meeting controls and participant management
+- **多平台支持** - 支持 8 个平台的原生 SDK，包括移动、桌面和 Web
+- **高质量音视频** - 专业级实时视频会议
+- **灵活架构** - 支持各种场景：
+  - 一对一视频通话
+  - 多人小组会议
+  - 预定会议和即时会议
+  - 会议控制和参与者管理
 
-### Security Features
+### 安全特性
 
-- **Watermarks** - Anti-recording watermark protection
-- **Media Encryption** - End-to-end encrypted transmission
-- **Meeting Controls** - Audio/video state control, meeting lock
+- **水印** - 防录制水印保护
+- **媒体加密** - 端到端加密传输
+- **会议控制** - 音视频状态控制、会议锁定
 
-### UI Customization
+### UI 自定义
 
-- **Theme Settings** - Dark/light theme switching
-- **Language Support** - Multi-language localization
-- **Custom Menus** - Meeting toolbar customization
-- **UI Components** - Customizable interface elements
+- **主题设置** - 深色/浅色主题切换
+- **语言支持** - 多语言本地化
+- **自定义菜单** - 会议工具栏自定义
+- **UI 组件** - 可自定义的界面元素
 
-### Advanced Features
+### 高级功能
 
-- **Beauty Filters** - Basic beauty effects
-- **Virtual Backgrounds** - Custom meeting backgrounds
-- **Meeting Extensions** - Plugin and extension capabilities
-- **IM Integration** - Reuse existing IM account systems
-- **Private Cloud** - Support for private deployment
+- **美颜滤镜** - 基础美颜效果
+- **虚拟背景** - 自定义会议背景
+- **会议扩展** - 插件和扩展功能
+- **IM 集成** - 重用现有 IM 账户系统
+- **私有云** - 支持私有部署
 
-## Support
+## 支持
 
-- **Official Website** - [NetEase CommsEase](https://yunxin.163.com/)
-- **Console** - [Management Console](https://app.yunxin.163.com/)
-- **Technical Support** - Visit official website for support
+- **官方网站** - [网易云信](https://yunxin.163.com/)
+- **控制台** - [管理控制台](https://app.yunxin.163.com/)
+- **技术支持** - 访问官网获取支持
 
-## License
+## 许可证
 
-Please refer to NetEase CommsEase Service Agreement for SDK usage.
+请参阅网易云信服务协议以了解 SDK 使用条款。

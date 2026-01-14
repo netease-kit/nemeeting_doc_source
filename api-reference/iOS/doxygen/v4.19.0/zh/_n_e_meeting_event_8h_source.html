@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingEvent.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingEvent.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_event_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407e">   12</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407e">NEMeetingStatus</a>) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae48bcb11a2658a5bf5af54231715084f">   17</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae48bcb11a2658a5bf5af54231715084f">MEETING_STATUS_FAILED</a> = -1,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaf3ac26490434bd1e9c08ebe057e7f642">   22</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaf3ac26490434bd1e9c08ebe057e7f642">MEETING_STATUS_IDLE</a> = 0,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea2ab67ced66bb129e34aa5547a131e667">   29</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea2ab67ced66bb129e34aa5547a131e667">MEETING_STATUS_WAITING</a> = 1,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea8fe7628121484cd3e1e5a4a2d3162abe">   34</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea8fe7628121484cd3e1e5a4a2d3162abe">MEETING_STATUS_CONNECTING</a> = 2,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ead1e73065cb374ae2a30daee9c4ddaa27">   39</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ead1e73065cb374ae2a30daee9c4ddaa27">MEETING_STATUS_INMEETING</a> = 3,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea5361df6983846cac94e38ecca408f702">   44</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea5361df6983846cac94e38ecca408f702">MEETING_STATUS_INMEETING_MINIMIZED</a> = 4,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea1dd044d60b2782dfd516e514ec322ece">   49</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea1dd044d60b2782dfd516e514ec322ece">MEETING_STATUS_IN_WAITING_ROOM</a> = 5,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea3c2b9971d204da5e61f13268f2fb5bff">   54</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea3c2b9971d204da5e61f13268f2fb5bff">MEETING_STATUS_DISCONNECTING</a> = 6,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae61e628cff4b05250e2b6ee58fca41c3">   59</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae61e628cff4b05250e2b6ee58fca41c3">MEETING_STATUS_IN_SCREEN_SHARING</a> = 7,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaac96132f59182a66b901807a978f0d71">   64</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaac96132f59182a66b901807a978f0d71">MEETING_STATUS_UNKNOWN</a>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23">   70</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23">MeetingCode</a>) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a12b9a7173fd13d0c191ee28abd700030">   75</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a12b9a7173fd13d0c191ee28abd700030">MEETING_DISCONNECTING_BY_NORMAL</a> = 0,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23aa592912a2354c3d2971c5f4e8152c9e4">   80</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23aa592912a2354c3d2971c5f4e8152c9e4">MEETING_DISCONNECTING_BY_HOST</a> = 1,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a13a8b3977b3c5dab9310ce9578dc53d6">   85</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a13a8b3977b3c5dab9310ce9578dc53d6">MEETING_DISCONNECTING_CLOSED_BY_HOST</a> = 2,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23ac4da014067e54259e525556d2a70d8fb">   90</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23ac4da014067e54259e525556d2a70d8fb">MEETING_DISCONNECTING_LOGIN_ON_OTHER_DEVICE</a> = 3,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a3588fc1b756ba7bc343e063b6f3b4340">   95</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a3588fc1b756ba7bc343e063b6f3b4340">MEETING_DISCONNECTING_CLOSED_BY_SELF_AS_HOST</a> = 4,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7d7f9d0dbd74b386be310de53cf815cd">  101</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7d7f9d0dbd74b386be310de53cf815cd">MEETING_DISCONNECTING_AUTH_INFO_EXPIRED</a> = 5,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a558565e3b3608a830961d78156837d54">  106</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a558565e3b3608a830961d78156837d54">MEETING_DISCONNECTING_NOT_EXIST</a> = 7,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a981d5fe5647384461ef808f5f2bcf410">  111</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a981d5fe5647384461ef808f5f2bcf410">MEETING_DISCONNECTING_SYNC_DATA_ERROR</a> = 8,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a770eb5a96dd076f8300df35fcfc4532a">  116</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a770eb5a96dd076f8300df35fcfc4532a">MEETING_DISCONNECTING_RTC_INIT_ERROR</a> = 9,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a5fcf53edcfe45d772d28acbccef9fa49">  121</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a5fcf53edcfe45d772d28acbccef9fa49">MEETING_DISCONNECTING_JOIN_CHANNEL_ERROR</a> = 10,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a6918448dd979e3089a34dfc2cb7120da">  126</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a6918448dd979e3089a34dfc2cb7120da">MEETING_DISCONNECTING_JOIN_TIMEOUT</a> = 11,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a415ae981ab68c79809ca83f58eb2dd5a">  131</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a415ae981ab68c79809ca83f58eb2dd5a">MEETING_DISCONNECTING_END_OF_LIFE</a> = 12,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a446df05e55acf86aa8208b4fda0c43a4">  136</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a446df05e55acf86aa8208b4fda0c43a4">MEETING_DISCONNECTING_KICK_BY_OTHER_DEVICE</a> = 13,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7428f4d5a5cd15d8b08978d1b4cf03fd">  141</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7428f4d5a5cd15d8b08978d1b4cf03fd">MEETING_DISCONNECTING_OTHER_DEVICE_MOVE_TO_WAITING_ROOM</a> = 14,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a103e4cfadbc0ec354bfc7b7b7b52a2df">  147</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a103e4cfadbc0ec354bfc7b7b7b52a2df">MEETING_WAITING_VERIFY_PASSWORD</a> = 20,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="_n_e_meeting_event_8h.html#a74b12fe4f8cfb1c4a690d5bce9919c94">  150</a></span><span class="keyword">typedef</span> <a class="code hl_enumeration" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23">MeetingCode</a> <a class="code hl_typedef" href="_n_e_meeting_event_8h.html#a74b12fe4f8cfb1c4a690d5bce9919c94">NEMeetingCode</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_event.html">  155</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_event.html">NEMeetingEvent</a> : NSObject</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_event.html#ae8180d2c095b13dd11a4eb243841b663">  160</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407e">NEMeetingStatus</a> <a class="code hl_property" href="interface_n_e_meeting_event.html#ae8180d2c095b13dd11a4eb243841b663">status</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_event.html#a66731df29c4cb1dc3819815eb21f2fd2">  165</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23">NEMeetingCode</a> <a class="code hl_property" href="interface_n_e_meeting_event.html#a66731df29c4cb1dc3819815eb21f2fd2">arg</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_event.html#af14e167c9983164b0f75e8a3f3e70a26">  170</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">id</span> _Nullable <a class="code hl_property" href="interface_n_e_meeting_event.html#af14e167c9983164b0f75e8a3f3e70a26">obj</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23">MeetingCode</a></div><div class="ttdeci">MeetingCode</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:70</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a103e4cfadbc0ec354bfc7b7b7b52a2df"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a103e4cfadbc0ec354bfc7b7b7b52a2df">MEETING_WAITING_VERIFY_PASSWORD</a></div><div class="ttdeci">@ MEETING_WAITING_VERIFY_PASSWORD</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:147</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a12b9a7173fd13d0c191ee28abd700030"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a12b9a7173fd13d0c191ee28abd700030">MEETING_DISCONNECTING_BY_NORMAL</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_BY_NORMAL</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:75</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a13a8b3977b3c5dab9310ce9578dc53d6"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a13a8b3977b3c5dab9310ce9578dc53d6">MEETING_DISCONNECTING_CLOSED_BY_HOST</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_CLOSED_BY_HOST</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:85</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a3588fc1b756ba7bc343e063b6f3b4340"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a3588fc1b756ba7bc343e063b6f3b4340">MEETING_DISCONNECTING_CLOSED_BY_SELF_AS_HOST</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_CLOSED_BY_SELF_AS_HOST</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:95</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a415ae981ab68c79809ca83f58eb2dd5a"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a415ae981ab68c79809ca83f58eb2dd5a">MEETING_DISCONNECTING_END_OF_LIFE</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_END_OF_LIFE</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:131</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a446df05e55acf86aa8208b4fda0c43a4"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a446df05e55acf86aa8208b4fda0c43a4">MEETING_DISCONNECTING_KICK_BY_OTHER_DEVICE</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_KICK_BY_OTHER_DEVICE</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:136</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a558565e3b3608a830961d78156837d54"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a558565e3b3608a830961d78156837d54">MEETING_DISCONNECTING_NOT_EXIST</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_NOT_EXIST</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:106</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a5fcf53edcfe45d772d28acbccef9fa49"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a5fcf53edcfe45d772d28acbccef9fa49">MEETING_DISCONNECTING_JOIN_CHANNEL_ERROR</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_JOIN_CHANNEL_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:121</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a6918448dd979e3089a34dfc2cb7120da"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a6918448dd979e3089a34dfc2cb7120da">MEETING_DISCONNECTING_JOIN_TIMEOUT</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_JOIN_TIMEOUT</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:126</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a7428f4d5a5cd15d8b08978d1b4cf03fd"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7428f4d5a5cd15d8b08978d1b4cf03fd">MEETING_DISCONNECTING_OTHER_DEVICE_MOVE_TO_WAITING_ROOM</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_OTHER_DEVICE_MOVE_TO_WAITING_ROOM</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:141</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a770eb5a96dd076f8300df35fcfc4532a"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a770eb5a96dd076f8300df35fcfc4532a">MEETING_DISCONNECTING_RTC_INIT_ERROR</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_RTC_INIT_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:116</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a7d7f9d0dbd74b386be310de53cf815cd"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a7d7f9d0dbd74b386be310de53cf815cd">MEETING_DISCONNECTING_AUTH_INFO_EXPIRED</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_AUTH_INFO_EXPIRED</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:101</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23a981d5fe5647384461ef808f5f2bcf410"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23a981d5fe5647384461ef808f5f2bcf410">MEETING_DISCONNECTING_SYNC_DATA_ERROR</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_SYNC_DATA_ERROR</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:111</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23aa592912a2354c3d2971c5f4e8152c9e4"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23aa592912a2354c3d2971c5f4e8152c9e4">MEETING_DISCONNECTING_BY_HOST</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_BY_HOST</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:80</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a56273f7978fa0b9a6e2c815c97bdda23ac4da014067e54259e525556d2a70d8fb"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a56273f7978fa0b9a6e2c815c97bdda23ac4da014067e54259e525556d2a70d8fb">MEETING_DISCONNECTING_LOGIN_ON_OTHER_DEVICE</a></div><div class="ttdeci">@ MEETING_DISCONNECTING_LOGIN_ON_OTHER_DEVICE</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:90</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_a74b12fe4f8cfb1c4a690d5bce9919c94"><div class="ttname"><a href="_n_e_meeting_event_8h.html#a74b12fe4f8cfb1c4a690d5bce9919c94">NEMeetingCode</a></div><div class="ttdeci">MeetingCode NEMeetingCode</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:150</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407e"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407e">NEMeetingStatus</a></div><div class="ttdeci">NEMeetingStatus</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:12</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ea1dd044d60b2782dfd516e514ec322ece"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea1dd044d60b2782dfd516e514ec322ece">MEETING_STATUS_IN_WAITING_ROOM</a></div><div class="ttdeci">@ MEETING_STATUS_IN_WAITING_ROOM</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:49</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ea2ab67ced66bb129e34aa5547a131e667"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea2ab67ced66bb129e34aa5547a131e667">MEETING_STATUS_WAITING</a></div><div class="ttdeci">@ MEETING_STATUS_WAITING</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:29</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ea3c2b9971d204da5e61f13268f2fb5bff"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea3c2b9971d204da5e61f13268f2fb5bff">MEETING_STATUS_DISCONNECTING</a></div><div class="ttdeci">@ MEETING_STATUS_DISCONNECTING</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:54</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ea5361df6983846cac94e38ecca408f702"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea5361df6983846cac94e38ecca408f702">MEETING_STATUS_INMEETING_MINIMIZED</a></div><div class="ttdeci">@ MEETING_STATUS_INMEETING_MINIMIZED</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:44</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ea8fe7628121484cd3e1e5a4a2d3162abe"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ea8fe7628121484cd3e1e5a4a2d3162abe">MEETING_STATUS_CONNECTING</a></div><div class="ttdeci">@ MEETING_STATUS_CONNECTING</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:34</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407eaac96132f59182a66b901807a978f0d71"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaac96132f59182a66b901807a978f0d71">MEETING_STATUS_UNKNOWN</a></div><div class="ttdeci">@ MEETING_STATUS_UNKNOWN</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:64</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407ead1e73065cb374ae2a30daee9c4ddaa27"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407ead1e73065cb374ae2a30daee9c4ddaa27">MEETING_STATUS_INMEETING</a></div><div class="ttdeci">@ MEETING_STATUS_INMEETING</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:39</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407eae48bcb11a2658a5bf5af54231715084f"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae48bcb11a2658a5bf5af54231715084f">MEETING_STATUS_FAILED</a></div><div class="ttdeci">@ MEETING_STATUS_FAILED</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:17</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407eae61e628cff4b05250e2b6ee58fca41c3"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eae61e628cff4b05250e2b6ee58fca41c3">MEETING_STATUS_IN_SCREEN_SHARING</a></div><div class="ttdeci">@ MEETING_STATUS_IN_SCREEN_SHARING</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:59</div></div>
+<div class="ttc" id="a_n_e_meeting_event_8h_html_abcc1b8d7827a544534493d44b1d2407eaf3ac26490434bd1e9c08ebe057e7f642"><div class="ttname"><a href="_n_e_meeting_event_8h.html#abcc1b8d7827a544534493d44b1d2407eaf3ac26490434bd1e9c08ebe057e7f642">MEETING_STATUS_IDLE</a></div><div class="ttdeci">@ MEETING_STATUS_IDLE</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:22</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_event_html"><div class="ttname"><a href="interface_n_e_meeting_event.html">NEMeetingEvent</a></div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:156</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_event_html_a66731df29c4cb1dc3819815eb21f2fd2"><div class="ttname"><a href="interface_n_e_meeting_event.html#a66731df29c4cb1dc3819815eb21f2fd2">NEMeetingEvent::arg</a></div><div class="ttdeci">NEMeetingCode arg</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:165</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_event_html_ae8180d2c095b13dd11a4eb243841b663"><div class="ttname"><a href="interface_n_e_meeting_event.html#ae8180d2c095b13dd11a4eb243841b663">NEMeetingEvent::status</a></div><div class="ttdeci">NEMeetingStatus status</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:160</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_event_html_af14e167c9983164b0f75e8a3f3e70a26"><div class="ttname"><a href="interface_n_e_meeting_event.html#af14e167c9983164b0f75e8a3f3e70a26">NEMeetingEvent::obj</a></div><div class="ttdeci">id _Nullable obj</div><div class="ttdef"><b>Definition</b> NEMeetingEvent.h:170</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,2811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NESettingsService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_n_e_settings_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NESettingsService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>配置服务  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kit__service__setting_8h_source.html">kit_service_setting.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NESettingsService 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_e_settings_service.png" usemap="#NESettingsService_map" alt=""/>
+  <map id="NESettingsService_map" name="NESettingsService_map">
+<area href="class_n_e_service.html" title="公共服务" alt="NEService" shape="rect" coords="0,56,117,80"/>
+<area href="class_n_e_object.html" title="公共对象" alt="NEObject" shape="rect" coords="0,0,117,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7da8adb202ca9b598ed52f0de3cda7d9" id="r_a7da8adb202ca9b598ed52f0de3cda7d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsBoolCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;bool&gt;</td></tr>
+<tr class="separator:a7da8adb202ca9b598ed52f0de3cda7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1311b947e0fe0163d3a881103b1556" id="r_a6e1311b947e0fe0163d3a881103b1556"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e1311b947e0fe0163d3a881103b1556">NEInterpretationConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a8e9453d22b2375b413ea61669008c671">NEInterpretationConfig</a>&gt;</td></tr>
+<tr class="separator:a6e1311b947e0fe0163d3a881103b1556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee560af6cacbe81e1acce37828293f" id="r_aa8ee560af6cacbe81e1acce37828293f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ee560af6cacbe81e1acce37828293f">NEScheduledMemberConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a74e21d4fa6c13a76e91e102c9f9908bc">NEScheduledMemberConfig</a>&gt;</td></tr>
+<tr class="separator:aa8ee560af6cacbe81e1acce37828293f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ef34cbfb463a5f59a5bf826ca3a7d" id="r_a323ef34cbfb463a5f59a5bf826ca3a7d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a323ef34cbfb463a5f59a5bf826ca3a7d">NEChatMessageNotificationTypeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a>&gt;</td></tr>
+<tr class="separator:a323ef34cbfb463a5f59a5bf826ca3a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb511af58c6111165cb7496508e2f2d4" id="r_adb511af58c6111165cb7496508e2f2d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb511af58c6111165cb7496508e2f2d4">NEASRTranslationLanguageCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#aa973176565ca4a6d7e9c614592f458b3">NEMeetingASRTranslationLanguage</a>&gt;</td></tr>
+<tr class="separator:adb511af58c6111165cb7496508e2f2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241299c2aba49650debacd39a21c8800" id="r_a241299c2aba49650debacd39a21c8800"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a241299c2aba49650debacd39a21c8800">NECloudRecordConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a>&gt;</td></tr>
+<tr class="separator:a241299c2aba49650debacd39a21c8800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac472afcb5d10edcdcb22a8b575246a99" id="r_ac472afcb5d10edcdcb22a8b575246a99"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac472afcb5d10edcdcb22a8b575246a99">NEMeetingAudioAINSModeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a>&gt;</td></tr>
+<tr class="separator:ac472afcb5d10edcdcb22a8b575246a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1fd86bec7b0015d8505049bec7a11f2b" id="r_a1fd86bec7b0015d8505049bec7a11f2b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd86bec7b0015d8505049bec7a11f2b">openSettingsWindow</a> (const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1fd86bec7b0015d8505049bec7a11f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开设置窗口  <br /></td></tr>
+<tr class="separator:a1fd86bec7b0015d8505049bec7a11f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38c6bcd84126fe64b09512a62a1dd98" id="r_aa38c6bcd84126fe64b09512a62a1dd98"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa38c6bcd84126fe64b09512a62a1dd98">enableShowMyMeetingElapseTime</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aa38c6bcd84126fe64b09512a62a1dd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否显示会议时长  <br /></td></tr>
+<tr class="separator:aa38c6bcd84126fe64b09512a62a1dd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213cd2c7fda2db9c910edc7f5b91b7fa" id="r_a213cd2c7fda2db9c910edc7f5b91b7fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a213cd2c7fda2db9c910edc7f5b91b7fa">isShowMyMeetingElapseTimeEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a213cd2c7fda2db9c910edc7f5b91b7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否显示会议时长  <br /></td></tr>
+<tr class="separator:a213cd2c7fda2db9c910edc7f5b91b7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae008ffac2b76a53f2938c56ceffb1b43" id="r_ae008ffac2b76a53f2938c56ceffb1b43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae008ffac2b76a53f2938c56ceffb1b43">enableTurnOnMyVideoWhenJoinMeeting</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ae008ffac2b76a53f2938c56ceffb1b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置入会时是否打开本地视频  <br /></td></tr>
+<tr class="separator:ae008ffac2b76a53f2938c56ceffb1b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032fbe925329af2a518bb5ae38822ade" id="r_a032fbe925329af2a518bb5ae38822ade"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a032fbe925329af2a518bb5ae38822ade">isTurnOnMyVideoWhenJoinMeetingEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a032fbe925329af2a518bb5ae38822ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询入会时是否打开本地视频  <br /></td></tr>
+<tr class="separator:a032fbe925329af2a518bb5ae38822ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5beda3c3836e10256276dd9ffc3528" id="r_aef5beda3c3836e10256276dd9ffc3528"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef5beda3c3836e10256276dd9ffc3528">enableTurnOnMyAudioWhenJoinMeeting</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aef5beda3c3836e10256276dd9ffc3528"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置入会时是否打开本地音频  <br /></td></tr>
+<tr class="separator:aef5beda3c3836e10256276dd9ffc3528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c5f2a886351c27baf9a74e3ba0ba36" id="r_a15c5f2a886351c27baf9a74e3ba0ba36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15c5f2a886351c27baf9a74e3ba0ba36">isTurnOnMyAudioWhenJoinMeetingEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a15c5f2a886351c27baf9a74e3ba0ba36"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询入会时是否打开本地音频  <br /></td></tr>
+<tr class="separator:a15c5f2a886351c27baf9a74e3ba0ba36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d8890f09e24d94c78a024975ee41ac" id="r_a02d8890f09e24d94c78a024975ee41ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02d8890f09e24d94c78a024975ee41ac">isMeetingLiveSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a02d8890f09e24d94c78a024975ee41ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持会议直播  <br /></td></tr>
+<tr class="separator:a02d8890f09e24d94c78a024975ee41ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03698316beee9459a4742ace54f4a2f5" id="r_a03698316beee9459a4742ace54f4a2f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03698316beee9459a4742ace54f4a2f5">isMeetingWhiteboardSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a03698316beee9459a4742ace54f4a2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持白板共享  <br /></td></tr>
+<tr class="separator:a03698316beee9459a4742ace54f4a2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3823ec20619a3a11cf874c1ae3db980" id="r_ad3823ec20619a3a11cf874c1ae3db980"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3823ec20619a3a11cf874c1ae3db980">isMeetingCloudRecordSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ad3823ec20619a3a11cf874c1ae3db980"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持云端录制服务  <br /></td></tr>
+<tr class="separator:ad3823ec20619a3a11cf874c1ae3db980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaa7b09485691ed04c6977636190eb1" id="r_a3eaa7b09485691ed04c6977636190eb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eaa7b09485691ed04c6977636190eb1">enableAudioAINS</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a3eaa7b09485691ed04c6977636190eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开音频智能降噪  <br /></td></tr>
+<tr class="separator:a3eaa7b09485691ed04c6977636190eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad910a8903a676c82efa5a2a1deb1162f" id="r_ad910a8903a676c82efa5a2a1deb1162f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad910a8903a676c82efa5a2a1deb1162f">isAudioAINSEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ad910a8903a676c82efa5a2a1deb1162f"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询音频智能降噪是否打开  <br /></td></tr>
+<tr class="separator:ad910a8903a676c82efa5a2a1deb1162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d7826676c11f18df95ca6cfd73a6a5" id="r_a89d7826676c11f18df95ca6cfd73a6a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89d7826676c11f18df95ca6cfd73a6a5">enableVirtualBackground</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a89d7826676c11f18df95ca6cfd73a6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否显示虚拟背景  <br /></td></tr>
+<tr class="separator:a89d7826676c11f18df95ca6cfd73a6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab949fdf4a0f17d72b3076fb73d10b08b" id="r_ab949fdf4a0f17d72b3076fb73d10b08b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab949fdf4a0f17d72b3076fb73d10b08b">isVirtualBackgroundEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ab949fdf4a0f17d72b3076fb73d10b08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询虚拟背景是否显示  <br /></td></tr>
+<tr class="separator:ab949fdf4a0f17d72b3076fb73d10b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cb25ea4cf20c051bfbdac02aa9e730" id="r_ab8cb25ea4cf20c051bfbdac02aa9e730"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8cb25ea4cf20c051bfbdac02aa9e730">setBuiltinVirtualBackgroundList</a> (std::list&lt; std::string &gt; pathList, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab8cb25ea4cf20c051bfbdac02aa9e730"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置内置虚拟背景图片路径列表  <br /></td></tr>
+<tr class="separator:ab8cb25ea4cf20c051bfbdac02aa9e730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760e14faabe1546645f5059bc69341af" id="r_a760e14faabe1546645f5059bc69341af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a760e14faabe1546645f5059bc69341af">getBuiltinVirtualBackgroundList</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::list&lt; std::string &gt; &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a760e14faabe1546645f5059bc69341af"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取内置虚拟背景图片路径列表  <br /></td></tr>
+<tr class="separator:a760e14faabe1546645f5059bc69341af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab825553d0b8f39cbc611e0b127a7b30b" id="r_ab825553d0b8f39cbc611e0b127a7b30b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab825553d0b8f39cbc611e0b127a7b30b">setExternalVirtualBackgroundList</a> (std::list&lt; std::string &gt; pathList, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab825553d0b8f39cbc611e0b127a7b30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置外部虚拟背景图片路径列表  <br /></td></tr>
+<tr class="separator:ab825553d0b8f39cbc611e0b127a7b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7774350159b265d9c29495a85739396a" id="r_a7774350159b265d9c29495a85739396a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7774350159b265d9c29495a85739396a">getExternalVirtualBackgroundList</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::list&lt; std::string &gt; &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a7774350159b265d9c29495a85739396a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取外部虚拟背景图片路径列表  <br /></td></tr>
+<tr class="separator:a7774350159b265d9c29495a85739396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27fb860d7dbe626368021535b962e0c5" id="r_a27fb860d7dbe626368021535b962e0c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27fb860d7dbe626368021535b962e0c5">setCurrentVirtualBackground</a> (std::string path, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a27fb860d7dbe626368021535b962e0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置最近选择的虚拟背景图片路径  <br /></td></tr>
+<tr class="separator:a27fb860d7dbe626368021535b962e0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338b98e9243dace74ae912475ede5efc" id="r_a338b98e9243dace74ae912475ede5efc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a338b98e9243dace74ae912475ede5efc">getCurrentVirtualBackground</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a338b98e9243dace74ae912475ede5efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取最近选择的虚拟背景图片路径  <br /></td></tr>
+<tr class="separator:a338b98e9243dace74ae912475ede5efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2817b6d83938d08fa7d215c0aa21df9" id="r_af2817b6d83938d08fa7d215c0aa21df9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2817b6d83938d08fa7d215c0aa21df9">enableSpeakerSpotlight</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af2817b6d83938d08fa7d215c0aa21df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开语音激励  <br /></td></tr>
+<tr class="separator:af2817b6d83938d08fa7d215c0aa21df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91702be1394671c642859b81a3a6ce12" id="r_a91702be1394671c642859b81a3a6ce12"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91702be1394671c642859b81a3a6ce12">isSpeakerSpotlightEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a91702be1394671c642859b81a3a6ce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否打开语音激励  <br /></td></tr>
+<tr class="separator:a91702be1394671c642859b81a3a6ce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fec578029ec6e7eea500cce3a3fb9cd" id="r_a7fec578029ec6e7eea500cce3a3fb9cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fec578029ec6e7eea500cce3a3fb9cd">enableCameraMirror</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a7fec578029ec6e7eea500cce3a3fb9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开摄像头镜像  <br /></td></tr>
+<tr class="separator:a7fec578029ec6e7eea500cce3a3fb9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc6d38905815ba7c82f89240c5a96bf" id="r_a6dc6d38905815ba7c82f89240c5a96bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dc6d38905815ba7c82f89240c5a96bf">isCameraMirrorEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a6dc6d38905815ba7c82f89240c5a96bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询摄像头镜像是否打开  <br /></td></tr>
+<tr class="separator:a6dc6d38905815ba7c82f89240c5a96bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4c399d37d1d1e891a6feb5de97c89a" id="r_aff4c399d37d1d1e891a6feb5de97c89a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff4c399d37d1d1e891a6feb5de97c89a">enableFrontCameraMirror</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aff4c399d37d1d1e891a6feb5de97c89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开前置摄像头镜像  <br /></td></tr>
+<tr class="separator:aff4c399d37d1d1e891a6feb5de97c89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52afaef36d0e2a00e6cc1f47c3222cba" id="r_a52afaef36d0e2a00e6cc1f47c3222cba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52afaef36d0e2a00e6cc1f47c3222cba">isFrontCameraMirrorEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a52afaef36d0e2a00e6cc1f47c3222cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询前置摄像头镜像是否打开  <br /></td></tr>
+<tr class="separator:a52afaef36d0e2a00e6cc1f47c3222cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e5c10bea1860943eb146985aa28232" id="r_ad7e5c10bea1860943eb146985aa28232"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e5c10bea1860943eb146985aa28232">enableTransparentWhiteboard</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ad7e5c10bea1860943eb146985aa28232"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开白板透明  <br /></td></tr>
+<tr class="separator:ad7e5c10bea1860943eb146985aa28232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec842cc31c0386f0f10c25e9ea51e16" id="r_a7ec842cc31c0386f0f10c25e9ea51e16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec842cc31c0386f0f10c25e9ea51e16">isTransparentWhiteboardEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a7ec842cc31c0386f0f10c25e9ea51e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询白板透明是否打开  <br /></td></tr>
+<tr class="separator:a7ec842cc31c0386f0f10c25e9ea51e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5f41b254bae722e257a9b9aa63898c" id="r_aeb5f41b254bae722e257a9b9aa63898c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb5f41b254bae722e257a9b9aa63898c">isBeautyFaceSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aeb5f41b254bae722e257a9b9aa63898c"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持美颜  <br /></td></tr>
+<tr class="separator:aeb5f41b254bae722e257a9b9aa63898c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f787da39571733d21150398b994ff57" id="r_a5f787da39571733d21150398b994ff57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f787da39571733d21150398b994ff57">getBeautyFaceValue</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a5f787da39571733d21150398b994ff57"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前美颜参数，关闭返回0  <br /></td></tr>
+<tr class="separator:a5f787da39571733d21150398b994ff57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b406bcecd64a581b2e8bea19c42d131" id="r_a6b406bcecd64a581b2e8bea19c42d131"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b406bcecd64a581b2e8bea19c42d131">setBeautyFaceValue</a> (int value, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a6b406bcecd64a581b2e8bea19c42d131"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置美颜参数  <br /></td></tr>
+<tr class="separator:a6b406bcecd64a581b2e8bea19c42d131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6f30ead6fd729d23971051cee51e85" id="r_aae6f30ead6fd729d23971051cee51e85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6f30ead6fd729d23971051cee51e85">isWaitingRoomSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aae6f30ead6fd729d23971051cee51e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持等候室  <br /></td></tr>
+<tr class="separator:aae6f30ead6fd729d23971051cee51e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b6ec2559a8f880bc47307d89054ccd" id="r_ad6b6ec2559a8f880bc47307d89054ccd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b6ec2559a8f880bc47307d89054ccd">isVirtualBackgroundSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ad6b6ec2559a8f880bc47307d89054ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持虚拟背景  <br /></td></tr>
+<tr class="separator:ad6b6ec2559a8f880bc47307d89054ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316f98d94637803496ec59c310e9d950" id="r_a316f98d94637803496ec59c310e9d950"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a316f98d94637803496ec59c310e9d950">setChatroomDefaultFileSavePath</a> (std::string filePath, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a316f98d94637803496ec59c310e9d950"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置应用聊天室默认文件下载保存路径  <br /></td></tr>
+<tr class="separator:a316f98d94637803496ec59c310e9d950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff112fa8c5cd690e314c4f3867a045fc" id="r_aff112fa8c5cd690e314c4f3867a045fc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff112fa8c5cd690e314c4f3867a045fc">getChatroomDefaultFileSavePath</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aff112fa8c5cd690e314c4f3867a045fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用聊天室文件下载默认保存路径  <br /></td></tr>
+<tr class="separator:aff112fa8c5cd690e314c4f3867a045fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c592e1b291c64bc00e354a3a96de2b" id="r_a06c592e1b291c64bc00e354a3a96de2b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c592e1b291c64bc00e354a3a96de2b">setGalleryModeMaxMemberCount</a> (int count, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a06c592e1b291c64bc00e354a3a96de2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画廊模式下单屏显示最大画面数量  <br /></td></tr>
+<tr class="separator:a06c592e1b291c64bc00e354a3a96de2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa225cf3960b75b1068ae196ffcbc4ad" id="r_aaa225cf3960b75b1068ae196ffcbc4ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa225cf3960b75b1068ae196ffcbc4ad">enableUnmuteAudioByPressSpaceBar</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aaa225cf3960b75b1068ae196ffcbc4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否支持静音时长按空格暂时开启麦克风  <br /></td></tr>
+<tr class="separator:aaa225cf3960b75b1068ae196ffcbc4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff3b484a2779cc28bcc256bd70d0d1f" id="r_acff3b484a2779cc28bcc256bd70d0d1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acff3b484a2779cc28bcc256bd70d0d1f">isUnmuteAudioByPressSpaceBarEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:acff3b484a2779cc28bcc256bd70d0d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否支持静音时长按空格暂时开启麦克风  <br /></td></tr>
+<tr class="separator:acff3b484a2779cc28bcc256bd70d0d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324f6211cdfb4551e2b115628afebdd7" id="r_a324f6211cdfb4551e2b115628afebdd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a324f6211cdfb4551e2b115628afebdd7">isGuestJoinSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a324f6211cdfb4551e2b115628afebdd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持访客入会  <br /></td></tr>
+<tr class="separator:a324f6211cdfb4551e2b115628afebdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c6d77a571527eadd8fbe006d21ccd4" id="r_ad1c6d77a571527eadd8fbe006d21ccd4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1c6d77a571527eadd8fbe006d21ccd4">isTranscriptionSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ad1c6d77a571527eadd8fbe006d21ccd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持转写功能  <br /></td></tr>
+<tr class="separator:ad1c6d77a571527eadd8fbe006d21ccd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bfa4b9e2d26c0f1c1f61c292310e26" id="r_ab3bfa4b9e2d26c0f1c1f61c292310e26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3bfa4b9e2d26c0f1c1f61c292310e26">getInterpretationConfig</a> (const <a class="el" href="#a6e1311b947e0fe0163d3a881103b1556">NEInterpretationConfigCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab3bfa4b9e2d26c0f1c1f61c292310e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用同声传译配置  <br /></td></tr>
+<tr class="separator:ab3bfa4b9e2d26c0f1c1f61c292310e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f47611322dd9f9c10a585913680276f" id="r_a5f47611322dd9f9c10a585913680276f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f47611322dd9f9c10a585913680276f">getScheduledMemberConfig</a> (const <a class="el" href="#aa8ee560af6cacbe81e1acce37828293f">NEScheduledMemberConfigCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a5f47611322dd9f9c10a585913680276f"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用预约会议指定成员配置  <br /></td></tr>
+<tr class="separator:a5f47611322dd9f9c10a585913680276f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08da1a38e90f72f301806f3e3f7a55a3" id="r_a08da1a38e90f72f301806f3e3f7a55a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08da1a38e90f72f301806f3e3f7a55a3">isNicknameUpdateSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a08da1a38e90f72f301806f3e3f7a55a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否拥有修改昵称权限  <br /></td></tr>
+<tr class="separator:a08da1a38e90f72f301806f3e3f7a55a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f57d07aeb2fdf507d9300594064f2ff" id="r_a2f57d07aeb2fdf507d9300594064f2ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f57d07aeb2fdf507d9300594064f2ff">isAvatarUpdateSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a2f57d07aeb2fdf507d9300594064f2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否拥有上传头像权限  <br /></td></tr>
+<tr class="separator:a2f57d07aeb2fdf507d9300594064f2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86f8fb20f40b705e2319d81f1fed933" id="r_ad86f8fb20f40b705e2319d81f1fed933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86f8fb20f40b705e2319d81f1fed933">isCaptionsSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ad86f8fb20f40b705e2319d81f1fed933"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持字幕功能  <br /></td></tr>
+<tr class="separator:ad86f8fb20f40b705e2319d81f1fed933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbe585953d6876db71d2fc7c79dff9a" id="r_aefbe585953d6876db71d2fc7c79dff9a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefbe585953d6876db71d2fc7c79dff9a">setASRTranslationLanguage</a> (<a class="el" href="kit__define__settings_8h.html#aa973176565ca4a6d7e9c614592f458b3">NEMeetingASRTranslationLanguage</a> language, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aefbe585953d6876db71d2fc7c79dff9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持语音转写功能  <br /></td></tr>
+<tr class="separator:aefbe585953d6876db71d2fc7c79dff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae5d581fb1e47f285db1fc3c8f411cd" id="r_aaae5d581fb1e47f285db1fc3c8f411cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaae5d581fb1e47f285db1fc3c8f411cd">getASRTranslationLanguage</a> (const <a class="el" href="#adb511af58c6111165cb7496508e2f2d4">NEASRTranslationLanguageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aaae5d581fb1e47f285db1fc3c8f411cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取会中字幕/转写翻译语言  <br /></td></tr>
+<tr class="separator:aaae5d581fb1e47f285db1fc3c8f411cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9008c5eceae1578b31858efc5dabd6b3" id="r_a9008c5eceae1578b31858efc5dabd6b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9008c5eceae1578b31858efc5dabd6b3">enableCaptionBilingual</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a9008c5eceae1578b31858efc5dabd6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启会中字幕同时显示双语  <br /></td></tr>
+<tr class="separator:a9008c5eceae1578b31858efc5dabd6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672b292d63f8d86198275ad7b17ad6c3" id="r_a672b292d63f8d86198275ad7b17ad6c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a672b292d63f8d86198275ad7b17ad6c3">isCaptionBilingualEnabled</a> (const <a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsBoolCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a672b292d63f8d86198275ad7b17ad6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询会中字幕同时显示双语是否开启  <br /></td></tr>
+<tr class="separator:a672b292d63f8d86198275ad7b17ad6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0769347e767a9ed587358db0f8f0a4" id="r_a7a0769347e767a9ed587358db0f8f0a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a0769347e767a9ed587358db0f8f0a4">enableTranscriptionBilingual</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a7a0769347e767a9ed587358db0f8f0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启会中转写同时显示双语  <br /></td></tr>
+<tr class="separator:a7a0769347e767a9ed587358db0f8f0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefc3d5fcd62d16e619a8418b0d076a4" id="r_abefc3d5fcd62d16e619a8418b0d076a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abefc3d5fcd62d16e619a8418b0d076a4">isTranscriptionBilingualEnabled</a> (const <a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsBoolCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:abefc3d5fcd62d16e619a8418b0d076a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询会中转写同时显示双语是否开启  <br /></td></tr>
+<tr class="separator:abefc3d5fcd62d16e619a8418b0d076a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ca7354150fc5d22028dffc8d7e70e" id="r_a323ca7354150fc5d22028dffc8d7e70e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a323ca7354150fc5d22028dffc8d7e70e">addSettingsChangedListener</a> (<a class="el" href="class_n_e_settings_changed_listener.html">NESettingsChangedListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a323ca7354150fc5d22028dffc8d7e70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加设置变更监听器  <br /></td></tr>
+<tr class="separator:a323ca7354150fc5d22028dffc8d7e70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf57c585ae30a0b4e117b185465efc1" id="r_aacf57c585ae30a0b4e117b185465efc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf57c585ae30a0b4e117b185465efc1">removeSettingsChangedListener</a> (<a class="el" href="class_n_e_settings_changed_listener.html">NESettingsChangedListener</a> *listener)=0</td></tr>
+<tr class="memdesc:aacf57c585ae30a0b4e117b185465efc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除设置变更监听器  <br /></td></tr>
+<tr class="separator:aacf57c585ae30a0b4e117b185465efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6302142df8463f06655f9306e421fbb2" id="r_a6302142df8463f06655f9306e421fbb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6302142df8463f06655f9306e421fbb2">isMeetingChatSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a6302142df8463f06655f9306e421fbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持聊天室服务  <br /></td></tr>
+<tr class="separator:a6302142df8463f06655f9306e421fbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1588d75ea32e32c8e973c99c4607f4a0" id="r_a1588d75ea32e32c8e973c99c4607f4a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1588d75ea32e32c8e973c99c4607f4a0">enableShowNotYetJoinedMembers</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1588d75ea32e32c8e973c99c4607f4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否显示未入会成员  <br /></td></tr>
+<tr class="separator:a1588d75ea32e32c8e973c99c4607f4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac310302d148c6a9ee98834279d251fb5" id="r_ac310302d148c6a9ee98834279d251fb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac310302d148c6a9ee98834279d251fb5">isShowNotYetJoinedMembersEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ac310302d148c6a9ee98834279d251fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否显示未入会成员  <br /></td></tr>
+<tr class="separator:ac310302d148c6a9ee98834279d251fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abd9934f56c1cb0a350715c7e64fd08" id="r_a1abd9934f56c1cb0a350715c7e64fd08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1abd9934f56c1cb0a350715c7e64fd08">setChatMessageNotificationType</a> (<a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a> type, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1abd9934f56c1cb0a350715c7e64fd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置聊天新消息提醒类型  <br /></td></tr>
+<tr class="separator:a1abd9934f56c1cb0a350715c7e64fd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0847488c9c4cadcab278cd4e2f177d" id="r_a4c0847488c9c4cadcab278cd4e2f177d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c0847488c9c4cadcab278cd4e2f177d">getChatMessageNotificationType</a> (const <a class="el" href="#a323ef34cbfb463a5f59a5bf826ca3a7d">NEChatMessageNotificationTypeCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a4c0847488c9c4cadcab278cd4e2f177d"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询聊天新消息提醒类型  <br /></td></tr>
+<tr class="separator:a4c0847488c9c4cadcab278cd4e2f177d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6636d86364b865f355dea7e3637a28" id="r_a7c6636d86364b865f355dea7e3637a28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c6636d86364b865f355dea7e3637a28">isShowNameInVideoEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a7c6636d86364b865f355dea7e3637a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否在视频中显示用户名  <br /></td></tr>
+<tr class="separator:a7c6636d86364b865f355dea7e3637a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0689af91e3bad0bdcea8d409ccf475" id="r_a4b0689af91e3bad0bdcea8d409ccf475"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b0689af91e3bad0bdcea8d409ccf475">enableShowNameInVideo</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a4b0689af91e3bad0bdcea8d409ccf475"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否在视频中显示用户名  <br /></td></tr>
+<tr class="separator:a4b0689af91e3bad0bdcea8d409ccf475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556c69e6a659a6eef0d7aaaa87149c14" id="r_a556c69e6a659a6eef0d7aaaa87149c14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a556c69e6a659a6eef0d7aaaa87149c14">isHideMyVideoEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a556c69e6a659a6eef0d7aaaa87149c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否开启隐藏非视频参会者。  <br /></td></tr>
+<tr class="separator:a556c69e6a659a6eef0d7aaaa87149c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac853fb19f5bc149328ef948be6f85a5f" id="r_ac853fb19f5bc149328ef948be6f85a5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac853fb19f5bc149328ef948be6f85a5f">enableHideMyVideo</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ac853fb19f5bc149328ef948be6f85a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置开启/关闭隐藏本人视图。默认为 false，即显示本人视图。 [enable] true: 隐藏本人视图；false: 显示本人视图  <br /></td></tr>
+<tr class="separator:ac853fb19f5bc149328ef948be6f85a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650fa26427fed98b848343d6b0874689" id="r_a650fa26427fed98b848343d6b0874689"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a650fa26427fed98b848343d6b0874689">enableHideVideoOffAttendees</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a650fa26427fed98b848343d6b0874689"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置开启/关闭隐藏非视频参会者。默认为 false，即显示非视频参会者。 @params [enable] true: 隐藏非视频参会者；false: 显示非视频参会者；  <br /></td></tr>
+<tr class="separator:a650fa26427fed98b848343d6b0874689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64ddbbf106e0929eeb542a7016e17cb" id="r_af64ddbbf106e0929eeb542a7016e17cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af64ddbbf106e0929eeb542a7016e17cb">isHideVideoOffAttendeesEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:af64ddbbf106e0929eeb542a7016e17cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否开启隐藏非视频参会者。  <br /></td></tr>
+<tr class="separator:af64ddbbf106e0929eeb542a7016e17cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab562c3eaf9f5f514fe09cad8334646f6" id="r_ab562c3eaf9f5f514fe09cad8334646f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab562c3eaf9f5f514fe09cad8334646f6">isShowMyMeetingParticipationTimeEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ab562c3eaf9f5f514fe09cad8334646f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询显示参会时长功能开启状态  <br /></td></tr>
+<tr class="separator:ab562c3eaf9f5f514fe09cad8334646f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb64a02ddf589d955f2587d7729fb801" id="r_abb64a02ddf589d955f2587d7729fb801"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb64a02ddf589d955f2587d7729fb801">enableShowMyMeetingParticipationTime</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:abb64a02ddf589d955f2587d7729fb801"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否显示参会时长  <br /></td></tr>
+<tr class="separator:abb64a02ddf589d955f2587d7729fb801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5cd9b12de95dcfede57d6893a65494" id="r_a8e5cd9b12de95dcfede57d6893a65494"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e5cd9b12de95dcfede57d6893a65494">isLeaveTheMeetingRequiresConfirmationEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a8e5cd9b12de95dcfede57d6893a65494"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询是否离开会议需要弹窗确认  <br /></td></tr>
+<tr class="separator:a8e5cd9b12de95dcfede57d6893a65494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62a08a2f6a6cd5e135c70ad2a02107b" id="r_ab62a08a2f6a6cd5e135c70ad2a02107b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab62a08a2f6a6cd5e135c70ad2a02107b">isCallOutRoomSystemDeviceSupported</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ab62a08a2f6a6cd5e135c70ad2a02107b"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用是否支持会议设备邀请  <br /></td></tr>
+<tr class="separator:ab62a08a2f6a6cd5e135c70ad2a02107b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d64bd2dd4fcb631986fc385e722c1c6" id="r_a8d64bd2dd4fcb631986fc385e722c1c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d64bd2dd4fcb631986fc385e722c1c6">enableLeaveTheMeetingRequiresConfirmation</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a8d64bd2dd4fcb631986fc385e722c1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置成员离开会议是否需要弹窗确认  <br /></td></tr>
+<tr class="separator:a8d64bd2dd4fcb631986fc385e722c1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f94a4fff6f64f8ecb5598e317ae4bde" id="r_a0f94a4fff6f64f8ecb5598e317ae4bde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f94a4fff6f64f8ecb5598e317ae4bde">getCloudRecordConfig</a> (const <a class="el" href="#a241299c2aba49650debacd39a21c8800">NECloudRecordConfigCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a0f94a4fff6f64f8ecb5598e317ae4bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取云录制配置  <br /></td></tr>
+<tr class="separator:a0f94a4fff6f64f8ecb5598e317ae4bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9a8f9e714810cc7c3208d1e8fa7c48" id="r_aee9a8f9e714810cc7c3208d1e8fa7c48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee9a8f9e714810cc7c3208d1e8fa7c48">setCloudRecordConfig</a> (const <a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a> &amp;config, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aee9a8f9e714810cc7c3208d1e8fa7c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置云录制配置  <br /></td></tr>
+<tr class="separator:aee9a8f9e714810cc7c3208d1e8fa7c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2631b9c45572e4d62b1b50f56ab5020" id="r_aa2631b9c45572e4d62b1b50f56ab5020"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2631b9c45572e4d62b1b50f56ab5020">getAppNotifySessionId</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aa2631b9c45572e4d62b1b50f56ab5020"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询应用session会话Id  <br /></td></tr>
+<tr class="separator:aa2631b9c45572e4d62b1b50f56ab5020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52b6ff2b7ce6abfc0cf8cbab47c3ac5" id="r_aa52b6ff2b7ce6abfc0cf8cbab47c3ac5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52b6ff2b7ce6abfc0cf8cbab47c3ac5">getAudioAINSMode</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; <a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a> &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aa52b6ff2b7ce6abfc0cf8cbab47c3ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频AINSMode  <br /></td></tr>
+<tr class="separator:aa52b6ff2b7ce6abfc0cf8cbab47c3ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed805169e25eae31a9baadf0c587b34" id="r_a0ed805169e25eae31a9baadf0c587b34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ed805169e25eae31a9baadf0c587b34">enableAudioAINSMode</a> (<a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a> mode, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a0ed805169e25eae31a9baadf0c587b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭音频AINSMode  <br /></td></tr>
+<tr class="separator:a0ed805169e25eae31a9baadf0c587b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba7fb6c6252a92602f34b891cfb905b" id="r_afba7fb6c6252a92602f34b891cfb905b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afba7fb6c6252a92602f34b891cfb905b">enableAutoSilentOnLock</a> (bool enable, const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:afba7fb6c6252a92602f34b891cfb905b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置锁屏是否自动静音关闭视频，默认为 true  <br /></td></tr>
+<tr class="separator:afba7fb6c6252a92602f34b891cfb905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfda8b14dafa7928b1d1ea4b850da0c" id="r_a1bfda8b14dafa7928b1d1ea4b850da0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bfda8b14dafa7928b1d1ea4b850da0c">isAutoSilentOnLockEnabled</a> (const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a1bfda8b14dafa7928b1d1ea4b850da0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取锁屏是否自动静音关闭视频  <br /></td></tr>
+<tr class="separator:a1bfda8b14dafa7928b1d1ea4b850da0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_service.html">NEService</a></td></tr>
+<tr class="memitem:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service" id="r_a39edbaa5283b44e0ca4b5b3f7e5118ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a39edbaa5283b44e0ca4b5b3f7e5118ff">NEService</a> ()</td></tr>
+<tr class="memdesc:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a39edbaa5283b44e0ca4b5b3f7e5118ff inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service" id="r_a68d614611401bd7085d6585e26a7a433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_service.html#a68d614611401bd7085d6585e26a7a433">~NEService</a> ()</td></tr>
+<tr class="memdesc:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a68d614611401bd7085d6585e26a7a433 inherit pub_methods_class_n_e_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_n_e_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_e_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_n_e_object.html">NEObject</a></td></tr>
+<tr class="memitem:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object" id="r_a970bc89c54e91e6748c15d0965f57f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#a970bc89c54e91e6748c15d0965f57f61">NEObject</a> ()=default</td></tr>
+<tr class="memdesc:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a970bc89c54e91e6748c15d0965f57f61 inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object" id="r_aba7d7df8f9f9de9a94f553cbe27730fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_e_object.html#aba7d7df8f9f9de9a94f553cbe27730fd">~NEObject</a> ()=default</td></tr>
+<tr class="memdesc:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aba7d7df8f9f9de9a94f553cbe27730fd inherit pub_methods_class_n_e_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>配置服务 </p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="adb511af58c6111165cb7496508e2f2d4" name="adb511af58c6111165cb7496508e2f2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb511af58c6111165cb7496508e2f2d4">&#9670;&#160;</a></span>NEASRTranslationLanguageCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#adb511af58c6111165cb7496508e2f2d4">NESettingsService::NEASRTranslationLanguageCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#aa973176565ca4a6d7e9c614592f458b3">NEMeetingASRTranslationLanguage</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a323ef34cbfb463a5f59a5bf826ca3a7d" name="a323ef34cbfb463a5f59a5bf826ca3a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323ef34cbfb463a5f59a5bf826ca3a7d">&#9670;&#160;</a></span>NEChatMessageNotificationTypeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a323ef34cbfb463a5f59a5bf826ca3a7d">NESettingsService::NEChatMessageNotificationTypeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a241299c2aba49650debacd39a21c8800" name="a241299c2aba49650debacd39a21c8800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241299c2aba49650debacd39a21c8800">&#9670;&#160;</a></span>NECloudRecordConfigCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a241299c2aba49650debacd39a21c8800">NESettingsService::NECloudRecordConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e1311b947e0fe0163d3a881103b1556" name="a6e1311b947e0fe0163d3a881103b1556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1311b947e0fe0163d3a881103b1556">&#9670;&#160;</a></span>NEInterpretationConfigCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a6e1311b947e0fe0163d3a881103b1556">NESettingsService::NEInterpretationConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a8e9453d22b2375b413ea61669008c671">NEInterpretationConfig</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac472afcb5d10edcdcb22a8b575246a99" name="ac472afcb5d10edcdcb22a8b575246a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac472afcb5d10edcdcb22a8b575246a99">&#9670;&#160;</a></span>NEMeetingAudioAINSModeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ac472afcb5d10edcdcb22a8b575246a99">NESettingsService::NEMeetingAudioAINSModeCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8ee560af6cacbe81e1acce37828293f" name="aa8ee560af6cacbe81e1acce37828293f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ee560af6cacbe81e1acce37828293f">&#9670;&#160;</a></span>NEScheduledMemberConfigCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa8ee560af6cacbe81e1acce37828293f">NESettingsService::NEScheduledMemberConfigCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;<a class="el" href="kit__define__settings_8h.html#a74e21d4fa6c13a76e91e102c9f9908bc">NEScheduledMemberConfig</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7da8adb202ca9b598ed52f0de3cda7d9" name="a7da8adb202ca9b598ed52f0de3cda7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da8adb202ca9b598ed52f0de3cda7d9">&#9670;&#160;</a></span>NESettingsBoolCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsService::NESettingsBoolCallback</a> = <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt;bool&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a323ca7354150fc5d22028dffc8d7e70e" name="a323ca7354150fc5d22028dffc8d7e70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323ca7354150fc5d22028dffc8d7e70e">&#9670;&#160;</a></span>addSettingsChangedListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::addSettingsChangedListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_settings_changed_listener.html">NESettingsChangedListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加设置变更监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3eaa7b09485691ed04c6977636190eb1" name="a3eaa7b09485691ed04c6977636190eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaa7b09485691ed04c6977636190eb1">&#9670;&#160;</a></span>enableAudioAINS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableAudioAINS </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否打开音频智能降噪 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ed805169e25eae31a9baadf0c587b34" name="a0ed805169e25eae31a9baadf0c587b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed805169e25eae31a9baadf0c587b34">&#9670;&#160;</a></span>enableAudioAINSMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableAudioAINSMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启/关闭音频AINSMode </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="afba7fb6c6252a92602f34b891cfb905b" name="afba7fb6c6252a92602f34b891cfb905b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba7fb6c6252a92602f34b891cfb905b">&#9670;&#160;</a></span>enableAutoSilentOnLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableAutoSilentOnLock </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置锁屏是否自动静音关闭视频，默认为 true </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fec578029ec6e7eea500cce3a3fb9cd" name="a7fec578029ec6e7eea500cce3a3fb9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fec578029ec6e7eea500cce3a3fb9cd">&#9670;&#160;</a></span>enableCameraMirror()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableCameraMirror </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否打开摄像头镜像 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9008c5eceae1578b31858efc5dabd6b3" name="a9008c5eceae1578b31858efc5dabd6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9008c5eceae1578b31858efc5dabd6b3">&#9670;&#160;</a></span>enableCaptionBilingual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableCaptionBilingual </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启会中字幕同时显示双语 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff4c399d37d1d1e891a6feb5de97c89a" name="aff4c399d37d1d1e891a6feb5de97c89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4c399d37d1d1e891a6feb5de97c89a">&#9670;&#160;</a></span>enableFrontCameraMirror()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableFrontCameraMirror </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否打开前置摄像头镜像 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac853fb19f5bc149328ef948be6f85a5f" name="ac853fb19f5bc149328ef948be6f85a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac853fb19f5bc149328ef948be6f85a5f">&#9670;&#160;</a></span>enableHideMyVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableHideMyVideo </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置开启/关闭隐藏本人视图。默认为 false，即显示本人视图。 [enable] true: 隐藏本人视图；false: 显示本人视图 </p>
+<dl class="section since"><dt>自从</dt><dd>4.9.0 </dd></dl>
+
+</div>
+</div>
+<a id="a650fa26427fed98b848343d6b0874689" name="a650fa26427fed98b848343d6b0874689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650fa26427fed98b848343d6b0874689">&#9670;&#160;</a></span>enableHideVideoOffAttendees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableHideVideoOffAttendees </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置开启/关闭隐藏非视频参会者。默认为 false，即显示非视频参会者。 @params [enable] true: 隐藏非视频参会者；false: 显示非视频参会者； </p>
+<dl class="section since"><dt>自从</dt><dd>4.9.0 </dd></dl>
+
+</div>
+</div>
+<a id="a8d64bd2dd4fcb631986fc385e722c1c6" name="a8d64bd2dd4fcb631986fc385e722c1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d64bd2dd4fcb631986fc385e722c1c6">&#9670;&#160;</a></span>enableLeaveTheMeetingRequiresConfirmation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableLeaveTheMeetingRequiresConfirmation </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配置成员离开会议是否需要弹窗确认 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="aa38c6bcd84126fe64b09512a62a1dd98" name="aa38c6bcd84126fe64b09512a62a1dd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38c6bcd84126fe64b09512a62a1dd98">&#9670;&#160;</a></span>enableShowMyMeetingElapseTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableShowMyMeetingElapseTime </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否显示会议时长 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb64a02ddf589d955f2587d7729fb801" name="abb64a02ddf589d955f2587d7729fb801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb64a02ddf589d955f2587d7729fb801">&#9670;&#160;</a></span>enableShowMyMeetingParticipationTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableShowMyMeetingParticipationTime </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否显示参会时长 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a4b0689af91e3bad0bdcea8d409ccf475" name="a4b0689af91e3bad0bdcea8d409ccf475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0689af91e3bad0bdcea8d409ccf475">&#9670;&#160;</a></span>enableShowNameInVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableShowNameInVideo </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否在视频中显示用户名 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="a1588d75ea32e32c8e973c99c4607f4a0" name="a1588d75ea32e32c8e973c99c4607f4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1588d75ea32e32c8e973c99c4607f4a0">&#9670;&#160;</a></span>enableShowNotYetJoinedMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableShowNotYetJoinedMembers </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否显示未入会成员 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2817b6d83938d08fa7d215c0aa21df9" name="af2817b6d83938d08fa7d215c0aa21df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2817b6d83938d08fa7d215c0aa21df9">&#9670;&#160;</a></span>enableSpeakerSpotlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableSpeakerSpotlight </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否打开语音激励 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a0769347e767a9ed587358db0f8f0a4" name="a7a0769347e767a9ed587358db0f8f0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0769347e767a9ed587358db0f8f0a4">&#9670;&#160;</a></span>enableTranscriptionBilingual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableTranscriptionBilingual </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启会中转写同时显示双语 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7e5c10bea1860943eb146985aa28232" name="ad7e5c10bea1860943eb146985aa28232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e5c10bea1860943eb146985aa28232">&#9670;&#160;</a></span>enableTransparentWhiteboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableTransparentWhiteboard </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否打开白板透明 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-开启，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef5beda3c3836e10256276dd9ffc3528" name="aef5beda3c3836e10256276dd9ffc3528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5beda3c3836e10256276dd9ffc3528">&#9670;&#160;</a></span>enableTurnOnMyAudioWhenJoinMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableTurnOnMyAudioWhenJoinMeeting </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置入会时是否打开本地音频 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-入会时打开音频，false-入会时关闭音频 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae008ffac2b76a53f2938c56ceffb1b43" name="ae008ffac2b76a53f2938c56ceffb1b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae008ffac2b76a53f2938c56ceffb1b43">&#9670;&#160;</a></span>enableTurnOnMyVideoWhenJoinMeeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableTurnOnMyVideoWhenJoinMeeting </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置入会时是否打开本地视频 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-入会时打开视频，false-入会时关闭视频 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa225cf3960b75b1068ae196ffcbc4ad" name="aaa225cf3960b75b1068ae196ffcbc4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa225cf3960b75b1068ae196ffcbc4ad">&#9670;&#160;</a></span>enableUnmuteAudioByPressSpaceBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableUnmuteAudioByPressSpaceBar </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否支持静音时长按空格暂时开启麦克风 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>是否开启 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89d7826676c11f18df95ca6cfd73a6a5" name="a89d7826676c11f18df95ca6cfd73a6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d7826676c11f18df95ca6cfd73a6a5">&#9670;&#160;</a></span>enableVirtualBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::enableVirtualBackground </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否显示虚拟背景 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true-打开，false-关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2631b9c45572e4d62b1b50f56ab5020" name="aa2631b9c45572e4d62b1b50f56ab5020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2631b9c45572e4d62b1b50f56ab5020">&#9670;&#160;</a></span>getAppNotifySessionId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getAppNotifySessionId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用session会话Id </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="aaae5d581fb1e47f285db1fc3c8f411cd" name="aaae5d581fb1e47f285db1fc3c8f411cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae5d581fb1e47f285db1fc3c8f411cd">&#9670;&#160;</a></span>getASRTranslationLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getASRTranslationLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#adb511af58c6111165cb7496508e2f2d4">NEASRTranslationLanguageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取会中字幕/转写翻译语言 </p>
+
+</div>
+</div>
+<a id="aa52b6ff2b7ce6abfc0cf8cbab47c3ac5" name="aa52b6ff2b7ce6abfc0cf8cbab47c3ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52b6ff2b7ce6abfc0cf8cbab47c3ac5">&#9670;&#160;</a></span>getAudioAINSMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getAudioAINSMode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; <a class="el" href="kit__define__meeting_8h.html#a69a17b6cd3bfae452be9554b5b6f2ae5">NEAudioAINSMode</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取音频AINSMode </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a5f787da39571733d21150398b994ff57" name="a5f787da39571733d21150398b994ff57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f787da39571733d21150398b994ff57">&#9670;&#160;</a></span>getBeautyFaceValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getBeautyFaceValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前美颜参数，关闭返回0 </p>
+
+</div>
+</div>
+<a id="a760e14faabe1546645f5059bc69341af" name="a760e14faabe1546645f5059bc69341af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760e14faabe1546645f5059bc69341af">&#9670;&#160;</a></span>getBuiltinVirtualBackgroundList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getBuiltinVirtualBackgroundList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::list&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取内置虚拟背景图片路径列表 </p>
+
+</div>
+</div>
+<a id="a4c0847488c9c4cadcab278cd4e2f177d" name="a4c0847488c9c4cadcab278cd4e2f177d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0847488c9c4cadcab278cd4e2f177d">&#9670;&#160;</a></span>getChatMessageNotificationType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getChatMessageNotificationType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a323ef34cbfb463a5f59a5bf826ca3a7d">NEChatMessageNotificationTypeCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询聊天新消息提醒类型 </p>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="aff112fa8c5cd690e314c4f3867a045fc" name="aff112fa8c5cd690e314c4f3867a045fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff112fa8c5cd690e314c4f3867a045fc">&#9670;&#160;</a></span>getChatroomDefaultFileSavePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getChatroomDefaultFileSavePath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用聊天室文件下载默认保存路径 </p>
+
+</div>
+</div>
+<a id="a0f94a4fff6f64f8ecb5598e317ae4bde" name="a0f94a4fff6f64f8ecb5598e317ae4bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f94a4fff6f64f8ecb5598e317ae4bde">&#9670;&#160;</a></span>getCloudRecordConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getCloudRecordConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a241299c2aba49650debacd39a21c8800">NECloudRecordConfigCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取云录制配置 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a338b98e9243dace74ae912475ede5efc" name="a338b98e9243dace74ae912475ede5efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338b98e9243dace74ae912475ede5efc">&#9670;&#160;</a></span>getCurrentVirtualBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getCurrentVirtualBackground </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取最近选择的虚拟背景图片路径 </p>
+
+</div>
+</div>
+<a id="a7774350159b265d9c29495a85739396a" name="a7774350159b265d9c29495a85739396a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7774350159b265d9c29495a85739396a">&#9670;&#160;</a></span>getExternalVirtualBackgroundList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getExternalVirtualBackgroundList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; std::list&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取外部虚拟背景图片路径列表 </p>
+
+</div>
+</div>
+<a id="ab3bfa4b9e2d26c0f1c1f61c292310e26" name="ab3bfa4b9e2d26c0f1c1f61c292310e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3bfa4b9e2d26c0f1c1f61c292310e26">&#9670;&#160;</a></span>getInterpretationConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getInterpretationConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a6e1311b947e0fe0163d3a881103b1556">NEInterpretationConfigCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用同声传译配置 </p>
+
+</div>
+</div>
+<a id="a5f47611322dd9f9c10a585913680276f" name="a5f47611322dd9f9c10a585913680276f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f47611322dd9f9c10a585913680276f">&#9670;&#160;</a></span>getScheduledMemberConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::getScheduledMemberConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aa8ee560af6cacbe81e1acce37828293f">NEScheduledMemberConfigCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用预约会议指定成员配置 </p>
+
+</div>
+</div>
+<a id="ad910a8903a676c82efa5a2a1deb1162f" name="ad910a8903a676c82efa5a2a1deb1162f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad910a8903a676c82efa5a2a1deb1162f">&#9670;&#160;</a></span>isAudioAINSEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isAudioAINSEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询音频智能降噪是否打开 </p>
+
+</div>
+</div>
+<a id="a1bfda8b14dafa7928b1d1ea4b850da0c" name="a1bfda8b14dafa7928b1d1ea4b850da0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bfda8b14dafa7928b1d1ea4b850da0c">&#9670;&#160;</a></span>isAutoSilentOnLockEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isAutoSilentOnLockEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取锁屏是否自动静音关闭视频 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a2f57d07aeb2fdf507d9300594064f2ff" name="a2f57d07aeb2fdf507d9300594064f2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f57d07aeb2fdf507d9300594064f2ff">&#9670;&#160;</a></span>isAvatarUpdateSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isAvatarUpdateSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否拥有上传头像权限 </p>
+
+</div>
+</div>
+<a id="aeb5f41b254bae722e257a9b9aa63898c" name="aeb5f41b254bae722e257a9b9aa63898c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5f41b254bae722e257a9b9aa63898c">&#9670;&#160;</a></span>isBeautyFaceSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isBeautyFaceSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持美颜 </p>
+
+</div>
+</div>
+<a id="ab62a08a2f6a6cd5e135c70ad2a02107b" name="ab62a08a2f6a6cd5e135c70ad2a02107b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62a08a2f6a6cd5e135c70ad2a02107b">&#9670;&#160;</a></span>isCallOutRoomSystemDeviceSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isCallOutRoomSystemDeviceSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持会议设备邀请 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a6dc6d38905815ba7c82f89240c5a96bf" name="a6dc6d38905815ba7c82f89240c5a96bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc6d38905815ba7c82f89240c5a96bf">&#9670;&#160;</a></span>isCameraMirrorEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isCameraMirrorEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询摄像头镜像是否打开 </p>
+
+</div>
+</div>
+<a id="a672b292d63f8d86198275ad7b17ad6c3" name="a672b292d63f8d86198275ad7b17ad6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672b292d63f8d86198275ad7b17ad6c3">&#9670;&#160;</a></span>isCaptionBilingualEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isCaptionBilingualEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsBoolCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询会中字幕同时显示双语是否开启 </p>
+<dl class="section return"><dt>返回</dt><dd>true-开启，false-关闭 </dd></dl>
+
+</div>
+</div>
+<a id="ad86f8fb20f40b705e2319d81f1fed933" name="ad86f8fb20f40b705e2319d81f1fed933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86f8fb20f40b705e2319d81f1fed933">&#9670;&#160;</a></span>isCaptionsSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isCaptionsSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持字幕功能 </p>
+
+</div>
+</div>
+<a id="a52afaef36d0e2a00e6cc1f47c3222cba" name="a52afaef36d0e2a00e6cc1f47c3222cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52afaef36d0e2a00e6cc1f47c3222cba">&#9670;&#160;</a></span>isFrontCameraMirrorEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isFrontCameraMirrorEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询前置摄像头镜像是否打开 </p>
+
+</div>
+</div>
+<a id="a324f6211cdfb4551e2b115628afebdd7" name="a324f6211cdfb4551e2b115628afebdd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324f6211cdfb4551e2b115628afebdd7">&#9670;&#160;</a></span>isGuestJoinSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isGuestJoinSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持访客入会 </p>
+
+</div>
+</div>
+<a id="a556c69e6a659a6eef0d7aaaa87149c14" name="a556c69e6a659a6eef0d7aaaa87149c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556c69e6a659a6eef0d7aaaa87149c14">&#9670;&#160;</a></span>isHideMyVideoEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isHideMyVideoEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否开启隐藏非视频参会者。 </p>
+<dl class="section since"><dt>自从</dt><dd>4.9.0 </dd></dl>
+
+</div>
+</div>
+<a id="af64ddbbf106e0929eeb542a7016e17cb" name="af64ddbbf106e0929eeb542a7016e17cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64ddbbf106e0929eeb542a7016e17cb">&#9670;&#160;</a></span>isHideVideoOffAttendeesEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isHideVideoOffAttendeesEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否开启隐藏非视频参会者。 </p>
+<dl class="section since"><dt>自从</dt><dd>4.9.0 </dd></dl>
+
+</div>
+</div>
+<a id="a8e5cd9b12de95dcfede57d6893a65494" name="a8e5cd9b12de95dcfede57d6893a65494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5cd9b12de95dcfede57d6893a65494">&#9670;&#160;</a></span>isLeaveTheMeetingRequiresConfirmationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isLeaveTheMeetingRequiresConfirmationEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否离开会议需要弹窗确认 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a6302142df8463f06655f9306e421fbb2" name="a6302142df8463f06655f9306e421fbb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6302142df8463f06655f9306e421fbb2">&#9670;&#160;</a></span>isMeetingChatSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isMeetingChatSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持聊天室服务 </p>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="ad3823ec20619a3a11cf874c1ae3db980" name="ad3823ec20619a3a11cf874c1ae3db980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3823ec20619a3a11cf874c1ae3db980">&#9670;&#160;</a></span>isMeetingCloudRecordSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isMeetingCloudRecordSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持云端录制服务 </p>
+
+</div>
+</div>
+<a id="a02d8890f09e24d94c78a024975ee41ac" name="a02d8890f09e24d94c78a024975ee41ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d8890f09e24d94c78a024975ee41ac">&#9670;&#160;</a></span>isMeetingLiveSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isMeetingLiveSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持会议直播 </p>
+
+</div>
+</div>
+<a id="a03698316beee9459a4742ace54f4a2f5" name="a03698316beee9459a4742ace54f4a2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03698316beee9459a4742ace54f4a2f5">&#9670;&#160;</a></span>isMeetingWhiteboardSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isMeetingWhiteboardSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持白板共享 </p>
+
+</div>
+</div>
+<a id="a08da1a38e90f72f301806f3e3f7a55a3" name="a08da1a38e90f72f301806f3e3f7a55a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08da1a38e90f72f301806f3e3f7a55a3">&#9670;&#160;</a></span>isNicknameUpdateSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isNicknameUpdateSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否拥有修改昵称权限 </p>
+
+</div>
+</div>
+<a id="a213cd2c7fda2db9c910edc7f5b91b7fa" name="a213cd2c7fda2db9c910edc7f5b91b7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213cd2c7fda2db9c910edc7f5b91b7fa">&#9670;&#160;</a></span>isShowMyMeetingElapseTimeEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isShowMyMeetingElapseTimeEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否显示会议时长 </p>
+
+</div>
+</div>
+<a id="ab562c3eaf9f5f514fe09cad8334646f6" name="ab562c3eaf9f5f514fe09cad8334646f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab562c3eaf9f5f514fe09cad8334646f6">&#9670;&#160;</a></span>isShowMyMeetingParticipationTimeEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isShowMyMeetingParticipationTimeEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询显示参会时长功能开启状态 </p>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a7c6636d86364b865f355dea7e3637a28" name="a7c6636d86364b865f355dea7e3637a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6636d86364b865f355dea7e3637a28">&#9670;&#160;</a></span>isShowNameInVideoEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isShowNameInVideoEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否在视频中显示用户名 </p>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac310302d148c6a9ee98834279d251fb5" name="ac310302d148c6a9ee98834279d251fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac310302d148c6a9ee98834279d251fb5">&#9670;&#160;</a></span>isShowNotYetJoinedMembersEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isShowNotYetJoinedMembersEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否显示未入会成员 </p>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="a91702be1394671c642859b81a3a6ce12" name="a91702be1394671c642859b81a3a6ce12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91702be1394671c642859b81a3a6ce12">&#9670;&#160;</a></span>isSpeakerSpotlightEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isSpeakerSpotlightEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否打开语音激励 </p>
+
+</div>
+</div>
+<a id="abefc3d5fcd62d16e619a8418b0d076a4" name="abefc3d5fcd62d16e619a8418b0d076a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abefc3d5fcd62d16e619a8418b0d076a4">&#9670;&#160;</a></span>isTranscriptionBilingualEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isTranscriptionBilingualEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a7da8adb202ca9b598ed52f0de3cda7d9">NESettingsBoolCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询会中转写同时显示双语是否开启 </p>
+<dl class="section return"><dt>返回</dt><dd>true-开启，false-关闭 </dd></dl>
+
+</div>
+</div>
+<a id="ad1c6d77a571527eadd8fbe006d21ccd4" name="ad1c6d77a571527eadd8fbe006d21ccd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c6d77a571527eadd8fbe006d21ccd4">&#9670;&#160;</a></span>isTranscriptionSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isTranscriptionSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持转写功能 </p>
+
+</div>
+</div>
+<a id="a7ec842cc31c0386f0f10c25e9ea51e16" name="a7ec842cc31c0386f0f10c25e9ea51e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec842cc31c0386f0f10c25e9ea51e16">&#9670;&#160;</a></span>isTransparentWhiteboardEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isTransparentWhiteboardEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询白板透明是否打开 </p>
+
+</div>
+</div>
+<a id="a15c5f2a886351c27baf9a74e3ba0ba36" name="a15c5f2a886351c27baf9a74e3ba0ba36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c5f2a886351c27baf9a74e3ba0ba36">&#9670;&#160;</a></span>isTurnOnMyAudioWhenJoinMeetingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isTurnOnMyAudioWhenJoinMeetingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询入会时是否打开本地音频 </p>
+
+</div>
+</div>
+<a id="a032fbe925329af2a518bb5ae38822ade" name="a032fbe925329af2a518bb5ae38822ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032fbe925329af2a518bb5ae38822ade">&#9670;&#160;</a></span>isTurnOnMyVideoWhenJoinMeetingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isTurnOnMyVideoWhenJoinMeetingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询入会时是否打开本地视频 </p>
+
+</div>
+</div>
+<a id="acff3b484a2779cc28bcc256bd70d0d1f" name="acff3b484a2779cc28bcc256bd70d0d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff3b484a2779cc28bcc256bd70d0d1f">&#9670;&#160;</a></span>isUnmuteAudioByPressSpaceBarEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isUnmuteAudioByPressSpaceBarEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询是否支持静音时长按空格暂时开启麦克风 </p>
+
+</div>
+</div>
+<a id="ab949fdf4a0f17d72b3076fb73d10b08b" name="ab949fdf4a0f17d72b3076fb73d10b08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab949fdf4a0f17d72b3076fb73d10b08b">&#9670;&#160;</a></span>isVirtualBackgroundEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isVirtualBackgroundEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询虚拟背景是否显示 </p>
+
+</div>
+</div>
+<a id="ad6b6ec2559a8f880bc47307d89054ccd" name="ad6b6ec2559a8f880bc47307d89054ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b6ec2559a8f880bc47307d89054ccd">&#9670;&#160;</a></span>isVirtualBackgroundSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isVirtualBackgroundSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持虚拟背景 </p>
+
+</div>
+</div>
+<a id="aae6f30ead6fd729d23971051cee51e85" name="aae6f30ead6fd729d23971051cee51e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6f30ead6fd729d23971051cee51e85">&#9670;&#160;</a></span>isWaitingRoomSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::isWaitingRoomSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#ace434984c94183b5a0534f48f2fea7c6">NECallback</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持等候室 </p>
+
+</div>
+</div>
+<a id="a1fd86bec7b0015d8505049bec7a11f2b" name="a1fd86bec7b0015d8505049bec7a11f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd86bec7b0015d8505049bec7a11f2b">&#9670;&#160;</a></span>openSettingsWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::openSettingsWindow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>打开设置窗口 </p>
+
+</div>
+</div>
+<a id="aacf57c585ae30a0b4e117b185465efc1" name="aacf57c585ae30a0b4e117b185465efc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf57c585ae30a0b4e117b185465efc1">&#9670;&#160;</a></span>removeSettingsChangedListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::removeSettingsChangedListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_e_settings_changed_listener.html">NESettingsChangedListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除设置变更监听器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefbe585953d6876db71d2fc7c79dff9a" name="aefbe585953d6876db71d2fc7c79dff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefbe585953d6876db71d2fc7c79dff9a">&#9670;&#160;</a></span>setASRTranslationLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setASRTranslationLanguage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__settings_8h.html#aa973176565ca4a6d7e9c614592f458b3">NEMeetingASRTranslationLanguage</a></td>          <td class="paramname"><span class="paramname"><em>language</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询应用是否支持语音转写功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>目标翻译语言 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b406bcecd64a581b2e8bea19c42d131" name="a6b406bcecd64a581b2e8bea19c42d131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b406bcecd64a581b2e8bea19c42d131">&#9670;&#160;</a></span>setBeautyFaceValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setBeautyFaceValue </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置美颜参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>传入美颜等级，参数规则为[0,10]整数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8cb25ea4cf20c051bfbdac02aa9e730" name="ab8cb25ea4cf20c051bfbdac02aa9e730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cb25ea4cf20c051bfbdac02aa9e730">&#9670;&#160;</a></span>setBuiltinVirtualBackgroundList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setBuiltinVirtualBackgroundList </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>pathList</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置内置虚拟背景图片路径列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathList</td><td>虚拟背景图片路径列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1abd9934f56c1cb0a350715c7e64fd08" name="a1abd9934f56c1cb0a350715c7e64fd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abd9934f56c1cb0a350715c7e64fd08">&#9670;&#160;</a></span>setChatMessageNotificationType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setChatMessageNotificationType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kit__define__settings_8h.html#a233a9e924604ac5e9a7589dd5630a5af">NEChatMessageNotificationType</a></td>          <td class="paramname"><span class="paramname"><em>type</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置聊天新消息提醒类型 </p>
+<dl class="section since"><dt>自从</dt><dd>4.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="a316f98d94637803496ec59c310e9d950" name="a316f98d94637803496ec59c310e9d950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316f98d94637803496ec59c310e9d950">&#9670;&#160;</a></span>setChatroomDefaultFileSavePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setChatroomDefaultFileSavePath </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filePath</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置应用聊天室默认文件下载保存路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>聊天室文件保存路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee9a8f9e714810cc7c3208d1e8fa7c48" name="aee9a8f9e714810cc7c3208d1e8fa7c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9a8f9e714810cc7c3208d1e8fa7c48">&#9670;&#160;</a></span>setCloudRecordConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setCloudRecordConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="kit__define__meeting_8h.html#abc8d798cffc04572201f53925ff2b4fb">NECloudRecordConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置云录制配置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>云录制配置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>4.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a27fb860d7dbe626368021535b962e0c5" name="a27fb860d7dbe626368021535b962e0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27fb860d7dbe626368021535b962e0c5">&#9670;&#160;</a></span>setCurrentVirtualBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setCurrentVirtualBackground </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置最近选择的虚拟背景图片路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>虚拟背景图片路径,为空代表不设置虚拟背景 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab825553d0b8f39cbc611e0b127a7b30b" name="ab825553d0b8f39cbc611e0b127a7b30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab825553d0b8f39cbc611e0b127a7b30b">&#9670;&#160;</a></span>setExternalVirtualBackgroundList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setExternalVirtualBackgroundList </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>pathList</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置外部虚拟背景图片路径列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathList</td><td>虚拟背景图片路径列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06c592e1b291c64bc00e354a3a96de2b" name="a06c592e1b291c64bc00e354a3a96de2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c592e1b291c64bc00e354a3a96de2b">&#9670;&#160;</a></span>setGalleryModeMaxMemberCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NESettingsService::setGalleryModeMaxMemberCount </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="kit__define__callback_8h.html#a1fa184463e4799c8374cd65ad3ee43f1">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置画廊模式下单屏显示最大画面数量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>最大显示人数目前支持9人或者16人 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>nem_sdk_interface/<a class="el" href="kit__service__setting_8h_source.html">kit_service_setting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

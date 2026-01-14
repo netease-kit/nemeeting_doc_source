@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: NEMeetingKit/ExportHeaders/NEMeetingMessageChannelService.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b6956a87560b6db45d7217c2460fcdd9.html">NEMeetingKit</a></li><li class="navelem"><a class="el" href="dir_eb4e098b8ac684e32f9afd912837e7e5.html">ExportHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">NEMeetingMessageChannelService.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_meeting_message_channel_service_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_meeting_kit_define_8h.html">NEMeetingKitDefine.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">   13</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a>) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759a92888bab03d1718b63636d41b7b1c91e">   17</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759a92888bab03d1718b63636d41b7b1c91e">NEMeetingSessionTypeNone</a> = -1,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_enumvalue" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759ab6cafd26b876c1ae357096355f7847f6">NEMeetingSessionTypeP2P</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759ab6cafd26b876c1ae357096355f7847f6">   22</a></span>};</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217">   27</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217">NEMeetingMessageSearchOrder</a>) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a3120aae484bf45f02ce0b4ea70307150">   31</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a3120aae484bf45f02ce0b4ea70307150">NEMeetingMessageSearchOrderDesc</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a9ef91e98f76c4e66ae6c984c949d7d6c">   35</a></span>  <a class="code hl_enumvalue" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a9ef91e98f76c4e66ae6c984c949d7d6c">NEMeetingMessageSearchOrderAsc</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html">   41</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a> : NSObject</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html#a370e8abcbb6d0827bb9dd4f780af4001">   46</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_n_e_meeting_get_message_history_params.html#a370e8abcbb6d0827bb9dd4f780af4001">sessionId</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html#ac6706a9b622dbf162ae457e33258aef2">   51</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> <a class="code hl_property" href="interface_n_e_meeting_get_message_history_params.html#ac6706a9b622dbf162ae457e33258aef2">fromTime</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html#a90654ad9449bdca63afb91356810ee1c">   56</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> <a class="code hl_property" href="interface_n_e_meeting_get_message_history_params.html#a90654ad9449bdca63afb91356810ee1c">toTime</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html#ac63efc6d1146dab9a72247e114154fd6">   61</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> <a class="code hl_property" href="interface_n_e_meeting_get_message_history_params.html#ac63efc6d1146dab9a72247e114154fd6">limit</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_get_message_history_params.html#a223523cc6ad9832e3d206cd8775a67be">   66</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217">NEMeetingMessageSearchOrder</a> <a class="code hl_property" href="interface_n_e_meeting_get_message_history_params.html#a223523cc6ad9832e3d206cd8775a67be">searchOrder</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_custom_message.html">   73</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_custom_message.html">NEMeetingCustomMessage</a> : NSObject</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_custom_message.html#adcf566f98dd1171597ce505e1b1bbbd2">   77</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *senderUuid;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_custom_message.html#aac43e554c0a798c02da4fe2982d95afc">   82</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> commandId;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_custom_message.html#a69718bb8ca072538c0e2edac5eee39a9">   87</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *data;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_custom_message.html#a29b264695b4bdea0c3ce90b0460b0307">   92</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *roomUuid;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html">   99</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a> : NSObject</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html#abd30ee271195540262e27771eb299c34">  103</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *sessionId;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html#abac69cade776ddb9767778fdb431c2a6">  108</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a> sessionType;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html#a7fff650611166448f635505c55b5c748">  113</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *messageId;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html#ac342f8811e675eaf9a51d48bb40350ee">  118</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *data;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_session_message.html#a1f43f81a21789061aaa76d907402a0c0">  123</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> time;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html">  130</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_recent_session.html">NEMeetingRecentSession</a> : NSObject</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#aed5a154fb94216baf6dd76f842680478">  136</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *sessionId;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#ac606cff23414a88e3098e6f810bf39ac">  142</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *fromAccount;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#a21a02eb2fdca0bb37e8c8d5d5fa4d5e9">  147</a></span><span class="keyword">@property</span>(nonatomic, assign) <a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a> sessionType;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#a03bf94d92fef5a04554f93d0a30efae6">  152</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *recentMessageId;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#a61d4d341367e93449b775bb6e86c4d72">  157</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">int</span> unreadCount;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_recent_session.html#a4f835c3ef1e8a7165ea2a4c4883e12cd">  162</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *content;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_message_channel_service.html#aeae359e7fcdcd21d1293ba90df49717b">  167</a></span><span class="keyword">@property</span>(nonatomic, assign) <span class="keywordtype">long</span> time;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="protocol_n_e_meeting_message_channel_listener-p.html">  174</a></span><span class="keyword">@protocol </span>NEMeetingMessageChannelListener &lt;NSObject&gt;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>- (void)onCustomMessageReceived:(<a class="code hl_interface" href="interface_n_e_meeting_custom_message.html">NEMeetingCustomMessage</a> *)message;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>- (void)onSessionMessageReceived:(<a class="code hl_interface" href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a> *)message;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>- (void)onSessionMessageRecentChanged:(NSArray&lt;<a class="code hl_interface" href="interface_n_e_meeting_recent_session.html">NEMeetingRecentSession</a> *&gt; *)messages;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>- (void)onSessionMessageDeleted:(<a class="code hl_interface" href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a> *)message;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>- (void)onSessionMessageAllDeleted:(NSString *)sessionId</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                       sessionType:(<a class="code hl_enumeration" href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a>)sessionType;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="interface_n_e_meeting_message_channel_service.html">  219</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a> : NSObject</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>- (void)addMeetingMessageChannelListener:(<span class="keywordtype">id</span>&lt;NEMeetingMessageChannelListener&gt;)listener;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>- (void)removeMeetingMessageChannelListener:(<span class="keywordtype">id</span>&lt;NEMeetingMessageChannelListener&gt;)listener;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>- (void)queryUnreadMessageList:(NSString *)sessionId</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                      callback:(<span class="keywordtype">void</span> (^)(NSInteger code, NSString *message,</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                                         NSArray&lt;<a class="code hl_interface" href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a> *&gt; *data))callback;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>- (void)clearUnreadCount:(NSString *)sessionId callback:(<a class="code hl_typedef" href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">NECallback</a>)callback;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>- (void)deleteAllSessionMessage:(NSString *)sessionId callback:(<a class="code hl_typedef" href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">NECallback</a>)callback;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>- (void)getSessionMessagesHistory:(<a class="code hl_interface" href="interface_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a> *)param</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                         callback:(<span class="keywordtype">void</span> (^)(NSInteger code, NSString *message,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                                            NSArray&lt;<a class="code hl_interface" href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a> *&gt; *data))callback;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html">NEMeetingKitDefine.h</a></div></div>
+<div class="ttc" id="a_n_e_meeting_kit_define_8h_html_aa65dcfd52574e6a5f446b36d5b1c467a"><div class="ttname"><a href="_n_e_meeting_kit_define_8h.html#aa65dcfd52574e6a5f446b36d5b1c467a">NECallback</a></div><div class="ttdeci">void(^ NECallback)(NSInteger resultCode, NSString *resultMessage, id resultData)</div><div class="ttdef"><b>Definition</b> NEMeetingKitDefine.h:17</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab04ba9f7099eaeea614cddbc41669759"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759">NEMeetingSessionType</a></div><div class="ttdeci">NEMeetingSessionType</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:13</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab04ba9f7099eaeea614cddbc41669759a92888bab03d1718b63636d41b7b1c91e"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759a92888bab03d1718b63636d41b7b1c91e">NEMeetingSessionTypeNone</a></div><div class="ttdeci">@ NEMeetingSessionTypeNone</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:17</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab04ba9f7099eaeea614cddbc41669759ab6cafd26b876c1ae357096355f7847f6"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab04ba9f7099eaeea614cddbc41669759ab6cafd26b876c1ae357096355f7847f6">NEMeetingSessionTypeP2P</a></div><div class="ttdeci">@ NEMeetingSessionTypeP2P</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:21</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab3e145488fd77c86c4c0ed60c17c6217"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217">NEMeetingMessageSearchOrder</a></div><div class="ttdeci">NEMeetingMessageSearchOrder</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:27</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab3e145488fd77c86c4c0ed60c17c6217a3120aae484bf45f02ce0b4ea70307150"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a3120aae484bf45f02ce0b4ea70307150">NEMeetingMessageSearchOrderDesc</a></div><div class="ttdeci">@ NEMeetingMessageSearchOrderDesc</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:31</div></div>
+<div class="ttc" id="a_n_e_meeting_message_channel_service_8h_html_ab3e145488fd77c86c4c0ed60c17c6217a9ef91e98f76c4e66ae6c984c949d7d6c"><div class="ttname"><a href="_n_e_meeting_message_channel_service_8h.html#ab3e145488fd77c86c4c0ed60c17c6217a9ef91e98f76c4e66ae6c984c949d7d6c">NEMeetingMessageSearchOrderAsc</a></div><div class="ttdeci">@ NEMeetingMessageSearchOrderAsc</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:35</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_custom_message_html"><div class="ttname"><a href="interface_n_e_meeting_custom_message.html">NEMeetingCustomMessage</a></div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:74</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html">NEMeetingGetMessageHistoryParams</a></div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:42</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html_a223523cc6ad9832e3d206cd8775a67be"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html#a223523cc6ad9832e3d206cd8775a67be">NEMeetingGetMessageHistoryParams::searchOrder</a></div><div class="ttdeci">NEMeetingMessageSearchOrder searchOrder</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:66</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html_a370e8abcbb6d0827bb9dd4f780af4001"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html#a370e8abcbb6d0827bb9dd4f780af4001">NEMeetingGetMessageHistoryParams::sessionId</a></div><div class="ttdeci">NSString * sessionId</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:46</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html_a90654ad9449bdca63afb91356810ee1c"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html#a90654ad9449bdca63afb91356810ee1c">NEMeetingGetMessageHistoryParams::toTime</a></div><div class="ttdeci">long toTime</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:56</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html_ac63efc6d1146dab9a72247e114154fd6"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html#ac63efc6d1146dab9a72247e114154fd6">NEMeetingGetMessageHistoryParams::limit</a></div><div class="ttdeci">long limit</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:61</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_get_message_history_params_html_ac6706a9b622dbf162ae457e33258aef2"><div class="ttname"><a href="interface_n_e_meeting_get_message_history_params.html#ac6706a9b622dbf162ae457e33258aef2">NEMeetingGetMessageHistoryParams::fromTime</a></div><div class="ttdeci">long fromTime</div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:51</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_message_channel_service_html"><div class="ttname"><a href="interface_n_e_meeting_message_channel_service.html">NEMeetingMessageChannelService</a></div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:220</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_recent_session_html"><div class="ttname"><a href="interface_n_e_meeting_recent_session.html">NEMeetingRecentSession</a></div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:131</div></div>
+<div class="ttc" id="ainterface_n_e_meeting_session_message_html"><div class="ttname"><a href="interface_n_e_meeting_session_message.html">NEMeetingSessionMessage</a></div><div class="ttdef"><b>Definition</b> NEMeetingMessageChannelService.h:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

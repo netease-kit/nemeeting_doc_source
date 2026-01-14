@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NEMeetingKit: &lt;NEMeetingInviteStatusListener&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NEMeetingKit<span id="projectnumber">&#160;V4.19.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">构造函数</a> &#124;
+<a href="protocol_n_e_meeting_invite_status_listener-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NEMeetingInviteStatusListener&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_meeting_invite_service_8h_source.html">NEMeetingInviteService.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NEMeetingInviteStatusListener&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_meeting_invite_status_listener-p.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+构造函数</h2></td></tr>
+<tr class="memitem:a482951b28a74dd7a3eeb7492dc77c325" id="r_a482951b28a74dd7a3eeb7492dc77c325"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a482951b28a74dd7a3eeb7492dc77c325">onMeetingInviteStatusChanged:meetingId:inviteInfo:</a></td></tr>
+<tr class="separator:a482951b28a74dd7a3eeb7492dc77c325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b557055ae06bd39d5384e62badfa1a" id="r_a02b557055ae06bd39d5384e62badfa1a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a02b557055ae06bd39d5384e62badfa1a">onMemberAppInviteStateChanged:operateBy:</a></td></tr>
+<tr class="separator:a02b557055ae06bd39d5384e62badfa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af870d381ed8d87fc49cab5002cff5ad7" id="r_af870d381ed8d87fc49cab5002cff5ad7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#af870d381ed8d87fc49cab5002cff5ad7">onMemberSipInviteStateChanged:operateBy:</a></td></tr>
+<tr class="separator:af870d381ed8d87fc49cab5002cff5ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>会议邀请状态监听器，用于监听邀请状态变更事件 </p>
+</div><h2 class="groupheader">函数文档</h2>
+<a id="a482951b28a74dd7a3eeb7492dc77c325" name="a482951b28a74dd7a3eeb7492dc77c325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482951b28a74dd7a3eeb7492dc77c325">&#9670;&#160;</a></span>onMeetingInviteStatusChanged:meetingId:inviteInfo:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onMeetingInviteStatusChanged: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_meeting_invite_info_8h.html#aae57fffbd0926ba0505d3a4bbaf7e093">NEMeetingInviteStatus</a>)</td>          <td class="paramname"><span class="paramname"><em>status</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">meetingId:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)</td>          <td class="paramname"><span class="paramname"><em>meetingId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">inviteInfo:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_meeting_invite_info.html">NEMeetingInviteInfo</a> *)</td>          <td class="paramname"><span class="paramname"><em>inviteInfo</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>本端会议邀请状态变更通知</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>邀请状态 </td></tr>
+    <tr><td class="paramname">meetingId</td><td>会议ID </td></tr>
+    <tr><td class="paramname">inviteInfo</td><td>邀请对象信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02b557055ae06bd39d5384e62badfa1a" name="a02b557055ae06bd39d5384e62badfa1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b557055ae06bd39d5384e62badfa1a">&#9670;&#160;</a></span>onMemberAppInviteStateChanged:operateBy:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onMemberAppInviteStateChanged: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_meeting_member.html">NEMeetingMember</a> *)</td>          <td class="paramname"><span class="paramname"><em>member</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">operateBy:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_meeting_member.html">NEMeetingMember</a> *_Nullable)</td>          <td class="paramname"><span class="paramname"><em>operateBy</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>会中成员App邀请状态变更通知</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">member</td><td>成员信息 </td></tr>
+    <tr><td class="paramname">operateBy</td><td>操作者信息，可能为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af870d381ed8d87fc49cab5002cff5ad7" name="af870d381ed8d87fc49cab5002cff5ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af870d381ed8d87fc49cab5002cff5ad7">&#9670;&#160;</a></span>onMemberSipInviteStateChanged:operateBy:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onMemberSipInviteStateChanged: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_meeting_member.html">NEMeetingMember</a> *)</td>          <td class="paramname"><span class="paramname"><em>member</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">operateBy:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_meeting_member.html">NEMeetingMember</a> *_Nullable)</td>          <td class="paramname"><span class="paramname"><em>operateBy</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>会中成员SIP邀请状态变更通知</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">member</td><td>成员信息 </td></tr>
+    <tr><td class="paramname">operateBy</td><td>操作者信息，可能为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>NEMeetingKit/ExportHeaders/<a class="el" href="_n_e_meeting_invite_service_8h_source.html">NEMeetingInviteService.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
